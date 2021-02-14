@@ -1,0 +1,17 @@
+E:\Igor\8_CSharp\0_ПРАКТИКА\16_Gokhlia_Money\16_Gokhlia_Money\bin\Debug\16_Gokhlia_Money.exe.config
+E:\Igor\8_CSharp\0_ПРАКТИКА\16_Gokhlia_Money\16_Gokhlia_Money\bin\Debug\16_Gokhlia_Money.exe
+E:\Igor\8_CSharp\0_ПРАКТИКА\16_Gokhlia_Money\16_Gokhlia_Money\bin\Debug\16_Gokhlia_Money.pdb
+E:\Igor\8_CSharp\0_ПРАКТИКА\16_Gokhlia_Money\16_Gokhlia_Money\obj\Debug\16_Gokhlia_Money.csprojAssemblyReference.cache
+E:\Igor\8_CSharp\0_ПРАКТИКА\16_Gokhlia_Money\16_Gokhlia_Money\obj\Debug\_16_Gokhlia_Money.Form1.resources
+E:\Igor\8_CSharp\0_ПРАКТИКА\16_Gokhlia_Money\16_Gokhlia_Money\obj\Debug\_16_Gokhlia_Money.Properties.Resources.resources
+E:\Igor\8_CSharp\0_ПРАКТИКА\16_Gokhlia_Money\16_Gokhlia_Money\obj\Debug\16_Gokhlia_Money.csproj.GenerateResource.cache
+E:\Igor\8_CSharp\0_ПРАКТИКА\16_Gokhlia_Money\16_Gokhlia_Money\obj\Debug\16_Gokhlia_Money.csproj.CoreCompileInputs.cache
+E:\Igor\8_CSharp\0_ПРАКТИКА\16_Gokhlia_Money\16_Gokhlia_Money\obj\Debug\16_Gokhlia_Money.exe
+E:\Igor\8_CSharp\0_ПРАКТИКА\16_Gokhlia_Money\16_Gokhlia_Money\obj\Debug\16_Gokhlia_Money.pdb
+E:\Igor\8_CSharp\0_ПРАКТИКА\16_Gokhlia_Money\16_Gokhlia_Money\bin\Debug\AngleSharp.dll
+E:\Igor\8_CSharp\0_ПРАКТИКА\16_Gokhlia_Money\16_Gokhlia_Money\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+E:\Igor\8_CSharp\0_ПРАКТИКА\16_Gokhlia_Money\16_Gokhlia_Money\bin\Debug\System.Text.Encoding.CodePages.dll
+E:\Igor\8_CSharp\0_ПРАКТИКА\16_Gokhlia_Money\16_Gokhlia_Money\bin\Debug\AngleSharp.xml
+E:\Igor\8_CSharp\0_ПРАКТИКА\16_Gokhlia_Money\16_Gokhlia_Money\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+E:\Igor\8_CSharp\0_ПРАКТИКА\16_Gokhlia_Money\16_Gokhlia_Money\obj\Debug\16_Gokhlia_Money.csproj.CopyComplete
+E:\Igor\8_CSharp\0_ПРАКТИКА\16_Gokhlia_Money\16_Gokhlia_Money\obj\Debug\_16_Gokhlia_Money.Graphik.resources

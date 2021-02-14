@@ -1,0 +1,13 @@
+E:\Igor\8_CSharp\7_ВТОРОЙ_УРОВЕНЬ\2_Универсальные_типы\2_Универсальные_типы\bin\Debug\netcoreapp3.1\2_Универсальные_типы.exe
+E:\Igor\8_CSharp\7_ВТОРОЙ_УРОВЕНЬ\2_Универсальные_типы\2_Универсальные_типы\bin\Debug\netcoreapp3.1\2_Универсальные_типы.deps.json
+E:\Igor\8_CSharp\7_ВТОРОЙ_УРОВЕНЬ\2_Универсальные_типы\2_Универсальные_типы\bin\Debug\netcoreapp3.1\2_Универсальные_типы.runtimeconfig.json
+E:\Igor\8_CSharp\7_ВТОРОЙ_УРОВЕНЬ\2_Универсальные_типы\2_Универсальные_типы\bin\Debug\netcoreapp3.1\2_Универсальные_типы.runtimeconfig.dev.json
+E:\Igor\8_CSharp\7_ВТОРОЙ_УРОВЕНЬ\2_Универсальные_типы\2_Универсальные_типы\bin\Debug\netcoreapp3.1\2_Универсальные_типы.dll
+E:\Igor\8_CSharp\7_ВТОРОЙ_УРОВЕНЬ\2_Универсальные_типы\2_Универсальные_типы\bin\Debug\netcoreapp3.1\2_Универсальные_типы.pdb
+E:\Igor\8_CSharp\7_ВТОРОЙ_УРОВЕНЬ\2_Универсальные_типы\2_Универсальные_типы\obj\Debug\netcoreapp3.1\2_Универсальные_типы.csprojAssemblyReference.cache
+E:\Igor\8_CSharp\7_ВТОРОЙ_УРОВЕНЬ\2_Универсальные_типы\2_Универсальные_типы\obj\Debug\netcoreapp3.1\2_Универсальные_типы.AssemblyInfoInputs.cache
+E:\Igor\8_CSharp\7_ВТОРОЙ_УРОВЕНЬ\2_Универсальные_типы\2_Универсальные_типы\obj\Debug\netcoreapp3.1\2_Универсальные_типы.AssemblyInfo.cs
+E:\Igor\8_CSharp\7_ВТОРОЙ_УРОВЕНЬ\2_Универсальные_типы\2_Универсальные_типы\obj\Debug\netcoreapp3.1\2_Универсальные_типы.csproj.CoreCompileInputs.cache
+E:\Igor\8_CSharp\7_ВТОРОЙ_УРОВЕНЬ\2_Универсальные_типы\2_Универсальные_типы\obj\Debug\netcoreapp3.1\2_Универсальные_типы.dll
+E:\Igor\8_CSharp\7_ВТОРОЙ_УРОВЕНЬ\2_Универсальные_типы\2_Универсальные_типы\obj\Debug\netcoreapp3.1\2_Универсальные_типы.pdb
+E:\Igor\8_CSharp\7_ВТОРОЙ_УРОВЕНЬ\2_Универсальные_типы\2_Универсальные_типы\obj\Debug\netcoreapp3.1\2_Универсальные_типы.genruntimeconfig.cache

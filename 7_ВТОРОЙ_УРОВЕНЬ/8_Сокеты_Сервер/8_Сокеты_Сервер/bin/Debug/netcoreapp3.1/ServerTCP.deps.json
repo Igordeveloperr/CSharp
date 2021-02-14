@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "ServerTCP/1.0.0": {
+        "runtime": {
+          "ServerTCP.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ServerTCP/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

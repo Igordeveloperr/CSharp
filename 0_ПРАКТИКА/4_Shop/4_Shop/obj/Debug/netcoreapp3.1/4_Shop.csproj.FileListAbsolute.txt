@@ -1,0 +1,13 @@
+E:\Igor\8_CSharp\0_ПРАКТИКА\4_Shop\4_Shop\bin\Debug\netcoreapp3.1\4_Shop.exe
+E:\Igor\8_CSharp\0_ПРАКТИКА\4_Shop\4_Shop\bin\Debug\netcoreapp3.1\4_Shop.deps.json
+E:\Igor\8_CSharp\0_ПРАКТИКА\4_Shop\4_Shop\bin\Debug\netcoreapp3.1\4_Shop.runtimeconfig.json
+E:\Igor\8_CSharp\0_ПРАКТИКА\4_Shop\4_Shop\bin\Debug\netcoreapp3.1\4_Shop.runtimeconfig.dev.json
+E:\Igor\8_CSharp\0_ПРАКТИКА\4_Shop\4_Shop\bin\Debug\netcoreapp3.1\4_Shop.dll
+E:\Igor\8_CSharp\0_ПРАКТИКА\4_Shop\4_Shop\bin\Debug\netcoreapp3.1\4_Shop.pdb
+E:\Igor\8_CSharp\0_ПРАКТИКА\4_Shop\4_Shop\obj\Debug\netcoreapp3.1\4_Shop.csprojAssemblyReference.cache
+E:\Igor\8_CSharp\0_ПРАКТИКА\4_Shop\4_Shop\obj\Debug\netcoreapp3.1\4_Shop.AssemblyInfoInputs.cache
+E:\Igor\8_CSharp\0_ПРАКТИКА\4_Shop\4_Shop\obj\Debug\netcoreapp3.1\4_Shop.AssemblyInfo.cs
+E:\Igor\8_CSharp\0_ПРАКТИКА\4_Shop\4_Shop\obj\Debug\netcoreapp3.1\4_Shop.csproj.CoreCompileInputs.cache
+E:\Igor\8_CSharp\0_ПРАКТИКА\4_Shop\4_Shop\obj\Debug\netcoreapp3.1\4_Shop.dll
+E:\Igor\8_CSharp\0_ПРАКТИКА\4_Shop\4_Shop\obj\Debug\netcoreapp3.1\4_Shop.pdb
+E:\Igor\8_CSharp\0_ПРАКТИКА\4_Shop\4_Shop\obj\Debug\netcoreapp3.1\4_Shop.genruntimeconfig.cache

@@ -1,0 +1,13 @@
+E:\Igor\8_CSharp\0_ПРАКТИКА\3_FP_proj\3_FP_proj\bin\Debug\netcoreapp3.1\3_FP_proj.exe
+E:\Igor\8_CSharp\0_ПРАКТИКА\3_FP_proj\3_FP_proj\bin\Debug\netcoreapp3.1\3_FP_proj.deps.json
+E:\Igor\8_CSharp\0_ПРАКТИКА\3_FP_proj\3_FP_proj\bin\Debug\netcoreapp3.1\3_FP_proj.runtimeconfig.json
+E:\Igor\8_CSharp\0_ПРАКТИКА\3_FP_proj\3_FP_proj\bin\Debug\netcoreapp3.1\3_FP_proj.runtimeconfig.dev.json
+E:\Igor\8_CSharp\0_ПРАКТИКА\3_FP_proj\3_FP_proj\bin\Debug\netcoreapp3.1\3_FP_proj.dll
+E:\Igor\8_CSharp\0_ПРАКТИКА\3_FP_proj\3_FP_proj\bin\Debug\netcoreapp3.1\3_FP_proj.pdb
+E:\Igor\8_CSharp\0_ПРАКТИКА\3_FP_proj\3_FP_proj\obj\Debug\netcoreapp3.1\3_FP_proj.csprojAssemblyReference.cache
+E:\Igor\8_CSharp\0_ПРАКТИКА\3_FP_proj\3_FP_proj\obj\Debug\netcoreapp3.1\3_FP_proj.AssemblyInfoInputs.cache
+E:\Igor\8_CSharp\0_ПРАКТИКА\3_FP_proj\3_FP_proj\obj\Debug\netcoreapp3.1\3_FP_proj.AssemblyInfo.cs
+E:\Igor\8_CSharp\0_ПРАКТИКА\3_FP_proj\3_FP_proj\obj\Debug\netcoreapp3.1\3_FP_proj.csproj.CoreCompileInputs.cache
+E:\Igor\8_CSharp\0_ПРАКТИКА\3_FP_proj\3_FP_proj\obj\Debug\netcoreapp3.1\3_FP_proj.dll
+E:\Igor\8_CSharp\0_ПРАКТИКА\3_FP_proj\3_FP_proj\obj\Debug\netcoreapp3.1\3_FP_proj.pdb
+E:\Igor\8_CSharp\0_ПРАКТИКА\3_FP_proj\3_FP_proj\obj\Debug\netcoreapp3.1\3_FP_proj.genruntimeconfig.cache

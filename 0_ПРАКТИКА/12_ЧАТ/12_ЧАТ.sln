@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30406.217
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "12_ЧАТ", "12_ЧАТ\12_ЧАТ.csproj", "{72A2FE56-242A-4BA4-A9BF-B434FAE59315}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServerChatUDP", "ServerChatUDP\ServerChatUDP.csproj", "{ABEF28D1-B18A-44AD-96EA-679E5B17F27B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{72A2FE56-242A-4BA4-A9BF-B434FAE59315}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72A2FE56-242A-4BA4-A9BF-B434FAE59315}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72A2FE56-242A-4BA4-A9BF-B434FAE59315}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72A2FE56-242A-4BA4-A9BF-B434FAE59315}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ABEF28D1-B18A-44AD-96EA-679E5B17F27B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ABEF28D1-B18A-44AD-96EA-679E5B17F27B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ABEF28D1-B18A-44AD-96EA-679E5B17F27B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ABEF28D1-B18A-44AD-96EA-679E5B17F27B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5BD0C74F-E5F3-4497-A8C4-815E4C9A4973}
+	EndGlobalSection
+EndGlobal

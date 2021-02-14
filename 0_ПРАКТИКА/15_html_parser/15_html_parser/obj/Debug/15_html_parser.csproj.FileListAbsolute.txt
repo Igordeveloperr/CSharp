@@ -1,0 +1,16 @@
+E:\Igor\8_CSharp\0_ПРАКТИКА\15_html_parser\15_html_parser\bin\Debug\15_html_parser.exe.config
+E:\Igor\8_CSharp\0_ПРАКТИКА\15_html_parser\15_html_parser\bin\Debug\15_html_parser.exe
+E:\Igor\8_CSharp\0_ПРАКТИКА\15_html_parser\15_html_parser\bin\Debug\15_html_parser.pdb
+E:\Igor\8_CSharp\0_ПРАКТИКА\15_html_parser\15_html_parser\bin\Debug\AngleSharp.dll
+E:\Igor\8_CSharp\0_ПРАКТИКА\15_html_parser\15_html_parser\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+E:\Igor\8_CSharp\0_ПРАКТИКА\15_html_parser\15_html_parser\bin\Debug\System.Text.Encoding.CodePages.dll
+E:\Igor\8_CSharp\0_ПРАКТИКА\15_html_parser\15_html_parser\bin\Debug\AngleSharp.xml
+E:\Igor\8_CSharp\0_ПРАКТИКА\15_html_parser\15_html_parser\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+E:\Igor\8_CSharp\0_ПРАКТИКА\15_html_parser\15_html_parser\obj\Debug\15_html_parser.csprojAssemblyReference.cache
+E:\Igor\8_CSharp\0_ПРАКТИКА\15_html_parser\15_html_parser\obj\Debug\_15_html_parser.Form1.resources
+E:\Igor\8_CSharp\0_ПРАКТИКА\15_html_parser\15_html_parser\obj\Debug\_15_html_parser.Properties.Resources.resources
+E:\Igor\8_CSharp\0_ПРАКТИКА\15_html_parser\15_html_parser\obj\Debug\15_html_parser.csproj.GenerateResource.cache
+E:\Igor\8_CSharp\0_ПРАКТИКА\15_html_parser\15_html_parser\obj\Debug\15_html_parser.csproj.CoreCompileInputs.cache
+E:\Igor\8_CSharp\0_ПРАКТИКА\15_html_parser\15_html_parser\obj\Debug\15_html_parser.csproj.CopyComplete
+E:\Igor\8_CSharp\0_ПРАКТИКА\15_html_parser\15_html_parser\obj\Debug\15_html_parser.exe
+E:\Igor\8_CSharp\0_ПРАКТИКА\15_html_parser\15_html_parser\obj\Debug\15_html_parser.pdb

@@ -1,0 +1,13 @@
+E:\Igor\8_CSharp\6_ООП\2_Еще_Классы\2_Еще_Классы\bin\Debug\netcoreapp3.1\2_Еще_Классы.exe
+E:\Igor\8_CSharp\6_ООП\2_Еще_Классы\2_Еще_Классы\bin\Debug\netcoreapp3.1\2_Еще_Классы.deps.json
+E:\Igor\8_CSharp\6_ООП\2_Еще_Классы\2_Еще_Классы\bin\Debug\netcoreapp3.1\2_Еще_Классы.runtimeconfig.json
+E:\Igor\8_CSharp\6_ООП\2_Еще_Классы\2_Еще_Классы\bin\Debug\netcoreapp3.1\2_Еще_Классы.runtimeconfig.dev.json
+E:\Igor\8_CSharp\6_ООП\2_Еще_Классы\2_Еще_Классы\bin\Debug\netcoreapp3.1\2_Еще_Классы.dll
+E:\Igor\8_CSharp\6_ООП\2_Еще_Классы\2_Еще_Классы\bin\Debug\netcoreapp3.1\2_Еще_Классы.pdb
+E:\Igor\8_CSharp\6_ООП\2_Еще_Классы\2_Еще_Классы\obj\Debug\netcoreapp3.1\2_Еще_Классы.csprojAssemblyReference.cache
+E:\Igor\8_CSharp\6_ООП\2_Еще_Классы\2_Еще_Классы\obj\Debug\netcoreapp3.1\2_Еще_Классы.AssemblyInfoInputs.cache
+E:\Igor\8_CSharp\6_ООП\2_Еще_Классы\2_Еще_Классы\obj\Debug\netcoreapp3.1\2_Еще_Классы.AssemblyInfo.cs
+E:\Igor\8_CSharp\6_ООП\2_Еще_Классы\2_Еще_Классы\obj\Debug\netcoreapp3.1\2_Еще_Классы.csproj.CoreCompileInputs.cache
+E:\Igor\8_CSharp\6_ООП\2_Еще_Классы\2_Еще_Классы\obj\Debug\netcoreapp3.1\2_Еще_Классы.dll
+E:\Igor\8_CSharp\6_ООП\2_Еще_Классы\2_Еще_Классы\obj\Debug\netcoreapp3.1\2_Еще_Классы.pdb
+E:\Igor\8_CSharp\6_ООП\2_Еще_Классы\2_Еще_Классы\obj\Debug\netcoreapp3.1\2_Еще_Классы.genruntimeconfig.cache

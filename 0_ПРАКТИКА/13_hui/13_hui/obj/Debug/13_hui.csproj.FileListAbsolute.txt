@@ -1,0 +1,10 @@
+E:\Igor\8_CSharp\0_ПРАКТИКА\13_hui\13_hui\bin\Debug\13_hui.exe.config
+E:\Igor\8_CSharp\0_ПРАКТИКА\13_hui\13_hui\bin\Debug\13_hui.exe
+E:\Igor\8_CSharp\0_ПРАКТИКА\13_hui\13_hui\bin\Debug\13_hui.pdb
+E:\Igor\8_CSharp\0_ПРАКТИКА\13_hui\13_hui\obj\Debug\13_hui.csprojAssemblyReference.cache
+E:\Igor\8_CSharp\0_ПРАКТИКА\13_hui\13_hui\obj\Debug\_13_hui.Form1.resources
+E:\Igor\8_CSharp\0_ПРАКТИКА\13_hui\13_hui\obj\Debug\_13_hui.Properties.Resources.resources
+E:\Igor\8_CSharp\0_ПРАКТИКА\13_hui\13_hui\obj\Debug\13_hui.csproj.GenerateResource.cache
+E:\Igor\8_CSharp\0_ПРАКТИКА\13_hui\13_hui\obj\Debug\13_hui.csproj.CoreCompileInputs.cache
+E:\Igor\8_CSharp\0_ПРАКТИКА\13_hui\13_hui\obj\Debug\13_hui.exe
+E:\Igor\8_CSharp\0_ПРАКТИКА\13_hui\13_hui\obj\Debug\13_hui.pdb

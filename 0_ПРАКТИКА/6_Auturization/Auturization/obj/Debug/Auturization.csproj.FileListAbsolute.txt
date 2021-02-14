@@ -1,0 +1,14 @@
+E:\Igor\8_CSharp\0_ПРАКТИКА\6_Auturization\Auturization\bin\Debug\Auturization.exe.config
+E:\Igor\8_CSharp\0_ПРАКТИКА\6_Auturization\Auturization\bin\Debug\Auturization.exe
+E:\Igor\8_CSharp\0_ПРАКТИКА\6_Auturization\Auturization\bin\Debug\Auturization.pdb
+E:\Igor\8_CSharp\0_ПРАКТИКА\6_Auturization\Auturization\obj\Debug\Auturization.csprojAssemblyReference.cache
+E:\Igor\8_CSharp\0_ПРАКТИКА\6_Auturization\Auturization\obj\Debug\Auturization.Form1.resources
+E:\Igor\8_CSharp\0_ПРАКТИКА\6_Auturization\Auturization\obj\Debug\Auturization.Properties.Resources.resources
+E:\Igor\8_CSharp\0_ПРАКТИКА\6_Auturization\Auturization\obj\Debug\Auturization.UserControlLogin.resources
+E:\Igor\8_CSharp\0_ПРАКТИКА\6_Auturization\Auturization\obj\Debug\Auturization.UserControlRegister.resources
+E:\Igor\8_CSharp\0_ПРАКТИКА\6_Auturization\Auturization\obj\Debug\Auturization.csproj.GenerateResource.cache
+E:\Igor\8_CSharp\0_ПРАКТИКА\6_Auturization\Auturization\obj\Debug\Auturization.csproj.CoreCompileInputs.cache
+E:\Igor\8_CSharp\0_ПРАКТИКА\6_Auturization\Auturization\obj\Debug\Auturization.exe
+E:\Igor\8_CSharp\0_ПРАКТИКА\6_Auturization\Auturization\obj\Debug\Auturization.pdb
+E:\Igor\8_CSharp\0_ПРАКТИКА\6_Auturization\Auturization\obj\Debug\Auturization.MainForm.resources
+E:\Igor\8_CSharp\0_ПРАКТИКА\6_Auturization\Auturization\obj\Debug\Auturization.Admin.resources

@@ -1,0 +1,13 @@
+E:\Igor\8_CSharp\7_ВТОРОЙ_УРОВЕНЬ\4_Исключения\4_Исключения\bin\Debug\netcoreapp3.1\4_Исключения.exe
+E:\Igor\8_CSharp\7_ВТОРОЙ_УРОВЕНЬ\4_Исключения\4_Исключения\bin\Debug\netcoreapp3.1\4_Исключения.deps.json
+E:\Igor\8_CSharp\7_ВТОРОЙ_УРОВЕНЬ\4_Исключения\4_Исключения\bin\Debug\netcoreapp3.1\4_Исключения.runtimeconfig.json
+E:\Igor\8_CSharp\7_ВТОРОЙ_УРОВЕНЬ\4_Исключения\4_Исключения\bin\Debug\netcoreapp3.1\4_Исключения.runtimeconfig.dev.json
+E:\Igor\8_CSharp\7_ВТОРОЙ_УРОВЕНЬ\4_Исключения\4_Исключения\bin\Debug\netcoreapp3.1\4_Исключения.dll
+E:\Igor\8_CSharp\7_ВТОРОЙ_УРОВЕНЬ\4_Исключения\4_Исключения\bin\Debug\netcoreapp3.1\4_Исключения.pdb
+E:\Igor\8_CSharp\7_ВТОРОЙ_УРОВЕНЬ\4_Исключения\4_Исключения\obj\Debug\netcoreapp3.1\4_Исключения.csprojAssemblyReference.cache
+E:\Igor\8_CSharp\7_ВТОРОЙ_УРОВЕНЬ\4_Исключения\4_Исключения\obj\Debug\netcoreapp3.1\4_Исключения.AssemblyInfoInputs.cache
+E:\Igor\8_CSharp\7_ВТОРОЙ_УРОВЕНЬ\4_Исключения\4_Исключения\obj\Debug\netcoreapp3.1\4_Исключения.AssemblyInfo.cs
+E:\Igor\8_CSharp\7_ВТОРОЙ_УРОВЕНЬ\4_Исключения\4_Исключения\obj\Debug\netcoreapp3.1\4_Исключения.csproj.CoreCompileInputs.cache
+E:\Igor\8_CSharp\7_ВТОРОЙ_УРОВЕНЬ\4_Исключения\4_Исключения\obj\Debug\netcoreapp3.1\4_Исключения.dll
+E:\Igor\8_CSharp\7_ВТОРОЙ_УРОВЕНЬ\4_Исключения\4_Исключения\obj\Debug\netcoreapp3.1\4_Исключения.pdb
+E:\Igor\8_CSharp\7_ВТОРОЙ_УРОВЕНЬ\4_Исключения\4_Исключения\obj\Debug\netcoreapp3.1\4_Исключения.genruntimeconfig.cache

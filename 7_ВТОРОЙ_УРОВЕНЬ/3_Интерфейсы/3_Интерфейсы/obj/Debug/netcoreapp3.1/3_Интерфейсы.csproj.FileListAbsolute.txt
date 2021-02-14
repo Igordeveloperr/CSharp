@@ -1,0 +1,13 @@
+E:\Igor\8_CSharp\7_ВТОРОЙ_УРОВЕНЬ\3_Интерфейсы\3_Интерфейсы\bin\Debug\netcoreapp3.1\3_Интерфейсы.exe
+E:\Igor\8_CSharp\7_ВТОРОЙ_УРОВЕНЬ\3_Интерфейсы\3_Интерфейсы\bin\Debug\netcoreapp3.1\3_Интерфейсы.deps.json
+E:\Igor\8_CSharp\7_ВТОРОЙ_УРОВЕНЬ\3_Интерфейсы\3_Интерфейсы\bin\Debug\netcoreapp3.1\3_Интерфейсы.runtimeconfig.json
+E:\Igor\8_CSharp\7_ВТОРОЙ_УРОВЕНЬ\3_Интерфейсы\3_Интерфейсы\bin\Debug\netcoreapp3.1\3_Интерфейсы.runtimeconfig.dev.json
+E:\Igor\8_CSharp\7_ВТОРОЙ_УРОВЕНЬ\3_Интерфейсы\3_Интерфейсы\bin\Debug\netcoreapp3.1\3_Интерфейсы.dll
+E:\Igor\8_CSharp\7_ВТОРОЙ_УРОВЕНЬ\3_Интерфейсы\3_Интерфейсы\bin\Debug\netcoreapp3.1\3_Интерфейсы.pdb
+E:\Igor\8_CSharp\7_ВТОРОЙ_УРОВЕНЬ\3_Интерфейсы\3_Интерфейсы\obj\Debug\netcoreapp3.1\3_Интерфейсы.csprojAssemblyReference.cache
+E:\Igor\8_CSharp\7_ВТОРОЙ_УРОВЕНЬ\3_Интерфейсы\3_Интерфейсы\obj\Debug\netcoreapp3.1\3_Интерфейсы.AssemblyInfoInputs.cache
+E:\Igor\8_CSharp\7_ВТОРОЙ_УРОВЕНЬ\3_Интерфейсы\3_Интерфейсы\obj\Debug\netcoreapp3.1\3_Интерфейсы.AssemblyInfo.cs
+E:\Igor\8_CSharp\7_ВТОРОЙ_УРОВЕНЬ\3_Интерфейсы\3_Интерфейсы\obj\Debug\netcoreapp3.1\3_Интерфейсы.csproj.CoreCompileInputs.cache
+E:\Igor\8_CSharp\7_ВТОРОЙ_УРОВЕНЬ\3_Интерфейсы\3_Интерфейсы\obj\Debug\netcoreapp3.1\3_Интерфейсы.dll
+E:\Igor\8_CSharp\7_ВТОРОЙ_УРОВЕНЬ\3_Интерфейсы\3_Интерфейсы\obj\Debug\netcoreapp3.1\3_Интерфейсы.pdb
+E:\Igor\8_CSharp\7_ВТОРОЙ_УРОВЕНЬ\3_Интерфейсы\3_Интерфейсы\obj\Debug\netcoreapp3.1\3_Интерфейсы.genruntimeconfig.cache

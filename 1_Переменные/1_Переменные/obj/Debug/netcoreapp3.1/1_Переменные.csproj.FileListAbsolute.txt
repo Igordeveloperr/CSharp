@@ -1,0 +1,13 @@
+E:\Igor\8_CSharp\1_Переменные\1_Переменные\bin\Debug\netcoreapp3.1\1_Переменные.exe
+E:\Igor\8_CSharp\1_Переменные\1_Переменные\bin\Debug\netcoreapp3.1\1_Переменные.deps.json
+E:\Igor\8_CSharp\1_Переменные\1_Переменные\bin\Debug\netcoreapp3.1\1_Переменные.runtimeconfig.json
+E:\Igor\8_CSharp\1_Переменные\1_Переменные\bin\Debug\netcoreapp3.1\1_Переменные.runtimeconfig.dev.json
+E:\Igor\8_CSharp\1_Переменные\1_Переменные\bin\Debug\netcoreapp3.1\1_Переменные.dll
+E:\Igor\8_CSharp\1_Переменные\1_Переменные\bin\Debug\netcoreapp3.1\1_Переменные.pdb
+E:\Igor\8_CSharp\1_Переменные\1_Переменные\obj\Debug\netcoreapp3.1\1_Переменные.csprojAssemblyReference.cache
+E:\Igor\8_CSharp\1_Переменные\1_Переменные\obj\Debug\netcoreapp3.1\1_Переменные.AssemblyInfoInputs.cache
+E:\Igor\8_CSharp\1_Переменные\1_Переменные\obj\Debug\netcoreapp3.1\1_Переменные.AssemblyInfo.cs
+E:\Igor\8_CSharp\1_Переменные\1_Переменные\obj\Debug\netcoreapp3.1\1_Переменные.csproj.CoreCompileInputs.cache
+E:\Igor\8_CSharp\1_Переменные\1_Переменные\obj\Debug\netcoreapp3.1\1_Переменные.dll
+E:\Igor\8_CSharp\1_Переменные\1_Переменные\obj\Debug\netcoreapp3.1\1_Переменные.pdb
+E:\Igor\8_CSharp\1_Переменные\1_Переменные\obj\Debug\netcoreapp3.1\1_Переменные.genruntimeconfig.cache

@@ -1,0 +1,10 @@
+E:\Igor\8_CSharp\0_ПРАКТИКА\TestForm\TestForm\bin\Debug\TestForm.exe.config
+E:\Igor\8_CSharp\0_ПРАКТИКА\TestForm\TestForm\bin\Debug\TestForm.exe
+E:\Igor\8_CSharp\0_ПРАКТИКА\TestForm\TestForm\bin\Debug\TestForm.pdb
+E:\Igor\8_CSharp\0_ПРАКТИКА\TestForm\TestForm\obj\Debug\TestForm.csprojAssemblyReference.cache
+E:\Igor\8_CSharp\0_ПРАКТИКА\TestForm\TestForm\obj\Debug\TestForm.Properties.Resources.resources
+E:\Igor\8_CSharp\0_ПРАКТИКА\TestForm\TestForm\obj\Debug\TestForm.csproj.GenerateResource.cache
+E:\Igor\8_CSharp\0_ПРАКТИКА\TestForm\TestForm\obj\Debug\TestForm.csproj.CoreCompileInputs.cache
+E:\Igor\8_CSharp\0_ПРАКТИКА\TestForm\TestForm\obj\Debug\TestForm.exe
+E:\Igor\8_CSharp\0_ПРАКТИКА\TestForm\TestForm\obj\Debug\TestForm.pdb
+E:\Igor\8_CSharp\0_ПРАКТИКА\TestForm\TestForm\obj\Debug\TestForm.Form1.resources

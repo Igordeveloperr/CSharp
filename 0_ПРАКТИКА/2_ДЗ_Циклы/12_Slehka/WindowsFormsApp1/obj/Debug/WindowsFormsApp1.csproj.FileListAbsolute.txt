@@ -1,0 +1,17 @@
+E:\Igor\8_CSharp\0_ПРАКТИКА\2_ДЗ_Циклы\12_Slehka\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+E:\Igor\8_CSharp\0_ПРАКТИКА\2_ДЗ_Циклы\12_Slehka\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+E:\Igor\8_CSharp\0_ПРАКТИКА\2_ДЗ_Циклы\12_Slehka\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+E:\Igor\8_CSharp\0_ПРАКТИКА\2_ДЗ_Циклы\12_Slehka\WindowsFormsApp1\bin\Debug\AForge.dll
+E:\Igor\8_CSharp\0_ПРАКТИКА\2_ДЗ_Циклы\12_Slehka\WindowsFormsApp1\bin\Debug\AForge.Video.DirectShow.dll
+E:\Igor\8_CSharp\0_ПРАКТИКА\2_ДЗ_Циклы\12_Slehka\WindowsFormsApp1\bin\Debug\AForge.Video.dll
+E:\Igor\8_CSharp\0_ПРАКТИКА\2_ДЗ_Циклы\12_Slehka\WindowsFormsApp1\bin\Debug\AForge.xml
+E:\Igor\8_CSharp\0_ПРАКТИКА\2_ДЗ_Циклы\12_Slehka\WindowsFormsApp1\bin\Debug\AForge.Video.xml
+E:\Igor\8_CSharp\0_ПРАКТИКА\2_ДЗ_Циклы\12_Slehka\WindowsFormsApp1\bin\Debug\AForge.Video.DirectShow.xml
+E:\Igor\8_CSharp\0_ПРАКТИКА\2_ДЗ_Циклы\12_Slehka\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csprojAssemblyReference.cache
+E:\Igor\8_CSharp\0_ПРАКТИКА\2_ДЗ_Циклы\12_Slehka\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form1.resources
+E:\Igor\8_CSharp\0_ПРАКТИКА\2_ДЗ_Циклы\12_Slehka\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+E:\Igor\8_CSharp\0_ПРАКТИКА\2_ДЗ_Циклы\12_Slehka\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
+E:\Igor\8_CSharp\0_ПРАКТИКА\2_ДЗ_Циклы\12_Slehka\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
+E:\Igor\8_CSharp\0_ПРАКТИКА\2_ДЗ_Циклы\12_Slehka\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CopyComplete
+E:\Igor\8_CSharp\0_ПРАКТИКА\2_ДЗ_Циклы\12_Slehka\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+E:\Igor\8_CSharp\0_ПРАКТИКА\2_ДЗ_Циклы\12_Slehka\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb

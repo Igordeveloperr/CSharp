@@ -1,0 +1,13 @@
+E:\Igor\8_CSharp\0_ПРАКТИКА\9_банк\9_банк\bin\Debug\netcoreapp3.1\9_банк.exe
+E:\Igor\8_CSharp\0_ПРАКТИКА\9_банк\9_банк\bin\Debug\netcoreapp3.1\9_банк.deps.json
+E:\Igor\8_CSharp\0_ПРАКТИКА\9_банк\9_банк\bin\Debug\netcoreapp3.1\9_банк.runtimeconfig.json
+E:\Igor\8_CSharp\0_ПРАКТИКА\9_банк\9_банк\bin\Debug\netcoreapp3.1\9_банк.runtimeconfig.dev.json
+E:\Igor\8_CSharp\0_ПРАКТИКА\9_банк\9_банк\bin\Debug\netcoreapp3.1\9_банк.dll
+E:\Igor\8_CSharp\0_ПРАКТИКА\9_банк\9_банк\bin\Debug\netcoreapp3.1\9_банк.pdb
+E:\Igor\8_CSharp\0_ПРАКТИКА\9_банк\9_банк\obj\Debug\netcoreapp3.1\9_банк.csprojAssemblyReference.cache
+E:\Igor\8_CSharp\0_ПРАКТИКА\9_банк\9_банк\obj\Debug\netcoreapp3.1\9_банк.AssemblyInfoInputs.cache
+E:\Igor\8_CSharp\0_ПРАКТИКА\9_банк\9_банк\obj\Debug\netcoreapp3.1\9_банк.AssemblyInfo.cs
+E:\Igor\8_CSharp\0_ПРАКТИКА\9_банк\9_банк\obj\Debug\netcoreapp3.1\9_банк.csproj.CoreCompileInputs.cache
+E:\Igor\8_CSharp\0_ПРАКТИКА\9_банк\9_банк\obj\Debug\netcoreapp3.1\9_банк.dll
+E:\Igor\8_CSharp\0_ПРАКТИКА\9_банк\9_банк\obj\Debug\netcoreapp3.1\9_банк.pdb
+E:\Igor\8_CSharp\0_ПРАКТИКА\9_банк\9_банк\obj\Debug\netcoreapp3.1\9_банк.genruntimeconfig.cache

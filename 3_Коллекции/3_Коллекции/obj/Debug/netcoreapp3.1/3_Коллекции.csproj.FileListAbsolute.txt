@@ -1,0 +1,13 @@
+E:\Igor\8_CSharp\3_Коллекции\3_Коллекции\bin\Debug\netcoreapp3.1\3_Коллекции.exe
+E:\Igor\8_CSharp\3_Коллекции\3_Коллекции\bin\Debug\netcoreapp3.1\3_Коллекции.deps.json
+E:\Igor\8_CSharp\3_Коллекции\3_Коллекции\bin\Debug\netcoreapp3.1\3_Коллекции.runtimeconfig.json
+E:\Igor\8_CSharp\3_Коллекции\3_Коллекции\bin\Debug\netcoreapp3.1\3_Коллекции.runtimeconfig.dev.json
+E:\Igor\8_CSharp\3_Коллекции\3_Коллекции\bin\Debug\netcoreapp3.1\3_Коллекции.dll
+E:\Igor\8_CSharp\3_Коллекции\3_Коллекции\bin\Debug\netcoreapp3.1\3_Коллекции.pdb
+E:\Igor\8_CSharp\3_Коллекции\3_Коллекции\obj\Debug\netcoreapp3.1\3_Коллекции.csprojAssemblyReference.cache
+E:\Igor\8_CSharp\3_Коллекции\3_Коллекции\obj\Debug\netcoreapp3.1\3_Коллекции.AssemblyInfoInputs.cache
+E:\Igor\8_CSharp\3_Коллекции\3_Коллекции\obj\Debug\netcoreapp3.1\3_Коллекции.AssemblyInfo.cs
+E:\Igor\8_CSharp\3_Коллекции\3_Коллекции\obj\Debug\netcoreapp3.1\3_Коллекции.csproj.CoreCompileInputs.cache
+E:\Igor\8_CSharp\3_Коллекции\3_Коллекции\obj\Debug\netcoreapp3.1\3_Коллекции.dll
+E:\Igor\8_CSharp\3_Коллекции\3_Коллекции\obj\Debug\netcoreapp3.1\3_Коллекции.pdb
+E:\Igor\8_CSharp\3_Коллекции\3_Коллекции\obj\Debug\netcoreapp3.1\3_Коллекции.genruntimeconfig.cache
