@@ -10,7 +10,7 @@ namespace _2_Factory.factory_pattern
         string Password { get; }
         bool Connected { get; }
 
-        IMessanger CreateMessanger(string text, string source, string target);
+        IMessage CreateMessage(string text, string source, string target);
         bool Authorize();
     }
 }

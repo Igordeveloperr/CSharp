@@ -24,7 +24,7 @@ namespace _2_Factory.factory_pattern
         }
         public abstract bool Authorize();
 
-        public abstract IMessanger CreateMessanger(string text, string source, string target);
+        public abstract IMessage CreateMessage(string text, string source, string target);
 
     }
 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using _2_Factory.factory_pattern;
+using System;
 
 namespace _2_Factory
 {
@@ -6,8 +7,9 @@ namespace _2_Factory
     {
         static void Main(string[] args)
         {
-            var massenger = new Messanger("Igor", "1234");
-            massenger.SendMessage("hello C#", "localhost", "first");
+            var twitter = new TwitterMessanger("igor", "123");
+            var twit = twitter.CreateMessage("hello C#", "@Gokhlia", "@Valentin");
+            twit.Send();
         }
     }
 }

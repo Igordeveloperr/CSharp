@@ -4,12 +4,26 @@ using System.Text;
 
 namespace _2_Factory.factory_pattern
 {
-    class TwitterMessanger : MessageBase
+    class TwitterMessanger : MessangerBase
     {
-        public TwitterMessanger(string txt, string source, string target) : base(txt, source, target) {}
-        public override void Send()
+        public TwitterMessanger(string name, string password) : base(name, password) { }
+        public override bool Authorize()
         {
-            throw new NotImplementedException();
+            if(UserName.Equals("igor") && Password.Equals("123"))
+            {
+                Console.WriteLine($"Connect user - {UserName}");
+                return true;
+            }
+            return false;
+        }
+
+        public override IMessage CreateMessage(string text, string source, string target)
+        {
+            if (string.IsNullOrWhiteSpace(text)) throw new ArgumentException(nameof(text));
+            if (string.IsNullOrWhiteSpace(source)) throw new ArgumentException(nameof(source));
+            if (string.IsNullOrWhiteSpace(target)) throw new ArgumentException(nameof(target));
+            var message = new TwitterMessage(text, source, target);
+            return message;
         }
     }
 }
