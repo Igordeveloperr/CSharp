@@ -1,0 +1,21 @@
+{
+  "version": 2,
+  "dgSpecHash": "6uYoaKfBu1T05ThUkw/FbPQHTCZgMO5NWeGLvVC2RG9Q2snI8US+F6v63RijGJW2ehTJY68o4SAaAmOs8uPBjg==",
+  "success": true,
+  "projectFilePath": "E:\\Igor\\8_CSharp\\9_WPF\\1_Начало_работы\\1_Начало_работы\\1_Начало_работы.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\программирование\\.nuget\\packages\\extended.wpf.toolkit\\4.0.2\\extended.wpf.toolkit.4.0.2.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Пакет \"Extended.Wpf.Toolkit 4.0.2\" был восстановлен с помощью \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8\", а не целевой платформы проекта \".NETCoreApp,Version=v3.1\". Этот пакет может быть не полностью совместим с вашим проектом.",
+      "libraryId": "Extended.Wpf.Toolkit",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v3.1"
+      ]
+    }
+  ]
+}
