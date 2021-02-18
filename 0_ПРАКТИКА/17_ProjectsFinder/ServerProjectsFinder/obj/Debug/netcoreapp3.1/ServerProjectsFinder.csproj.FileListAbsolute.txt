@@ -1,0 +1,13 @@
+E:\Igor\8_CSharp\0_ПРАКТИКА\17_ProjectsFinder\ServerProjectsFinder\bin\Debug\netcoreapp3.1\ServerProjectsFinder.exe
+E:\Igor\8_CSharp\0_ПРАКТИКА\17_ProjectsFinder\ServerProjectsFinder\bin\Debug\netcoreapp3.1\ServerProjectsFinder.deps.json
+E:\Igor\8_CSharp\0_ПРАКТИКА\17_ProjectsFinder\ServerProjectsFinder\bin\Debug\netcoreapp3.1\ServerProjectsFinder.runtimeconfig.json
+E:\Igor\8_CSharp\0_ПРАКТИКА\17_ProjectsFinder\ServerProjectsFinder\bin\Debug\netcoreapp3.1\ServerProjectsFinder.runtimeconfig.dev.json
+E:\Igor\8_CSharp\0_ПРАКТИКА\17_ProjectsFinder\ServerProjectsFinder\bin\Debug\netcoreapp3.1\ServerProjectsFinder.dll
+E:\Igor\8_CSharp\0_ПРАКТИКА\17_ProjectsFinder\ServerProjectsFinder\bin\Debug\netcoreapp3.1\ServerProjectsFinder.pdb
+E:\Igor\8_CSharp\0_ПРАКТИКА\17_ProjectsFinder\ServerProjectsFinder\obj\Debug\netcoreapp3.1\ServerProjectsFinder.csprojAssemblyReference.cache
+E:\Igor\8_CSharp\0_ПРАКТИКА\17_ProjectsFinder\ServerProjectsFinder\obj\Debug\netcoreapp3.1\ServerProjectsFinder.AssemblyInfoInputs.cache
+E:\Igor\8_CSharp\0_ПРАКТИКА\17_ProjectsFinder\ServerProjectsFinder\obj\Debug\netcoreapp3.1\ServerProjectsFinder.AssemblyInfo.cs
+E:\Igor\8_CSharp\0_ПРАКТИКА\17_ProjectsFinder\ServerProjectsFinder\obj\Debug\netcoreapp3.1\ServerProjectsFinder.csproj.CoreCompileInputs.cache
+E:\Igor\8_CSharp\0_ПРАКТИКА\17_ProjectsFinder\ServerProjectsFinder\obj\Debug\netcoreapp3.1\ServerProjectsFinder.dll
+E:\Igor\8_CSharp\0_ПРАКТИКА\17_ProjectsFinder\ServerProjectsFinder\obj\Debug\netcoreapp3.1\ServerProjectsFinder.pdb
+E:\Igor\8_CSharp\0_ПРАКТИКА\17_ProjectsFinder\ServerProjectsFinder\obj\Debug\netcoreapp3.1\ServerProjectsFinder.genruntimeconfig.cache

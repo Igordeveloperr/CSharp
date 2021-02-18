@@ -1,4 +1,5 @@
-﻿using System;
+﻿using _17_ProjectsFinder.Send;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -27,7 +28,13 @@ namespace _17_ProjectsFinder
         // кнопка "отправить" вешаю обработу
         private void StartValidation(object sender, RoutedEventArgs e)
         {
-            
+            if (string.IsNullOrWhiteSpace(login.Text) || string.IsNullOrWhiteSpace(password.Text))
+            {
+                MessageBox.Show("Неверный логин или пароль!");
+                return;
+            }
+            var request = new AuthorizationRequest(login.Text, password.Text);
+            request.SendRequest();
         }
     }
 }

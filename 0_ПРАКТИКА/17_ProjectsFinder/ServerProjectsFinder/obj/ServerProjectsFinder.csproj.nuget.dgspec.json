@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Igor\\8_CSharp\\0_ПРАКТИКА\\17_ProjectsFinder\\17_ProjectsFinder\\17_ProjectsFinder.csproj": {}
+    "E:\\Igor\\8_CSharp\\0_ПРАКТИКА\\17_ProjectsFinder\\ServerProjectsFinder\\ServerProjectsFinder.csproj": {}
   },
   "projects": {
-    "E:\\Igor\\8_CSharp\\0_ПРАКТИКА\\17_ProjectsFinder\\17_ProjectsFinder\\17_ProjectsFinder.csproj": {
+    "E:\\Igor\\8_CSharp\\0_ПРАКТИКА\\17_ProjectsFinder\\ServerProjectsFinder\\ServerProjectsFinder.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Igor\\8_CSharp\\0_ПРАКТИКА\\17_ProjectsFinder\\17_ProjectsFinder\\17_ProjectsFinder.csproj",
-        "projectName": "17_ProjectsFinder",
-        "projectPath": "E:\\Igor\\8_CSharp\\0_ПРАКТИКА\\17_ProjectsFinder\\17_ProjectsFinder\\17_ProjectsFinder.csproj",
+        "projectUniqueName": "E:\\Igor\\8_CSharp\\0_ПРАКТИКА\\17_ProjectsFinder\\ServerProjectsFinder\\ServerProjectsFinder.csproj",
+        "projectName": "ServerProjectsFinder",
+        "projectPath": "E:\\Igor\\8_CSharp\\0_ПРАКТИКА\\17_ProjectsFinder\\ServerProjectsFinder\\ServerProjectsFinder.csproj",
         "packagesPath": "C:\\Users\\программирование\\.nuget\\packages\\",
-        "outputPath": "E:\\Igor\\8_CSharp\\0_ПРАКТИКА\\17_ProjectsFinder\\17_ProjectsFinder\\obj\\",
+        "outputPath": "E:\\Igor\\8_CSharp\\0_ПРАКТИКА\\17_ProjectsFinder\\ServerProjectsFinder\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\программирование\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -37,12 +37,6 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "dependencies": {
-            "System.Text.Json": {
-              "target": "Package",
-              "version": "[5.0.1, )"
-            }
-          },
           "imports": [
             "net461",
             "net462",
@@ -56,9 +50,6 @@
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
-            },
-            "Microsoft.WindowsDesktop.App.WPF": {
-              "privateAssets": "none"
             }
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"

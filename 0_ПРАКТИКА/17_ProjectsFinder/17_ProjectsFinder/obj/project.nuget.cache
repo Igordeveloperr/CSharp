@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "wzKdUZ6OLO0Sek3LJxKvRN9djxxTy3iRH8SaX83mHs0OyFvRYhSDW22N3Nq+pdad3N74zcSOubpi2KkuqjuwVw==",
+  "dgSpecHash": "bTzGg29vIxvSt5HjUCNJhiBDGWm1gW1QwgA6O5QsORZC89ZZ+er8uJAXP61DbJm3ZZ8yZzleTr68w6Lqui5O6Q==",
   "success": true,
   "projectFilePath": "E:\\Igor\\8_CSharp\\0_ПРАКТИКА\\17_ProjectsFinder\\17_ProjectsFinder\\17_ProjectsFinder.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\программирование\\.nuget\\packages\\system.text.json\\5.0.1\\system.text.json.5.0.1.nupkg.sha512"
+  ],
   "logs": []
 }
