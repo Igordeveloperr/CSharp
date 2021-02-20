@@ -5,12 +5,13 @@ using System.Net;
 using System.Net.Sockets;
 using System.Text;
 using System.Text.Json;
+using _17_ProjectsFinder.Send;
+
 
 namespace ServerProjectsFinder
 {
     class Router : IRouter
     {
-        private string Json;
         private TcpListener listener;
         public byte[] Data { get; } = new byte[1024];
         private NetworkStream Stream;
@@ -21,7 +22,8 @@ namespace ServerProjectsFinder
             listener.Start();
         }
         public async void RecivingRequest()
-        { 
+        {
+            string json = "";
             TcpClient client = await listener.AcceptTcpClientAsync();
             Stream = client.GetStream();
             if (Stream.CanRead)
@@ -29,15 +31,20 @@ namespace ServerProjectsFinder
                 StringBuilder builder = new StringBuilder();
                 do
                 {
-                    int a = Stream.Read(Data, 0, Data.Length);
-                    builder.Append(Encoding.UTF8.GetString(Data, 0, a));
-                    Console.WriteLine(builder.ToString());
+                    int count = Stream.Read(Data, 0, Data.Length);
+                    json = builder.Append(Encoding.UTF8.GetString(Data, 0, count)).ToString();
                 }
                 while (Stream.DataAvailable);
+                SelectController(json);
             }
-            //var obj = JsonSerializer.Deserialize<IRequest>(Json);
             Stream.Close();
             client.Close();
+        }
+
+        private void SelectController(string json)
+        {
+            var obj = JsonSerializer.Deserialize<Request>(json);
+            
         }
     }
 }

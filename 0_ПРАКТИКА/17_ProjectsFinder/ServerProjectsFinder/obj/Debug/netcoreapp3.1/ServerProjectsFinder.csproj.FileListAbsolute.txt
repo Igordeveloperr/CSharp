@@ -11,3 +11,8 @@ E:\Igor\8_CSharp\0_ПРАКТИКА\17_ProjectsFinder\ServerProjectsFinder\obj\D
 E:\Igor\8_CSharp\0_ПРАКТИКА\17_ProjectsFinder\ServerProjectsFinder\obj\Debug\netcoreapp3.1\ServerProjectsFinder.dll
 E:\Igor\8_CSharp\0_ПРАКТИКА\17_ProjectsFinder\ServerProjectsFinder\obj\Debug\netcoreapp3.1\ServerProjectsFinder.pdb
 E:\Igor\8_CSharp\0_ПРАКТИКА\17_ProjectsFinder\ServerProjectsFinder\obj\Debug\netcoreapp3.1\ServerProjectsFinder.genruntimeconfig.cache
+E:\Igor\8_CSharp\0_ПРАКТИКА\17_ProjectsFinder\ServerProjectsFinder\bin\Debug\netcoreapp3.1\17_ProjectsFinder.exe
+E:\Igor\8_CSharp\0_ПРАКТИКА\17_ProjectsFinder\ServerProjectsFinder\bin\Debug\netcoreapp3.1\System.Text.Json.dll
+E:\Igor\8_CSharp\0_ПРАКТИКА\17_ProjectsFinder\ServerProjectsFinder\bin\Debug\netcoreapp3.1\17_ProjectsFinder.dll
+E:\Igor\8_CSharp\0_ПРАКТИКА\17_ProjectsFinder\ServerProjectsFinder\bin\Debug\netcoreapp3.1\17_ProjectsFinder.pdb
+E:\Igor\8_CSharp\0_ПРАКТИКА\17_ProjectsFinder\ServerProjectsFinder\obj\Debug\netcoreapp3.1\ServerProjectsFinder.csproj.CopyComplete
