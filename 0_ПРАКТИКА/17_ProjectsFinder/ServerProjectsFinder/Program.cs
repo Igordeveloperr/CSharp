@@ -7,6 +7,11 @@ namespace ServerProjectsFinder
     {
         static void Main(string[] args)
         {
+            while (true)
+            {
+                Console.WriteLine("Я хочу пиццу!!!!!!");
+            }
+
             Router router = new Router();
             Thread a = new Thread(router.RecivingRequest);
             a.Start();

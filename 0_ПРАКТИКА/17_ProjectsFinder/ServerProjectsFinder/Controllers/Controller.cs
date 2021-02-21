@@ -4,8 +4,8 @@ using System.Text;
 
 namespace ServerProjectsFinder.Controller
 {
-    public abstract class Controller
+    public abstract class ControllerBase
     {
-        
+        public abstract void Work(string json);
     }
 }

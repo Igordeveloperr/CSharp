@@ -4,14 +4,19 @@ using System.Collections.Generic;
 using System.Net;
 using System.Net.Sockets;
 using System.Text;
-using System.Text.Json;
 using _17_ProjectsFinder.Send;
-
+using Newtonsoft.Json;
+using _17_ProjectsFinder.Send.Settings;
+using ServerProjectsFinder.Controller;
 
 namespace ServerProjectsFinder
 {
     class Router : IRouter
     {
+        private Dictionary<string, ControllerBase> Controllers = new Dictionary<string, ControllerBase>
+        {
+            {"authorization", new AuthorizationController() }
+        };
         private TcpListener listener;
         public byte[] Data { get; } = new byte[1024];
         private NetworkStream Stream;
@@ -33,18 +38,19 @@ namespace ServerProjectsFinder
                 {
                     int count = Stream.Read(Data, 0, Data.Length);
                     json = builder.Append(Encoding.UTF8.GetString(Data, 0, count)).ToString();
+                    Console.WriteLine(json);
                 }
                 while (Stream.DataAvailable);
-                SelectController(json);
+                var obj = JsonConvert.DeserializeObject<Request>(json);
+                SelectController(json, obj.Type);
             }
             Stream.Close();
             client.Close();
         }
 
-        private void SelectController(string json)
+        private void SelectController(string json, string reqType)
         {
-            var obj = JsonSerializer.Deserialize<Request>(json);
-            
+            Controllers[reqType].Work(json);
         }
     }
 }

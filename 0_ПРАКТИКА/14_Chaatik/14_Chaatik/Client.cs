@@ -37,16 +37,17 @@ namespace _14_Chaatik
         {   
             while (true)
             {
-                    udpClient = new UdpClient(8090);
-                    string message = "";
-                    await Task.Run(() =>
-                    {
-                        IPEndPoint ip = null;
-                        byte[] data = udpClient.Receive(ref ip);
-                        message = Encoding.UTF8.GetString(data);
-                        list.Items.Add(message);
-                        udpClient.Close();
-                    });
+                udpClient = new UdpClient(8090);
+                string message = "";
+                await Task.Run(() =>
+                {
+                    IPEndPoint ip = null;
+                    byte[] data = udpClient.Receive(ref ip);
+                    message = Encoding.UTF8.GetString(data);
+                        
+                    udpClient.Close();
+                });
+                list.Items.Add(message);
             }
         }
         private void TryConnect()
