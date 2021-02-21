@@ -1,4 +1,5 @@
 ﻿using _17_ProjectsFinder.Send;
+using _17_ProjectsFinder.Send.response;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -30,11 +31,14 @@ namespace _17_ProjectsFinder
         {
             if (string.IsNullOrWhiteSpace(login.Text) || string.IsNullOrWhiteSpace(password.Text))
             {
-                MessageBox.Show("Неверный логин или пароль!");
+                MessageBox.Show("Пустой логин или пароль!");
                 return;
             }
             var request = new AuthorizationRequest(login.Text, password.Text);
             request.SendRequest();
+            var response = new AuthorizationResponse();
+            bool res = response.GetAuthorizationResponse().Result;
+            MessageBox.Show(res.ToString());
         }
     }
 }
