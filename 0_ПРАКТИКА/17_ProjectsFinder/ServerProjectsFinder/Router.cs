@@ -19,7 +19,7 @@ namespace ServerProjectsFinder
         };
         private TcpListener listener;
         public byte[] Data { get; } = new byte[1024];
-        private NetworkStream Stream;
+        internal NetworkStream Stream;
         public IRouterSetting Setting { get; } = new RouterSetting();
         public Router()
         {

@@ -10,18 +10,14 @@ namespace _17_ProjectsFinder.Send.response
 {
     internal class AuthorizationResponse
     {
-        private TcpListener listener;
         private NetworkStream Stream;
         private RequestSetting Setting = new RequestSetting();
-        public AuthorizationResponse()
-        {
-            listener = new TcpListener(IPAddress.Parse(Setting.Ip), 8000);
-            listener.Start();
-        }
 
         internal async Task<bool> GetAuthorizationResponse()
-        {
-            TcpClient client = await listener.AcceptTcpClientAsync();
+        {   
+            var listener = new TcpListener(IPAddress.Parse(Setting.Ip), 8000);
+            listener.Start();
+            TcpClient client = listener.AcceptTcpClient();
             StringBuilder builder = new StringBuilder();
             byte[] data = new byte[256];
             string result = "";
@@ -33,6 +29,7 @@ namespace _17_ProjectsFinder.Send.response
             } while (Stream.DataAvailable);
             Stream.Close();
             client.Close();
+            listener.Stop();
             return Convert.ToBoolean(result);
         }
     }

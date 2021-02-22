@@ -8,9 +8,11 @@ namespace ServerProjectsFinder
         static void Main(string[] args)
         {
             Router router = new Router();
-            Thread a = new Thread(router.RecivingRequest);
-            a.Start();
-            Console.ReadLine();
+            while (true)
+            {   
+                router.RecivingRequest();
+                Thread.Sleep(1000);
+            }
         }
     }
 }

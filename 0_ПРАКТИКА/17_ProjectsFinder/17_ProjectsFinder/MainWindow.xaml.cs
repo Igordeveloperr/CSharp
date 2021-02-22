@@ -27,7 +27,7 @@ namespace _17_ProjectsFinder
             InitializeComponent();
         }
         // кнопка "отправить" вешаю обработу
-        private void StartValidation(object sender, RoutedEventArgs e)
+        private async void StartValidation(object sender, RoutedEventArgs e)
         {
             if (string.IsNullOrWhiteSpace(login.Text) || string.IsNullOrWhiteSpace(password.Text))
             {
@@ -35,10 +35,18 @@ namespace _17_ProjectsFinder
                 return;
             }
             var request = new AuthorizationRequest(login.Text, password.Text);
-            request.SendRequest();
             var response = new AuthorizationResponse();
-            bool res = response.GetAuthorizationResponse().Result;
-            MessageBox.Show(res.ToString());
+            bool res = false;
+            await Task.Run(()=> { request.SendRequest(); });
+            await Task.Run(() =>{ res = response.GetAuthorizationResponse().Result;});
+            if (res)
+            {
+                MessageBox.Show("Вы вошли!");
+            }
+            else
+            {
+                MessageBox.Show("Неверный логин или пароль!");
+            }
         }
     }
 }
