@@ -1,0 +1,40 @@
+﻿<Window x:Class="_17_ProjectsFinder.BaseAppWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_17_ProjectsFinder"
+        mc:Ignorable="d"
+        Background="#303952"
+        Title="BaseAppWindow" Height="500" Width="950">
+    <Grid>
+        <Grid RenderTransformOrigin="0.5,0.5">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="203*"/>
+                <ColumnDefinition Width="747*"/>
+            </Grid.ColumnDefinitions>
+            <Border Grid.Column="0" Width="5" Height="480" HorizontalAlignment="Right" Background="#2c2c54"/>
+            <StackPanel Grid.Column="0">
+                <TextBlock Text="Меню" TextAlignment="Left" Padding="10,0,0,0" FontSize="22" Foreground="#786fa6" Width="200" Height="40" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,10,0,0"/>
+                <Button Width="180" Content="Проекты на PHP" Height="30" HorizontalAlignment="Left" Margin="10,0,0,0" Background="#8c7ae6" Foreground="White" FontSize="18"/>
+                <Button Width="180" Content="Проекты на C#" Height="30" HorizontalAlignment="Left" Margin="10,10,0,0" Background="#8c7ae6" Foreground="White" FontSize="18"/>
+                <Button Width="180" Content="Проекты на TS" Height="30" HorizontalAlignment="Left" Margin="10,10,0,0" Background="#8c7ae6" Foreground="White" FontSize="18"/>
+                <Button Width="180" Content="Проекты на JS" Height="30" HorizontalAlignment="Left" Margin="10,10,0,0" Background="#8c7ae6" Foreground="White" FontSize="18"/>
+                <Button Width="180" Content="Проекты на C++" Height="30" HorizontalAlignment="Left" Margin="10,10,0,0" Background="#8c7ae6" Foreground="White" FontSize="18"/>
+            </StackPanel>
+            <Button Grid.Column="0" Width="180" Content="Выход" Height="30" HorizontalAlignment="Left" Margin="10,0,0,20" Background="#c23616" Foreground="White" FontSize="18" VerticalAlignment="Bottom"/>
+            <Image Source="https://img.icons8.com/pastel-glyph/2x/search--v2.png" Grid.Column="1" Width="50" Height="50" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10,5,0,0"/>
+            <TextBox Grid.Column="1" Height="25" Width="500" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="65,20,0,0"/>
+            <Button Grid.Column="1" Width="130" Height="25" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="0,20,20,0" Content="искать" FontSize="14" Background="#192a56" Foreground="White"/>
+            <StackPanel Grid.Column="1" Width="745" Height="400" VerticalAlignment="Bottom" HorizontalAlignment="Left">
+                <ListBox Height="400" Background="#303952" Width="730" BorderBrush="#303952">
+                    <ListBoxItem>
+                        <StackPanel>
+                            <TextBlock Text="Test" FontSize="30"/>
+                        </StackPanel>
+                    </ListBoxItem>
+                </ListBox>
+            </StackPanel>
+        </Grid>
+    </Grid>
+</Window>

@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NETCOREAPP;NETCOREAPP3_1
 E:\Igor\8_CSharp\0_ПРАКТИКА\17_ProjectsFinder\17_ProjectsFinder\App.xaml
-11151548125
+2-313186201
 
-8-208725567
+9128148109
 193775303075
-MainWindow.xaml;
+BaseAppWindow.xaml;MainWindow.xaml;
 
 False
 
