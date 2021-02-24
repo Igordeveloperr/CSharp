@@ -8,6 +8,7 @@ using _17_ProjectsFinder.Send;
 using Newtonsoft.Json;
 using _17_ProjectsFinder.Send.Settings;
 using ServerProjectsFinder.Controller;
+using ServerProjectsFinder.Controllers;
 
 namespace ServerProjectsFinder
 {
@@ -15,7 +16,8 @@ namespace ServerProjectsFinder
     {
         private Dictionary<string, ControllerBase> Controllers = new Dictionary<string, ControllerBase>
         {
-            {"authorization", new AuthorizationController() }
+            {"authorization", new AuthorizationController() },
+            {"posts", new PostController() }
         };
         private TcpListener listener;
         public byte[] Data { get; } = new byte[1024];
