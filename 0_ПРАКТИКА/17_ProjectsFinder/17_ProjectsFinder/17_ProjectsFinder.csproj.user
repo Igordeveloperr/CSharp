@@ -10,12 +10,18 @@
     <Compile Update="BaseAppWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="SpecificPostPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Page Update="BaseAppWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="SpecificPostPage.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

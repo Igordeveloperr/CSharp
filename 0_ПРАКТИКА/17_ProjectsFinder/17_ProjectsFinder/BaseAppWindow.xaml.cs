@@ -1,4 +1,5 @@
-﻿using _17_ProjectsFinder.Send;
+﻿using _17_ProjectsFinder.FrontendAndBackend.category;
+using _17_ProjectsFinder.Send;
 using _17_ProjectsFinder.Send.response;
 using _17_ProjectsFinder.Send.response.copyView;
 using System;
@@ -21,10 +22,19 @@ namespace _17_ProjectsFinder
     /// </summary>
     public partial class BaseAppWindow : Window
     {
+        private MainWindow AuthorizationWindow = new MainWindow();
         private PostRequest PostRequestObj;
         private PostResponse PostResponseObj;
         private event Action OnLoadForm;
         private List<PostView> Posts;
+        private Dictionary<string, CategoryBase> CategoryObjects = new Dictionary<string, CategoryBase>
+        {
+            {"php", new PhpCategory() },
+            {"plus", new PlusCategory() },
+            {"sharp", new SharpCategory() },
+            {"ts", new TypeScriptCategory() },
+            {"js", new JavaScriptCategory()},
+        };
         public BaseAppWindow()
         {
             InitializeComponent();
@@ -43,8 +53,10 @@ namespace _17_ProjectsFinder
 
         private void Select_Category(object sender, RoutedEventArgs e)
         {
-            string clickBtnType = (sender as Button).Name;
-            
+            string type = (sender as Button).Name;
+            List<PostView> specificPost = CategoryObjects[type].LoadCategory(type, Posts);
+            postBox.Items.Clear();
+            AddPost(specificPost);
         }
 
         private void AddPost(List<PostView> list)
@@ -53,6 +65,7 @@ namespace _17_ProjectsFinder
             foreach (var post in list)
             {
                 StackPanel panel = new StackPanel();
+                panel.Name = post.Type;
                 TextBlock textBlock = new TextBlock();
                 Button btn = new Button();
                 textBlock.Text = post.Title;
@@ -65,6 +78,8 @@ namespace _17_ProjectsFinder
                 btn.Height = 30;
                 btn.Background = (Brush) converter.ConvertFrom("#c56cf0");
                 btn.FontSize = 16;
+                btn.TabIndex = post.Id - 1;
+                btn.Click += ConnectBtnClick;
                 btn.Margin = new Thickness(0,10,0,10);
                 btn.HorizontalAlignment = HorizontalAlignment.Left;
                 btn.Foreground = (Brush)converter.ConvertFrom("#d1d8e0");                
@@ -72,6 +87,25 @@ namespace _17_ProjectsFinder
                 panel.Children.Add(btn);
                 postBox.Items.Add(panel);
             }
+        }
+
+        private void ConnectBtnClick(object sender, RoutedEventArgs e)
+        {
+            int id = (sender as Button).TabIndex;
+            var page = new SpecificPostPage(id, Posts);
+            page.Show();
+        }
+
+        private void ShowAllCategory(object sender, RoutedEventArgs e)
+        {
+            postBox.Items.Clear();
+            AddPost(Posts);
+        }
+
+        private void CloseApp(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+            AuthorizationWindow.Show();
         }
     }
 }

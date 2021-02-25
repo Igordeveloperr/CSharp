@@ -21,3 +21,5 @@ E:\Igor\8_CSharp\0_ПРАКТИКА\17_ProjectsFinder\17_ProjectsFinder\bin\Debu
 E:\Igor\8_CSharp\0_ПРАКТИКА\17_ProjectsFinder\17_ProjectsFinder\obj\Debug\netcoreapp3.1\17_ProjectsFinder.csproj.CoreCompileInputs.cache
 E:\Igor\8_CSharp\0_ПРАКТИКА\17_ProjectsFinder\17_ProjectsFinder\obj\Debug\netcoreapp3.1\BaseAppWindow.g.cs
 E:\Igor\8_CSharp\0_ПРАКТИКА\17_ProjectsFinder\17_ProjectsFinder\obj\Debug\netcoreapp3.1\BaseAppWindow.baml
+E:\Igor\8_CSharp\0_ПРАКТИКА\17_ProjectsFinder\17_ProjectsFinder\obj\Debug\netcoreapp3.1\SpecificPostPage.g.cs
+E:\Igor\8_CSharp\0_ПРАКТИКА\17_ProjectsFinder\17_ProjectsFinder\obj\Debug\netcoreapp3.1\SpecificPostPage.baml
