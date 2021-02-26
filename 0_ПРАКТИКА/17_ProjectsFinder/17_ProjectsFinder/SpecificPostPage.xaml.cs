@@ -18,26 +18,21 @@ namespace _17_ProjectsFinder
     /// </summary>
     public partial class SpecificPostPage : Window
     {
-        private List<PostView> PostList = new List<PostView>();
-        private int Id;
-        private delegate void BaseDelegat();
-        private event BaseDelegat OnLoadWindow;
+        public List<PostView> PostList { get; private set; } = new List<PostView>();
+        public int Id { get; }
+        public string TitleValue { get; private set; }
+        public string TextValue { get; private set; }
         public SpecificPostPage(int id, List<PostView> list)
         {
-            if (id > 0 && list != null)
+            if (id >= 0 && list != null)
             {
                 Id = id;
                 PostList = list;
-                OnLoadWindow += ShowContent;
-                OnLoadWindow.Invoke();
+                TitleValue = PostList[Id].Title;
+                TextValue = PostList[Id].Text;
             }
+            DataContext = this;
             InitializeComponent();
-        }
-
-        private void ShowContent()
-        {
-            PostList.Reverse();
-            MessageBox.Show($"{PostList[Id].Id} - {Id}");
         }
     }
 }

@@ -17,7 +17,7 @@ namespace ServerProjectsFinder.Model
         private RequestSetting Setting = new RequestSetting();
         public DataRow[] LoadAllPost()
         {
-            var array = DataBase.DataBaseObj.GetData("SELECT * FROM project  ORDER BY id DESC").Result;
+            var array = DataBase.DataBaseObj.GetData("SELECT * FROM project ORDER BY id DESC").Result;
             return array;
         }
 

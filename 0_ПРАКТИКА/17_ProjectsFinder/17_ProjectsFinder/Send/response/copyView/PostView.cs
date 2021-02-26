@@ -6,7 +6,7 @@ namespace _17_ProjectsFinder.Send.response.copyView
 {
     public class PostView
     {
-        public int Id { get; }
+        public int Id { get; set; }
         public string Title { get; }
         public string Text { get; }
         public int Status { get; }
