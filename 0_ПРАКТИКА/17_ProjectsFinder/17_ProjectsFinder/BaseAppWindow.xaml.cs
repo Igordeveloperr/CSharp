@@ -1,4 +1,5 @@
-﻿using _17_ProjectsFinder.FrontendAndBackend.category;
+﻿using _17_ProjectsFinder.Frontend.search;
+using _17_ProjectsFinder.FrontendAndBackend.category;
 using _17_ProjectsFinder.Send;
 using _17_ProjectsFinder.Send.response;
 using _17_ProjectsFinder.Send.response.copyView;
@@ -23,6 +24,7 @@ namespace _17_ProjectsFinder
     public partial class BaseAppWindow : Window
     {
         private List<PostView> SpecificPost = new List<PostView>();
+        private List<PostView> SearchPost = new List<PostView>();
         private MainWindow AuthorizationWindow = new MainWindow();
         private PostRequest PostRequestObj;
         private PostResponse PostResponseObj;
@@ -64,9 +66,13 @@ namespace _17_ProjectsFinder
         {
             int id = (sender as Button).TabIndex;
             SpecificPostPage page;
-            if(SpecificPost.Count == 0)
+            if(SpecificPost.Count == 0 && SearchPost.Count == 0)
             {
                 page = new SpecificPostPage(id, Posts);
+            }
+            else if(SearchPost.Count >= 0 && SpecificPost.Count == 0)
+            {
+                page = new SpecificPostPage(id, SearchPost);
             }
             else
             {
@@ -78,6 +84,7 @@ namespace _17_ProjectsFinder
         private void ShowAllCategory(object sender, RoutedEventArgs e)
         {
             SpecificPost.Clear();
+            SearchPost.Clear();
             postBox.Items.Clear();
             AddPost(Posts);
         }
@@ -86,6 +93,22 @@ namespace _17_ProjectsFinder
         {
             this.Close();
             AuthorizationWindow.Show();
+        }
+        private void Search(object sender, RoutedEventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(searchBox.Text))
+            {
+                MessageBox.Show("Заполните строку поиска!");
+            }
+            else
+            {
+                SearchPost search = new SearchPost(searchBox.Text, Posts);
+                SpecificPost.Clear();
+                postBox.Items.Clear();
+                SearchPost = search.GetSearchResult();
+                AddPost(SearchPost);
+            }
+            searchBox.Text = "";
         }
         private void AddPost(List<PostView> list)
         {
