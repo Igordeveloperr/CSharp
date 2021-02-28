@@ -17,7 +17,8 @@ namespace ServerProjectsFinder
         private Dictionary<string, ControllerBase> Controllers = new Dictionary<string, ControllerBase>
         {
             {"authorization", new AuthorizationController() },
-            {"posts", new PostController() }
+            {"posts", new PostController() },
+            {"update_user", new UpdateUserController() },
         };
         private TcpListener listener;
         public byte[] Data { get; } = new byte[1024];

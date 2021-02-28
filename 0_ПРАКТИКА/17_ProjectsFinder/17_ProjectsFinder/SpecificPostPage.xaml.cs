@@ -1,4 +1,5 @@
-﻿using _17_ProjectsFinder.Send.response.copyView;
+﻿using _17_ProjectsFinder.Send;
+using _17_ProjectsFinder.Send.response.copyView;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -33,6 +34,11 @@ namespace _17_ProjectsFinder
             }
             DataContext = this;
             InitializeComponent();
+        }
+
+        private void Connect(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("вы присоединились!");
         }
     }
 }

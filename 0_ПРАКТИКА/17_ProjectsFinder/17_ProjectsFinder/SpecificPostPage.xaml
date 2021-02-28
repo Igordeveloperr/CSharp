@@ -12,7 +12,7 @@
             <Label Height="3" Width="400" HorizontalAlignment="Left" Background="#22a6b3"/>
             <TextBlock HorizontalAlignment="Left" Width="600" FontSize="17" Text="Краткое описание:" Foreground="White" Padding="10,10,0,0"/>
             <TextBlock FontSize="15" Height="280" Text="{Binding Path=TextValue}" Foreground="White" Padding="10,0,0,10" x:Name="description"/>
-            <Button Width="200" Height="30" Content="Присоединиться" FontSize="14" Background="#686de0" Foreground="White"/>
+            <Button Width="200" Height="30" Content="Присоединиться" FontSize="14" Background="#686de0" Foreground="White" Click="Connect"/>
         </StackPanel>
     </Grid>
 </Window>
