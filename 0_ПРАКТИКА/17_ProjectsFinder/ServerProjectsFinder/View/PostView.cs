@@ -12,14 +12,12 @@ namespace ServerProjectsFinder.View
         public int Id { get; }
         public string Title { get; }
         public string Text { get; }
-        public int Status { get; }
         public string Type { get; }
-        public PostView(int id, string title, string text, int status, string type)
+        public PostView(int id, string title, string text, string type)
         {
             Id = id;
             Title = title;
             Text = text;
-            Status = status;
             Type = type;
         }
     }

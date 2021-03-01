@@ -30,7 +30,6 @@ namespace ServerProjectsFinder.Model
                     (int)post["id"],
                     (string)post["title"],
                     (string)post["text"],
-                    (int)post["status"],
                     (string)post["type"]
                 );
                 list.Add(sendPost);

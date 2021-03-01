@@ -41,7 +41,7 @@ namespace _17_ProjectsFinder
             await Task.Run(() =>{ res = response.GetAuthorizationResponse().Result;});
             if (res)
             {
-                BaseAppWindow baseAppWindow = new BaseAppWindow();
+                BaseAppWindow baseAppWindow = new BaseAppWindow(login.Text);
                 baseAppWindow.Show();
                 this.Close();
             }

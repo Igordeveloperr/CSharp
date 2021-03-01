@@ -9,14 +9,12 @@ namespace _17_ProjectsFinder.Send.response.copyView
         public int Id { get; set; }
         public string Title { get; }
         public string Text { get; }
-        public int Status { get; }
         public string Type { get; }
-        public PostView(int id, string title, string text, int status, string type)
+        public PostView(int id, string title, string text, string type)
         {
             Id = id;
             Title = title;
             Text = text;
-            Status = status;
             Type = type;
         }
     }

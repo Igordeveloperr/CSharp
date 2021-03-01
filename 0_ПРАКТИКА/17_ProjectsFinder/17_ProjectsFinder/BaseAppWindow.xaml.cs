@@ -22,7 +22,8 @@ namespace _17_ProjectsFinder
     /// Логика взаимодействия для BaseAppWindow.xaml
     /// </summary>
     public partial class BaseAppWindow : Window
-    {
+    {   
+        public string Login { get; }
         private List<PostView> SpecificPost = new List<PostView>();
         private List<PostView> SearchPost = new List<PostView>();
         private MainWindow AuthorizationWindow = new MainWindow();
@@ -38,8 +39,9 @@ namespace _17_ProjectsFinder
             {"ts", new TypeScriptCategory() },
             {"js", new JavaScriptCategory()},
         };
-        public BaseAppWindow()
+        public BaseAppWindow(string login)
         {
+            Login = login;
             InitializeComponent();
             OnLoadForm += Update_Post;
             OnLoadForm.Invoke();
@@ -68,15 +70,15 @@ namespace _17_ProjectsFinder
             SpecificPostPage page;
             if(SpecificPost.Count == 0 && SearchPost.Count == 0)
             {
-                page = new SpecificPostPage(id, Posts);
+                page = new SpecificPostPage(id, Posts, Login);
             }
             else if(SearchPost.Count >= 0 && SpecificPost.Count == 0)
             {
-                page = new SpecificPostPage(id, SearchPost);
+                page = new SpecificPostPage(id, SearchPost, Login);
             }
             else
             {
-                page = new SpecificPostPage(id, SpecificPost);
+                page = new SpecificPostPage(id, SpecificPost, Login);
             }
             page.Show();
         }

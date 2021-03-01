@@ -1,8 +1,10 @@
 ﻿using _17_ProjectsFinder.Send;
+using _17_ProjectsFinder.Send.response;
 using _17_ProjectsFinder.Send.response.copyView;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -21,9 +23,10 @@ namespace _17_ProjectsFinder
     {
         public List<PostView> PostList { get; private set; } = new List<PostView>();
         public int Id { get; }
+        public string Login { get; }
         public string TitleValue { get; private set; }
         public string TextValue { get; private set; }
-        public SpecificPostPage(int id, List<PostView> list)
+        public SpecificPostPage(int id, List<PostView> list, string login)
         {
             if (id >= 0 && list != null)
             {
@@ -31,14 +34,21 @@ namespace _17_ProjectsFinder
                 PostList = list;
                 TitleValue = PostList[Id].Title;
                 TextValue = PostList[Id].Text;
+                Login = login;
             }
             DataContext = this;
             InitializeComponent();
         }
 
-        private void Connect(object sender, RoutedEventArgs e)
-        {
-            MessageBox.Show("вы присоединились!");
+        private async void Connect(object sender, RoutedEventArgs e)
+        {   
+            int postId = PostList[Id].Id;
+            var request = new InsertUserRequest(postId, Login);
+            var response = new UserConnectResponse();
+            string message = "";
+            await Task.Run(()=> { request.SendRequest(); });
+            await Task.Run(() => { message = response.GetResponse().Result; });
+            MessageBox.Show(message);
         }
     }
 }
