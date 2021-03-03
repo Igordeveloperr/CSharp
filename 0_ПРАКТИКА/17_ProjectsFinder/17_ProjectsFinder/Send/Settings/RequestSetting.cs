@@ -4,7 +4,7 @@ using System.Text;
 
 namespace _17_ProjectsFinder.Send.Settings
 {
-    public class RequestSetting : IRequestSettings
+    public class RequestSetting : RequestSettings
     {
         public string Ip { get; } = "127.0.0.1";
 

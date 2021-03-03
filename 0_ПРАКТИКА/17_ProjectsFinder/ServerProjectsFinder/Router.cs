@@ -19,6 +19,7 @@ namespace ServerProjectsFinder
             {"authorization", new AuthorizationController() },
             {"posts", new PostController() },
             {"insert_user", new InsertUserController() },
+            {"update_user_list", new UpdateUserListController() },
         };
         private TcpListener listener;
         public byte[] Data { get; } = new byte[1024];

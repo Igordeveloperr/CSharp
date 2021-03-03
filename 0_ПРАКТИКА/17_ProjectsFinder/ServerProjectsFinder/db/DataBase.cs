@@ -48,7 +48,7 @@ namespace ServerProjectsFinder.db
                 await Connection.OpenAsync();
                 Command = Connection.CreateCommand();
                 Command.CommandText = "INSERT INTO `project_role`(`id`, `login`, `role`, `project_id`) VALUES (null, ?login, ?role, ?id)";
-                Command.Parameters.AddWithValue("?login", login);
+                Command.Parameters.AddWithValue("?login", login.ToLower());
                 Command.Parameters.AddWithValue("?role", role);
                 Command.Parameters.AddWithValue("?id", id);
                 await Command.ExecuteNonQueryAsync();

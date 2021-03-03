@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:_17_ProjectsFinder"
         mc:Ignorable="d"
-        Title="SpecificPostPage" Height="450" Width="600" Background="#303952">
+        Title="SpecificPostPage" Height="500" Width="600" Background="#303952">
     <Grid>
         <StackPanel>
             <TextBlock Width="600" Text="{Binding Path=TitleValue}" Height="50" FontSize="23" Foreground="White" Padding="10,10,0,0" x:Name="title"/>
@@ -13,6 +13,8 @@
             <TextBlock HorizontalAlignment="Left" Width="600" FontSize="17" Text="Краткое описание:" Foreground="White" Padding="10,10,0,0"/>
             <TextBlock FontSize="15" Height="280" Text="{Binding Path=TextValue}" Foreground="White" Padding="10,0,0,10" x:Name="description"/>
             <Button Width="200" Height="30" Content="Присоединиться" FontSize="14" Background="#686de0" Foreground="White" Click="Connect"/>
+            <ComboBox Padding="0,0,0,0" Width="300" IsReadOnly="True" Margin="0,30,0,0" Background="#686de0" Foreground="White" x:Name="userList">
+            </ComboBox>
         </StackPanel>
     </Grid>
 </Window>

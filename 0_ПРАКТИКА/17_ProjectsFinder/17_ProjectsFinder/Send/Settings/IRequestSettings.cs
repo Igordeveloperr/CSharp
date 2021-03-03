@@ -5,7 +5,7 @@ using System.Text;
 
 namespace _17_ProjectsFinder.Send
 {
-    public interface IRequestSettings
+    public interface RequestSettings
     {
         string Ip { get; }
         int Port { get; }

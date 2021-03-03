@@ -26,6 +26,8 @@ namespace _17_ProjectsFinder
         public string Login { get; }
         public string TitleValue { get; private set; }
         public string TextValue { get; private set; }
+        private delegate void MyAction();
+        private event MyAction WindowOnLoad;
         public SpecificPostPage(int id, List<PostView> list, string login)
         {
             if (id >= 0 && list != null)
@@ -35,9 +37,22 @@ namespace _17_ProjectsFinder
                 TitleValue = PostList[Id].Title;
                 TextValue = PostList[Id].Text;
                 Login = login;
+                WindowOnLoad += UpdateUserList;
+                WindowOnLoad.Invoke();
             }
             DataContext = this;
             InitializeComponent();
+        }
+
+        private async void UpdateUserList()
+        {
+            List<UpdateUserListView> list = new List<UpdateUserListView>();
+            int postId = PostList[Id].Id;
+            var request = new UpdateUserListRequest(postId);
+            var response = new UpdateUserListResponse();
+            await Task.Run(() => { request.SendRequest(); });
+            await Task.Run(() => { list = response.GetUserList().Result; });
+            AddUserInList(list);
         }
 
         private async void Connect(object sender, RoutedEventArgs e)
@@ -49,6 +64,24 @@ namespace _17_ProjectsFinder
             await Task.Run(()=> { request.SendRequest(); });
             await Task.Run(() => { message = response.GetResponse().Result; });
             MessageBox.Show(message);
+        }
+
+        private void AddUserInList(List<UpdateUserListView> list)
+        {
+            BrushConverter converter = new BrushConverter();
+            foreach (var user in list)
+            {
+                StackPanel panel = new StackPanel();
+                TextBlock textBlock = new TextBlock();
+                panel.Children.Add(textBlock);
+                panel.Background = (Brush)converter.ConvertFrom("#273c75");
+                panel.Width = 300;
+                textBlock.Padding = new Thickness(10,10,10,10);
+                textBlock.FontSize = 16;
+                textBlock.Foreground = Brushes.White;
+                textBlock.Text = user.Name;
+                userList.Items.Add(panel);
+            }
         }
     }
 }

@@ -106,6 +106,10 @@
             "MySql.Data": {
               "target": "Package",
               "version": "[8.0.23, )"
+            },
+            "System.Data.Common": {
+              "target": "Package",
+              "version": "[4.3.0, )"
             }
           },
           "imports": [
