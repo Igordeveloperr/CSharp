@@ -1,0 +1,63 @@
+{
+  "format": 1,
+  "restore": {
+    "E:\\Igor\\8_CSharp\\9_WPF\\4_паттерн_MVVM\\4_паттерн_MVVM\\4_паттерн_MVVM.csproj": {}
+  },
+  "projects": {
+    "E:\\Igor\\8_CSharp\\9_WPF\\4_паттерн_MVVM\\4_паттерн_MVVM\\4_паттерн_MVVM.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\Igor\\8_CSharp\\9_WPF\\4_паттерн_MVVM\\4_паттерн_MVVM\\4_паттерн_MVVM.csproj",
+        "projectName": "4_паттерн_MVVM",
+        "projectPath": "E:\\Igor\\8_CSharp\\9_WPF\\4_паттерн_MVVM\\4_паттерн_MVVM\\4_паттерн_MVVM.csproj",
+        "packagesPath": "C:\\Users\\программирование\\.nuget\\packages\\",
+        "outputPath": "E:\\Igor\\8_CSharp\\9_WPF\\4_паттерн_MVVM\\4_паттерн_MVVM\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\программирование\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App.WPF": {
+              "privateAssets": "none"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
