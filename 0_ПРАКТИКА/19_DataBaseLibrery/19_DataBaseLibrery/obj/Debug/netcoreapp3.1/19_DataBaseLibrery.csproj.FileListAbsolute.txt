@@ -1,0 +1,9 @@
+E:\Igor\8_CSharp\0_ПРАКТИКА\19_DataBaseLibrery\19_DataBaseLibrery\bin\Debug\netcoreapp3.1\19_DataBaseLibrery.deps.json
+E:\Igor\8_CSharp\0_ПРАКТИКА\19_DataBaseLibrery\19_DataBaseLibrery\bin\Debug\netcoreapp3.1\19_DataBaseLibrery.dll
+E:\Igor\8_CSharp\0_ПРАКТИКА\19_DataBaseLibrery\19_DataBaseLibrery\obj\Debug\netcoreapp3.1\19_DataBaseLibrery.csprojAssemblyReference.cache
+E:\Igor\8_CSharp\0_ПРАКТИКА\19_DataBaseLibrery\19_DataBaseLibrery\obj\Debug\netcoreapp3.1\19_DataBaseLibrery.AssemblyInfoInputs.cache
+E:\Igor\8_CSharp\0_ПРАКТИКА\19_DataBaseLibrery\19_DataBaseLibrery\obj\Debug\netcoreapp3.1\19_DataBaseLibrery.AssemblyInfo.cs
+E:\Igor\8_CSharp\0_ПРАКТИКА\19_DataBaseLibrery\19_DataBaseLibrery\obj\Debug\netcoreapp3.1\19_DataBaseLibrery.csproj.CoreCompileInputs.cache
+E:\Igor\8_CSharp\0_ПРАКТИКА\19_DataBaseLibrery\19_DataBaseLibrery\bin\Debug\netcoreapp3.1\19_DataBaseLibrery.pdb
+E:\Igor\8_CSharp\0_ПРАКТИКА\19_DataBaseLibrery\19_DataBaseLibrery\obj\Debug\netcoreapp3.1\19_DataBaseLibrery.dll
+E:\Igor\8_CSharp\0_ПРАКТИКА\19_DataBaseLibrery\19_DataBaseLibrery\obj\Debug\netcoreapp3.1\19_DataBaseLibrery.pdb

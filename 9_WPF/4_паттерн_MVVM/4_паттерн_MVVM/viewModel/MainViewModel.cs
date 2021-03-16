@@ -1,4 +1,5 @@
-﻿using System;
+﻿using _4_паттерн_MVVM.model.db;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
@@ -35,9 +36,10 @@ namespace _4_паттерн_MVVM.viewModel
         {
             get
             {
-                return new DelegateCommand((obj) =>
+                return new DelegateCommand(async(obj) =>
                 {
                     // TODO залупасить регистратион шо
+                    
                 });
             }
         }
