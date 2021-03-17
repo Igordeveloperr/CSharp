@@ -2,6 +2,8 @@
 using System;
 using System.Data;
 using System.Threading.Tasks;
+using _19_DataBaseLibrery.requestBuilder;
+using System.Collections.Generic;
 
 namespace _19_DataBaseLibrery
 {
@@ -14,16 +16,17 @@ namespace _19_DataBaseLibrery
         {
             ConnectionString = $"server={host};user={user};database={db};port={port};password={password};charset=utf8";
         }
-        public async Task<DataRow[]> SelectAllFromTable(string table)
+        public async Task<DataRow[]> GetData(string table, RequestType type)
         {
             if (string.IsNullOrWhiteSpace(table)) throw new ArgumentException(nameof(table));
+            string request = Builder<bool>.RequestBuilderDictionary[type].BuildRequest(table);
             DataRow[] data = null;
             try
             {
                 Connection = new MySqlConnection(ConnectionString);
                 await Connection.OpenAsync();
                 Command = Connection.CreateCommand();
-                Command.CommandText = $"SELECT * FROM {table} ORDER BY id DESC";
+                Command.CommandText = request;
                 MySqlDataAdapter adapter = new MySqlDataAdapter(Command);
                 DataTable dataTable = new DataTable();
                 await adapter.FillAsync(dataTable);
@@ -37,18 +40,17 @@ namespace _19_DataBaseLibrery
             return data;
         }
 
-        public async Task<DataRow[]> SelectAndSortByParametr<T>(string table, string parametr, T parametrValue)
+        public async Task<DataRow[]> GetData<T>(string table, RequestType type, Dictionary<string, T> parameters)
         {
             if (string.IsNullOrWhiteSpace(table)) throw new ArgumentException(nameof(table));
-            if (string.IsNullOrWhiteSpace(parametr)) throw new ArgumentException(nameof(parametr));
-            if (parametrValue == null) throw new ArgumentException(nameof(parametrValue));
+            string request = Builder<T>.RequestBuilderDictionary[type].BuildRequest(table, parameters, type);
             DataRow[] data = null;
             try
             {
                 Connection = new MySqlConnection(ConnectionString);
                 await Connection.OpenAsync();
                 Command = Connection.CreateCommand();
-                Command.CommandText = $"SELECT * FROM {table} WHERE {parametr} = '{parametrValue}'";
+                Command.CommandText = request;
                 MySqlDataAdapter adapter = new MySqlDataAdapter(Command);
                 DataTable dataTable = new DataTable();
                 await adapter.FillAsync(dataTable);
@@ -57,7 +59,7 @@ namespace _19_DataBaseLibrery
             }
             catch (MySqlException e)
             {
-                throw new Exception(Convert.ToString(e.Message));
+                throw new Exception(Convert.ToString(e.Number));
             }
             return data;
         }
