@@ -16,7 +16,7 @@ namespace _19_DataBaseLibrery
         {
             ConnectionString = $"server={host};user={user};database={db};port={port};password={password};charset=utf8";
         }
-        public async Task<DataRow[]> GetData(string table, RequestType type)
+        public async Task<DataRow[]> SendRequest(string table, RequestType type)
         {
             if (string.IsNullOrWhiteSpace(table)) throw new ArgumentException(nameof(table));
             string request = Builder<bool>.RequestBuilderDictionary[type].BuildRequest(table);
@@ -40,7 +40,7 @@ namespace _19_DataBaseLibrery
             return data;
         }
 
-        public async Task<DataRow[]> GetData<T>(string table, RequestType type, Dictionary<string, T> parameters)
+        public async Task<DataRow[]> SendRequest<T>(string table, RequestType type, Dictionary<string, T> parameters)
         {
             if (string.IsNullOrWhiteSpace(table)) throw new ArgumentException(nameof(table));
             string request = Builder<T>.RequestBuilderDictionary[type].BuildRequest(table, parameters, type);
@@ -59,7 +59,7 @@ namespace _19_DataBaseLibrery
             }
             catch (MySqlException e)
             {
-                throw new Exception(Convert.ToString(e.Number));
+                throw new Exception(Convert.ToString(e.Message));
             }
             return data;
         }

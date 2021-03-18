@@ -12,6 +12,7 @@ namespace _19_DataBaseLibrery.requestBuilder
             {RequestType.SELECTALL, new SelectRequestBuilder<T>() },
             {RequestType.SELECTBYPARAMETR, new SelectRequestBuilder<T>() },
             {RequestType.SELECTBYTWOPARAMETR, new SelectRequestBuilder<T>() },
+            {RequestType.INSERT, new InsertRequestBuilder<T>() },
         };
     }
 }
