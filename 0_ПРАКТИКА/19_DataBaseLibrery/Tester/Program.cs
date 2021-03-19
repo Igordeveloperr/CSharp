@@ -11,10 +11,10 @@ namespace Tester
         {
             Dictionary<string, string> parameters = new Dictionary<string, string>
             {
-                { "id", "NULL" }, { "login", "worker" }, { "password", "78wq980" } 
+                { "id", "8" }
             };
-            DataBase dataBase = new DataBase("localhost", "root", "", "projectsfinder", "3306");
-            DataRow[] data = dataBase.SendRequest<string>("user", RequestType.INSERT, parameters).Result;
+            DataBase dataBase = new DataBase("localhost", "root", "", "testdb", "3306");
+            DataRow[] data = dataBase.SendRequest<string>("products", RequestType.DELETE, parameters).Result;
             foreach (var a in data)
             {
                 Console.WriteLine(a.ItemArray[1]);
