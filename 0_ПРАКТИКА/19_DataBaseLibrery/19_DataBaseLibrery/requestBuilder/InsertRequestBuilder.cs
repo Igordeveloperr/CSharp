@@ -1,5 +1,6 @@
 ﻿using _19_DataBaseLibrery.myExceptions;
 using _19_DataBaseLibrery.request;
+using _19_DataBaseLibrery.requestBuilder.builderParametr;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -8,21 +9,17 @@ using System.Threading.Tasks;
 
 namespace _19_DataBaseLibrery.requestBuilder
 {
-    internal class InsertRequestBuilder<T> : RequestBuilderBase<T>
+    internal class InsertRequestBuilder : RequestBuilderBase
     {   
         private const int MaxDictionaryLength = 8;
         private const string NullSqlSyntax = "NULL";
-        public override string BuildRequest(string request)
-        {
-            throw new EmptyMethodException("Команда INSERT используется только с методом, который принимает словарь в параметры!");
-        }
 
-        public override string BuildRequest(string table, Dictionary<string, T> parameters, RequestType type)
+        public override string BuildRequest(Parametr parameters, RequestType type)
         {
             string request = "";
             string into = "";
             string values = "";
-            try
+            /*try
             {
                 if (parameters.Count > MaxDictionaryLength) 
                     throw new RequestParametrException("длина словаря больше допустимого значения(8)");
@@ -44,7 +41,7 @@ namespace _19_DataBaseLibrery.requestBuilder
             catch(Exception e)
             {
                 throw new Exception(e.Message);                
-            }
+            }*/
             return request;
         }
     }

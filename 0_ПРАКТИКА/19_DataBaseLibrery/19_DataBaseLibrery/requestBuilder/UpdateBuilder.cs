@@ -1,28 +1,25 @@
 ﻿using _19_DataBaseLibrery.myExceptions;
 using _19_DataBaseLibrery.request;
+using _19_DataBaseLibrery.requestBuilder.builderParametr;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace _19_DataBaseLibrery.requestBuilder
 {
-    internal class UpdateBuilder<T> : RequestBuilderBase<T>
+    internal class UpdateBuilder : RequestBuilderBase
     {
         private const int MaxColumnLength = 9;
         private const int MaxExplodedLength = 2;
-        public override string BuildRequest(string table)
-        {
-            throw new EmptyMethodException("Команда UPDATE используется только с методом, который принимает словарь в параметры!");
-        }
 
-        public override string BuildRequest(string table, Dictionary<string, T> parameters, RequestType type)
+        public override string BuildRequest(Parametr parameters, RequestType type)
         {
             string request = "";
             string set = "";
             string value = "";
             string resultSet = "";
             string[] exploded = null;
-            try
+            /*try
             {
                 if (parameters.Count > MaxColumnLength)
                     throw new RequestParametrException($"длина больше допустимого значения({MaxColumnLength})");
@@ -44,7 +41,7 @@ namespace _19_DataBaseLibrery.requestBuilder
             catch(Exception e)
             {
                 throw new Exception(e.Message);
-            }
+            }*/
             return request;
         }
     }

@@ -1,4 +1,5 @@
 ﻿using _19_DataBaseLibrery.myExceptions;
+using _19_DataBaseLibrery.requestBuilder.builderParametr;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -6,44 +7,22 @@ using System.Text;
 
 namespace _19_DataBaseLibrery.request
 {
-    internal class SelectRequestBuilder<T> : RequestBuilderBase<T>
+    internal class SelectRequestBuilder : RequestBuilderBase
     {
-        private const int MaxLengthByParametr = 1;
-        private const int MaxLengthByTwoParametr = 2;
-        public override string BuildRequest(string table)
+        public override string BuildRequest(Parametr parameters, RequestType type)
         {
-            string request = $"SELECT * FROM {table}";
-            return request;
-        }
-        public override string BuildRequest(string table, Dictionary<string, T> parameters, RequestType type)
-        {
-            string request = "";
-            if(type == RequestType.SELECTBYPARAMETR)
+            SelectParametr obj = (SelectParametr)parameters; 
+            string request = type == RequestType.SELECTALL ? request = $"SELECT * FROM `{obj.Table}`" : "";
+            if (type == RequestType.SELECTBYPARAMETR)
             {
-                try
-                {
-                    if (parameters.Count > MaxLengthByParametr) 
-                        throw new RequestParametrException($"словарь не должен быть длинее {MaxLengthByParametr}");   
-                    request = $"SELECT * FROM {table} WHERE {parameters.ElementAt(0).Key} = '{parameters.ElementAt(0).Value}'";
-                }
-                catch (Exception e)
-                {
-                    throw new Exception(e.Message);
-                }
+                request = $"SELECT * FROM `{obj.Table}` WHERE `{obj.SorCategory}` = '{obj.SortValue}'";
             }
-            else if(type == RequestType.SELECTBYTWOPARAMETR)
+            else if (type == RequestType.SELECTBYTWOPARAMETR)
             {
-                try
-                {
-                    if (parameters.Count > MaxLengthByTwoParametr) 
-                        throw new RequestParametrException($"словарь не должен быть длинее {MaxLengthByTwoParametr}");
-                    request = $"SELECT * FROM {table} WHERE {parameters.ElementAt(0).Key} = '{parameters.ElementAt(0).Value}' AND {parameters.ElementAt(1).Key} = '{parameters.ElementAt(1).Value}'";
-                }
-                catch (Exception e)
-                {
-                    throw new Exception(e.Message);
-                }
+
+                request = $"SELECT * FROM `{obj.Table}` WHERE `{obj.SorCategory}` = '{obj.SortValue}' AND `{obj.SorCategorySecond}` = '{obj.SortValueSecond}'";
             }
+            Console.WriteLine(request);
             return request;
         }
     }
