@@ -19,5 +19,15 @@ namespace _1_Нейронка.layer
             if (neurons == null) throw new ArgumentException("0 нейронов в слое!");
             Neurons = neurons;
         }
+        // сбор сигналов со слоя
+        public List<double> GetSignals()
+        {
+            var result = new List<double>();
+            foreach(var neuron in Neurons)
+            {
+                result.Add(neuron.OutPut);
+            }
+            return result;
+        }
     }
 }
