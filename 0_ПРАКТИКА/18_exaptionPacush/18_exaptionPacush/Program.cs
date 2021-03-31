@@ -7,6 +7,9 @@ namespace _18_exaptionPacush
     {
         static void Main(string[] args)
         {
+            string Host = System.Net.Dns.GetHostName();
+            string IP = System.Net.Dns.GetHostByName(Host).AddressList[2].ToString();
+            Console.WriteLine(IP);
             try
             {
                 string command = Console.ReadLine();

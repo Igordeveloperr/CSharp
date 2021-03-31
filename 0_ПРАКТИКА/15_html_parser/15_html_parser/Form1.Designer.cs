@@ -37,10 +37,12 @@
             // 
             // titlesList
             // 
+            this.titlesList.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.titlesList.FormattingEnabled = true;
+            this.titlesList.ItemHeight = 23;
             this.titlesList.Location = new System.Drawing.Point(12, 12);
             this.titlesList.Name = "titlesList";
-            this.titlesList.Size = new System.Drawing.Size(822, 563);
+            this.titlesList.Size = new System.Drawing.Size(822, 556);
             this.titlesList.TabIndex = 0;
             // 
             // StartPoint
@@ -97,12 +99,11 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.ListBox titlesList;
         private System.Windows.Forms.TextBox StartPoint;
         private System.Windows.Forms.TextBox EndPoint;
         private System.Windows.Forms.Button parseBtn;
         private System.Windows.Forms.Button stopBtn;
+        public System.Windows.Forms.ListBox titlesList;
     }
 }
 

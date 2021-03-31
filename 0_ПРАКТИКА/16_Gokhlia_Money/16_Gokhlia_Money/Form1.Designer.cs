@@ -29,13 +29,13 @@
         private void InitializeComponent()
         {
             this.table = new System.Windows.Forms.ListBox();
-            this.stateBtn = new System.Windows.Forms.Button();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.updateTableBtn = new System.Windows.Forms.Button();
             this.graphikBtn = new System.Windows.Forms.Button();
-            this.selectUrlBtn = new System.Windows.Forms.Button();
-            this.updateListBtn = new System.Windows.Forms.Button();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.updateListBtn = new System.Windows.Forms.Button();
+            this.stateBtn = new System.Windows.Forms.Button();
+            this.selectUrlBtn = new System.Windows.Forms.Button();
             this.flowLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -50,17 +50,6 @@
             this.table.TabIndex = 0;
             this.table.SelectedIndexChanged += new System.EventHandler(this.table_SelectedIndexChanged);
             // 
-            // stateBtn
-            // 
-            this.stateBtn.Location = new System.Drawing.Point(20, 33);
-            this.stateBtn.Margin = new System.Windows.Forms.Padding(10, 3, 3, 3);
-            this.stateBtn.Name = "stateBtn";
-            this.stateBtn.Size = new System.Drawing.Size(212, 44);
-            this.stateBtn.TabIndex = 1;
-            this.stateBtn.Text = "статистика";
-            this.stateBtn.UseVisualStyleBackColor = true;
-            this.stateBtn.Click += new System.EventHandler(this.stateBtn_Click);
-            // 
             // flowLayoutPanel1
             // 
             this.flowLayoutPanel1.Controls.Add(this.stateBtn);
@@ -68,7 +57,6 @@
             this.flowLayoutPanel1.Controls.Add(this.graphikBtn);
             this.flowLayoutPanel1.Controls.Add(this.selectUrlBtn);
             this.flowLayoutPanel1.Controls.Add(this.updateListBtn);
-            this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.flowLayoutPanel1.FlowDirection = System.Windows.Forms.FlowDirection.BottomUp;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
@@ -98,15 +86,14 @@
             this.graphikBtn.UseVisualStyleBackColor = true;
             this.graphikBtn.Click += new System.EventHandler(this.graphikBtn_Click);
             // 
-            // selectUrlBtn
+            // richTextBox1
             // 
-            this.selectUrlBtn.Location = new System.Drawing.Point(695, 33);
-            this.selectUrlBtn.Margin = new System.Windows.Forms.Padding(10, 3, 3, 3);
-            this.selectUrlBtn.Name = "selectUrlBtn";
-            this.selectUrlBtn.Size = new System.Drawing.Size(212, 44);
-            this.selectUrlBtn.TabIndex = 4;
-            this.selectUrlBtn.Text = "сменить источник";
-            this.selectUrlBtn.UseVisualStyleBackColor = true;
+            this.richTextBox1.Location = new System.Drawing.Point(571, 134);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.Size = new System.Drawing.Size(568, 652);
+            this.richTextBox1.TabIndex = 3;
+            this.richTextBox1.Text = "";
+            this.richTextBox1.TextChanged += new System.EventHandler(this.richTextBox1_TextChanged);
             // 
             // updateListBtn
             // 
@@ -117,15 +104,29 @@
             this.updateListBtn.TabIndex = 5;
             this.updateListBtn.Text = "журнал обнавлений";
             this.updateListBtn.UseVisualStyleBackColor = true;
+            this.updateListBtn.Click += new System.EventHandler(this.updateListBtn_Click);
             // 
-            // richTextBox1
+            // stateBtn
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(571, 134);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(568, 652);
-            this.richTextBox1.TabIndex = 3;
-            this.richTextBox1.Text = "";
-            this.richTextBox1.TextChanged += new System.EventHandler(this.richTextBox1_TextChanged);
+            this.stateBtn.Location = new System.Drawing.Point(20, 33);
+            this.stateBtn.Margin = new System.Windows.Forms.Padding(10, 3, 3, 3);
+            this.stateBtn.Name = "stateBtn";
+            this.stateBtn.Size = new System.Drawing.Size(212, 44);
+            this.stateBtn.TabIndex = 1;
+            this.stateBtn.Text = "статистика";
+            this.stateBtn.UseVisualStyleBackColor = true;
+            this.stateBtn.Click += new System.EventHandler(this.stateBtn_Click);
+            // 
+            // selectUrlBtn
+            // 
+            this.selectUrlBtn.Location = new System.Drawing.Point(695, 33);
+            this.selectUrlBtn.Margin = new System.Windows.Forms.Padding(10, 3, 3, 3);
+            this.selectUrlBtn.Name = "selectUrlBtn";
+            this.selectUrlBtn.Size = new System.Drawing.Size(212, 44);
+            this.selectUrlBtn.TabIndex = 4;
+            this.selectUrlBtn.Text = "сменить источник";
+            this.selectUrlBtn.UseVisualStyleBackColor = true;
+            this.selectUrlBtn.Click += new System.EventHandler(this.selectUrlBtn_Click);
             // 
             // Form1
             // 
@@ -145,13 +146,13 @@
         #endregion
 
         private System.Windows.Forms.ListBox table;
-        private System.Windows.Forms.Button stateBtn;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private System.Windows.Forms.Button graphikBtn;
         private System.Windows.Forms.Button updateTableBtn;
+        private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.Button stateBtn;
         private System.Windows.Forms.Button selectUrlBtn;
         private System.Windows.Forms.Button updateListBtn;
-        private System.Windows.Forms.RichTextBox richTextBox1;
     }
 }
 

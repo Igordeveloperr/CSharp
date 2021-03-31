@@ -41,11 +41,6 @@ namespace _16_Gokhlia_Money
             }
         }
 
-        private void stateBtn_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void updateTableBtn_Click(object sender, EventArgs e)
         {
             parserInterface.Start();
@@ -62,6 +57,21 @@ namespace _16_Gokhlia_Money
         }
 
         private void table_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void stateBtn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void selectUrlBtn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void updateListBtn_Click(object sender, EventArgs e)
         {
 
         }
