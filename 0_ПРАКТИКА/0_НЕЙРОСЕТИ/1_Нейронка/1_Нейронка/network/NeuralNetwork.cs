@@ -26,10 +26,11 @@ namespace _1_Нейронка.network
         }
         public double FeedForward(List<double> inputSignals)
         {
-            SendSignalToInputNeurons(inputSignals);
-            for(int i = 1; i < Layers.Count; i++)
+            SendSignalsToInputNeurons(inputSignals);
+            for (int i = 1; i < Layers.Count; i++)
             {
                 var layer = Layers[i];
+                var prevLayerSignals = Layers[i - 1].GetSignals();
             }
         }
 

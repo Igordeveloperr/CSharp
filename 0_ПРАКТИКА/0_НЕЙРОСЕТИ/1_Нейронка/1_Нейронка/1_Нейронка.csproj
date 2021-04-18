@@ -52,6 +52,11 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="layer\Layer.cs" />
+    <Compile Include="network\NeuralNetwork.cs" />
+    <Compile Include="network\Topology.cs" />
+    <Compile Include="neuron\Neuron.cs" />
+    <Compile Include="neuron\NeuronType.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
