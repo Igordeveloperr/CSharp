@@ -1,4 +1,6 @@
 ﻿using _22_Банк.command;
+using _22_Банк.model.request;
+using _22_Банк.model.request.requests;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -38,6 +40,12 @@ namespace _22_Банк.viewModel
                     Str = "ЧЕ";
                 });
             }
+        }
+        public MainViewModel()
+        {
+            string requestJson = new AuthorizationRequest(RequestType.authorization, "BOB", "123").ToJson();
+            var sendler = new RequestSendler(requestJson);
+            sendler.SendRequest();
         }
     }
 }

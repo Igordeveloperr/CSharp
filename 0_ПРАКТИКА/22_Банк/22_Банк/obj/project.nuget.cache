@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "Tqad8ckMkBf9vx0Ym6mKapvxDx/g6AcfbyEO0fIntGVUP7l7daLPZH0ajmZcD2ThePsO3Rzmu7Yq2POm8p9xlA==",
+  "dgSpecHash": "lNGEfN8+ABb/izzZWiuVgops+n5wwkY2RmacRl9bDjXRy8y0hwkUl+GwlcAUOYxDH79lXh9fNbv5YJiHrU3GqA==",
   "success": true,
   "projectFilePath": "E:\\Igor\\8_CSharp\\0_ПРАКТИКА\\22_Банк\\22_Банк\\22_Банк.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\программирование\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+  ],
   "logs": []
 }

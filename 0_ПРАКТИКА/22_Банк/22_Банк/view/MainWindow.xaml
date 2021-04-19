@@ -11,6 +11,6 @@
     </Window.DataContext>
     <Grid>
         <TextBlock Text="{Binding Str}" Width="100" Height="100" FontSize="27" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-        <Button Width="100" Height="100" Content="cont2ent" VerticalAlignment="Bottom" Command="{Binding ClickAdd}"/>
+        <Button Width="100" Height="100" Content="cont2ent" VerticalAlignment="Top" Command="{Binding ClickAdd}"/>
     </Grid>
 </Window>

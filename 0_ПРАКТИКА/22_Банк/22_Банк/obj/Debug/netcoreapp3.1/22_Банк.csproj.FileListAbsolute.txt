@@ -18,3 +18,5 @@ E:\Igor\8_CSharp\0_ПРАКТИКА\22_Банк\22_Банк\obj\Debug\netcoreapp
 E:\Igor\8_CSharp\0_ПРАКТИКА\22_Банк\22_Банк\obj\Debug\netcoreapp3.1\22_Банк.pdb
 E:\Igor\8_CSharp\0_ПРАКТИКА\22_Банк\22_Банк\obj\Debug\netcoreapp3.1\22_Банк.genruntimeconfig.cache
 E:\Igor\8_CSharp\0_ПРАКТИКА\22_Банк\22_Банк\obj\Debug\netcoreapp3.1\GeneratedInternalTypeHelper.g.cs
+E:\Igor\8_CSharp\0_ПРАКТИКА\22_Банк\22_Банк\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+E:\Igor\8_CSharp\0_ПРАКТИКА\22_Банк\22_Банк\obj\Debug\netcoreapp3.1\22_Банк.csproj.CopyComplete
