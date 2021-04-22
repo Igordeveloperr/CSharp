@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "13_Методы_Расширения/1.0.0": {
+        "runtime": {
+          "13_Методы_Расширения.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "13_Методы_Расширения/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

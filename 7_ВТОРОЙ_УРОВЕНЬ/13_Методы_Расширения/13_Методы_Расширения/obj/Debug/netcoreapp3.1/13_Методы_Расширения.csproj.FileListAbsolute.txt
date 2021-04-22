@@ -1,0 +1,13 @@
+E:\Igor\8_CSharp\7_ВТОРОЙ_УРОВЕНЬ\13_Методы_Расширения\13_Методы_Расширения\bin\Debug\netcoreapp3.1\13_Методы_Расширения.exe
+E:\Igor\8_CSharp\7_ВТОРОЙ_УРОВЕНЬ\13_Методы_Расширения\13_Методы_Расширения\bin\Debug\netcoreapp3.1\13_Методы_Расширения.deps.json
+E:\Igor\8_CSharp\7_ВТОРОЙ_УРОВЕНЬ\13_Методы_Расширения\13_Методы_Расширения\bin\Debug\netcoreapp3.1\13_Методы_Расширения.runtimeconfig.json
+E:\Igor\8_CSharp\7_ВТОРОЙ_УРОВЕНЬ\13_Методы_Расширения\13_Методы_Расширения\bin\Debug\netcoreapp3.1\13_Методы_Расширения.runtimeconfig.dev.json
+E:\Igor\8_CSharp\7_ВТОРОЙ_УРОВЕНЬ\13_Методы_Расширения\13_Методы_Расширения\bin\Debug\netcoreapp3.1\13_Методы_Расширения.dll
+E:\Igor\8_CSharp\7_ВТОРОЙ_УРОВЕНЬ\13_Методы_Расширения\13_Методы_Расширения\bin\Debug\netcoreapp3.1\13_Методы_Расширения.pdb
+E:\Igor\8_CSharp\7_ВТОРОЙ_УРОВЕНЬ\13_Методы_Расширения\13_Методы_Расширения\obj\Debug\netcoreapp3.1\13_Методы_Расширения.csprojAssemblyReference.cache
+E:\Igor\8_CSharp\7_ВТОРОЙ_УРОВЕНЬ\13_Методы_Расширения\13_Методы_Расширения\obj\Debug\netcoreapp3.1\13_Методы_Расширения.AssemblyInfoInputs.cache
+E:\Igor\8_CSharp\7_ВТОРОЙ_УРОВЕНЬ\13_Методы_Расширения\13_Методы_Расширения\obj\Debug\netcoreapp3.1\13_Методы_Расширения.AssemblyInfo.cs
+E:\Igor\8_CSharp\7_ВТОРОЙ_УРОВЕНЬ\13_Методы_Расширения\13_Методы_Расширения\obj\Debug\netcoreapp3.1\13_Методы_Расширения.csproj.CoreCompileInputs.cache
+E:\Igor\8_CSharp\7_ВТОРОЙ_УРОВЕНЬ\13_Методы_Расширения\13_Методы_Расширения\obj\Debug\netcoreapp3.1\13_Методы_Расширения.dll
+E:\Igor\8_CSharp\7_ВТОРОЙ_УРОВЕНЬ\13_Методы_Расширения\13_Методы_Расширения\obj\Debug\netcoreapp3.1\13_Методы_Расширения.pdb
+E:\Igor\8_CSharp\7_ВТОРОЙ_УРОВЕНЬ\13_Методы_Расширения\13_Методы_Расширения\obj\Debug\netcoreapp3.1\13_Методы_Расширения.genruntimeconfig.cache
