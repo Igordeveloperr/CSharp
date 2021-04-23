@@ -1,4 +1,5 @@
 ﻿using _22_Банк.command;
+using _22_Банк.encrypt;
 using _22_Банк.model.request;
 using _22_Банк.model.request.requests;
 using System;
@@ -43,9 +44,11 @@ namespace _22_Банк.viewModel
         }
         public MainViewModel()
         {
-            string requestJson = new AuthorizationRequest(RequestType.authorization, "BOB", "123").ToJson();
-            var sendler = new RequestSendler(requestJson);
-            sendler.SendRequest();
+            var aes = new AesEncrypt();
+            string requestJson = new AuthorizationRequest(RequestType.authorization, "s", "1").ToJson();
+            string data = Convert.ToBase64String(aes.EncryptString(requestJson));
+            var sendler = new RequestSendler(data);
+            sendler.SendRequest( );
         }
     }
 }
