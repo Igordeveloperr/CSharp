@@ -1,0 +1,13 @@
+E:\Igor\8_CSharp\0_ПРАКТИКА\22_Банк\ServerBank\bin\Debug\netcoreapp3.1\ServerBank.exe
+E:\Igor\8_CSharp\0_ПРАКТИКА\22_Банк\ServerBank\bin\Debug\netcoreapp3.1\ServerBank.deps.json
+E:\Igor\8_CSharp\0_ПРАКТИКА\22_Банк\ServerBank\bin\Debug\netcoreapp3.1\ServerBank.runtimeconfig.json
+E:\Igor\8_CSharp\0_ПРАКТИКА\22_Банк\ServerBank\bin\Debug\netcoreapp3.1\ServerBank.runtimeconfig.dev.json
+E:\Igor\8_CSharp\0_ПРАКТИКА\22_Банк\ServerBank\bin\Debug\netcoreapp3.1\ServerBank.dll
+E:\Igor\8_CSharp\0_ПРАКТИКА\22_Банк\ServerBank\bin\Debug\netcoreapp3.1\ServerBank.pdb
+E:\Igor\8_CSharp\0_ПРАКТИКА\22_Банк\ServerBank\obj\Debug\netcoreapp3.1\ServerBank.csprojAssemblyReference.cache
+E:\Igor\8_CSharp\0_ПРАКТИКА\22_Банк\ServerBank\obj\Debug\netcoreapp3.1\ServerBank.AssemblyInfoInputs.cache
+E:\Igor\8_CSharp\0_ПРАКТИКА\22_Банк\ServerBank\obj\Debug\netcoreapp3.1\ServerBank.AssemblyInfo.cs
+E:\Igor\8_CSharp\0_ПРАКТИКА\22_Банк\ServerBank\obj\Debug\netcoreapp3.1\ServerBank.csproj.CoreCompileInputs.cache
+E:\Igor\8_CSharp\0_ПРАКТИКА\22_Банк\ServerBank\obj\Debug\netcoreapp3.1\ServerBank.dll
+E:\Igor\8_CSharp\0_ПРАКТИКА\22_Банк\ServerBank\obj\Debug\netcoreapp3.1\ServerBank.pdb
+E:\Igor\8_CSharp\0_ПРАКТИКА\22_Банк\ServerBank\obj\Debug\netcoreapp3.1\ServerBank.genruntimeconfig.cache

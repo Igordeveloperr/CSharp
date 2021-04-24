@@ -38,17 +38,17 @@ namespace _22_Банк.viewModel
             {
                 return new MyCommand((obj)=>
                 {
-                    Str = "ЧЕ";
+                    var aes = new AesEncrypt();
+                    string requestJson = new AuthorizationRequest(RequestType.authorization, "s", "1").ToJson();
+                    string data = Convert.ToBase64String(aes.EncryptString(requestJson));
+                    var sendler = new RequestSendler(data);
+                    sendler.SendRequest();
                 });
             }
         }
         public MainViewModel()
         {
-            var aes = new AesEncrypt();
-            string requestJson = new AuthorizationRequest(RequestType.authorization, "s", "1").ToJson();
-            string data = Convert.ToBase64String(aes.EncryptString(requestJson));
-            var sendler = new RequestSendler(data);
-            sendler.SendRequest( );
+
         }
     }
 }
