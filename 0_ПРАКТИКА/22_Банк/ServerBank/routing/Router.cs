@@ -41,13 +41,12 @@ namespace ServerBank.routing
         }
         private string GetDataFromConnectionChannel(NetworkStream stream)
         {
-            StringBuilder builder = new StringBuilder();
-            byte[] data = new byte[1024];
+            byte[] data = new byte[256];
             string json = string.Empty;
             do
             {
                 int count = stream.Read(data, 0, data.Length);
-                json = builder.Append(Encoding.UTF8.GetString(data, 0, count)).ToString();
+                json = Convert.ToBase64String(data);
             }
             while (stream.DataAvailable);
             return json;

@@ -7,7 +7,7 @@ using System.Xml.Serialization;
 
 namespace _22_Банк.encrypt
 {
-    internal class RsaEncrypt : IEncrypt
+    public class RsaEncrypt : IEncrypt
     {
         private RSACryptoServiceProvider CryptoServiceProvider = new RSACryptoServiceProvider(2048);
         private RSAParameters PrivateKey;
@@ -18,6 +18,11 @@ namespace _22_Банк.encrypt
             if (string.IsNullOrWhiteSpace(serverPublicKey))
                 throw new ArgumentException(nameof(serverPublicKey));
             ServerPublicKey = serverPublicKey;
+            PrivateKey = CryptoServiceProvider.ExportParameters(true);
+            PublicKey = CryptoServiceProvider.ExportParameters(false);
+        }
+        public RsaEncrypt()
+        {
             PrivateKey = CryptoServiceProvider.ExportParameters(true);
             PublicKey = CryptoServiceProvider.ExportParameters(false);
         }
@@ -48,6 +53,16 @@ namespace _22_Банк.encrypt
                 XmlSerializer xmlDeseriallizer = new XmlSerializer(typeof(RSAParameters));
                 RSAParameters rsaKey = (RSAParameters)xmlDeseriallizer.Deserialize(stringReader);
                 return rsaKey;
+            }
+        }
+        public string PublicKeyTostring()
+        {
+            using (var writer = new StreamWriter(""))
+            {
+                var serializer = new XmlSerializer(typeof(RSAParameters));
+                serializer.Serialize(writer, PublicKey);
+                string key = writer.ToString();
+                return key;
             }
         }
     }

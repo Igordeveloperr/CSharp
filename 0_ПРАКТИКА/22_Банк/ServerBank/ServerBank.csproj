@@ -6,9 +6,12 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="model\" />
     <Folder Include="view\" />
     <Folder Include="controller\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\22_Банк\22_Банк.csproj" />
   </ItemGroup>
 
 </Project>

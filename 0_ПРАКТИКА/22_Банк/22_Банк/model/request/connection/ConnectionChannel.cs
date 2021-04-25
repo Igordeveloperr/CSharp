@@ -5,18 +5,21 @@ using System.Net.Sockets;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
+using _22_Банк.model.request.connection;
 
 namespace _22_Банк.model.request
 {
-    internal class ConnectionChannel
+    public class ConnectionChannel : IConnectionChannel
     {
         private NetworkStream Stream;
-        public async Task<TcpClient> ConnectToChannel()
+        public async Task<TcpClient> ConnectToChannel(string ip, int port)
         {
             TcpClient client = new TcpClient();
             try
             {
-                await client.ConnectAsync("127.0.0.1", 80);
+                if (string.IsNullOrWhiteSpace(ip) || port <= 0)
+                    throw new ArgumentException("шото не так тут");
+                await client.ConnectAsync(ip, port);
             }
             catch (SocketException e)
             {
@@ -39,6 +42,11 @@ namespace _22_Банк.model.request
             {
                 MessageBox.Show(e.Message);
             }
+        }
+        public void CloseConnection(TcpClient client)
+        {
+            Stream.Close();
+            client.Close();
         }
     }
 }

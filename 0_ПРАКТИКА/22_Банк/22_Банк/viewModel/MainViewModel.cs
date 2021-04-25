@@ -38,9 +38,11 @@ namespace _22_Банк.viewModel
             {
                 return new MyCommand((obj)=>
                 {
+                    //var rsa = new RsaEncrypt();
                     var aes = new AesEncrypt();
-                    string requestJson = new AuthorizationRequest(RequestType.authorization, "s", "1").ToJson();
-                    string data = Convert.ToBase64String(aes.EncryptString(requestJson));
+                    string requestJson = new AuthorizationRequest(RequestType.authorization, "Bobiks", "123").ToJson();
+                    byte[] data = aes.EncryptString(requestJson);
+                    //byte[] sendingData = rsa.Encrypt(Convert.ToBase64String(data));
                     var sendler = new RequestSendler(data);
                     sendler.SendRequest();
                 });

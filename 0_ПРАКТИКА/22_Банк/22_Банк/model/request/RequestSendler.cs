@@ -11,19 +11,19 @@ namespace _22_Банк.model.request
     internal class RequestSendler : IRequestSendler
     {
         private ConnectionChannel Channel;
-        private string Json;
-        public RequestSendler(string json)
+        private byte[] DataJson;
+        public RequestSendler(byte[] dataJson)
         {
             Channel = new ConnectionChannel();
-            if (string.IsNullOrWhiteSpace(json))
-                throw new ArgumentException(nameof(json));
-            Json = json;
+            if (dataJson == null)
+                throw new ArgumentException(nameof(dataJson));
+            DataJson = dataJson;
         }
         public async void SendRequest()
         {
-            byte[] data = Encoding.UTF8.GetBytes(Json);
-            TcpClient client = await Task.Run(()=> Channel.ConnectToChannel().Result);
-            Channel.SendDataToChannel(data, client);
+            TcpClient client = await Task.Run(()=> Channel.ConnectToChannel("127.0.0.1",80).Result);
+            Channel.SendDataToChannel(DataJson, client);
+            Channel.CloseConnection(client);
         }
     }
 }

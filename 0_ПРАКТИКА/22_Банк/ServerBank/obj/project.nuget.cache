@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "QhJ07X+mPCTmpBseLfTQ+gZtt93LXEjQmaitp5Kp7UZMIo9WmysJqnyI9pif25Td/PlNsBxD5DVxFKE3wtjRSA==",
+  "dgSpecHash": "zg/5h2qLYekYrk/vK9TlEezw5ct3xPO5gcswafdb+wjq1cU0HGkuyZXmciTTPsA0Mzmp1WQ6jldQimsHlZaiUA==",
   "success": true,
   "projectFilePath": "E:\\Igor\\8_CSharp\\0_ПРАКТИКА\\22_Банк\\ServerBank\\ServerBank.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\программирование\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+  ],
   "logs": []
 }

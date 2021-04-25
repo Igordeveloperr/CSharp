@@ -5,7 +5,10 @@ VisualStudioVersion = 16.0.30406.217
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "22_Банк", "22_Банк\22_Банк.csproj", "{4FDE9863-9A10-40B0-A99B-DF364A3A0822}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServerBank", "ServerBank\ServerBank.csproj", "{D6600E1E-E71B-4E9F-9963-A2507EFF67F8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ServerBank", "ServerBank\ServerBank.csproj", "{D6600E1E-E71B-4E9F-9963-A2507EFF67F8}"
+	ProjectSection(ProjectDependencies) = postProject
+		{4FDE9863-9A10-40B0-A99B-DF364A3A0822} = {4FDE9863-9A10-40B0-A99B-DF364A3A0822}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

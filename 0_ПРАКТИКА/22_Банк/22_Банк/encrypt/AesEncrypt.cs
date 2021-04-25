@@ -6,7 +6,7 @@ using System.Text;
 
 namespace _22_Банк.encrypt
 {
-    internal class AesEncrypt : IEncrypt
+    public class AesEncrypt : IEncrypt
     {
         /// <summary>
         /// Создает объект от класса с входными ключами
