@@ -40,10 +40,14 @@ namespace _22_Банк.viewModel
                 {
                     //var rsa = new RsaEncrypt();
                     var aes = new AesEncrypt();
-                    string requestJson = new AuthorizationRequest(RequestType.authorization, "Bobiks", "123").ToJson();
+                    var rsa = new RsaEncrypt();
+                    byte[] key = rsa.Encrypt(Convert.ToString(aes.Key));
+                    byte[] iv = rsa.Encrypt(Convert.ToString(aes.IV));
+                    string requestJson = new AuthorizationRequest(RequestType.authorization,"Bob", "123").ToJson();
                     byte[] data = aes.EncryptString(requestJson);
-                    //byte[] sendingData = rsa.Encrypt(Convert.ToBase64String(data));
-                    var sendler = new RequestSendler(data);
+                    RequestObject requestObject = new RequestObject(data, key, iv);
+                    MessageBox.Show(Convert.ToString(requestObject.ToByteArray().Length));
+                    var sendler = new RequestSendler(requestObject.ToByteArray());
                     sendler.SendRequest();
                 });
             }

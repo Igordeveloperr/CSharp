@@ -39,7 +39,7 @@ namespace _22_Банк.encrypt
         {
             if (string.IsNullOrWhiteSpace(text))
                 throw new ArgumentException(nameof(text));
-            RSAParameters key = KeyToRsa(ServerPublicKey);
+            RSAParameters key = PublicKey;
             CryptoServiceProvider.ImportParameters(key);
             byte[] data = CryptoServiceProvider.Encrypt(Encoding.UTF8.GetBytes(text), false);
             return data;

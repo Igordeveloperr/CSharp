@@ -1,5 +1,7 @@
-﻿using ServerBank.routing;
+﻿using ServerBank.controller;
+using ServerBank.routing;
 using System;
+using System.Net.Sockets;
 using System.Threading;
 
 namespace ServerBank
@@ -8,10 +10,14 @@ namespace ServerBank
     {
         static void Main(string[] args)
         {
-            Router r = new Router();
+            Router router = new Router();
             while (true)
             {
-                r.ListenConnectionChannel();
+                TcpClient client = router.ConnectClientToChannel().Result;
+                string data = router.GetDataFromConnectionChannel(client);
+                Console.WriteLine(data);
+                new ControllerSelecter(data).SelectController();
+                router.CloseConnectionChannel(client);
                 Thread.Sleep(100);
             }
         }

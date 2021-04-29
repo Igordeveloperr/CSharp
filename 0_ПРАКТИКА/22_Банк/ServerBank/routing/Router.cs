@@ -21,35 +21,37 @@ namespace ServerBank.routing
             }
             catch (StartTcpListenerException e) { Console.WriteLine(e.Message); }
         }
-        public async void ListenConnectionChannel()
+        public async Task<TcpClient> ConnectClientToChannel()
         {
+            TcpClient client = await Listener.AcceptTcpClientAsync();
             try
             {
-                TcpClient client = await Listener.AcceptTcpClientAsync();
-                if (!client.Connected) throw new ClientConnectException("пользовательно не смог подключиться");
-                Stream = client.GetStream();
-                if (!Stream.CanRead) throw new StreamException("не удается прочитать поток");
-                string json = GetDataFromConnectionChannel(Stream);
-                Console.WriteLine(json);
-                Stream.Close();
-                client.Close();
+                if (!client.Connected) throw new ClientConnectException("пользователь не смог подключиться");
             }
-            catch (Exception e)
+            catch (ClientConnectException e)
             {
                 Console.WriteLine(e.Message);
             }
+            return client;
         }
-        private string GetDataFromConnectionChannel(NetworkStream stream)
+        public string GetDataFromConnectionChannel(TcpClient client)
         {
-            byte[] data = new byte[256];
+            Stream = client.GetStream();
+            if (!Stream.CanRead) throw new StreamException("не удается прочитать поток");
+            byte[] data = new byte[804];
             string json = string.Empty;
             do
             {
-                int count = stream.Read(data, 0, data.Length);
-                json = Convert.ToBase64String(data);
+                int count = Stream.Read(data, 0, data.Length);
+                json = Encoding.UTF8.GetString(data, 0, count);
             }
-            while (stream.DataAvailable);
+            while (Stream.DataAvailable);
             return json;
+        }
+        public void CloseConnectionChannel(TcpClient client)
+        {
+            Stream.Close();
+            client.Close();
         }
     }
 }

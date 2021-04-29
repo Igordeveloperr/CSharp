@@ -4,8 +4,9 @@ using System.Text;
 
 namespace _22_Банк.model.request.requests
 {
-    internal enum RequestType
+    public enum RequestType
     {
         authorization = 0,
+        news = 1,
     }
 }
