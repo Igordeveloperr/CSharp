@@ -20,16 +20,17 @@ namespace ServerBank.controller
         {
             foreach (Type item in Controllers)
             {
+                
                 PropertyInfo[] property = item?.GetProperties();
-                bool flag = CheckProperty(property, item);
+                Controller instance = (Controller)item?.Assembly.CreateInstance(item.FullName);
+                bool flag = CheckProperty(property, instance);
             }
         }
-        private bool CheckProperty(PropertyInfo[] property, Type classItem)
+        private bool CheckProperty(PropertyInfo[] property, Controller instance)
         {
-            Controller a = new AuthorizationController();
             foreach(var item in property)
             {
-                Console.WriteLine(item?.GetValue(a));
+                Console.WriteLine(item?.GetValue(instance));    
             }
             return true;
         }
