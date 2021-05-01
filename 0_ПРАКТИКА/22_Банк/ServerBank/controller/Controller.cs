@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Sockets;
 using System.Reflection;
 using System.Text;
 
@@ -10,7 +11,7 @@ namespace ServerBank.controller
     internal abstract class Controller
     {
         public RequestType ControllerType { get; protected set; }
-        public abstract void ControllerStartWork(string json);
+        public abstract void ControllerStartWork(string json, TcpClient client);
         public static IEnumerable<Type> GetAllControllers()
         {
             Type baseType = typeof(Controller);

@@ -19,11 +19,13 @@ namespace _22_Банк.model.request
                 throw new ArgumentException(nameof(dataJson));
             DataJson = dataJson;
         }
-        public async void SendRequest()
+        public async Task<string> SendRequest()
         {
             TcpClient client = await Task.Run(()=> Channel.ConnectToChannel("127.0.0.1",80).Result);
             Channel.SendDataToChannel(DataJson, client);
+            string response = await Channel.GetResponse(client);
             Channel.CloseConnection(client);
+            return response;
         }
     }
 }

@@ -2,24 +2,31 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Windows;
 
 namespace _22_Банк.model.request.requests
 {
     public class RequestObject
     {
         [JsonProperty]
-        private byte[] Data;
+        public byte[] Iv { get; private set; }
         [JsonProperty]
-        private byte[] Key;
+        public byte[] Key { get; private set; }
         [JsonProperty]
-        private byte[] IV;
-        public RequestObject(byte[] data, byte[] key, byte[] iv)
+        public byte[] Data { get; private set; }
+        [JsonProperty]
+        public RequestType Type { get; private set; }
+        public RequestObject(RequestType type)
         {
-            if (data == null || key == null || iv == null)
-                throw new ArgumentException("error!");
-            Data = data;
+            Type = type;
+        }
+        [JsonConstructor]
+        public RequestObject(byte[] key, byte[] iv, byte[] data, RequestType type)
+        {
             Key = key;
-            IV = iv;
+            Iv = iv;
+            Type = type;
+            Data = data;
         }
         public string ToJson()
         {
@@ -29,6 +36,17 @@ namespace _22_Банк.model.request.requests
         public byte[] ToByteArray()
         {
             return Encoding.UTF8.GetBytes(this.ToJson());
+        }
+        public static RequestObject ToRequestObject(string json)
+        {
+            if (string.IsNullOrWhiteSpace(json))
+                throw new ArgumentException("json пуст");
+            RequestObject obj = null;
+            try
+            {obj = JsonConvert.DeserializeObject<RequestObject>(json);}
+            catch (JsonException e)
+            {MessageBox.Show(e.Message);}
+            return obj;
         }
     }
 }

@@ -1,6 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Net.Sockets;
 using System.Text;
+using System.Threading.Tasks;
+using _22_Банк.model.request;
 using _22_Банк.model.request.requests;
 
 namespace ServerBank.controller
@@ -11,10 +14,10 @@ namespace ServerBank.controller
         {
             ControllerType = RequestType.authorization;
         }
-        public override void ControllerStartWork(string json)
+        public override void ControllerStartWork(string json, TcpClient client)
         {
-            
-            Console.WriteLine("work");
+            var channel = new ConnectionChannel();
+            channel.SendDataToChannel(Encoding.UTF8.GetBytes("hello"),client);
         }
     }
 }

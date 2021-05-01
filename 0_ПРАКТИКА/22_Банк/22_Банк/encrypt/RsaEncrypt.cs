@@ -39,7 +39,7 @@ namespace _22_Банк.encrypt
         {
             if (string.IsNullOrWhiteSpace(text))
                 throw new ArgumentException(nameof(text));
-            RSAParameters key = PublicKey;
+            RSAParameters key = KeyToRsa(ServerPublicKey);
             CryptoServiceProvider.ImportParameters(key);
             byte[] data = CryptoServiceProvider.Encrypt(Encoding.UTF8.GetBytes(text), false);
             return data;
@@ -57,13 +57,11 @@ namespace _22_Банк.encrypt
         }
         public string PublicKeyTostring()
         {
-            using (var writer = new StreamWriter(""))
-            {
-                var serializer = new XmlSerializer(typeof(RSAParameters));
-                serializer.Serialize(writer, PublicKey);
-                string key = writer.ToString();
-                return key;
-            }
+            var writer = new StringWriter();
+            var serializer = new XmlSerializer(typeof(RSAParameters));
+            serializer.Serialize(writer, PublicKey);
+            string key = writer.ToString();
+            return key;
         }
     }
 }

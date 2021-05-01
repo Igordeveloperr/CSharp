@@ -7,6 +7,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
 using System.Text;
+using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Input;
 
@@ -36,19 +37,17 @@ namespace _22_Банк.viewModel
         {
             get
             {
-                return new MyCommand((obj)=>
+                return new MyCommand(async(obj)=>
                 {
-                    //var rsa = new RsaEncrypt();
+                    var request = new RequestObject(RequestType.encrypt);
+                    byte[] data = request.ToByteArray();
+                    var sendler = new RequestSendler(data);
+                    string response = await sendler.SendRequest();
+                    var rsa = new RsaEncrypt(response);
                     var aes = new AesEncrypt();
-                    var rsa = new RsaEncrypt();
-                    byte[] key = rsa.Encrypt(Convert.ToString(aes.Key));
-                    byte[] iv = rsa.Encrypt(Convert.ToString(aes.IV));
-                    string requestJson = new AuthorizationRequest(RequestType.authorization,"Bob", "123").ToJson();
-                    byte[] data = aes.EncryptString(requestJson);
-                    RequestObject requestObject = new RequestObject(data, key, iv);
-                    MessageBox.Show(Convert.ToString(requestObject.ToByteArray().Length));
-                    var sendler = new RequestSendler(requestObject.ToByteArray());
-                    sendler.SendRequest();
+                    byte[] login = aes.EncryptString("Bob");
+                    data = new RequestObject(rsa.Encrypt(aes.KeyToBase64()), rsa.Encrypt(aes.IVToBase64()), login, RequestType.encrypt).ToByteArray();
+                    response = await new RequestSendler(data).SendRequest();
                 });
             }
         }

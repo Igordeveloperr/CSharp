@@ -43,6 +43,13 @@ namespace _22_Банк.model.request
                 MessageBox.Show(e.Message);
             }
         }
+        public async Task<string> GetResponse(TcpClient client)
+        {
+            byte[] data = new byte[1024];
+            int count = await Stream.ReadAsync(data, 0, data.Length);
+            string result = Encoding.UTF8.GetString(data, 0, count);
+            return result;
+        }
         public void CloseConnection(TcpClient client)
         {
             Stream.Close();

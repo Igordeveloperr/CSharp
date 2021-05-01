@@ -16,8 +16,9 @@ namespace ServerBank
                 TcpClient client = router.ConnectClientToChannel().Result;
                 string data = router.GetDataFromConnectionChannel(client);
                 Console.WriteLine(data);
-                new ControllerSelecter(data).SelectController();
-                router.CloseConnectionChannel(client);
+                var selecter =  new ControllerSelecter(data, client);
+                selecter.SelectController();
+                selecter.StartSelectedController();
                 Thread.Sleep(100);
             }
         }
