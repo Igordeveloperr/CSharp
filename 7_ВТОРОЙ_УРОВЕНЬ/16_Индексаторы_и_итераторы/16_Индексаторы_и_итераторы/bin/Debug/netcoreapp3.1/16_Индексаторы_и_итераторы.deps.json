@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "16_Индексаторы_и_итераторы/1.0.0": {
+        "runtime": {
+          "16_Индексаторы_и_итераторы.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "16_Индексаторы_и_итераторы/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

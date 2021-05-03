@@ -46,7 +46,7 @@ namespace _22_Банк.viewModel
                     var rsa = new RsaEncrypt(response);
                     var aes = new AesEncrypt();
                     byte[] login = aes.EncryptString("Bob");
-                    data = new RequestObject(rsa.Encrypt(aes.KeyToBase64()), rsa.Encrypt(aes.IVToBase64()), login, RequestType.encrypt).ToByteArray();
+                    data = new RequestObject(rsa.Encrypt(aes.Key), rsa.Encrypt(aes.IV), login, RequestType.encrypt).ToByteArray();
                     response = await new RequestSendler(data).SendRequest();
                 });
             }

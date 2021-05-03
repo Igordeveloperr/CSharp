@@ -7,9 +7,9 @@ using System.Xml.Serialization;
 
 namespace _22_Банк.encrypt
 {
-    public class RsaEncrypt : IEncrypt
+    public class RsaEncrypt 
     {
-        private RSACryptoServiceProvider CryptoServiceProvider = new RSACryptoServiceProvider(2048);
+        private RSACryptoServiceProvider CryptoServiceProvider = new RSACryptoServiceProvider(512);
         private RSAParameters PrivateKey;
         private RSAParameters PublicKey;
         private string ServerPublicKey;
@@ -26,23 +26,20 @@ namespace _22_Банк.encrypt
             PrivateKey = CryptoServiceProvider.ExportParameters(true);
             PublicKey = CryptoServiceProvider.ExportParameters(false);
         }
-        public byte[] Decrypt(string text)
+        public byte[] Decrypt(byte[] data)
         {
-            if (string.IsNullOrWhiteSpace(text))
-                throw new ArgumentException(nameof(text));
-            byte[] data = Convert.FromBase64String(text);
             CryptoServiceProvider.ImportParameters(PrivateKey);
             byte[] decrypteData = CryptoServiceProvider.Decrypt(data, false);
             return decrypteData;
         }
-        public byte[] Encrypt(string text)
+        public byte[] Encrypt(byte[] data)
         {
-            if (string.IsNullOrWhiteSpace(text))
-                throw new ArgumentException(nameof(text));
+            //if (string.IsNullOrWhiteSpace(text))
+                //throw new ArgumentException(nameof(text));
             RSAParameters key = KeyToRsa(ServerPublicKey);
             CryptoServiceProvider.ImportParameters(key);
-            byte[] data = CryptoServiceProvider.Encrypt(Encoding.UTF8.GetBytes(text), false);
-            return data;
+            byte[] encryptData = CryptoServiceProvider.Encrypt(data, false);
+            return encryptData;
         }
         private RSAParameters KeyToRsa(string key)
         {

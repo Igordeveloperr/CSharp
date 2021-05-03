@@ -14,5 +14,9 @@ namespace _13_Методы_Расширения
             }
             return false;
         }
+        public static int Test(this string str)
+        {
+            return 111111111;
+        }
     }
 }

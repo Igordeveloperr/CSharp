@@ -7,7 +7,9 @@ namespace _13_Методы_Расширения
         static void Main(string[] args)
         {
             int a = 988;
-            Console.WriteLine(a.IsEven());   
+            Console.WriteLine(a.IsEven());
+            string anyString = "aaaaaa";
+            Console.WriteLine(anyString.Test());
         }
     }
 }

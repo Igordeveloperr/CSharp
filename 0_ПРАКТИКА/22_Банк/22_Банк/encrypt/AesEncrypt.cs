@@ -59,8 +59,8 @@ namespace _22_Банк.encrypt
             byte[] data = Convert.FromBase64String(text);
             using (var aes = System.Security.Cryptography.Aes.Create())
             {
-                aes.KeySize = 128;
-                aes.BlockSize = 128;
+                aes.KeySize = 64;
+                aes.BlockSize = 64;
                 aes.Padding = PaddingMode.Zeros;
 
                 aes.Key = Key;

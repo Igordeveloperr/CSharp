@@ -11,6 +11,7 @@ namespace ServerBank.controller
 {
     internal class EncryptController : Controller
     {
+        private static RsaEncrypt rsa = new RsaEncrypt();
         public EncryptController()
         {
             ControllerType = RequestType.encrypt;
@@ -18,17 +19,21 @@ namespace ServerBank.controller
         public override void ControllerStartWork(string json, TcpClient client)
         {
             RequestObject request = JsonConvert.DeserializeObject<RequestObject>(json);
-            RsaEncrypt rsa = new RsaEncrypt();
+            string key = rsa.PublicKeyTostring();
             ConnectionChannel channel = new ConnectionChannel();
             if(request.Key == null || request.Iv == null)
             {
-                string key = rsa.PublicKeyTostring();
+                Console.WriteLine(key);
                 byte[] data = Encoding.UTF8.GetBytes(key);
                 channel.SendDataToChannel(data, client);
             }
             else
-            {
-                
+            {   
+                var aesKey = rsa.Decrypt(request.Key);
+                var iv = rsa.Decrypt(request.Iv);
+                var aes = new AesEncrypt(aesKey, iv);
+                var encData = aes.DecryptString(request.Data);
+                Console.WriteLine(encData);
             }
         }
     }
