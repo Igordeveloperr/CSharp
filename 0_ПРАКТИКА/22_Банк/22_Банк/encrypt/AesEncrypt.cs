@@ -54,9 +54,8 @@ namespace _22_Банк.encrypt
         /// </summary>
         /// <param name="data"></param>
         /// <returns>Encrypted input data</returns>
-        public byte[] Encrypt(string text)
+        public byte[] Encrypt(byte[] text)
         {
-            byte[] data = Convert.FromBase64String(text);
             using (var aes = System.Security.Cryptography.Aes.Create())
             {
                 aes.KeySize = 64;
@@ -68,7 +67,7 @@ namespace _22_Банк.encrypt
 
                 using (var encryptor = aes.CreateEncryptor(aes.Key, aes.IV))
                 {
-                    return PerformCryptography(data, encryptor);
+                    return PerformCryptography(text, encryptor);
                 }
             }
         }
@@ -77,9 +76,8 @@ namespace _22_Банк.encrypt
         /// </summary>
         /// <param name="encryptedData"></param>
         /// <returns>Decrypted input data</returns>
-        public byte[] Decrypt(string text)
+        public byte[] Decrypt(byte[] text)
         {
-            byte[] encryptedData = Convert.FromBase64String(text);
             using (var aes = System.Security.Cryptography.Aes.Create())
             {
                 aes.KeySize = 128;
@@ -91,7 +89,7 @@ namespace _22_Банк.encrypt
 
                 using (var decryptor = aes.CreateDecryptor(aes.Key, aes.IV))
                 {
-                    return PerformCryptography(encryptedData, decryptor);
+                    return PerformCryptography(text, decryptor);
                 }
             }
         }

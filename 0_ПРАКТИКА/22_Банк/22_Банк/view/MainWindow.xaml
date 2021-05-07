@@ -5,12 +5,20 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:_22_Банк" xmlns:viewmodel="clr-namespace:_22_Банк.viewModel"
         mc:Ignorable="d"
-        Title="Main" Height="450" Width="800">
+        Title="Main" Height="720" Width="850">
     <Window.DataContext>
         <viewmodel:MainViewModel/>
     </Window.DataContext>
     <Grid>
-        <TextBlock Text="{Binding Str}" Width="100" Height="100" FontSize="27" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-        <Button Width="100" Height="100" Content="cont2ent" VerticalAlignment="Top" Command="{Binding ClickAdd}"/>
+        <StackPanel>
+            <StackPanel.Background>
+                <ImageBrush ImageSource=".\img\2.jpg"/>
+            </StackPanel.Background>
+            <TextBlock Text="Логин" FontSize="28" FontWeight="Bold" Foreground="#000" TextAlignment="Left" Width="640" Margin="0,160,0,10"/>
+            <TextBox Width="640" Text="{Binding Name}" Height="40" Padding="5,5,0,5" Foreground="#000" Margin="0,5,0,15" FontSize="22"/>
+            <TextBlock Text="Пароль" FontSize="28" FontWeight="Bold" Foreground="#000" TextAlignment="Left" Width="640" Margin="0,0,0,10"/>
+            <TextBox Text="{Binding Password}" Width="640" Height="40" Padding="5,5,0,5" Foreground="#000" Margin="0,5,0,15" FontSize="22"/>
+            <Button Focusable="False" Width="200" Height="40" Content="Войти" FontSize="22" Background="#4b6584" Foreground="#fff" Command="{Binding ClickAdd}"/>
+        </StackPanel>
     </Grid>
 </Window>

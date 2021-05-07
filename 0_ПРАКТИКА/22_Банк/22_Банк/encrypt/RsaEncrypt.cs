@@ -7,7 +7,7 @@ using System.Xml.Serialization;
 
 namespace _22_Банк.encrypt
 {
-    public class RsaEncrypt 
+    public class RsaEncrypt : IEncrypt
     {
         private RSACryptoServiceProvider CryptoServiceProvider = new RSACryptoServiceProvider(512);
         private RSAParameters PrivateKey;

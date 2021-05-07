@@ -6,7 +6,7 @@ namespace _22_Банк.encrypt
 {
     public interface IEncrypt
     {
-        public byte[] Encrypt(string text);
-        public byte[] Decrypt(string text);
+        public byte[] Encrypt(byte[] text);
+        public byte[] Decrypt(byte[] text);
     }
 }
