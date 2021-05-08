@@ -20,8 +20,8 @@ namespace _22_Банк.viewModel
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(property));
         }
-        private string name;
-        private string password;
+        private string name = string.Empty;
+        private string password = string.Empty;
         public string Name
         {
             get
@@ -46,44 +46,29 @@ namespace _22_Банк.viewModel
                 OnPropertyChanged();
             }
         }
-        private string str;
-        public string Str
-        {
-            get
-            {
-                return str;
-            }
-            set
-            {
-                str = value;
-                OnPropertyChanged();
-            }
-        }
-        public ICommand ClickAdd
+        public ICommand LoginIn
         {
             get
             {
                 return new MyCommand(async(obj)=>
                 {
-                    MessageBox.Show(name);
-                    bool check = CheckUserData();
-                    if (check)
+                    bool isReady = CheckUserData();
+                    if (isReady)
                     {
                         string response = await GetServerPublicKey();
-                        SendData(response);
+                        await Task.Run(() => SendData(response));
                     }
                 });
             }
         }
         public MainViewModel()
         {
-
         }
         private bool CheckUserData()
         {
-            if(string.IsNullOrWhiteSpace(name) || string.IsNullOrWhiteSpace(password))
+            if(string.IsNullOrWhiteSpace(password) || string.IsNullOrWhiteSpace(name))
             {
-               
+                MessageBox.Show("Заполните все поля!");
                 return false;
             }
             return true;
@@ -100,8 +85,9 @@ namespace _22_Банк.viewModel
         {
             var rsa = new RsaEncrypt(response);
             var aes = new AesEncrypt();
-            byte[] login = aes.EncryptString("Bob");
-            byte[] data = new RequestObject(rsa.Encrypt(aes.Key), rsa.Encrypt(aes.IV), login, RequestType.authorization).ToByteArray();
+            var request = new AuthorizationRequest(RequestType.authorization, name, password);
+            byte[] encRequest = aes.EncryptString(request.ToJson());
+            byte[] data = new RequestObject(rsa.Encrypt(aes.Key), rsa.Encrypt(aes.IV), encRequest, RequestType.authorization).ToByteArray();
             response = await new RequestSendler(data).SendRequest();
         }
     }
