@@ -7,6 +7,8 @@ using _22_Банк.encrypt;
 using _22_Банк.model.request;
 using _22_Банк.model.request.requests;
 using Newtonsoft.Json;
+using ServerBank.db;
+using ServerBank.db.entities;
 
 namespace ServerBank.controller
 {
@@ -33,7 +35,13 @@ namespace ServerBank.controller
                 var iv = rsa.Decrypt(request.Iv);
                 var aes = new AesEncrypt(aesKey, iv);
                 var encData = aes.DecryptString(request.Data);
-                Console.WriteLine(encData);
+                using (UserContext db = new UserContext())
+                {
+                    var user = new User { Name = "test", Password = "1" };
+                    var a = db.Users;
+                    a.Add(user);
+                    Console.WriteLine(11111111111111);
+                }
             }
         }
     }

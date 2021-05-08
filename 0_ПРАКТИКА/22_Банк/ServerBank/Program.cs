@@ -1,4 +1,6 @@
 ﻿using ServerBank.controller;
+using ServerBank.db;
+using ServerBank.db.entities;
 using ServerBank.routing;
 using System;
 using System.Net.Sockets;

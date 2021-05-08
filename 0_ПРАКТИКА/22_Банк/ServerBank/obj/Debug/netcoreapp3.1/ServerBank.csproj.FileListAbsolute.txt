@@ -7,7 +7,6 @@ E:\Igor\8_CSharp\0_ПРАКТИКА\22_Банк\ServerBank\bin\Debug\netcoreapp3
 E:\Igor\8_CSharp\0_ПРАКТИКА\22_Банк\ServerBank\obj\Debug\netcoreapp3.1\ServerBank.csprojAssemblyReference.cache
 E:\Igor\8_CSharp\0_ПРАКТИКА\22_Банк\ServerBank\obj\Debug\netcoreapp3.1\ServerBank.AssemblyInfoInputs.cache
 E:\Igor\8_CSharp\0_ПРАКТИКА\22_Банк\ServerBank\obj\Debug\netcoreapp3.1\ServerBank.AssemblyInfo.cs
-E:\Igor\8_CSharp\0_ПРАКТИКА\22_Банк\ServerBank\obj\Debug\netcoreapp3.1\ServerBank.csproj.CoreCompileInputs.cache
 E:\Igor\8_CSharp\0_ПРАКТИКА\22_Банк\ServerBank\obj\Debug\netcoreapp3.1\ServerBank.dll
 E:\Igor\8_CSharp\0_ПРАКТИКА\22_Банк\ServerBank\obj\Debug\netcoreapp3.1\ServerBank.pdb
 E:\Igor\8_CSharp\0_ПРАКТИКА\22_Банк\ServerBank\obj\Debug\netcoreapp3.1\ServerBank.genruntimeconfig.cache
@@ -16,3 +15,13 @@ E:\Igor\8_CSharp\0_ПРАКТИКА\22_Банк\ServerBank\bin\Debug\netcoreapp3
 E:\Igor\8_CSharp\0_ПРАКТИКА\22_Банк\ServerBank\bin\Debug\netcoreapp3.1\22_Банк.dll
 E:\Igor\8_CSharp\0_ПРАКТИКА\22_Банк\ServerBank\bin\Debug\netcoreapp3.1\22_Банк.pdb
 E:\Igor\8_CSharp\0_ПРАКТИКА\22_Банк\ServerBank\obj\Debug\netcoreapp3.1\ServerBank.csproj.CopyComplete
+E:\Igor\8_CSharp\0_ПРАКТИКА\22_Банк\ServerBank\bin\Debug\netcoreapp3.1\ServerBank.dll.config
+E:\Igor\8_CSharp\0_ПРАКТИКА\22_Банк\ServerBank\bin\Debug\netcoreapp3.1\EntityFramework.SqlServer.dll
+E:\Igor\8_CSharp\0_ПРАКТИКА\22_Банк\ServerBank\bin\Debug\netcoreapp3.1\EntityFramework.dll
+E:\Igor\8_CSharp\0_ПРАКТИКА\22_Банк\ServerBank\bin\Debug\netcoreapp3.1\System.Data.SqlClient.dll
+E:\Igor\8_CSharp\0_ПРАКТИКА\22_Банк\ServerBank\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
+E:\Igor\8_CSharp\0_ПРАКТИКА\22_Банк\ServerBank\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sni.dll
+E:\Igor\8_CSharp\0_ПРАКТИКА\22_Банк\ServerBank\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
+E:\Igor\8_CSharp\0_ПРАКТИКА\22_Банк\ServerBank\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+E:\Igor\8_CSharp\0_ПРАКТИКА\22_Банк\ServerBank\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+E:\Igor\8_CSharp\0_ПРАКТИКА\22_Банк\ServerBank\obj\Debug\netcoreapp3.1\ServerBank.csproj.CoreCompileInputs.cache
