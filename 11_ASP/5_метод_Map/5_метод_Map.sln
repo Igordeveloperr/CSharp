@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30611.23
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "5_метод_Map", "5_метод_Map\5_метод_Map.csproj", "{0C43A2C5-212C-4A9F-AD55-25E58AED4C59}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0C43A2C5-212C-4A9F-AD55-25E58AED4C59}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C43A2C5-212C-4A9F-AD55-25E58AED4C59}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C43A2C5-212C-4A9F-AD55-25E58AED4C59}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C43A2C5-212C-4A9F-AD55-25E58AED4C59}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A5F52A29-F857-474B-A39E-4984178D4A30}
+	EndGlobalSection
+EndGlobal
