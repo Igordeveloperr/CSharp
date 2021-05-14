@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Igor\\8_CSharp\\0_ПРАКТИКА\\19_DataBaseLibrery\\19_DataBaseLibrery\\19_DataBaseLibrery.csproj": {}
+    "E:\\Igor\\8_CSharp\\11_ASP\\7_конвейер_обработки_запросов\\7_конвейер_обработки_запросов\\7_конвейер_обработки_запросов.csproj": {}
   },
   "projects": {
-    "E:\\Igor\\8_CSharp\\0_ПРАКТИКА\\19_DataBaseLibrery\\19_DataBaseLibrery\\19_DataBaseLibrery.csproj": {
+    "E:\\Igor\\8_CSharp\\11_ASP\\7_конвейер_обработки_запросов\\7_конвейер_обработки_запросов\\7_конвейер_обработки_запросов.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Igor\\8_CSharp\\0_ПРАКТИКА\\19_DataBaseLibrery\\19_DataBaseLibrery\\19_DataBaseLibrery.csproj",
-        "projectName": "19_DataBaseLibrery",
-        "projectPath": "E:\\Igor\\8_CSharp\\0_ПРАКТИКА\\19_DataBaseLibrery\\19_DataBaseLibrery\\19_DataBaseLibrery.csproj",
+        "projectUniqueName": "E:\\Igor\\8_CSharp\\11_ASP\\7_конвейер_обработки_запросов\\7_конвейер_обработки_запросов\\7_конвейер_обработки_запросов.csproj",
+        "projectName": "7_конвейер_обработки_запросов",
+        "projectPath": "E:\\Igor\\8_CSharp\\11_ASP\\7_конвейер_обработки_запросов\\7_конвейер_обработки_запросов\\7_конвейер_обработки_запросов.csproj",
         "packagesPath": "C:\\Users\\программирование\\.nuget\\packages\\",
-        "outputPath": "E:\\Igor\\8_CSharp\\0_ПРАКТИКА\\19_DataBaseLibrery\\19_DataBaseLibrery\\obj\\",
+        "outputPath": "E:\\Igor\\8_CSharp\\11_ASP\\7_конвейер_обработки_запросов\\7_конвейер_обработки_запросов\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\программирование\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -37,12 +37,6 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "dependencies": {
-            "MySql.Data": {
-              "target": "Package",
-              "version": "[8.0.23, )"
-            }
-          },
           "imports": [
             "net461",
             "net462",
@@ -54,6 +48,9 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
