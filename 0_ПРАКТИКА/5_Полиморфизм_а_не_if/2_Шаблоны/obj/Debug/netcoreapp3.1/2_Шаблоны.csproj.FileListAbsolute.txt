@@ -1,0 +1,13 @@
+E:\Igor\8_CSharp\7_ВТОРОЙ_УРОВЕНЬ\2_Шаблоны\2_Шаблоны\bin\Debug\netcoreapp3.1\2_Шаблоны.exe
+E:\Igor\8_CSharp\7_ВТОРОЙ_УРОВЕНЬ\2_Шаблоны\2_Шаблоны\bin\Debug\netcoreapp3.1\2_Шаблоны.deps.json
+E:\Igor\8_CSharp\7_ВТОРОЙ_УРОВЕНЬ\2_Шаблоны\2_Шаблоны\bin\Debug\netcoreapp3.1\2_Шаблоны.runtimeconfig.json
+E:\Igor\8_CSharp\7_ВТОРОЙ_УРОВЕНЬ\2_Шаблоны\2_Шаблоны\bin\Debug\netcoreapp3.1\2_Шаблоны.runtimeconfig.dev.json
+E:\Igor\8_CSharp\7_ВТОРОЙ_УРОВЕНЬ\2_Шаблоны\2_Шаблоны\bin\Debug\netcoreapp3.1\2_Шаблоны.dll
+E:\Igor\8_CSharp\7_ВТОРОЙ_УРОВЕНЬ\2_Шаблоны\2_Шаблоны\bin\Debug\netcoreapp3.1\2_Шаблоны.pdb
+E:\Igor\8_CSharp\7_ВТОРОЙ_УРОВЕНЬ\2_Шаблоны\2_Шаблоны\obj\Debug\netcoreapp3.1\2_Шаблоны.csprojAssemblyReference.cache
+E:\Igor\8_CSharp\7_ВТОРОЙ_УРОВЕНЬ\2_Шаблоны\2_Шаблоны\obj\Debug\netcoreapp3.1\2_Шаблоны.AssemblyInfoInputs.cache
+E:\Igor\8_CSharp\7_ВТОРОЙ_УРОВЕНЬ\2_Шаблоны\2_Шаблоны\obj\Debug\netcoreapp3.1\2_Шаблоны.AssemblyInfo.cs
+E:\Igor\8_CSharp\7_ВТОРОЙ_УРОВЕНЬ\2_Шаблоны\2_Шаблоны\obj\Debug\netcoreapp3.1\2_Шаблоны.csproj.CoreCompileInputs.cache
+E:\Igor\8_CSharp\7_ВТОРОЙ_УРОВЕНЬ\2_Шаблоны\2_Шаблоны\obj\Debug\netcoreapp3.1\2_Шаблоны.dll
+E:\Igor\8_CSharp\7_ВТОРОЙ_УРОВЕНЬ\2_Шаблоны\2_Шаблоны\obj\Debug\netcoreapp3.1\2_Шаблоны.pdb
+E:\Igor\8_CSharp\7_ВТОРОЙ_УРОВЕНЬ\2_Шаблоны\2_Шаблоны\obj\Debug\netcoreapp3.1\2_Шаблоны.genruntimeconfig.cache

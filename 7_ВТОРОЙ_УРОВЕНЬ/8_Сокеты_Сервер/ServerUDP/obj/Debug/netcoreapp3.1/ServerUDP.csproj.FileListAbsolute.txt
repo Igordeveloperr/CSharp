@@ -1,0 +1,13 @@
+E:\Igor\8_CSharp\7_ВТОРОЙ_УРОВЕНЬ\8_Сокеты_Сервер\ServerUDP\bin\Debug\netcoreapp3.1\ServerUDP.exe
+E:\Igor\8_CSharp\7_ВТОРОЙ_УРОВЕНЬ\8_Сокеты_Сервер\ServerUDP\bin\Debug\netcoreapp3.1\ServerUDP.deps.json
+E:\Igor\8_CSharp\7_ВТОРОЙ_УРОВЕНЬ\8_Сокеты_Сервер\ServerUDP\bin\Debug\netcoreapp3.1\ServerUDP.runtimeconfig.json
+E:\Igor\8_CSharp\7_ВТОРОЙ_УРОВЕНЬ\8_Сокеты_Сервер\ServerUDP\bin\Debug\netcoreapp3.1\ServerUDP.runtimeconfig.dev.json
+E:\Igor\8_CSharp\7_ВТОРОЙ_УРОВЕНЬ\8_Сокеты_Сервер\ServerUDP\bin\Debug\netcoreapp3.1\ServerUDP.dll
+E:\Igor\8_CSharp\7_ВТОРОЙ_УРОВЕНЬ\8_Сокеты_Сервер\ServerUDP\bin\Debug\netcoreapp3.1\ServerUDP.pdb
+E:\Igor\8_CSharp\7_ВТОРОЙ_УРОВЕНЬ\8_Сокеты_Сервер\ServerUDP\obj\Debug\netcoreapp3.1\ServerUDP.csprojAssemblyReference.cache
+E:\Igor\8_CSharp\7_ВТОРОЙ_УРОВЕНЬ\8_Сокеты_Сервер\ServerUDP\obj\Debug\netcoreapp3.1\ServerUDP.AssemblyInfoInputs.cache
+E:\Igor\8_CSharp\7_ВТОРОЙ_УРОВЕНЬ\8_Сокеты_Сервер\ServerUDP\obj\Debug\netcoreapp3.1\ServerUDP.AssemblyInfo.cs
+E:\Igor\8_CSharp\7_ВТОРОЙ_УРОВЕНЬ\8_Сокеты_Сервер\ServerUDP\obj\Debug\netcoreapp3.1\ServerUDP.csproj.CoreCompileInputs.cache
+E:\Igor\8_CSharp\7_ВТОРОЙ_УРОВЕНЬ\8_Сокеты_Сервер\ServerUDP\obj\Debug\netcoreapp3.1\ServerUDP.dll
+E:\Igor\8_CSharp\7_ВТОРОЙ_УРОВЕНЬ\8_Сокеты_Сервер\ServerUDP\obj\Debug\netcoreapp3.1\ServerUDP.pdb
+E:\Igor\8_CSharp\7_ВТОРОЙ_УРОВЕНЬ\8_Сокеты_Сервер\ServerUDP\obj\Debug\netcoreapp3.1\ServerUDP.genruntimeconfig.cache

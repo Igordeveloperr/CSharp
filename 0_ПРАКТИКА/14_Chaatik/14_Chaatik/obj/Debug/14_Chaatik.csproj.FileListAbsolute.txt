@@ -1,0 +1,10 @@
+E:\Igor\8_CSharp\0_ПРАКТИКА\14_Chaatik\14_Chaatik\bin\Debug\14_Chaatik.exe.config
+E:\Igor\8_CSharp\0_ПРАКТИКА\14_Chaatik\14_Chaatik\bin\Debug\14_Chaatik.exe
+E:\Igor\8_CSharp\0_ПРАКТИКА\14_Chaatik\14_Chaatik\bin\Debug\14_Chaatik.pdb
+E:\Igor\8_CSharp\0_ПРАКТИКА\14_Chaatik\14_Chaatik\obj\Debug\14_Chaatik.csprojAssemblyReference.cache
+E:\Igor\8_CSharp\0_ПРАКТИКА\14_Chaatik\14_Chaatik\obj\Debug\_14_Chaatik.Form1.resources
+E:\Igor\8_CSharp\0_ПРАКТИКА\14_Chaatik\14_Chaatik\obj\Debug\_14_Chaatik.Properties.Resources.resources
+E:\Igor\8_CSharp\0_ПРАКТИКА\14_Chaatik\14_Chaatik\obj\Debug\14_Chaatik.csproj.GenerateResource.cache
+E:\Igor\8_CSharp\0_ПРАКТИКА\14_Chaatik\14_Chaatik\obj\Debug\14_Chaatik.csproj.CoreCompileInputs.cache
+E:\Igor\8_CSharp\0_ПРАКТИКА\14_Chaatik\14_Chaatik\obj\Debug\14_Chaatik.exe
+E:\Igor\8_CSharp\0_ПРАКТИКА\14_Chaatik\14_Chaatik\obj\Debug\14_Chaatik.pdb

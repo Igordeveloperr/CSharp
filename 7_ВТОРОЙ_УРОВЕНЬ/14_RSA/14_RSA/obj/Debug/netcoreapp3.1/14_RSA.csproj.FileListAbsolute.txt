@@ -1,0 +1,13 @@
+E:\Igor\8_CSharp\7_ВТОРОЙ_УРОВЕНЬ\14_RSA\14_RSA\bin\Debug\netcoreapp3.1\14_RSA.exe
+E:\Igor\8_CSharp\7_ВТОРОЙ_УРОВЕНЬ\14_RSA\14_RSA\obj\Debug\netcoreapp3.1\14_RSA.csprojAssemblyReference.cache
+E:\Igor\8_CSharp\7_ВТОРОЙ_УРОВЕНЬ\14_RSA\14_RSA\obj\Debug\netcoreapp3.1\14_RSA.AssemblyInfoInputs.cache
+E:\Igor\8_CSharp\7_ВТОРОЙ_УРОВЕНЬ\14_RSA\14_RSA\obj\Debug\netcoreapp3.1\14_RSA.AssemblyInfo.cs
+E:\Igor\8_CSharp\7_ВТОРОЙ_УРОВЕНЬ\14_RSA\14_RSA\bin\Debug\netcoreapp3.1\14_RSA.deps.json
+E:\Igor\8_CSharp\7_ВТОРОЙ_УРОВЕНЬ\14_RSA\14_RSA\bin\Debug\netcoreapp3.1\14_RSA.runtimeconfig.json
+E:\Igor\8_CSharp\7_ВТОРОЙ_УРОВЕНЬ\14_RSA\14_RSA\bin\Debug\netcoreapp3.1\14_RSA.runtimeconfig.dev.json
+E:\Igor\8_CSharp\7_ВТОРОЙ_УРОВЕНЬ\14_RSA\14_RSA\bin\Debug\netcoreapp3.1\14_RSA.dll
+E:\Igor\8_CSharp\7_ВТОРОЙ_УРОВЕНЬ\14_RSA\14_RSA\bin\Debug\netcoreapp3.1\14_RSA.pdb
+E:\Igor\8_CSharp\7_ВТОРОЙ_УРОВЕНЬ\14_RSA\14_RSA\obj\Debug\netcoreapp3.1\14_RSA.csproj.CoreCompileInputs.cache
+E:\Igor\8_CSharp\7_ВТОРОЙ_УРОВЕНЬ\14_RSA\14_RSA\obj\Debug\netcoreapp3.1\14_RSA.dll
+E:\Igor\8_CSharp\7_ВТОРОЙ_УРОВЕНЬ\14_RSA\14_RSA\obj\Debug\netcoreapp3.1\14_RSA.pdb
+E:\Igor\8_CSharp\7_ВТОРОЙ_УРОВЕНЬ\14_RSA\14_RSA\obj\Debug\netcoreapp3.1\14_RSA.genruntimeconfig.cache

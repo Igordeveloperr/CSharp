@@ -1,0 +1,13 @@
+E:\Igor\8_CSharp\7_ВТОРОЙ_УРОВЕНЬ\12_LINQ\12_LINQ\bin\Debug\netcoreapp3.1\12_LINQ.exe
+E:\Igor\8_CSharp\7_ВТОРОЙ_УРОВЕНЬ\12_LINQ\12_LINQ\bin\Debug\netcoreapp3.1\12_LINQ.deps.json
+E:\Igor\8_CSharp\7_ВТОРОЙ_УРОВЕНЬ\12_LINQ\12_LINQ\bin\Debug\netcoreapp3.1\12_LINQ.runtimeconfig.json
+E:\Igor\8_CSharp\7_ВТОРОЙ_УРОВЕНЬ\12_LINQ\12_LINQ\bin\Debug\netcoreapp3.1\12_LINQ.runtimeconfig.dev.json
+E:\Igor\8_CSharp\7_ВТОРОЙ_УРОВЕНЬ\12_LINQ\12_LINQ\bin\Debug\netcoreapp3.1\12_LINQ.dll
+E:\Igor\8_CSharp\7_ВТОРОЙ_УРОВЕНЬ\12_LINQ\12_LINQ\bin\Debug\netcoreapp3.1\12_LINQ.pdb
+E:\Igor\8_CSharp\7_ВТОРОЙ_УРОВЕНЬ\12_LINQ\12_LINQ\obj\Debug\netcoreapp3.1\12_LINQ.csprojAssemblyReference.cache
+E:\Igor\8_CSharp\7_ВТОРОЙ_УРОВЕНЬ\12_LINQ\12_LINQ\obj\Debug\netcoreapp3.1\12_LINQ.AssemblyInfoInputs.cache
+E:\Igor\8_CSharp\7_ВТОРОЙ_УРОВЕНЬ\12_LINQ\12_LINQ\obj\Debug\netcoreapp3.1\12_LINQ.AssemblyInfo.cs
+E:\Igor\8_CSharp\7_ВТОРОЙ_УРОВЕНЬ\12_LINQ\12_LINQ\obj\Debug\netcoreapp3.1\12_LINQ.csproj.CoreCompileInputs.cache
+E:\Igor\8_CSharp\7_ВТОРОЙ_УРОВЕНЬ\12_LINQ\12_LINQ\obj\Debug\netcoreapp3.1\12_LINQ.dll
+E:\Igor\8_CSharp\7_ВТОРОЙ_УРОВЕНЬ\12_LINQ\12_LINQ\obj\Debug\netcoreapp3.1\12_LINQ.pdb
+E:\Igor\8_CSharp\7_ВТОРОЙ_УРОВЕНЬ\12_LINQ\12_LINQ\obj\Debug\netcoreapp3.1\12_LINQ.genruntimeconfig.cache

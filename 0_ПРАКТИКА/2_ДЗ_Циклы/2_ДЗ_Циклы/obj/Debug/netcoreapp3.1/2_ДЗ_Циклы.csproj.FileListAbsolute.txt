@@ -1,0 +1,13 @@
+E:\Igor\8_CSharp\0_ПРАКТИКА\2_ДЗ_Циклы\2_ДЗ_Циклы\bin\Debug\netcoreapp3.1\2_ДЗ_Циклы.exe
+E:\Igor\8_CSharp\0_ПРАКТИКА\2_ДЗ_Циклы\2_ДЗ_Циклы\bin\Debug\netcoreapp3.1\2_ДЗ_Циклы.deps.json
+E:\Igor\8_CSharp\0_ПРАКТИКА\2_ДЗ_Циклы\2_ДЗ_Циклы\bin\Debug\netcoreapp3.1\2_ДЗ_Циклы.runtimeconfig.json
+E:\Igor\8_CSharp\0_ПРАКТИКА\2_ДЗ_Циклы\2_ДЗ_Циклы\bin\Debug\netcoreapp3.1\2_ДЗ_Циклы.runtimeconfig.dev.json
+E:\Igor\8_CSharp\0_ПРАКТИКА\2_ДЗ_Циклы\2_ДЗ_Циклы\bin\Debug\netcoreapp3.1\2_ДЗ_Циклы.dll
+E:\Igor\8_CSharp\0_ПРАКТИКА\2_ДЗ_Циклы\2_ДЗ_Циклы\bin\Debug\netcoreapp3.1\2_ДЗ_Циклы.pdb
+E:\Igor\8_CSharp\0_ПРАКТИКА\2_ДЗ_Циклы\2_ДЗ_Циклы\obj\Debug\netcoreapp3.1\2_ДЗ_Циклы.csprojAssemblyReference.cache
+E:\Igor\8_CSharp\0_ПРАКТИКА\2_ДЗ_Циклы\2_ДЗ_Циклы\obj\Debug\netcoreapp3.1\2_ДЗ_Циклы.AssemblyInfoInputs.cache
+E:\Igor\8_CSharp\0_ПРАКТИКА\2_ДЗ_Циклы\2_ДЗ_Циклы\obj\Debug\netcoreapp3.1\2_ДЗ_Циклы.AssemblyInfo.cs
+E:\Igor\8_CSharp\0_ПРАКТИКА\2_ДЗ_Циклы\2_ДЗ_Циклы\obj\Debug\netcoreapp3.1\2_ДЗ_Циклы.csproj.CoreCompileInputs.cache
+E:\Igor\8_CSharp\0_ПРАКТИКА\2_ДЗ_Циклы\2_ДЗ_Циклы\obj\Debug\netcoreapp3.1\2_ДЗ_Циклы.dll
+E:\Igor\8_CSharp\0_ПРАКТИКА\2_ДЗ_Циклы\2_ДЗ_Циклы\obj\Debug\netcoreapp3.1\2_ДЗ_Циклы.pdb
+E:\Igor\8_CSharp\0_ПРАКТИКА\2_ДЗ_Циклы\2_ДЗ_Циклы\obj\Debug\netcoreapp3.1\2_ДЗ_Циклы.genruntimeconfig.cache

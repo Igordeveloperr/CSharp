@@ -1,0 +1,13 @@
+E:\Igor\8_CSharp\0_ПРАКТИКА\12_ЧАТ\ServerChatUDP\bin\Debug\netcoreapp3.1\ServerChatUDP.exe
+E:\Igor\8_CSharp\0_ПРАКТИКА\12_ЧАТ\ServerChatUDP\bin\Debug\netcoreapp3.1\ServerChatUDP.deps.json
+E:\Igor\8_CSharp\0_ПРАКТИКА\12_ЧАТ\ServerChatUDP\bin\Debug\netcoreapp3.1\ServerChatUDP.runtimeconfig.json
+E:\Igor\8_CSharp\0_ПРАКТИКА\12_ЧАТ\ServerChatUDP\bin\Debug\netcoreapp3.1\ServerChatUDP.runtimeconfig.dev.json
+E:\Igor\8_CSharp\0_ПРАКТИКА\12_ЧАТ\ServerChatUDP\bin\Debug\netcoreapp3.1\ServerChatUDP.dll
+E:\Igor\8_CSharp\0_ПРАКТИКА\12_ЧАТ\ServerChatUDP\bin\Debug\netcoreapp3.1\ServerChatUDP.pdb
+E:\Igor\8_CSharp\0_ПРАКТИКА\12_ЧАТ\ServerChatUDP\obj\Debug\netcoreapp3.1\ServerChatUDP.csprojAssemblyReference.cache
+E:\Igor\8_CSharp\0_ПРАКТИКА\12_ЧАТ\ServerChatUDP\obj\Debug\netcoreapp3.1\ServerChatUDP.AssemblyInfoInputs.cache
+E:\Igor\8_CSharp\0_ПРАКТИКА\12_ЧАТ\ServerChatUDP\obj\Debug\netcoreapp3.1\ServerChatUDP.AssemblyInfo.cs
+E:\Igor\8_CSharp\0_ПРАКТИКА\12_ЧАТ\ServerChatUDP\obj\Debug\netcoreapp3.1\ServerChatUDP.csproj.CoreCompileInputs.cache
+E:\Igor\8_CSharp\0_ПРАКТИКА\12_ЧАТ\ServerChatUDP\obj\Debug\netcoreapp3.1\ServerChatUDP.dll
+E:\Igor\8_CSharp\0_ПРАКТИКА\12_ЧАТ\ServerChatUDP\obj\Debug\netcoreapp3.1\ServerChatUDP.pdb
+E:\Igor\8_CSharp\0_ПРАКТИКА\12_ЧАТ\ServerChatUDP\obj\Debug\netcoreapp3.1\ServerChatUDP.genruntimeconfig.cache

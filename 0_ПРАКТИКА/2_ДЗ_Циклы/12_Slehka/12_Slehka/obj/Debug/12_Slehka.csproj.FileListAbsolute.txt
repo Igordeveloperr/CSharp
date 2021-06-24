@@ -1,0 +1,10 @@
+E:\Igor\8_CSharp\0_ПРАКТИКА\2_ДЗ_Циклы\12_Slehka\12_Slehka\bin\Debug\12_Slehka.exe.config
+E:\Igor\8_CSharp\0_ПРАКТИКА\2_ДЗ_Циклы\12_Slehka\12_Slehka\bin\Debug\12_Slehka.exe
+E:\Igor\8_CSharp\0_ПРАКТИКА\2_ДЗ_Циклы\12_Slehka\12_Slehka\bin\Debug\12_Slehka.pdb
+E:\Igor\8_CSharp\0_ПРАКТИКА\2_ДЗ_Циклы\12_Slehka\12_Slehka\obj\Debug\12_Slehka.csprojAssemblyReference.cache
+E:\Igor\8_CSharp\0_ПРАКТИКА\2_ДЗ_Циклы\12_Slehka\12_Slehka\obj\Debug\_12_Slehka.Form1.resources
+E:\Igor\8_CSharp\0_ПРАКТИКА\2_ДЗ_Циклы\12_Slehka\12_Slehka\obj\Debug\_12_Slehka.Properties.Resources.resources
+E:\Igor\8_CSharp\0_ПРАКТИКА\2_ДЗ_Циклы\12_Slehka\12_Slehka\obj\Debug\12_Slehka.csproj.GenerateResource.cache
+E:\Igor\8_CSharp\0_ПРАКТИКА\2_ДЗ_Циклы\12_Slehka\12_Slehka\obj\Debug\12_Slehka.csproj.CoreCompileInputs.cache
+E:\Igor\8_CSharp\0_ПРАКТИКА\2_ДЗ_Циклы\12_Slehka\12_Slehka\obj\Debug\12_Slehka.exe
+E:\Igor\8_CSharp\0_ПРАКТИКА\2_ДЗ_Циклы\12_Slehka\12_Slehka\obj\Debug\12_Slehka.pdb

@@ -1,0 +1,10 @@
+E:\Igor\8_CSharp\0_ПРАКТИКА\12_ЧАТ\12_ЧАТ\bin\Debug\12_ЧАТ.exe.config
+E:\Igor\8_CSharp\0_ПРАКТИКА\12_ЧАТ\12_ЧАТ\bin\Debug\12_ЧАТ.exe
+E:\Igor\8_CSharp\0_ПРАКТИКА\12_ЧАТ\12_ЧАТ\bin\Debug\12_ЧАТ.pdb
+E:\Igor\8_CSharp\0_ПРАКТИКА\12_ЧАТ\12_ЧАТ\obj\Debug\12_ЧАТ.csprojAssemblyReference.cache
+E:\Igor\8_CSharp\0_ПРАКТИКА\12_ЧАТ\12_ЧАТ\obj\Debug\_12_ЧАТ.Form1.resources
+E:\Igor\8_CSharp\0_ПРАКТИКА\12_ЧАТ\12_ЧАТ\obj\Debug\_12_ЧАТ.Properties.Resources.resources
+E:\Igor\8_CSharp\0_ПРАКТИКА\12_ЧАТ\12_ЧАТ\obj\Debug\12_ЧАТ.csproj.GenerateResource.cache
+E:\Igor\8_CSharp\0_ПРАКТИКА\12_ЧАТ\12_ЧАТ\obj\Debug\12_ЧАТ.csproj.CoreCompileInputs.cache
+E:\Igor\8_CSharp\0_ПРАКТИКА\12_ЧАТ\12_ЧАТ\obj\Debug\12_ЧАТ.exe
+E:\Igor\8_CSharp\0_ПРАКТИКА\12_ЧАТ\12_ЧАТ\obj\Debug\12_ЧАТ.pdb

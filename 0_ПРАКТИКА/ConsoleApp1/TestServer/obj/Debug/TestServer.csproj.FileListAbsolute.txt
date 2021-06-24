@@ -1,0 +1,10 @@
+E:\Igor\8_CSharp\0_ПРАКТИКА\ConsoleApp1\TestServer\bin\Debug\TestServer.exe.config
+E:\Igor\8_CSharp\0_ПРАКТИКА\ConsoleApp1\TestServer\bin\Debug\TestServer.exe
+E:\Igor\8_CSharp\0_ПРАКТИКА\ConsoleApp1\TestServer\bin\Debug\TestServer.pdb
+E:\Igor\8_CSharp\0_ПРАКТИКА\ConsoleApp1\TestServer\obj\Debug\TestServer.csprojAssemblyReference.cache
+E:\Igor\8_CSharp\0_ПРАКТИКА\ConsoleApp1\TestServer\obj\Debug\TestServer.Form1.resources
+E:\Igor\8_CSharp\0_ПРАКТИКА\ConsoleApp1\TestServer\obj\Debug\TestServer.Properties.Resources.resources
+E:\Igor\8_CSharp\0_ПРАКТИКА\ConsoleApp1\TestServer\obj\Debug\TestServer.csproj.GenerateResource.cache
+E:\Igor\8_CSharp\0_ПРАКТИКА\ConsoleApp1\TestServer\obj\Debug\TestServer.csproj.CoreCompileInputs.cache
+E:\Igor\8_CSharp\0_ПРАКТИКА\ConsoleApp1\TestServer\obj\Debug\TestServer.exe
+E:\Igor\8_CSharp\0_ПРАКТИКА\ConsoleApp1\TestServer\obj\Debug\TestServer.pdb

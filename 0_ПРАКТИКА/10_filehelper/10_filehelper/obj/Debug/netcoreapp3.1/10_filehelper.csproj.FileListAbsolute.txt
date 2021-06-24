@@ -1,0 +1,13 @@
+E:\Igor\8_CSharp\0_ПРАКТИКА\10_filehelper\10_filehelper\bin\Debug\netcoreapp3.1\10_filehelper.exe
+E:\Igor\8_CSharp\0_ПРАКТИКА\10_filehelper\10_filehelper\bin\Debug\netcoreapp3.1\10_filehelper.deps.json
+E:\Igor\8_CSharp\0_ПРАКТИКА\10_filehelper\10_filehelper\bin\Debug\netcoreapp3.1\10_filehelper.runtimeconfig.json
+E:\Igor\8_CSharp\0_ПРАКТИКА\10_filehelper\10_filehelper\bin\Debug\netcoreapp3.1\10_filehelper.runtimeconfig.dev.json
+E:\Igor\8_CSharp\0_ПРАКТИКА\10_filehelper\10_filehelper\bin\Debug\netcoreapp3.1\10_filehelper.dll
+E:\Igor\8_CSharp\0_ПРАКТИКА\10_filehelper\10_filehelper\bin\Debug\netcoreapp3.1\10_filehelper.pdb
+E:\Igor\8_CSharp\0_ПРАКТИКА\10_filehelper\10_filehelper\obj\Debug\netcoreapp3.1\10_filehelper.csprojAssemblyReference.cache
+E:\Igor\8_CSharp\0_ПРАКТИКА\10_filehelper\10_filehelper\obj\Debug\netcoreapp3.1\10_filehelper.AssemblyInfoInputs.cache
+E:\Igor\8_CSharp\0_ПРАКТИКА\10_filehelper\10_filehelper\obj\Debug\netcoreapp3.1\10_filehelper.AssemblyInfo.cs
+E:\Igor\8_CSharp\0_ПРАКТИКА\10_filehelper\10_filehelper\obj\Debug\netcoreapp3.1\10_filehelper.csproj.CoreCompileInputs.cache
+E:\Igor\8_CSharp\0_ПРАКТИКА\10_filehelper\10_filehelper\obj\Debug\netcoreapp3.1\10_filehelper.dll
+E:\Igor\8_CSharp\0_ПРАКТИКА\10_filehelper\10_filehelper\obj\Debug\netcoreapp3.1\10_filehelper.pdb
+E:\Igor\8_CSharp\0_ПРАКТИКА\10_filehelper\10_filehelper\obj\Debug\netcoreapp3.1\10_filehelper.genruntimeconfig.cache

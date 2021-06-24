@@ -1,0 +1,13 @@
+E:\Igor\8_CSharp\6_ООП\3_Методы\3_Методы\bin\Debug\netcoreapp3.1\3_Методы.exe
+E:\Igor\8_CSharp\6_ООП\3_Методы\3_Методы\bin\Debug\netcoreapp3.1\3_Методы.deps.json
+E:\Igor\8_CSharp\6_ООП\3_Методы\3_Методы\bin\Debug\netcoreapp3.1\3_Методы.runtimeconfig.json
+E:\Igor\8_CSharp\6_ООП\3_Методы\3_Методы\bin\Debug\netcoreapp3.1\3_Методы.runtimeconfig.dev.json
+E:\Igor\8_CSharp\6_ООП\3_Методы\3_Методы\bin\Debug\netcoreapp3.1\3_Методы.dll
+E:\Igor\8_CSharp\6_ООП\3_Методы\3_Методы\bin\Debug\netcoreapp3.1\3_Методы.pdb
+E:\Igor\8_CSharp\6_ООП\3_Методы\3_Методы\obj\Debug\netcoreapp3.1\3_Методы.csprojAssemblyReference.cache
+E:\Igor\8_CSharp\6_ООП\3_Методы\3_Методы\obj\Debug\netcoreapp3.1\3_Методы.AssemblyInfoInputs.cache
+E:\Igor\8_CSharp\6_ООП\3_Методы\3_Методы\obj\Debug\netcoreapp3.1\3_Методы.AssemblyInfo.cs
+E:\Igor\8_CSharp\6_ООП\3_Методы\3_Методы\obj\Debug\netcoreapp3.1\3_Методы.csproj.CoreCompileInputs.cache
+E:\Igor\8_CSharp\6_ООП\3_Методы\3_Методы\obj\Debug\netcoreapp3.1\3_Методы.dll
+E:\Igor\8_CSharp\6_ООП\3_Методы\3_Методы\obj\Debug\netcoreapp3.1\3_Методы.pdb
+E:\Igor\8_CSharp\6_ООП\3_Методы\3_Методы\obj\Debug\netcoreapp3.1\3_Методы.genruntimeconfig.cache

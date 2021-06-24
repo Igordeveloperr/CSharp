@@ -1,0 +1,10 @@
+C:\Users\Dom\Desktop\The-basis-of-CScharp\$НАРАБОТКИ\CorrectionExeption\CorrectionExeption\bin\Debug\CorrectionExeption.exe.config
+C:\Users\Dom\Desktop\The-basis-of-CScharp\$НАРАБОТКИ\CorrectionExeption\CorrectionExeption\bin\Debug\CorrectionExeption.exe
+C:\Users\Dom\Desktop\The-basis-of-CScharp\$НАРАБОТКИ\CorrectionExeption\CorrectionExeption\bin\Debug\CorrectionExeption.pdb
+C:\Users\Dom\Desktop\The-basis-of-CScharp\$НАРАБОТКИ\CorrectionExeption\CorrectionExeption\obj\Debug\CorrectionExeption.csprojAssemblyReference.cache
+C:\Users\Dom\Desktop\The-basis-of-CScharp\$НАРАБОТКИ\CorrectionExeption\CorrectionExeption\obj\Debug\CorrectionExeption.Form1.resources
+C:\Users\Dom\Desktop\The-basis-of-CScharp\$НАРАБОТКИ\CorrectionExeption\CorrectionExeption\obj\Debug\CorrectionExeption.Properties.Resources.resources
+C:\Users\Dom\Desktop\The-basis-of-CScharp\$НАРАБОТКИ\CorrectionExeption\CorrectionExeption\obj\Debug\CorrectionExeption.csproj.GenerateResource.cache
+C:\Users\Dom\Desktop\The-basis-of-CScharp\$НАРАБОТКИ\CorrectionExeption\CorrectionExeption\obj\Debug\CorrectionExeption.csproj.CoreCompileInputs.cache
+C:\Users\Dom\Desktop\The-basis-of-CScharp\$НАРАБОТКИ\CorrectionExeption\CorrectionExeption\obj\Debug\CorrectionExeption.exe
+C:\Users\Dom\Desktop\The-basis-of-CScharp\$НАРАБОТКИ\CorrectionExeption\CorrectionExeption\obj\Debug\CorrectionExeption.pdb

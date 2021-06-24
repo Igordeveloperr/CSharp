@@ -1,0 +1,13 @@
+E:\Igor\8_CSharp\0_ПРАКТИКА\18_exaptionPacush\18_exaptionPacush\bin\Debug\netcoreapp3.1\18_exaptionPacush.exe
+E:\Igor\8_CSharp\0_ПРАКТИКА\18_exaptionPacush\18_exaptionPacush\bin\Debug\netcoreapp3.1\18_exaptionPacush.deps.json
+E:\Igor\8_CSharp\0_ПРАКТИКА\18_exaptionPacush\18_exaptionPacush\bin\Debug\netcoreapp3.1\18_exaptionPacush.runtimeconfig.json
+E:\Igor\8_CSharp\0_ПРАКТИКА\18_exaptionPacush\18_exaptionPacush\bin\Debug\netcoreapp3.1\18_exaptionPacush.runtimeconfig.dev.json
+E:\Igor\8_CSharp\0_ПРАКТИКА\18_exaptionPacush\18_exaptionPacush\bin\Debug\netcoreapp3.1\18_exaptionPacush.dll
+E:\Igor\8_CSharp\0_ПРАКТИКА\18_exaptionPacush\18_exaptionPacush\bin\Debug\netcoreapp3.1\18_exaptionPacush.pdb
+E:\Igor\8_CSharp\0_ПРАКТИКА\18_exaptionPacush\18_exaptionPacush\obj\Debug\netcoreapp3.1\18_exaptionPacush.csprojAssemblyReference.cache
+E:\Igor\8_CSharp\0_ПРАКТИКА\18_exaptionPacush\18_exaptionPacush\obj\Debug\netcoreapp3.1\18_exaptionPacush.AssemblyInfoInputs.cache
+E:\Igor\8_CSharp\0_ПРАКТИКА\18_exaptionPacush\18_exaptionPacush\obj\Debug\netcoreapp3.1\18_exaptionPacush.AssemblyInfo.cs
+E:\Igor\8_CSharp\0_ПРАКТИКА\18_exaptionPacush\18_exaptionPacush\obj\Debug\netcoreapp3.1\18_exaptionPacush.csproj.CoreCompileInputs.cache
+E:\Igor\8_CSharp\0_ПРАКТИКА\18_exaptionPacush\18_exaptionPacush\obj\Debug\netcoreapp3.1\18_exaptionPacush.dll
+E:\Igor\8_CSharp\0_ПРАКТИКА\18_exaptionPacush\18_exaptionPacush\obj\Debug\netcoreapp3.1\18_exaptionPacush.pdb
+E:\Igor\8_CSharp\0_ПРАКТИКА\18_exaptionPacush\18_exaptionPacush\obj\Debug\netcoreapp3.1\18_exaptionPacush.genruntimeconfig.cache

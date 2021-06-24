@@ -1,0 +1,13 @@
+E:\Igor\8_CSharp\7_ВТОРОЙ_УРОВЕНЬ\8_Сокеты_Сервер\ClientTCP\bin\Debug\netcoreapp3.1\ClientTCP.exe
+E:\Igor\8_CSharp\7_ВТОРОЙ_УРОВЕНЬ\8_Сокеты_Сервер\ClientTCP\bin\Debug\netcoreapp3.1\ClientTCP.deps.json
+E:\Igor\8_CSharp\7_ВТОРОЙ_УРОВЕНЬ\8_Сокеты_Сервер\ClientTCP\bin\Debug\netcoreapp3.1\ClientTCP.runtimeconfig.json
+E:\Igor\8_CSharp\7_ВТОРОЙ_УРОВЕНЬ\8_Сокеты_Сервер\ClientTCP\bin\Debug\netcoreapp3.1\ClientTCP.runtimeconfig.dev.json
+E:\Igor\8_CSharp\7_ВТОРОЙ_УРОВЕНЬ\8_Сокеты_Сервер\ClientTCP\bin\Debug\netcoreapp3.1\ClientTCP.dll
+E:\Igor\8_CSharp\7_ВТОРОЙ_УРОВЕНЬ\8_Сокеты_Сервер\ClientTCP\bin\Debug\netcoreapp3.1\ClientTCP.pdb
+E:\Igor\8_CSharp\7_ВТОРОЙ_УРОВЕНЬ\8_Сокеты_Сервер\ClientTCP\obj\Debug\netcoreapp3.1\ClientTCP.csprojAssemblyReference.cache
+E:\Igor\8_CSharp\7_ВТОРОЙ_УРОВЕНЬ\8_Сокеты_Сервер\ClientTCP\obj\Debug\netcoreapp3.1\ClientTCP.AssemblyInfoInputs.cache
+E:\Igor\8_CSharp\7_ВТОРОЙ_УРОВЕНЬ\8_Сокеты_Сервер\ClientTCP\obj\Debug\netcoreapp3.1\ClientTCP.AssemblyInfo.cs
+E:\Igor\8_CSharp\7_ВТОРОЙ_УРОВЕНЬ\8_Сокеты_Сервер\ClientTCP\obj\Debug\netcoreapp3.1\ClientTCP.csproj.CoreCompileInputs.cache
+E:\Igor\8_CSharp\7_ВТОРОЙ_УРОВЕНЬ\8_Сокеты_Сервер\ClientTCP\obj\Debug\netcoreapp3.1\ClientTCP.dll
+E:\Igor\8_CSharp\7_ВТОРОЙ_УРОВЕНЬ\8_Сокеты_Сервер\ClientTCP\obj\Debug\netcoreapp3.1\ClientTCP.pdb
+E:\Igor\8_CSharp\7_ВТОРОЙ_УРОВЕНЬ\8_Сокеты_Сервер\ClientTCP\obj\Debug\netcoreapp3.1\ClientTCP.genruntimeconfig.cache

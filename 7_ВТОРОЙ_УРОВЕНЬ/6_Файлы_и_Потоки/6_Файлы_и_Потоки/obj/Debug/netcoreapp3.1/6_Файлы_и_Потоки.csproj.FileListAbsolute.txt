@@ -1,0 +1,13 @@
+E:\Igor\8_CSharp\7_ВТОРОЙ_УРОВЕНЬ\6_Файлы_и_Потоки\6_Файлы_и_Потоки\bin\Debug\netcoreapp3.1\6_Файлы_и_Потоки.exe
+E:\Igor\8_CSharp\7_ВТОРОЙ_УРОВЕНЬ\6_Файлы_и_Потоки\6_Файлы_и_Потоки\bin\Debug\netcoreapp3.1\6_Файлы_и_Потоки.deps.json
+E:\Igor\8_CSharp\7_ВТОРОЙ_УРОВЕНЬ\6_Файлы_и_Потоки\6_Файлы_и_Потоки\bin\Debug\netcoreapp3.1\6_Файлы_и_Потоки.runtimeconfig.json
+E:\Igor\8_CSharp\7_ВТОРОЙ_УРОВЕНЬ\6_Файлы_и_Потоки\6_Файлы_и_Потоки\bin\Debug\netcoreapp3.1\6_Файлы_и_Потоки.runtimeconfig.dev.json
+E:\Igor\8_CSharp\7_ВТОРОЙ_УРОВЕНЬ\6_Файлы_и_Потоки\6_Файлы_и_Потоки\bin\Debug\netcoreapp3.1\6_Файлы_и_Потоки.dll
+E:\Igor\8_CSharp\7_ВТОРОЙ_УРОВЕНЬ\6_Файлы_и_Потоки\6_Файлы_и_Потоки\bin\Debug\netcoreapp3.1\6_Файлы_и_Потоки.pdb
+E:\Igor\8_CSharp\7_ВТОРОЙ_УРОВЕНЬ\6_Файлы_и_Потоки\6_Файлы_и_Потоки\obj\Debug\netcoreapp3.1\6_Файлы_и_Потоки.csprojAssemblyReference.cache
+E:\Igor\8_CSharp\7_ВТОРОЙ_УРОВЕНЬ\6_Файлы_и_Потоки\6_Файлы_и_Потоки\obj\Debug\netcoreapp3.1\6_Файлы_и_Потоки.AssemblyInfoInputs.cache
+E:\Igor\8_CSharp\7_ВТОРОЙ_УРОВЕНЬ\6_Файлы_и_Потоки\6_Файлы_и_Потоки\obj\Debug\netcoreapp3.1\6_Файлы_и_Потоки.AssemblyInfo.cs
+E:\Igor\8_CSharp\7_ВТОРОЙ_УРОВЕНЬ\6_Файлы_и_Потоки\6_Файлы_и_Потоки\obj\Debug\netcoreapp3.1\6_Файлы_и_Потоки.csproj.CoreCompileInputs.cache
+E:\Igor\8_CSharp\7_ВТОРОЙ_УРОВЕНЬ\6_Файлы_и_Потоки\6_Файлы_и_Потоки\obj\Debug\netcoreapp3.1\6_Файлы_и_Потоки.dll
+E:\Igor\8_CSharp\7_ВТОРОЙ_УРОВЕНЬ\6_Файлы_и_Потоки\6_Файлы_и_Потоки\obj\Debug\netcoreapp3.1\6_Файлы_и_Потоки.pdb
+E:\Igor\8_CSharp\7_ВТОРОЙ_УРОВЕНЬ\6_Файлы_и_Потоки\6_Файлы_и_Потоки\obj\Debug\netcoreapp3.1\6_Файлы_и_Потоки.genruntimeconfig.cache

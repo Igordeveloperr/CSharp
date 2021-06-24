@@ -1,0 +1,13 @@
+E:\Igor\8_CSharp\4_Условный_оператор\4_Условный_оператор\bin\Debug\netcoreapp3.1\4_Условный_оператор.exe
+E:\Igor\8_CSharp\4_Условный_оператор\4_Условный_оператор\bin\Debug\netcoreapp3.1\4_Условный_оператор.deps.json
+E:\Igor\8_CSharp\4_Условный_оператор\4_Условный_оператор\bin\Debug\netcoreapp3.1\4_Условный_оператор.runtimeconfig.json
+E:\Igor\8_CSharp\4_Условный_оператор\4_Условный_оператор\bin\Debug\netcoreapp3.1\4_Условный_оператор.runtimeconfig.dev.json
+E:\Igor\8_CSharp\4_Условный_оператор\4_Условный_оператор\bin\Debug\netcoreapp3.1\4_Условный_оператор.dll
+E:\Igor\8_CSharp\4_Условный_оператор\4_Условный_оператор\bin\Debug\netcoreapp3.1\4_Условный_оператор.pdb
+E:\Igor\8_CSharp\4_Условный_оператор\4_Условный_оператор\obj\Debug\netcoreapp3.1\4_Условный_оператор.csprojAssemblyReference.cache
+E:\Igor\8_CSharp\4_Условный_оператор\4_Условный_оператор\obj\Debug\netcoreapp3.1\4_Условный_оператор.AssemblyInfoInputs.cache
+E:\Igor\8_CSharp\4_Условный_оператор\4_Условный_оператор\obj\Debug\netcoreapp3.1\4_Условный_оператор.AssemblyInfo.cs
+E:\Igor\8_CSharp\4_Условный_оператор\4_Условный_оператор\obj\Debug\netcoreapp3.1\4_Условный_оператор.csproj.CoreCompileInputs.cache
+E:\Igor\8_CSharp\4_Условный_оператор\4_Условный_оператор\obj\Debug\netcoreapp3.1\4_Условный_оператор.dll
+E:\Igor\8_CSharp\4_Условный_оператор\4_Условный_оператор\obj\Debug\netcoreapp3.1\4_Условный_оператор.pdb
+E:\Igor\8_CSharp\4_Условный_оператор\4_Условный_оператор\obj\Debug\netcoreapp3.1\4_Условный_оператор.genruntimeconfig.cache

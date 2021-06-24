@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "dgSpecHash": "DTZJ6gkPMbSGhJulxPJiDSMw0XrT6a5imF0Nm7lxOjW/Lfv+LVhLbQrRwNFopKBMHAYTubyiRx2ScFAW7VqvRw==",
+  "success": true,
+  "projectFilePath": "E:\\Igor\\8_CSharp\\11_ASP\\11_свои_сервисы\\11_свои_сервисы\\11_свои_сервисы.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\программирование\\.nuget\\packages\\mailkit\\2.12.0\\mailkit.2.12.0.nupkg.sha512",
+    "C:\\Users\\программирование\\.nuget\\packages\\microsoft.netcore.platforms\\2.0.0\\microsoft.netcore.platforms.2.0.0.nupkg.sha512",
+    "C:\\Users\\программирование\\.nuget\\packages\\mimekit\\2.12.0\\mimekit.2.12.0.nupkg.sha512",
+    "C:\\Users\\программирование\\.nuget\\packages\\portable.bouncycastle\\1.8.10\\portable.bouncycastle.1.8.10.nupkg.sha512",
+    "C:\\Users\\программирование\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
+    "C:\\Users\\программирование\\.nuget\\packages\\system.reflection.typeextensions\\4.4.0\\system.reflection.typeextensions.4.4.0.nupkg.sha512",
+    "C:\\Users\\программирование\\.nuget\\packages\\system.security.cryptography.cng\\4.7.0\\system.security.cryptography.cng.4.7.0.nupkg.sha512",
+    "C:\\Users\\программирование\\.nuget\\packages\\system.security.cryptography.pkcs\\4.7.0\\system.security.cryptography.pkcs.4.7.0.nupkg.sha512",
+    "C:\\Users\\программирование\\.nuget\\packages\\system.text.encoding.codepages\\4.4.0\\system.text.encoding.codepages.4.4.0.nupkg.sha512"
+  ],
+  "logs": []
+}

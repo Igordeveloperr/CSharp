@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "KiSZ4BomQVZfNIgyxwMs+HgWbpsjScius5BjJ65kpofxUZYUHQ81JWNtdLXWBduWq5Vy97kaYUx/ng8sk50+Rw==",
+  "success": true,
+  "projectFilePath": "E:\\Igor\\8_CSharp\\0_ПРАКТИКА\\17_ProjectsFinder\\17_ProjectsFinder\\17_ProjectsFinder.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\программирование\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

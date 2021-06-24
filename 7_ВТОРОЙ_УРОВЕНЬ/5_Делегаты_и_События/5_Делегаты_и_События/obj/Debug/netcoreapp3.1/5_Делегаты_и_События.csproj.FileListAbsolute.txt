@@ -1,0 +1,13 @@
+E:\Igor\8_CSharp\7_ВТОРОЙ_УРОВЕНЬ\5_Делегаты_и_События\5_Делегаты_и_События\obj\Debug\netcoreapp3.1\5_Делегаты_и_События.csprojAssemblyReference.cache
+E:\Igor\8_CSharp\7_ВТОРОЙ_УРОВЕНЬ\5_Делегаты_и_События\5_Делегаты_и_События\obj\Debug\netcoreapp3.1\5_Делегаты_и_События.AssemblyInfoInputs.cache
+E:\Igor\8_CSharp\7_ВТОРОЙ_УРОВЕНЬ\5_Делегаты_и_События\5_Делегаты_и_События\obj\Debug\netcoreapp3.1\5_Делегаты_и_События.AssemblyInfo.cs
+E:\Igor\8_CSharp\7_ВТОРОЙ_УРОВЕНЬ\5_Делегаты_и_События\5_Делегаты_и_События\obj\Debug\netcoreapp3.1\5_Делегаты_и_События.csproj.CoreCompileInputs.cache
+E:\Igor\8_CSharp\7_ВТОРОЙ_УРОВЕНЬ\5_Делегаты_и_События\5_Делегаты_и_События\bin\Debug\netcoreapp3.1\5_Делегаты_и_События.exe
+E:\Igor\8_CSharp\7_ВТОРОЙ_УРОВЕНЬ\5_Делегаты_и_События\5_Делегаты_и_События\bin\Debug\netcoreapp3.1\5_Делегаты_и_События.deps.json
+E:\Igor\8_CSharp\7_ВТОРОЙ_УРОВЕНЬ\5_Делегаты_и_События\5_Делегаты_и_События\bin\Debug\netcoreapp3.1\5_Делегаты_и_События.runtimeconfig.json
+E:\Igor\8_CSharp\7_ВТОРОЙ_УРОВЕНЬ\5_Делегаты_и_События\5_Делегаты_и_События\bin\Debug\netcoreapp3.1\5_Делегаты_и_События.runtimeconfig.dev.json
+E:\Igor\8_CSharp\7_ВТОРОЙ_УРОВЕНЬ\5_Делегаты_и_События\5_Делегаты_и_События\bin\Debug\netcoreapp3.1\5_Делегаты_и_События.dll
+E:\Igor\8_CSharp\7_ВТОРОЙ_УРОВЕНЬ\5_Делегаты_и_События\5_Делегаты_и_События\bin\Debug\netcoreapp3.1\5_Делегаты_и_События.pdb
+E:\Igor\8_CSharp\7_ВТОРОЙ_УРОВЕНЬ\5_Делегаты_и_События\5_Делегаты_и_События\obj\Debug\netcoreapp3.1\5_Делегаты_и_События.dll
+E:\Igor\8_CSharp\7_ВТОРОЙ_УРОВЕНЬ\5_Делегаты_и_События\5_Делегаты_и_События\obj\Debug\netcoreapp3.1\5_Делегаты_и_События.pdb
+E:\Igor\8_CSharp\7_ВТОРОЙ_УРОВЕНЬ\5_Делегаты_и_События\5_Делегаты_и_События\obj\Debug\netcoreapp3.1\5_Делегаты_и_События.genruntimeconfig.cache

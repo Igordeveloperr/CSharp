@@ -1,0 +1,10 @@
+E:\Igor\8_CSharp\7_ВТОРОЙ_УРОВЕНЬ\9_HTTP\9_HTTP\bin\Debug\9_HTTP.exe.config
+E:\Igor\8_CSharp\7_ВТОРОЙ_УРОВЕНЬ\9_HTTP\9_HTTP\bin\Debug\9_HTTP.exe
+E:\Igor\8_CSharp\7_ВТОРОЙ_УРОВЕНЬ\9_HTTP\9_HTTP\bin\Debug\9_HTTP.pdb
+E:\Igor\8_CSharp\7_ВТОРОЙ_УРОВЕНЬ\9_HTTP\9_HTTP\obj\Debug\9_HTTP.csprojAssemblyReference.cache
+E:\Igor\8_CSharp\7_ВТОРОЙ_УРОВЕНЬ\9_HTTP\9_HTTP\obj\Debug\_9_HTTP.Form1.resources
+E:\Igor\8_CSharp\7_ВТОРОЙ_УРОВЕНЬ\9_HTTP\9_HTTP\obj\Debug\_9_HTTP.Properties.Resources.resources
+E:\Igor\8_CSharp\7_ВТОРОЙ_УРОВЕНЬ\9_HTTP\9_HTTP\obj\Debug\9_HTTP.csproj.GenerateResource.cache
+E:\Igor\8_CSharp\7_ВТОРОЙ_УРОВЕНЬ\9_HTTP\9_HTTP\obj\Debug\9_HTTP.csproj.CoreCompileInputs.cache
+E:\Igor\8_CSharp\7_ВТОРОЙ_УРОВЕНЬ\9_HTTP\9_HTTP\obj\Debug\9_HTTP.exe
+E:\Igor\8_CSharp\7_ВТОРОЙ_УРОВЕНЬ\9_HTTP\9_HTTP\obj\Debug\9_HTTP.pdb

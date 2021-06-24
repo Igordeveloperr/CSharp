@@ -1,0 +1,13 @@
+E:\Igor\8_CSharp\0_ПРАКТИКА\1_ДЗ_Условие\1_ДЗ_Условие\bin\Debug\netcoreapp3.1\1_ДЗ_Условие.exe
+E:\Igor\8_CSharp\0_ПРАКТИКА\1_ДЗ_Условие\1_ДЗ_Условие\bin\Debug\netcoreapp3.1\1_ДЗ_Условие.deps.json
+E:\Igor\8_CSharp\0_ПРАКТИКА\1_ДЗ_Условие\1_ДЗ_Условие\bin\Debug\netcoreapp3.1\1_ДЗ_Условие.runtimeconfig.json
+E:\Igor\8_CSharp\0_ПРАКТИКА\1_ДЗ_Условие\1_ДЗ_Условие\bin\Debug\netcoreapp3.1\1_ДЗ_Условие.runtimeconfig.dev.json
+E:\Igor\8_CSharp\0_ПРАКТИКА\1_ДЗ_Условие\1_ДЗ_Условие\bin\Debug\netcoreapp3.1\1_ДЗ_Условие.dll
+E:\Igor\8_CSharp\0_ПРАКТИКА\1_ДЗ_Условие\1_ДЗ_Условие\bin\Debug\netcoreapp3.1\1_ДЗ_Условие.pdb
+E:\Igor\8_CSharp\0_ПРАКТИКА\1_ДЗ_Условие\1_ДЗ_Условие\obj\Debug\netcoreapp3.1\1_ДЗ_Условие.csprojAssemblyReference.cache
+E:\Igor\8_CSharp\0_ПРАКТИКА\1_ДЗ_Условие\1_ДЗ_Условие\obj\Debug\netcoreapp3.1\1_ДЗ_Условие.AssemblyInfoInputs.cache
+E:\Igor\8_CSharp\0_ПРАКТИКА\1_ДЗ_Условие\1_ДЗ_Условие\obj\Debug\netcoreapp3.1\1_ДЗ_Условие.AssemblyInfo.cs
+E:\Igor\8_CSharp\0_ПРАКТИКА\1_ДЗ_Условие\1_ДЗ_Условие\obj\Debug\netcoreapp3.1\1_ДЗ_Условие.csproj.CoreCompileInputs.cache
+E:\Igor\8_CSharp\0_ПРАКТИКА\1_ДЗ_Условие\1_ДЗ_Условие\obj\Debug\netcoreapp3.1\1_ДЗ_Условие.dll
+E:\Igor\8_CSharp\0_ПРАКТИКА\1_ДЗ_Условие\1_ДЗ_Условие\obj\Debug\netcoreapp3.1\1_ДЗ_Условие.pdb
+E:\Igor\8_CSharp\0_ПРАКТИКА\1_ДЗ_Условие\1_ДЗ_Условие\obj\Debug\netcoreapp3.1\1_ДЗ_Условие.genruntimeconfig.cache

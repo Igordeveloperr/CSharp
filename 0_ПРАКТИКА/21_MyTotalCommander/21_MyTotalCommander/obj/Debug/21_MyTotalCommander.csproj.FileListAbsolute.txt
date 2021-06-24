@@ -1,0 +1,10 @@
+E:\Igor\8_CSharp\0_ПРАКТИКА\21_MyTotalCommander\21_MyTotalCommander\bin\Debug\21_MyTotalCommander.exe.config
+E:\Igor\8_CSharp\0_ПРАКТИКА\21_MyTotalCommander\21_MyTotalCommander\bin\Debug\21_MyTotalCommander.exe
+E:\Igor\8_CSharp\0_ПРАКТИКА\21_MyTotalCommander\21_MyTotalCommander\bin\Debug\21_MyTotalCommander.pdb
+E:\Igor\8_CSharp\0_ПРАКТИКА\21_MyTotalCommander\21_MyTotalCommander\obj\Debug\21_MyTotalCommander.csprojAssemblyReference.cache
+E:\Igor\8_CSharp\0_ПРАКТИКА\21_MyTotalCommander\21_MyTotalCommander\obj\Debug\_21_MyTotalCommander.Form1.resources
+E:\Igor\8_CSharp\0_ПРАКТИКА\21_MyTotalCommander\21_MyTotalCommander\obj\Debug\_21_MyTotalCommander.Properties.Resources.resources
+E:\Igor\8_CSharp\0_ПРАКТИКА\21_MyTotalCommander\21_MyTotalCommander\obj\Debug\21_MyTotalCommander.csproj.GenerateResource.cache
+E:\Igor\8_CSharp\0_ПРАКТИКА\21_MyTotalCommander\21_MyTotalCommander\obj\Debug\21_MyTotalCommander.csproj.CoreCompileInputs.cache
+E:\Igor\8_CSharp\0_ПРАКТИКА\21_MyTotalCommander\21_MyTotalCommander\obj\Debug\21_MyTotalCommander.exe
+E:\Igor\8_CSharp\0_ПРАКТИКА\21_MyTotalCommander\21_MyTotalCommander\obj\Debug\21_MyTotalCommander.pdb
