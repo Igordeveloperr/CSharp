@@ -1,0 +1,7 @@
+C:\Users\Гохля\Desktop\программирование\CSharp-cours\8_ПАТТЕРНЫ\4_Builder\4_Builder\bin\Debug\4_Builder.exe.config
+C:\Users\Гохля\Desktop\программирование\CSharp-cours\8_ПАТТЕРНЫ\4_Builder\4_Builder\bin\Debug\4_Builder.exe
+C:\Users\Гохля\Desktop\программирование\CSharp-cours\8_ПАТТЕРНЫ\4_Builder\4_Builder\bin\Debug\4_Builder.pdb
+C:\Users\Гохля\Desktop\программирование\CSharp-cours\8_ПАТТЕРНЫ\4_Builder\4_Builder\obj\Debug\4_Builder.csproj.AssemblyReference.cache
+C:\Users\Гохля\Desktop\программирование\CSharp-cours\8_ПАТТЕРНЫ\4_Builder\4_Builder\obj\Debug\4_Builder.csproj.CoreCompileInputs.cache
+C:\Users\Гохля\Desktop\программирование\CSharp-cours\8_ПАТТЕРНЫ\4_Builder\4_Builder\obj\Debug\4_Builder.exe
+C:\Users\Гохля\Desktop\программирование\CSharp-cours\8_ПАТТЕРНЫ\4_Builder\4_Builder\obj\Debug\4_Builder.pdb
