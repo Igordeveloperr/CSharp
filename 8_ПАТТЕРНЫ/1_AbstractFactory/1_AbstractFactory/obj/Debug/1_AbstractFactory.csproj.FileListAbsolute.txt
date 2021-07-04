@@ -1,0 +1,7 @@
+C:\Users\Гохля\Desktop\программирование\1_C#\Паттерны\1_AbstractFactory\1_AbstractFactory\bin\Debug\1_AbstractFactory.exe.config
+C:\Users\Гохля\Desktop\программирование\1_C#\Паттерны\1_AbstractFactory\1_AbstractFactory\bin\Debug\1_AbstractFactory.exe
+C:\Users\Гохля\Desktop\программирование\1_C#\Паттерны\1_AbstractFactory\1_AbstractFactory\bin\Debug\1_AbstractFactory.pdb
+C:\Users\Гохля\Desktop\программирование\1_C#\Паттерны\1_AbstractFactory\1_AbstractFactory\obj\Debug\1_AbstractFactory.csproj.AssemblyReference.cache
+C:\Users\Гохля\Desktop\программирование\1_C#\Паттерны\1_AbstractFactory\1_AbstractFactory\obj\Debug\1_AbstractFactory.csproj.CoreCompileInputs.cache
+C:\Users\Гохля\Desktop\программирование\1_C#\Паттерны\1_AbstractFactory\1_AbstractFactory\obj\Debug\1_AbstractFactory.exe
+C:\Users\Гохля\Desktop\программирование\1_C#\Паттерны\1_AbstractFactory\1_AbstractFactory\obj\Debug\1_AbstractFactory.pdb
