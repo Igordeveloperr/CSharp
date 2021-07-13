@@ -1,0 +1,15 @@
+C:\Users\Гохля\Desktop\программирование\CSharp-cours\8_ПАТТЕРНЫ\5_Factory\5_Factory\bin\Debug\5_Factory.exe.config
+C:\Users\Гохля\Desktop\программирование\CSharp-cours\8_ПАТТЕРНЫ\5_Factory\5_Factory\bin\Debug\5_Factory.exe
+C:\Users\Гохля\Desktop\программирование\CSharp-cours\8_ПАТТЕРНЫ\5_Factory\5_Factory\bin\Debug\5_Factory.pdb
+C:\Users\Гохля\Desktop\программирование\CSharp-cours\8_ПАТТЕРНЫ\5_Factory\5_Factory\obj\Debug\5_Factory.csproj.AssemblyReference.cache
+C:\Users\Гохля\Desktop\программирование\CSharp-cours\8_ПАТТЕРНЫ\5_Factory\5_Factory\obj\Debug\MainWindow.g.cs
+C:\Users\Гохля\Desktop\программирование\CSharp-cours\8_ПАТТЕРНЫ\5_Factory\5_Factory\obj\Debug\App.g.cs
+C:\Users\Гохля\Desktop\программирование\CSharp-cours\8_ПАТТЕРНЫ\5_Factory\5_Factory\obj\Debug\5_Factory_MarkupCompile.cache
+C:\Users\Гохля\Desktop\программирование\CSharp-cours\8_ПАТТЕРНЫ\5_Factory\5_Factory\obj\Debug\5_Factory_MarkupCompile.lref
+C:\Users\Гохля\Desktop\программирование\CSharp-cours\8_ПАТТЕРНЫ\5_Factory\5_Factory\obj\Debug\MainWindow.baml
+C:\Users\Гохля\Desktop\программирование\CSharp-cours\8_ПАТТЕРНЫ\5_Factory\5_Factory\obj\Debug\5_Factory.g.resources
+C:\Users\Гохля\Desktop\программирование\CSharp-cours\8_ПАТТЕРНЫ\5_Factory\5_Factory\obj\Debug\_5_Factory.Properties.Resources.resources
+C:\Users\Гохля\Desktop\программирование\CSharp-cours\8_ПАТТЕРНЫ\5_Factory\5_Factory\obj\Debug\5_Factory.csproj.GenerateResource.cache
+C:\Users\Гохля\Desktop\программирование\CSharp-cours\8_ПАТТЕРНЫ\5_Factory\5_Factory\obj\Debug\5_Factory.csproj.CoreCompileInputs.cache
+C:\Users\Гохля\Desktop\программирование\CSharp-cours\8_ПАТТЕРНЫ\5_Factory\5_Factory\obj\Debug\5_Factory.exe
+C:\Users\Гохля\Desktop\программирование\CSharp-cours\8_ПАТТЕРНЫ\5_Factory\5_Factory\obj\Debug\5_Factory.pdb

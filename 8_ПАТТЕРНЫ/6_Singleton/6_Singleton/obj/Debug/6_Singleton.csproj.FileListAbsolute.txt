@@ -1,0 +1,7 @@
+C:\Users\Гохля\Desktop\программирование\CSharp-cours\8_ПАТТЕРНЫ\6_Singleton\6_Singleton\bin\Debug\6_Singleton.exe.config
+C:\Users\Гохля\Desktop\программирование\CSharp-cours\8_ПАТТЕРНЫ\6_Singleton\6_Singleton\bin\Debug\6_Singleton.exe
+C:\Users\Гохля\Desktop\программирование\CSharp-cours\8_ПАТТЕРНЫ\6_Singleton\6_Singleton\bin\Debug\6_Singleton.pdb
+C:\Users\Гохля\Desktop\программирование\CSharp-cours\8_ПАТТЕРНЫ\6_Singleton\6_Singleton\obj\Debug\6_Singleton.csproj.AssemblyReference.cache
+C:\Users\Гохля\Desktop\программирование\CSharp-cours\8_ПАТТЕРНЫ\6_Singleton\6_Singleton\obj\Debug\6_Singleton.csproj.CoreCompileInputs.cache
+C:\Users\Гохля\Desktop\программирование\CSharp-cours\8_ПАТТЕРНЫ\6_Singleton\6_Singleton\obj\Debug\6_Singleton.exe
+C:\Users\Гохля\Desktop\программирование\CSharp-cours\8_ПАТТЕРНЫ\6_Singleton\6_Singleton\obj\Debug\6_Singleton.pdb
