@@ -8,19 +8,19 @@
     ".NETCoreApp,Version=v3.1": []
   },
   "packageFolders": {
-    "C:\\Users\\программирование\\.nuget\\packages\\": {}
+    "C:\\Users\\Гохля\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Igor\\8_CSharp\\7_ВТОРОЙ_УРОВЕНЬ\\2_Универсальные_типы\\2_Универсальные_типы\\2_Универсальные_типы.csproj",
+      "projectUniqueName": "C:\\Users\\Гохля\\Desktop\\программирование\\CSharp-cours\\7_ВТОРОЙ_УРОВЕНЬ\\2_Универсальные_типы\\2_Универсальные_типы\\2_Универсальные_типы.csproj",
       "projectName": "2_Универсальные_типы",
-      "projectPath": "E:\\Igor\\8_CSharp\\7_ВТОРОЙ_УРОВЕНЬ\\2_Универсальные_типы\\2_Универсальные_типы\\2_Универсальные_типы.csproj",
-      "packagesPath": "C:\\Users\\программирование\\.nuget\\packages\\",
-      "outputPath": "E:\\Igor\\8_CSharp\\7_ВТОРОЙ_УРОВЕНЬ\\2_Универсальные_типы\\2_Универсальные_типы\\obj\\",
+      "projectPath": "C:\\Users\\Гохля\\Desktop\\программирование\\CSharp-cours\\7_ВТОРОЙ_УРОВЕНЬ\\2_Универсальные_типы\\2_Универсальные_типы\\2_Универсальные_типы.csproj",
+      "packagesPath": "C:\\Users\\Гохля\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Гохля\\Desktop\\программирование\\CSharp-cours\\7_ВТОРОЙ_УРОВЕНЬ\\2_Универсальные_типы\\2_Универсальные_типы\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\программирование\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Гохля\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -32,6 +32,7 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "projectReferences": {}
         }
       },
@@ -43,6 +44,7 @@
     },
     "frameworks": {
       "netcoreapp3.1": {
+        "targetAlias": "netcoreapp3.1",
         "imports": [
           "net461",
           "net462",
@@ -58,7 +60,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
       }
     }
   }

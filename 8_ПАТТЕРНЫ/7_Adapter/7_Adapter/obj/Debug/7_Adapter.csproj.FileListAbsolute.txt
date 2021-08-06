@@ -1,0 +1,7 @@
+C:\Users\Гохля\Desktop\программирование\CSharp-cours\8_ПАТТЕРНЫ\7_Adapter\7_Adapter\bin\Debug\7_Adapter.exe.config
+C:\Users\Гохля\Desktop\программирование\CSharp-cours\8_ПАТТЕРНЫ\7_Adapter\7_Adapter\bin\Debug\7_Adapter.exe
+C:\Users\Гохля\Desktop\программирование\CSharp-cours\8_ПАТТЕРНЫ\7_Adapter\7_Adapter\bin\Debug\7_Adapter.pdb
+C:\Users\Гохля\Desktop\программирование\CSharp-cours\8_ПАТТЕРНЫ\7_Adapter\7_Adapter\obj\Debug\7_Adapter.csproj.AssemblyReference.cache
+C:\Users\Гохля\Desktop\программирование\CSharp-cours\8_ПАТТЕРНЫ\7_Adapter\7_Adapter\obj\Debug\7_Adapter.csproj.CoreCompileInputs.cache
+C:\Users\Гохля\Desktop\программирование\CSharp-cours\8_ПАТТЕРНЫ\7_Adapter\7_Adapter\obj\Debug\7_Adapter.exe
+C:\Users\Гохля\Desktop\программирование\CSharp-cours\8_ПАТТЕРНЫ\7_Adapter\7_Adapter\obj\Debug\7_Adapter.pdb
