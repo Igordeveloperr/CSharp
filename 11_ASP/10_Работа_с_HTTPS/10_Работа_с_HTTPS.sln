@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31410.357
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "10_Работа_с_HTTPS", "10_Работа_с_HTTPS\10_Работа_с_HTTPS.csproj", "{CF785B8E-C8FF-44CD-842E-8315AFD0D808}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CF785B8E-C8FF-44CD-842E-8315AFD0D808}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF785B8E-C8FF-44CD-842E-8315AFD0D808}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF785B8E-C8FF-44CD-842E-8315AFD0D808}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF785B8E-C8FF-44CD-842E-8315AFD0D808}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {99CFF7FC-A26F-4A89-B60F-0353450B71BB}
+	EndGlobalSection
+EndGlobal
