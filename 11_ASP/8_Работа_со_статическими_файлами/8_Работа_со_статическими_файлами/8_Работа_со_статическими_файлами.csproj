@@ -1,0 +1,8 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>_8_Работа_со_статическими_файлами</RootNamespace>
+  </PropertyGroup>
+
+</Project>
