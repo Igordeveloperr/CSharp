@@ -12,6 +12,7 @@ namespace _23_PongoClicker.viewModel
 {
     internal class BaseViewModel : INotifyPropertyChanged
     {
+        protected bool isAuthorized = false;
         public event PropertyChangedEventHandler PropertyChanged;
         public void OnPropertyChanged([CallerMemberName]string property = "")
         {

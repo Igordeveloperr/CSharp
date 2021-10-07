@@ -12,26 +12,20 @@ namespace _23_PongoClicker.viewModel
 {
     internal class MainViewModel : BaseViewModel
     {
-        private int _c = 0;
-        public int C
-        {
-            get
-            {
-                return _c;
-            }
-            set
-            {
-                _c = value;
-                OnPropertyChanged();
-            }
-        }
         public ICommand TestClick
         {
             get
             {
                 return new DelegateCommand((obj) =>
                 {
-                    CurrentPage = new GamePage();
+                    if (isAuthorized)
+                    {
+                        CurrentPage = new GamePage();
+                    }
+                    else
+                    {
+                        CurrentPage = new AuthorizationPage();
+                    }
                 });
             }
         }

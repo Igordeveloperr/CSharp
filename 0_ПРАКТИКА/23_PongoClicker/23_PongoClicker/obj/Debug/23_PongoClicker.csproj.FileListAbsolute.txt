@@ -16,3 +16,5 @@ C:\Users\Гохля\Desktop\программирование\CSharp-cours\0_ПР
 C:\Users\Гохля\Desktop\программирование\CSharp-cours\0_ПРАКТИКА\23_PongoClicker\23_PongoClicker\obj\Debug\GeneratedInternalTypeHelper.g.cs
 C:\Users\Гохля\Desktop\программирование\CSharp-cours\0_ПРАКТИКА\23_PongoClicker\23_PongoClicker\obj\Debug\view\pages\GamePage.g.cs
 C:\Users\Гохля\Desktop\программирование\CSharp-cours\0_ПРАКТИКА\23_PongoClicker\23_PongoClicker\obj\Debug\view\pages\GamePage.baml
+C:\Users\Гохля\Desktop\программирование\CSharp-cours\0_ПРАКТИКА\23_PongoClicker\23_PongoClicker\obj\Debug\view\pages\AuthorizationPage.g.cs
+C:\Users\Гохля\Desktop\программирование\CSharp-cours\0_ПРАКТИКА\23_PongoClicker\23_PongoClicker\obj\Debug\view\pages\AuthorizationPage.baml
