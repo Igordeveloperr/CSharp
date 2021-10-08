@@ -12,13 +12,38 @@ namespace _23_PongoClicker.viewModel
 {
     internal class MainViewModel : BaseViewModel
     {
+        public MainViewModel()
+        {
+            if (isUserAuthorized)
+            {
+                CurrentPage = new GamePage();
+            }
+            else
+            {
+                MenuActivation = false;
+                CurrentPage = new AuthorizationPage();
+            }
+        }
+        private bool _menuActivation = true;
+        public bool MenuActivation
+        {
+            get
+            {
+                return _menuActivation;
+            }
+            set
+            {
+                _menuActivation = value;
+                OnPropertyChanged();
+            }
+        }
         public ICommand TestClick
         {
             get
             {
                 return new DelegateCommand((obj) =>
                 {
-                    if (isAuthorized)
+                    if (isUserAuthorized)
                     {
                         CurrentPage = new GamePage();
                     }

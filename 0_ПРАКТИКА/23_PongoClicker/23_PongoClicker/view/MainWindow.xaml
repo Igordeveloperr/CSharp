@@ -14,13 +14,13 @@
             <ColumnDefinition Width="150"/>
             <ColumnDefinition Width="750"/>
         </Grid.ColumnDefinitions>
-        <StackPanel>
+        <StackPanel IsEnabled="{Binding MenuActivation}">
             <Button Command="{Binding TestClick}" Content="test page"/>
         </StackPanel>
         <Frame
             Grid.Column="1"
             Content="{Binding CurrentPage}"
-            NavigationUIVisibility="Hidden"
+            NavigationUIVisibility="Hidden" Navigated="Frame_Navigated"
             />
     </Grid>
 </Window>

@@ -59,12 +59,21 @@
     <Compile Include="user\AdminUser.cs" />
     <Compile Include="user\DefaultUser.cs" />
     <Compile Include="user\User.cs" />
+    <Compile Include="viewModel\AuthorizationViewModel.cs" />
+    <Compile Include="viewModel\GoAuthorizationViewModel.cs" />
+    <Compile Include="view\AuthorizationWindow.xaml.cs">
+      <DependentUpon>AuthorizationWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="view\pages\AuthorizationPage.xaml.cs">
       <DependentUpon>AuthorizationPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="view\pages\GamePage.xaml.cs">
       <DependentUpon>GamePage.xaml</DependentUpon>
     </Compile>
+    <Page Include="view\AuthorizationWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="view\MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -116,6 +125,12 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="model\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\gokhlia.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\logo.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

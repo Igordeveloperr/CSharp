@@ -10,20 +10,18 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace _23_PongoClicker.view.pages
+namespace _23_PongoClicker.view
 {
     /// <summary>
-    /// Логика взаимодействия для AuthorizationPage.xaml
+    /// Логика взаимодействия для AuthorizationWindow.xaml
     /// </summary>
-    public partial class AuthorizationPage : Page
+    public partial class AuthorizationWindow : Window
     {
-        public AuthorizationPage()
+        public AuthorizationWindow()
         {
             InitializeComponent();
         }
-
     }
 }

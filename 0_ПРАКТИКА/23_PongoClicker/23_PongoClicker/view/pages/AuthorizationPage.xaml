@@ -3,12 +3,36 @@
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-      xmlns:local="clr-namespace:_23_PongoClicker.view.pages"
+      xmlns:local="clr-namespace:_23_PongoClicker.view.pages" xmlns:viewmodel="clr-namespace:_23_PongoClicker.viewModel"
       mc:Ignorable="d" 
       d:DesignHeight="600" d:DesignWidth="900"
       Title="AuthorizationPage">
-
-    <Grid Background="#fff">
-        <TextBlock Text="Авторизуйся школьник" FontSize="30" Width="100" VerticalAlignment="Center"/>
+    <Page.DataContext>
+        <viewmodel:GoAuthorizationViewModel/>
+    </Page.DataContext>
+    <Page.Resources>
+        <ControlTemplate x:Key="BaseBorderForBtn" TargetType="Button">
+            <Border CornerRadius="6" BorderBrush="#4b4b4b" BorderThickness="1"
+                    Background="#16a085">
+                <ContentControl FontSize="17" 
+                                HorizontalAlignment="Center"
+                                VerticalAlignment="Center"
+                                Foreground="#f1f2f6"
+                                Content="Войти"
+                                />
+            </Border>
+        </ControlTemplate>
+    </Page.Resources>
+    <Grid Background="#34495e">
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+            <TextBlock Text="Авторизуйся школьник" Foreground="#fff" FontSize="30" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+            <Button Width="200" Height="30" Margin="0,10,0,0"
+                    FontSize="16"
+                    Template="{StaticResource BaseBorderForBtn}" Command="{Binding OpenAuthorizationWindow}">
+                <Button.Effect>
+                    <DropShadowEffect Color="#78e08f" BlurRadius="15" Direction="360" ShadowDepth="-5"/>
+                </Button.Effect>
+            </Button>
+        </StackPanel>
     </Grid>
 </Page>

@@ -1,0 +1,51 @@
+﻿<Window x:Class="_23_PongoClicker.view.AuthorizationWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_23_PongoClicker.view" xmlns:viewmodel="clr-namespace:_23_PongoClicker.viewModel"
+        mc:Ignorable="d"
+        Title="AuthorizationWindow" Height="450" Width="400">
+    <Window.DataContext>
+        <viewmodel:AuthorizationViewModel/>
+    </Window.DataContext>
+    <Window.Resources>
+        <DataTemplate DataType="{x:Type viewmodel:AuthorizationViewModel}">
+            <local:AuthorizationWindow/>
+        </DataTemplate>
+        <ControlTemplate x:Key="BorderForBtn" TargetType="Button">
+            <Border CornerRadius="6" BorderBrush="#4b4b4b" BorderThickness="1"
+                    Background="#3c6382">
+                <ContentControl FontSize="14" 
+                                HorizontalAlignment="Center"
+                                VerticalAlignment="Center"
+                                Foreground="#f1f2f6"
+                                Content="Понгонуться"
+                                />
+            </Border>
+        </ControlTemplate>
+    </Window.Resources>
+    <Grid Background="#34495e">
+        <Image Source="./../img/logo.png" VerticalAlignment="Top" Margin="0,30,0,0"/>
+        <StackPanel VerticalAlignment="Center" Margin="0,40,0,0">
+            <TextBlock Text="Логин" Margin="50,0,30,10" FontSize="14" Foreground="#fff"/>
+            <TextBox Width="300" Background="#2C3A47" Height="20" Foreground="#fff" FontSize="13">
+                <TextBox.Effect>
+                    <DropShadowEffect Color="#55E6C1" BlurRadius="10" Direction="360" ShadowDepth="-5"/>
+                </TextBox.Effect>
+            </TextBox>
+            <TextBlock Text="Пароль" Margin="50,10,30,10" FontSize="14" Foreground="#fff"/>
+            <TextBox Width="300" Background="#2C3A47" Height="20" Foreground="#fff" FontSize="13">
+                <TextBox.Effect>
+                    <DropShadowEffect Color="#55E6C1" BlurRadius="10" Direction="360" ShadowDepth="-5"/>
+                </TextBox.Effect>
+            </TextBox>
+            <CheckBox Width="300" Margin="0,10,0,0" Content="Новый аккуант" FontSize="13" Foreground="#fff"/>
+            <Button Width="150" Height="25" Margin="0,30,0,0" Template="{StaticResource BorderForBtn}">
+                <Button.Effect>
+                    <DropShadowEffect Color="#63cdda" BlurRadius="15" Direction="360" ShadowDepth="-5"/>
+                </Button.Effect>
+            </Button>
+        </StackPanel>
+    </Grid>
+</Window>

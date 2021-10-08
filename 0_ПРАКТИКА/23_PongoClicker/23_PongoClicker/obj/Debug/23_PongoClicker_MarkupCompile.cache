@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\Гохля\Desktop\программирование\CSharp-cours\0_ПРАКТИКА\23_PongoClicker\23_PongoClicker\App.xaml
-31278060090
+4-1220701125
 
-131363160918
+16-1105162487
 13-1505183044
-view\MainWindow.xaml;view\pages\AuthorizationPage.xaml;view\pages\GamePage.xaml;
+view\AuthorizationWindow.xaml;view\MainWindow.xaml;view\pages\AuthorizationPage.xaml;view\pages\GamePage.xaml;
 
 False
 
