@@ -25,10 +25,5 @@ namespace _23_PongoClicker
         {
             InitializeComponent();
         }
-
-        private void Frame_Navigated(object sender, NavigationEventArgs e)
-        {
-
-        }
     }
 }

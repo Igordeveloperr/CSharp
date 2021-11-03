@@ -1,0 +1,7 @@
+C:\Users\Гохля\Desktop\программирование\CSharp-cours\7_ВТОРОЙ_УРОВЕНЬ\17_Рефлексия\17_Рефлексия\bin\Debug\17_Рефлексия.exe.config
+C:\Users\Гохля\Desktop\программирование\CSharp-cours\7_ВТОРОЙ_УРОВЕНЬ\17_Рефлексия\17_Рефлексия\bin\Debug\17_Рефлексия.exe
+C:\Users\Гохля\Desktop\программирование\CSharp-cours\7_ВТОРОЙ_УРОВЕНЬ\17_Рефлексия\17_Рефлексия\bin\Debug\17_Рефлексия.pdb
+C:\Users\Гохля\Desktop\программирование\CSharp-cours\7_ВТОРОЙ_УРОВЕНЬ\17_Рефлексия\17_Рефлексия\obj\Debug\17_Рефлексия.csproj.AssemblyReference.cache
+C:\Users\Гохля\Desktop\программирование\CSharp-cours\7_ВТОРОЙ_УРОВЕНЬ\17_Рефлексия\17_Рефлексия\obj\Debug\17_Рефлексия.csproj.CoreCompileInputs.cache
+C:\Users\Гохля\Desktop\программирование\CSharp-cours\7_ВТОРОЙ_УРОВЕНЬ\17_Рефлексия\17_Рефлексия\obj\Debug\17_Рефлексия.exe
+C:\Users\Гохля\Desktop\программирование\CSharp-cours\7_ВТОРОЙ_УРОВЕНЬ\17_Рефлексия\17_Рефлексия\obj\Debug\17_Рефлексия.pdb
