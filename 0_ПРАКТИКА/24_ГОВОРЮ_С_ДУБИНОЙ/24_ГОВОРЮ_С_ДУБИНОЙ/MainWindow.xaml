@@ -1,0 +1,17 @@
+﻿<Window x:Class="_24_ГОВОРЮ_С_ДУБИНОЙ.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_24_ГОВОРЮ_С_ДУБИНОЙ"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+            <TextBlock Text="Темпа проца:" FontSize="18" x:Name="temp"/>
+            <TextBlock Text="Оброты говна:" FontSize="18"/>
+            <TextBlock Text="Видюха:" FontSize="18"/>
+            <TextBlock Text="Кэш:" FontSize="18"/>
+        </StackPanel>
+    </Grid>
+</Window>

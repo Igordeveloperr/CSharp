@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Use_i_tD.props" />
+</Project>

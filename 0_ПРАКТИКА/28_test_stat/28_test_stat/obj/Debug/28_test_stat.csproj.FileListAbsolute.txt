@@ -1,0 +1,7 @@
+C:\Users\Гохля\Desktop\программирование\CSharp-cours\0_ПРАКТИКА\28_test_stat\28_test_stat\bin\Debug\28_test_stat.exe.config
+C:\Users\Гохля\Desktop\программирование\CSharp-cours\0_ПРАКТИКА\28_test_stat\28_test_stat\bin\Debug\28_test_stat.exe
+C:\Users\Гохля\Desktop\программирование\CSharp-cours\0_ПРАКТИКА\28_test_stat\28_test_stat\bin\Debug\28_test_stat.pdb
+C:\Users\Гохля\Desktop\программирование\CSharp-cours\0_ПРАКТИКА\28_test_stat\28_test_stat\obj\Debug\28_test_stat.csproj.AssemblyReference.cache
+C:\Users\Гохля\Desktop\программирование\CSharp-cours\0_ПРАКТИКА\28_test_stat\28_test_stat\obj\Debug\28_test_stat.csproj.CoreCompileInputs.cache
+C:\Users\Гохля\Desktop\программирование\CSharp-cours\0_ПРАКТИКА\28_test_stat\28_test_stat\obj\Debug\28_test_stat.exe
+C:\Users\Гохля\Desktop\программирование\CSharp-cours\0_ПРАКТИКА\28_test_stat\28_test_stat\obj\Debug\28_test_stat.pdb

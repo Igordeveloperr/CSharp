@@ -1,0 +1,9 @@
+C:\Users\Гохля\Desktop\программирование\CSharp-cours\0_ПРАКТИКА\ConsoleApp2\ConsoleApp2\bin\x64\Debug\ConsoleApp2.exe.config
+C:\Users\Гохля\Desktop\программирование\CSharp-cours\0_ПРАКТИКА\ConsoleApp2\ConsoleApp2\bin\x64\Debug\ConsoleApp2.exe
+C:\Users\Гохля\Desktop\программирование\CSharp-cours\0_ПРАКТИКА\ConsoleApp2\ConsoleApp2\bin\x64\Debug\ConsoleApp2.pdb
+C:\Users\Гохля\Desktop\программирование\CSharp-cours\0_ПРАКТИКА\ConsoleApp2\ConsoleApp2\bin\x64\Debug\OpenHardwareMonitorLib.dll
+C:\Users\Гохля\Desktop\программирование\CSharp-cours\0_ПРАКТИКА\ConsoleApp2\ConsoleApp2\obj\x64\Debug\ConsoleApp2.csproj.CoreCompileInputs.cache
+C:\Users\Гохля\Desktop\программирование\CSharp-cours\0_ПРАКТИКА\ConsoleApp2\ConsoleApp2\obj\x64\Debug\ConsoleApp2.csproj.CopyComplete
+C:\Users\Гохля\Desktop\программирование\CSharp-cours\0_ПРАКТИКА\ConsoleApp2\ConsoleApp2\obj\x64\Debug\ConsoleApp2.exe
+C:\Users\Гохля\Desktop\программирование\CSharp-cours\0_ПРАКТИКА\ConsoleApp2\ConsoleApp2\obj\x64\Debug\ConsoleApp2.pdb
+C:\Users\Гохля\Desktop\программирование\CSharp-cours\0_ПРАКТИКА\ConsoleApp2\ConsoleApp2\obj\x64\Debug\ConsoleApp2.csproj.AssemblyReference.cache

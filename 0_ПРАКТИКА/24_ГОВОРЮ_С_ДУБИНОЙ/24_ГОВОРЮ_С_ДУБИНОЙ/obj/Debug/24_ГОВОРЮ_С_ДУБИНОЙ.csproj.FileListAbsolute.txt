@@ -1,0 +1,15 @@
+C:\Users\Гохля\Desktop\программирование\CSharp-cours\0_ПРАКТИКА\24_ГОВОРЮ_С_ДУБИНОЙ\24_ГОВОРЮ_С_ДУБИНОЙ\bin\Debug\24_ГОВОРЮ_С_ДУБИНОЙ.exe.config
+C:\Users\Гохля\Desktop\программирование\CSharp-cours\0_ПРАКТИКА\24_ГОВОРЮ_С_ДУБИНОЙ\24_ГОВОРЮ_С_ДУБИНОЙ\bin\Debug\24_ГОВОРЮ_С_ДУБИНОЙ.exe
+C:\Users\Гохля\Desktop\программирование\CSharp-cours\0_ПРАКТИКА\24_ГОВОРЮ_С_ДУБИНОЙ\24_ГОВОРЮ_С_ДУБИНОЙ\bin\Debug\24_ГОВОРЮ_С_ДУБИНОЙ.pdb
+C:\Users\Гохля\Desktop\программирование\CSharp-cours\0_ПРАКТИКА\24_ГОВОРЮ_С_ДУБИНОЙ\24_ГОВОРЮ_С_ДУБИНОЙ\obj\Debug\24_ГОВОРЮ_С_ДУБИНОЙ.csproj.AssemblyReference.cache
+C:\Users\Гохля\Desktop\программирование\CSharp-cours\0_ПРАКТИКА\24_ГОВОРЮ_С_ДУБИНОЙ\24_ГОВОРЮ_С_ДУБИНОЙ\obj\Debug\MainWindow.g.cs
+C:\Users\Гохля\Desktop\программирование\CSharp-cours\0_ПРАКТИКА\24_ГОВОРЮ_С_ДУБИНОЙ\24_ГОВОРЮ_С_ДУБИНОЙ\obj\Debug\App.g.cs
+C:\Users\Гохля\Desktop\программирование\CSharp-cours\0_ПРАКТИКА\24_ГОВОРЮ_С_ДУБИНОЙ\24_ГОВОРЮ_С_ДУБИНОЙ\obj\Debug\24_ГОВОРЮ_С_ДУБИНОЙ_MarkupCompile.cache
+C:\Users\Гохля\Desktop\программирование\CSharp-cours\0_ПРАКТИКА\24_ГОВОРЮ_С_ДУБИНОЙ\24_ГОВОРЮ_С_ДУБИНОЙ\obj\Debug\24_ГОВОРЮ_С_ДУБИНОЙ_MarkupCompile.lref
+C:\Users\Гохля\Desktop\программирование\CSharp-cours\0_ПРАКТИКА\24_ГОВОРЮ_С_ДУБИНОЙ\24_ГОВОРЮ_С_ДУБИНОЙ\obj\Debug\MainWindow.baml
+C:\Users\Гохля\Desktop\программирование\CSharp-cours\0_ПРАКТИКА\24_ГОВОРЮ_С_ДУБИНОЙ\24_ГОВОРЮ_С_ДУБИНОЙ\obj\Debug\24_ГОВОРЮ_С_ДУБИНОЙ.g.resources
+C:\Users\Гохля\Desktop\программирование\CSharp-cours\0_ПРАКТИКА\24_ГОВОРЮ_С_ДУБИНОЙ\24_ГОВОРЮ_С_ДУБИНОЙ\obj\Debug\_24_ГОВОРЮ_С_ДУБИНОЙ.Properties.Resources.resources
+C:\Users\Гохля\Desktop\программирование\CSharp-cours\0_ПРАКТИКА\24_ГОВОРЮ_С_ДУБИНОЙ\24_ГОВОРЮ_С_ДУБИНОЙ\obj\Debug\24_ГОВОРЮ_С_ДУБИНОЙ.csproj.GenerateResource.cache
+C:\Users\Гохля\Desktop\программирование\CSharp-cours\0_ПРАКТИКА\24_ГОВОРЮ_С_ДУБИНОЙ\24_ГОВОРЮ_С_ДУБИНОЙ\obj\Debug\24_ГОВОРЮ_С_ДУБИНОЙ.csproj.CoreCompileInputs.cache
+C:\Users\Гохля\Desktop\программирование\CSharp-cours\0_ПРАКТИКА\24_ГОВОРЮ_С_ДУБИНОЙ\24_ГОВОРЮ_С_ДУБИНОЙ\obj\Debug\24_ГОВОРЮ_С_ДУБИНОЙ.exe
+C:\Users\Гохля\Desktop\программирование\CSharp-cours\0_ПРАКТИКА\24_ГОВОРЮ_С_ДУБИНОЙ\24_ГОВОРЮ_С_ДУБИНОЙ\obj\Debug\24_ГОВОРЮ_С_ДУБИНОЙ.pdb

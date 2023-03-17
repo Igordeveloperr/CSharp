@@ -1,0 +1,19 @@
+﻿@using аряяяяяяяя.Models.vm
+@model UserNameViewModel
+@{
+    ViewData["Title"] = "Forma";
+}
+<h1>This is forma</h1>
+<div class="form">
+    <form asp-action="Index" method="post" asp-controller="Form">
+        <div asp-validation-summary="All"></div>
+        <input type="text" asp-for="Name" value="" />
+        <button id="btn" type="submit">Submit</button>
+    </form>
+</div>
+<div>
+    @if (Model != null)
+    {
+        <h2 style="color:green;">@Model.Name,ваши данные добавлены!</h2>
+    }
+</div>
