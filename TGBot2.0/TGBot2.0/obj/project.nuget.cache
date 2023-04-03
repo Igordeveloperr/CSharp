@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "YR/hifu9WtP7mKm4YVj81CM7l1zGp8V4KE9BTnVwEFFOtyg4v7jXnLIgTYdDYkflxgekwZR9n7Y0HJgpr6BSfg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Гохля\\Desktop\\программирование\\CSharp-cours\\TGBot2.0\\TGBot2.0\\TGBot2.0.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Гохля\\.nuget\\packages\\newtonsoft.json\\12.0.2\\newtonsoft.json.12.0.2.nupkg.sha512",
+    "C:\\Users\\Гохля\\.nuget\\packages\\telegram.bot\\18.0.0\\telegram.bot.18.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

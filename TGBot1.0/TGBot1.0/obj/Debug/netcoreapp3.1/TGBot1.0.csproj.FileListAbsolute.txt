@@ -1,0 +1,17 @@
+C:\Users\Гохля\Desktop\программирование\CSharp-cours\TGBot1.0\TGBot1.0\bin\Debug\netcoreapp3.1\TGBot1.0.exe
+C:\Users\Гохля\Desktop\программирование\CSharp-cours\TGBot1.0\TGBot1.0\bin\Debug\netcoreapp3.1\TGBot1.0.deps.json
+C:\Users\Гохля\Desktop\программирование\CSharp-cours\TGBot1.0\TGBot1.0\bin\Debug\netcoreapp3.1\TGBot1.0.runtimeconfig.json
+C:\Users\Гохля\Desktop\программирование\CSharp-cours\TGBot1.0\TGBot1.0\bin\Debug\netcoreapp3.1\TGBot1.0.runtimeconfig.dev.json
+C:\Users\Гохля\Desktop\программирование\CSharp-cours\TGBot1.0\TGBot1.0\bin\Debug\netcoreapp3.1\TGBot1.0.dll
+C:\Users\Гохля\Desktop\программирование\CSharp-cours\TGBot1.0\TGBot1.0\bin\Debug\netcoreapp3.1\TGBot1.0.pdb
+C:\Users\Гохля\Desktop\программирование\CSharp-cours\TGBot1.0\TGBot1.0\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\Гохля\Desktop\программирование\CSharp-cours\TGBot1.0\TGBot1.0\bin\Debug\netcoreapp3.1\Telegram.Bot.dll
+C:\Users\Гохля\Desktop\программирование\CSharp-cours\TGBot1.0\TGBot1.0\obj\Debug\netcoreapp3.1\TGBot1.0.csproj.AssemblyReference.cache
+C:\Users\Гохля\Desktop\программирование\CSharp-cours\TGBot1.0\TGBot1.0\obj\Debug\netcoreapp3.1\TGBot1.0.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Гохля\Desktop\программирование\CSharp-cours\TGBot1.0\TGBot1.0\obj\Debug\netcoreapp3.1\TGBot1.0.AssemblyInfoInputs.cache
+C:\Users\Гохля\Desktop\программирование\CSharp-cours\TGBot1.0\TGBot1.0\obj\Debug\netcoreapp3.1\TGBot1.0.AssemblyInfo.cs
+C:\Users\Гохля\Desktop\программирование\CSharp-cours\TGBot1.0\TGBot1.0\obj\Debug\netcoreapp3.1\TGBot1.0.csproj.CoreCompileInputs.cache
+C:\Users\Гохля\Desktop\программирование\CSharp-cours\TGBot1.0\TGBot1.0\obj\Debug\netcoreapp3.1\TGBot1.0.csproj.CopyComplete
+C:\Users\Гохля\Desktop\программирование\CSharp-cours\TGBot1.0\TGBot1.0\obj\Debug\netcoreapp3.1\TGBot1.0.dll
+C:\Users\Гохля\Desktop\программирование\CSharp-cours\TGBot1.0\TGBot1.0\obj\Debug\netcoreapp3.1\TGBot1.0.pdb
+C:\Users\Гохля\Desktop\программирование\CSharp-cours\TGBot1.0\TGBot1.0\obj\Debug\netcoreapp3.1\TGBot1.0.genruntimeconfig.cache
