@@ -1,0 +1,15 @@
+C:\Users\Гохля\Desktop\programming\CSharp-cours\12_закрываем_пробелы\1_перегрузка_операторов\1_перегрузка_операторов\bin\Debug\net6.0\1_перегрузка_операторов.exe
+C:\Users\Гохля\Desktop\programming\CSharp-cours\12_закрываем_пробелы\1_перегрузка_операторов\1_перегрузка_операторов\bin\Debug\net6.0\1_перегрузка_операторов.deps.json
+C:\Users\Гохля\Desktop\programming\CSharp-cours\12_закрываем_пробелы\1_перегрузка_операторов\1_перегрузка_операторов\bin\Debug\net6.0\1_перегрузка_операторов.runtimeconfig.json
+C:\Users\Гохля\Desktop\programming\CSharp-cours\12_закрываем_пробелы\1_перегрузка_операторов\1_перегрузка_операторов\bin\Debug\net6.0\1_перегрузка_операторов.dll
+C:\Users\Гохля\Desktop\programming\CSharp-cours\12_закрываем_пробелы\1_перегрузка_операторов\1_перегрузка_операторов\bin\Debug\net6.0\1_перегрузка_операторов.pdb
+C:\Users\Гохля\Desktop\programming\CSharp-cours\12_закрываем_пробелы\1_перегрузка_операторов\1_перегрузка_операторов\obj\Debug\net6.0\1_перегрузка_операторов.csproj.AssemblyReference.cache
+C:\Users\Гохля\Desktop\programming\CSharp-cours\12_закрываем_пробелы\1_перегрузка_операторов\1_перегрузка_операторов\obj\Debug\net6.0\1_перегрузка_операторов.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Гохля\Desktop\programming\CSharp-cours\12_закрываем_пробелы\1_перегрузка_операторов\1_перегрузка_операторов\obj\Debug\net6.0\1_перегрузка_операторов.AssemblyInfoInputs.cache
+C:\Users\Гохля\Desktop\programming\CSharp-cours\12_закрываем_пробелы\1_перегрузка_операторов\1_перегрузка_операторов\obj\Debug\net6.0\1_перегрузка_операторов.AssemblyInfo.cs
+C:\Users\Гохля\Desktop\programming\CSharp-cours\12_закрываем_пробелы\1_перегрузка_операторов\1_перегрузка_операторов\obj\Debug\net6.0\1_перегрузка_операторов.csproj.CoreCompileInputs.cache
+C:\Users\Гохля\Desktop\programming\CSharp-cours\12_закрываем_пробелы\1_перегрузка_операторов\1_перегрузка_операторов\obj\Debug\net6.0\1_перегрузка_операторов.dll
+C:\Users\Гохля\Desktop\programming\CSharp-cours\12_закрываем_пробелы\1_перегрузка_операторов\1_перегрузка_операторов\obj\Debug\net6.0\refint\1_перегрузка_операторов.dll
+C:\Users\Гохля\Desktop\programming\CSharp-cours\12_закрываем_пробелы\1_перегрузка_операторов\1_перегрузка_операторов\obj\Debug\net6.0\1_перегрузка_операторов.pdb
+C:\Users\Гохля\Desktop\programming\CSharp-cours\12_закрываем_пробелы\1_перегрузка_операторов\1_перегрузка_операторов\obj\Debug\net6.0\1_перегрузка_операторов.genruntimeconfig.cache
+C:\Users\Гохля\Desktop\programming\CSharp-cours\12_закрываем_пробелы\1_перегрузка_операторов\1_перегрузка_операторов\obj\Debug\net6.0\ref\1_перегрузка_операторов.dll
