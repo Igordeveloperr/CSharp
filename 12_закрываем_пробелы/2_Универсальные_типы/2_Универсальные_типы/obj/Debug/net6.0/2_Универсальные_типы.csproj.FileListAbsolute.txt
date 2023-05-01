@@ -1,0 +1,15 @@
+C:\Users\Гохля\Desktop\programming\CSharp-cours\12_закрываем_пробелы\2_Универсальные_типы\2_Универсальные_типы\bin\Debug\net6.0\2_Универсальные_типы.exe
+C:\Users\Гохля\Desktop\programming\CSharp-cours\12_закрываем_пробелы\2_Универсальные_типы\2_Универсальные_типы\bin\Debug\net6.0\2_Универсальные_типы.deps.json
+C:\Users\Гохля\Desktop\programming\CSharp-cours\12_закрываем_пробелы\2_Универсальные_типы\2_Универсальные_типы\bin\Debug\net6.0\2_Универсальные_типы.runtimeconfig.json
+C:\Users\Гохля\Desktop\programming\CSharp-cours\12_закрываем_пробелы\2_Универсальные_типы\2_Универсальные_типы\bin\Debug\net6.0\2_Универсальные_типы.dll
+C:\Users\Гохля\Desktop\programming\CSharp-cours\12_закрываем_пробелы\2_Универсальные_типы\2_Универсальные_типы\bin\Debug\net6.0\2_Универсальные_типы.pdb
+C:\Users\Гохля\Desktop\programming\CSharp-cours\12_закрываем_пробелы\2_Универсальные_типы\2_Универсальные_типы\obj\Debug\net6.0\2_Универсальные_типы.csproj.AssemblyReference.cache
+C:\Users\Гохля\Desktop\programming\CSharp-cours\12_закрываем_пробелы\2_Универсальные_типы\2_Универсальные_типы\obj\Debug\net6.0\2_Универсальные_типы.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Гохля\Desktop\programming\CSharp-cours\12_закрываем_пробелы\2_Универсальные_типы\2_Универсальные_типы\obj\Debug\net6.0\2_Универсальные_типы.AssemblyInfoInputs.cache
+C:\Users\Гохля\Desktop\programming\CSharp-cours\12_закрываем_пробелы\2_Универсальные_типы\2_Универсальные_типы\obj\Debug\net6.0\2_Универсальные_типы.AssemblyInfo.cs
+C:\Users\Гохля\Desktop\programming\CSharp-cours\12_закрываем_пробелы\2_Универсальные_типы\2_Универсальные_типы\obj\Debug\net6.0\2_Универсальные_типы.csproj.CoreCompileInputs.cache
+C:\Users\Гохля\Desktop\programming\CSharp-cours\12_закрываем_пробелы\2_Универсальные_типы\2_Универсальные_типы\obj\Debug\net6.0\2_Универсальные_типы.dll
+C:\Users\Гохля\Desktop\programming\CSharp-cours\12_закрываем_пробелы\2_Универсальные_типы\2_Универсальные_типы\obj\Debug\net6.0\refint\2_Универсальные_типы.dll
+C:\Users\Гохля\Desktop\programming\CSharp-cours\12_закрываем_пробелы\2_Универсальные_типы\2_Универсальные_типы\obj\Debug\net6.0\2_Универсальные_типы.pdb
+C:\Users\Гохля\Desktop\programming\CSharp-cours\12_закрываем_пробелы\2_Универсальные_типы\2_Универсальные_типы\obj\Debug\net6.0\2_Универсальные_типы.genruntimeconfig.cache
+C:\Users\Гохля\Desktop\programming\CSharp-cours\12_закрываем_пробелы\2_Универсальные_типы\2_Универсальные_типы\obj\Debug\net6.0\ref\2_Универсальные_типы.dll
