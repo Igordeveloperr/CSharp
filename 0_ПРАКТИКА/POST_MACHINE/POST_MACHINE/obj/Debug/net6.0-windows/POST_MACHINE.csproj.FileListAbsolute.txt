@@ -1,0 +1,17 @@
+C:\Users\Гохля\Desktop\programming\CSharp-cours\0_ПРАКТИКА\POST_MACHINE\POST_MACHINE\bin\Debug\net6.0-windows\POST_MACHINE.exe
+C:\Users\Гохля\Desktop\programming\CSharp-cours\0_ПРАКТИКА\POST_MACHINE\POST_MACHINE\bin\Debug\net6.0-windows\POST_MACHINE.deps.json
+C:\Users\Гохля\Desktop\programming\CSharp-cours\0_ПРАКТИКА\POST_MACHINE\POST_MACHINE\bin\Debug\net6.0-windows\POST_MACHINE.runtimeconfig.json
+C:\Users\Гохля\Desktop\programming\CSharp-cours\0_ПРАКТИКА\POST_MACHINE\POST_MACHINE\bin\Debug\net6.0-windows\POST_MACHINE.dll
+C:\Users\Гохля\Desktop\programming\CSharp-cours\0_ПРАКТИКА\POST_MACHINE\POST_MACHINE\bin\Debug\net6.0-windows\POST_MACHINE.pdb
+C:\Users\Гохля\Desktop\programming\CSharp-cours\0_ПРАКТИКА\POST_MACHINE\POST_MACHINE\obj\Debug\net6.0-windows\POST_MACHINE.csproj.AssemblyReference.cache
+C:\Users\Гохля\Desktop\programming\CSharp-cours\0_ПРАКТИКА\POST_MACHINE\POST_MACHINE\obj\Debug\net6.0-windows\POST_MACHINE.csproj.GenerateResource.cache
+C:\Users\Гохля\Desktop\programming\CSharp-cours\0_ПРАКТИКА\POST_MACHINE\POST_MACHINE\obj\Debug\net6.0-windows\POST_MACHINE.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Гохля\Desktop\programming\CSharp-cours\0_ПРАКТИКА\POST_MACHINE\POST_MACHINE\obj\Debug\net6.0-windows\POST_MACHINE.AssemblyInfoInputs.cache
+C:\Users\Гохля\Desktop\programming\CSharp-cours\0_ПРАКТИКА\POST_MACHINE\POST_MACHINE\obj\Debug\net6.0-windows\POST_MACHINE.AssemblyInfo.cs
+C:\Users\Гохля\Desktop\programming\CSharp-cours\0_ПРАКТИКА\POST_MACHINE\POST_MACHINE\obj\Debug\net6.0-windows\POST_MACHINE.csproj.CoreCompileInputs.cache
+C:\Users\Гохля\Desktop\programming\CSharp-cours\0_ПРАКТИКА\POST_MACHINE\POST_MACHINE\obj\Debug\net6.0-windows\POST_MACHINE.dll
+C:\Users\Гохля\Desktop\programming\CSharp-cours\0_ПРАКТИКА\POST_MACHINE\POST_MACHINE\obj\Debug\net6.0-windows\refint\POST_MACHINE.dll
+C:\Users\Гохля\Desktop\programming\CSharp-cours\0_ПРАКТИКА\POST_MACHINE\POST_MACHINE\obj\Debug\net6.0-windows\POST_MACHINE.pdb
+C:\Users\Гохля\Desktop\programming\CSharp-cours\0_ПРАКТИКА\POST_MACHINE\POST_MACHINE\obj\Debug\net6.0-windows\POST_MACHINE.genruntimeconfig.cache
+C:\Users\Гохля\Desktop\programming\CSharp-cours\0_ПРАКТИКА\POST_MACHINE\POST_MACHINE\obj\Debug\net6.0-windows\ref\POST_MACHINE.dll
+C:\Users\Гохля\Desktop\programming\CSharp-cours\0_ПРАКТИКА\POST_MACHINE\POST_MACHINE\obj\Debug\net6.0-windows\POST_MACHINE.MainWindow.resources
