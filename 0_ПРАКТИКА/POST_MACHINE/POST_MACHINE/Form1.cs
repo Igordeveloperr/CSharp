@@ -36,11 +36,39 @@ namespace POST_MACHINE
             }
         }
 
+        private Button CreateCell()
+        {
+            var btn = new Button();
+            btn.Text = "0";
+            btn.Font = new Font("Microsoft Sans Serif", 48F, FontStyle.Bold);
+            btn.Dock = DockStyle.Fill;
+            btn.Click += OnCellClick;
+            return btn;
+        }
+
+        private void OnCellClick(object? sender, EventArgs e)
+        {
+            var btn = (Button)sender!;
+            if (btn.Text == "X")
+            {
+                btn.Text = "0";
+            }
+            else
+            {
+                btn.Text = "X";
+            }
+        }
+
+        private void ÑlearTapeBtn_Click(object sender, EventArgs e)
+        {
+            _cells.ForEach(x => x.Text = "0");
+        }
+
         private void CompileBtn_Click(object sender, EventArgs e)
         {
             if (Int32.TryParse(cursorIndex.Text, out int res))
             {
-                ExecuteProgram(res); 
+                ExecuteProgram(res);
             }
             else
             {
@@ -59,7 +87,7 @@ namespace POST_MACHINE
                     CompileCode(cmd, ref i, ref index, ref commands);
                 }
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
@@ -83,26 +111,9 @@ namespace POST_MACHINE
             }
         }
 
-        private Button CreateCell()
+        private void codeField_TextChanged(object sender, EventArgs e)
         {
-            var btn = new Button();
-            btn.Text = "0";
-            btn.Font = new Font("Microsoft Sans Serif", 48F, FontStyle.Bold);
-            btn.Dock = DockStyle.Fill;
-            btn.Click += OnCellClick;
-            return btn;
+            
         }
-
-        private void OnCellClick(object? sender, EventArgs e)
-        {
-            var btn = (Button)sender!;
-            btn.Text = "X";
-        }
-
-        private void ÑlearTapeBtn_Click(object sender, EventArgs e)
-        {
-            _cells.ForEach(x => x.Text = "0");
-        }
-
     }
 }

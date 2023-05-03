@@ -43,6 +43,7 @@
             codeField.Size = new Size(797, 276);
             codeField.TabIndex = 0;
             codeField.Text = "";
+            codeField.TextChanged += codeField_TextChanged;
             // 
             // CompileBtn
             // 
