@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace POST_MACHINE.commands
 {
-    internal class RightCommand : ICommand
+    internal class PointCommand : ICommand
     {
-        public readonly static string Pattern = "r";
+        public readonly static string Pattern = "p";
         public void Execute(ref int increment, ref int index, ref string[] commands, ref List<Button> cells)
         {
             var arr = commands[increment - 1].Split(" ");
-            index++;
+            cells[index].Text = "X";
             increment = Convert.ToInt32(arr[1]);
             increment -= 1;
         }

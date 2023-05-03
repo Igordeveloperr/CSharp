@@ -6,13 +6,14 @@ using System.Threading.Tasks;
 
 namespace POST_MACHINE.commands
 {
-    internal class RightCommand : ICommand
+    internal class ErasePointCommand : ICommand
     {
-        public readonly static string Pattern = "r";
+        public readonly static string Pattern = "e";
+
         public void Execute(ref int increment, ref int index, ref string[] commands, ref List<Button> cells)
         {
             var arr = commands[increment - 1].Split(" ");
-            index++;
+            cells[index].Text = "0";
             increment = Convert.ToInt32(arr[1]);
             increment -= 1;
         }
