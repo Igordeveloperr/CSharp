@@ -35,38 +35,62 @@ namespace POST_MACHINE
 
         private void CompileBtn_Click(object sender, EventArgs e)
         {
-            int index = Convert.ToInt32(cursorIndex.Text);
-            var commands = codeField.Lines.ToList();
-            commands.ForEach(x => {
-                if(x == "r")
+            if (Int32.TryParse(cursorIndex.Text, out int res))
+            {
+                int index = res;
+                string[] commands = codeField.Lines.Select(x => x.Trim()).ToArray();
+                for (int i = 1; i <= commands.Length; i++)
                 {
-                    index++;
-                }
-                if (x == "l")
-                {
-                    index--;
-                }
-                if(x == "p")
-                {
-                    _cells[index].Text = "X";
-                }
-                if(x == "e")
-                {
-                    _cells[index].Text = "0";
-                }
-                if (x.StartsWith("j"))
-                {
+                    var x = commands[i - 1];
                     var arr = x.Split(" ");
-                    if (_cells[index].Text == "X")
-                    {
 
+                    if (x.StartsWith("r"))
+                    {
+                        index++;
+                        i = Convert.ToInt32(arr[1]);
+                        i -= 1;
+                    }
+                    if (x.StartsWith("l"))
+                    {
+                        index--;
+                        i = Convert.ToInt32(arr[1]);
+                        i -= 1;
+                    }
+                    if (x.StartsWith("p"))
+                    {
+                        _cells[index].Text = "X";
+                        i = Convert.ToInt32(arr[1]);
+                        i -= 1;
+                    }
+                    if (x.StartsWith("e"))
+                    {
+                        _cells[index].Text = "0";
+                        i = Convert.ToInt32(arr[1]);
+                        i -= 1;
+                    }
+                    if (x.StartsWith("j"))
+                    {
+                        if (_cells[index].Text == "X")
+                        {
+                            i = Convert.ToInt32(arr[1]);
+                        }
+                        else
+                        {
+                            i = Convert.ToInt32(arr[2]);
+                        }
+                        i -= 1;
+                    }
+                    if (x == "s")
+                    {
+                        i = commands.Length;
+                        MessageBox.Show("Машина остановлена!");
                     }
                 }
-                if(x == "s")
-                {
-                    MessageBox.Show("Машина остановлена!");
-                }
-            });
+            }
+            else
+            {
+                MessageBox.Show("Ошибка ввода указателя!!!");
+            }
         }
 
         private Button CreateCell()

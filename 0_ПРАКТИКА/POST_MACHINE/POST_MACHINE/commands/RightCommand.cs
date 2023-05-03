@@ -8,9 +8,10 @@ namespace POST_MACHINE.commands
 {
     internal class RightCommand : ICommand
     {
-        public void Execute()
+        public readonly string Cmd = @"r\s\d[0-9]\s\d[0-9]";
+        public void Execute(ref int increment, ref int index, ref string[] commands, ref List<Button> cells)
         {
-            
+            throw new NotImplementedException();
         }
     }
 }

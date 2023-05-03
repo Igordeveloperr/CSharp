@@ -8,6 +8,6 @@ namespace POST_MACHINE.commands
 {
     internal interface ICommand
     {
-        public void Execute();
+        public void Execute(ref int increment, ref int index, ref string[] commands, ref List<Button> cells);
     }
 }
