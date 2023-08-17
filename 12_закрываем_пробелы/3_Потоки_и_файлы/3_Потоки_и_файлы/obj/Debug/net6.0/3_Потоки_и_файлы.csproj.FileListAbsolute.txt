@@ -1,0 +1,15 @@
+C:\Users\Гохля\Desktop\programming\CSharp\12_закрываем_пробелы\3_Потоки_и_файлы\3_Потоки_и_файлы\bin\Debug\net6.0\3_Потоки_и_файлы.exe
+C:\Users\Гохля\Desktop\programming\CSharp\12_закрываем_пробелы\3_Потоки_и_файлы\3_Потоки_и_файлы\bin\Debug\net6.0\3_Потоки_и_файлы.deps.json
+C:\Users\Гохля\Desktop\programming\CSharp\12_закрываем_пробелы\3_Потоки_и_файлы\3_Потоки_и_файлы\bin\Debug\net6.0\3_Потоки_и_файлы.runtimeconfig.json
+C:\Users\Гохля\Desktop\programming\CSharp\12_закрываем_пробелы\3_Потоки_и_файлы\3_Потоки_и_файлы\bin\Debug\net6.0\3_Потоки_и_файлы.dll
+C:\Users\Гохля\Desktop\programming\CSharp\12_закрываем_пробелы\3_Потоки_и_файлы\3_Потоки_и_файлы\bin\Debug\net6.0\3_Потоки_и_файлы.pdb
+C:\Users\Гохля\Desktop\programming\CSharp\12_закрываем_пробелы\3_Потоки_и_файлы\3_Потоки_и_файлы\obj\Debug\net6.0\3_Потоки_и_файлы.csproj.AssemblyReference.cache
+C:\Users\Гохля\Desktop\programming\CSharp\12_закрываем_пробелы\3_Потоки_и_файлы\3_Потоки_и_файлы\obj\Debug\net6.0\3_Потоки_и_файлы.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Гохля\Desktop\programming\CSharp\12_закрываем_пробелы\3_Потоки_и_файлы\3_Потоки_и_файлы\obj\Debug\net6.0\3_Потоки_и_файлы.AssemblyInfoInputs.cache
+C:\Users\Гохля\Desktop\programming\CSharp\12_закрываем_пробелы\3_Потоки_и_файлы\3_Потоки_и_файлы\obj\Debug\net6.0\3_Потоки_и_файлы.AssemblyInfo.cs
+C:\Users\Гохля\Desktop\programming\CSharp\12_закрываем_пробелы\3_Потоки_и_файлы\3_Потоки_и_файлы\obj\Debug\net6.0\3_Потоки_и_файлы.csproj.CoreCompileInputs.cache
+C:\Users\Гохля\Desktop\programming\CSharp\12_закрываем_пробелы\3_Потоки_и_файлы\3_Потоки_и_файлы\obj\Debug\net6.0\3_Потоки_и_файлы.dll
+C:\Users\Гохля\Desktop\programming\CSharp\12_закрываем_пробелы\3_Потоки_и_файлы\3_Потоки_и_файлы\obj\Debug\net6.0\refint\3_Потоки_и_файлы.dll
+C:\Users\Гохля\Desktop\programming\CSharp\12_закрываем_пробелы\3_Потоки_и_файлы\3_Потоки_и_файлы\obj\Debug\net6.0\3_Потоки_и_файлы.pdb
+C:\Users\Гохля\Desktop\programming\CSharp\12_закрываем_пробелы\3_Потоки_и_файлы\3_Потоки_и_файлы\obj\Debug\net6.0\3_Потоки_и_файлы.genruntimeconfig.cache
+C:\Users\Гохля\Desktop\programming\CSharp\12_закрываем_пробелы\3_Потоки_и_файлы\3_Потоки_и_файлы\obj\Debug\net6.0\ref\3_Потоки_и_файлы.dll
