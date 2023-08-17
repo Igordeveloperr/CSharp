@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "4_Асинхронность_и_многопоточность/1.0.0": {
+        "runtime": {
+          "4_Асинхронность_и_многопоточность.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "4_Асинхронность_и_многопоточность/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
