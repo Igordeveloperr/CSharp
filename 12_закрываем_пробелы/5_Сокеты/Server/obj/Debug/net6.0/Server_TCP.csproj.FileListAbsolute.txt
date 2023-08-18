@@ -1,0 +1,15 @@
+C:\Users\Гохля\Desktop\programming\CSharp\12_закрываем_пробелы\5_Сокеты\Server\bin\Debug\net6.0\Server_TCP.exe
+C:\Users\Гохля\Desktop\programming\CSharp\12_закрываем_пробелы\5_Сокеты\Server\bin\Debug\net6.0\Server_TCP.deps.json
+C:\Users\Гохля\Desktop\programming\CSharp\12_закрываем_пробелы\5_Сокеты\Server\bin\Debug\net6.0\Server_TCP.runtimeconfig.json
+C:\Users\Гохля\Desktop\programming\CSharp\12_закрываем_пробелы\5_Сокеты\Server\bin\Debug\net6.0\Server_TCP.dll
+C:\Users\Гохля\Desktop\programming\CSharp\12_закрываем_пробелы\5_Сокеты\Server\bin\Debug\net6.0\Server_TCP.pdb
+C:\Users\Гохля\Desktop\programming\CSharp\12_закрываем_пробелы\5_Сокеты\Server\obj\Debug\net6.0\Server_TCP.csproj.AssemblyReference.cache
+C:\Users\Гохля\Desktop\programming\CSharp\12_закрываем_пробелы\5_Сокеты\Server\obj\Debug\net6.0\Server_TCP.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Гохля\Desktop\programming\CSharp\12_закрываем_пробелы\5_Сокеты\Server\obj\Debug\net6.0\Server_TCP.AssemblyInfoInputs.cache
+C:\Users\Гохля\Desktop\programming\CSharp\12_закрываем_пробелы\5_Сокеты\Server\obj\Debug\net6.0\Server_TCP.AssemblyInfo.cs
+C:\Users\Гохля\Desktop\programming\CSharp\12_закрываем_пробелы\5_Сокеты\Server\obj\Debug\net6.0\Server_TCP.csproj.CoreCompileInputs.cache
+C:\Users\Гохля\Desktop\programming\CSharp\12_закрываем_пробелы\5_Сокеты\Server\obj\Debug\net6.0\Server_TCP.dll
+C:\Users\Гохля\Desktop\programming\CSharp\12_закрываем_пробелы\5_Сокеты\Server\obj\Debug\net6.0\refint\Server_TCP.dll
+C:\Users\Гохля\Desktop\programming\CSharp\12_закрываем_пробелы\5_Сокеты\Server\obj\Debug\net6.0\Server_TCP.pdb
+C:\Users\Гохля\Desktop\programming\CSharp\12_закрываем_пробелы\5_Сокеты\Server\obj\Debug\net6.0\Server_TCP.genruntimeconfig.cache
+C:\Users\Гохля\Desktop\programming\CSharp\12_закрываем_пробелы\5_Сокеты\Server\obj\Debug\net6.0\ref\Server_TCP.dll

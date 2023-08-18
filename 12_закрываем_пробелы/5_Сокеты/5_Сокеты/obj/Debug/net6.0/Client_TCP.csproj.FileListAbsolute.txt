@@ -1,0 +1,15 @@
+C:\Users\Гохля\Desktop\programming\CSharp\12_закрываем_пробелы\5_Сокеты\5_Сокеты\bin\Debug\net6.0\Client_TCP.exe
+C:\Users\Гохля\Desktop\programming\CSharp\12_закрываем_пробелы\5_Сокеты\5_Сокеты\bin\Debug\net6.0\Client_TCP.deps.json
+C:\Users\Гохля\Desktop\programming\CSharp\12_закрываем_пробелы\5_Сокеты\5_Сокеты\bin\Debug\net6.0\Client_TCP.runtimeconfig.json
+C:\Users\Гохля\Desktop\programming\CSharp\12_закрываем_пробелы\5_Сокеты\5_Сокеты\bin\Debug\net6.0\Client_TCP.dll
+C:\Users\Гохля\Desktop\programming\CSharp\12_закрываем_пробелы\5_Сокеты\5_Сокеты\bin\Debug\net6.0\Client_TCP.pdb
+C:\Users\Гохля\Desktop\programming\CSharp\12_закрываем_пробелы\5_Сокеты\5_Сокеты\obj\Debug\net6.0\Client_TCP.csproj.AssemblyReference.cache
+C:\Users\Гохля\Desktop\programming\CSharp\12_закрываем_пробелы\5_Сокеты\5_Сокеты\obj\Debug\net6.0\Client_TCP.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Гохля\Desktop\programming\CSharp\12_закрываем_пробелы\5_Сокеты\5_Сокеты\obj\Debug\net6.0\Client_TCP.AssemblyInfoInputs.cache
+C:\Users\Гохля\Desktop\programming\CSharp\12_закрываем_пробелы\5_Сокеты\5_Сокеты\obj\Debug\net6.0\Client_TCP.AssemblyInfo.cs
+C:\Users\Гохля\Desktop\programming\CSharp\12_закрываем_пробелы\5_Сокеты\5_Сокеты\obj\Debug\net6.0\Client_TCP.csproj.CoreCompileInputs.cache
+C:\Users\Гохля\Desktop\programming\CSharp\12_закрываем_пробелы\5_Сокеты\5_Сокеты\obj\Debug\net6.0\Client_TCP.dll
+C:\Users\Гохля\Desktop\programming\CSharp\12_закрываем_пробелы\5_Сокеты\5_Сокеты\obj\Debug\net6.0\refint\Client_TCP.dll
+C:\Users\Гохля\Desktop\programming\CSharp\12_закрываем_пробелы\5_Сокеты\5_Сокеты\obj\Debug\net6.0\Client_TCP.pdb
+C:\Users\Гохля\Desktop\programming\CSharp\12_закрываем_пробелы\5_Сокеты\5_Сокеты\obj\Debug\net6.0\Client_TCP.genruntimeconfig.cache
+C:\Users\Гохля\Desktop\programming\CSharp\12_закрываем_пробелы\5_Сокеты\5_Сокеты\obj\Debug\net6.0\ref\Client_TCP.dll
