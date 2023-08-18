@@ -35,9 +35,8 @@ while(true)
     } 
     while (listener.Available > 0);
 
-    Console.WriteLine($"Buffer: {buffer}");
-    Console.WriteLine("-----------------------------------------");
     Console.WriteLine($"Data: {data}");
+    Console.WriteLine("-----------------------------------------");
 
     // отправляю ответ клиенту
     listener.Send(Encoding.UTF8.GetBytes("Accept data!"));

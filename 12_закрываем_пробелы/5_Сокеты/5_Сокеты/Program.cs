@@ -12,7 +12,7 @@ var endpoint = new IPEndPoint(IPAddress.Parse(IP), PORT);
 var socket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
 
 Console.Write("Enter data: ");
-var message = string.Empty ?? Console.ReadLine();
+var message = Console.ReadLine();
 var data = Encoding.UTF8.GetBytes(message);
 var builder = new StringBuilder();
 
