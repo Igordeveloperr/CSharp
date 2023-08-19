@@ -1,9 +1,12 @@
 ﻿using test;
 
-string mark;
+#region Destructor
+/*string mark;
 DateTime year;
 
 var bmw = new Car("BMW", DateTime.Now);
 bmw.Deconstruct(out mark, out year);
 Console.WriteLine(mark);
-Console.WriteLine(year);
+Console.WriteLine(year);*/
+#endregion
+
