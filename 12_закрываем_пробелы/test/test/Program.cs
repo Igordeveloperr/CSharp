@@ -13,4 +13,9 @@ Console.WriteLine(year);*/
 #region
 MyFile file = new MyFile("./data.txt");
 file.PrintPath();
+
+// копирование структуры
+MyFile secondFile = new MyFile();
+secondFile = file;
+secondFile.PrintPath();
 #endregion
