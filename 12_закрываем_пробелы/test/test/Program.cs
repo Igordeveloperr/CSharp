@@ -21,9 +21,9 @@ secondFile.PrintPath();*/
 #endregion
 
 #region Null-type
-// разрешаю присваивать null типу
+/*// разрешаю присваивать null типу
 int? age = null; // ЧЗХ ЭТО РЕАЛЬНО
 // операции с nullable-типами
 age = 12;
-int? x = age + 10; // результатом всегда должен быть nullable-тип
+int? x = age + 10; // результатом всегда должен быть nullable-тип*/
 #endregion
