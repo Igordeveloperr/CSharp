@@ -38,3 +38,16 @@ int y = x ?? 1488;
 Console.WriteLine(x);*/
 #endregion
 
+#region operation ?.
+/*void PrintInfo(Person? person)
+{
+    if(person != null)
+    {
+        Console.WriteLine($"{person.Work?.Length}");
+        Console.WriteLine(person.Age);
+    }
+}
+
+Person person = new Person("microsoft",23);
+PrintInfo(person);*/
+#endregion
