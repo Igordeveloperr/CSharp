@@ -10,3 +10,7 @@ Console.WriteLine(mark);
 Console.WriteLine(year);*/
 #endregion
 
+#region
+MyFile file = new MyFile("./data.txt");
+file.PrintPath();
+#endregion
