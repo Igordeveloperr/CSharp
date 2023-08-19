@@ -29,11 +29,12 @@ int? x = age + 10; // результатом всегда должен быть 
 #endregion
 
 #region operation ??
-string? token = null;
+/*string? token = null;
 string accessToken = token ?? "ah11dao921kl2j1g";
 Console.WriteLine(accessToken);
 
 int? x = 299;
 int y = x ?? 1488;
-Console.WriteLine(x);
+Console.WriteLine(x);*/
 #endregion
+
