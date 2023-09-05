@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33414.496
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "6_приколы_с функциями", "6_приколы_с функциями\6_приколы_с функциями.csproj", "{C0D463B7-E2FD-4BE5-8585-58338873A8E3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C0D463B7-E2FD-4BE5-8585-58338873A8E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0D463B7-E2FD-4BE5-8585-58338873A8E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0D463B7-E2FD-4BE5-8585-58338873A8E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0D463B7-E2FD-4BE5-8585-58338873A8E3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {91A79692-63CD-43C6-9FE4-0C29DD4FD71D}
+	EndGlobalSection
+EndGlobal
