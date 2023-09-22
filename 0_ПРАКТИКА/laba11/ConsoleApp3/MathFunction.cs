@@ -18,7 +18,7 @@ namespace ConsoleApp3
         {
             if(x < MIN_VALUE)
             {
-                PrintError("D(f) = [-1; +infinity)");
+                ErrorLogger.PrintError("D(f) = [-1; +infinity)");
                 throw new ArgumentException("D(f) = [-1; +infinity)");
             }
             else
@@ -36,7 +36,7 @@ namespace ConsoleApp3
             }
             else
             {
-                PrintError("D(f) = (-2; -1) U (-1; +infinity)");
+                ErrorLogger.PrintError("D(f) = (-2; -1) U (-1; +infinity)");
                 throw new ArgumentException("D(f) = (-2; -1) U (-1; +infinity)");
             }
         }
@@ -52,17 +52,9 @@ namespace ConsoleApp3
             }
             else
             {
-                PrintError("D(f) = (-2; -1) U (-1; +infinity)");
+                ErrorLogger.PrintError("D(f) = (-2; -1) U (-1; +infinity)");
                 throw new ArgumentException("D(f) = (-2; -1) U (-1; +infinity)");
             }
-        }
-
-        // логирование ошибок
-        private void PrintError(string message)
-        {
-            Console.ForegroundColor = ConsoleColor.Red;
-            Console.WriteLine(message);
-            Console.ForegroundColor = ConsoleColor.Green;
         }
     }
 }
