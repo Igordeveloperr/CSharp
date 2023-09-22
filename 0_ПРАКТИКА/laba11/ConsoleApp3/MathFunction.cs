@@ -11,14 +11,14 @@ namespace ConsoleApp3
         // мин значение функции
         private const int MIN_VALUE = -1;
         // до куда округляем
-        private const byte ROUND = 6;
+        public const byte ROUND = 6;
 
         // считаем значение функции
         public double Calculate(double x)
         {
             if(x < MIN_VALUE)
             {
-                ErrorLogger.PrintError("D(f) = [-1; +infinity)");
+                Logger.LogError("D(f) = [-1; +infinity)");
                 throw new ArgumentException("D(f) = [-1; +infinity)");
             }
             else
@@ -36,7 +36,7 @@ namespace ConsoleApp3
             }
             else
             {
-                ErrorLogger.PrintError("D(f) = (-2; -1) U (-1; +infinity)");
+                Logger.LogError("D(f) = (-2; -1) U (-1; +infinity)");
                 throw new ArgumentException("D(f) = (-2; -1) U (-1; +infinity)");
             }
         }
@@ -52,7 +52,7 @@ namespace ConsoleApp3
             }
             else
             {
-                ErrorLogger.PrintError("D(f) = (-2; -1) U (-1; +infinity)");
+                Logger.LogError("D(f) = (-2; -1) U (-1; +infinity)");
                 throw new ArgumentException("D(f) = (-2; -1) U (-1; +infinity)");
             }
         }

@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp3
 {
-    internal static class ErrorLogger
+    internal static class Logger
     {
         // логирование ошибок
-        public static void PrintError(string message)
+        public static void LogError(string message)
         {
             Console.ForegroundColor = ConsoleColor.Red;
             Console.WriteLine(message);

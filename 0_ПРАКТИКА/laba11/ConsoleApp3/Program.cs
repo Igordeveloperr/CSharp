@@ -24,6 +24,7 @@ CombinedMethod combinedMethod = new CombinedMethod
    b
 );
 
-
+combinedMethod.DetermineDirOfCalc();
+Console.WriteLine($"Ответ: x = {combinedMethod.CalculateRoot()}");
 
 Console.ForegroundColor = ConsoleColor.White;
