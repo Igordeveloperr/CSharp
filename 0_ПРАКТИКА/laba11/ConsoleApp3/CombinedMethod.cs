@@ -35,15 +35,16 @@ namespace ConsoleApp3
             _endOfInterval = endOfInterval;
         }
 
-        public void DetermineDirOfCalc()
+        // выводим направление вычислений
+        public void SelectDirOfCalc()
         {
             if (_funcValA * _secondDerValA > 0)
             {
-                Console.WriteLine("Метод касательных по недостатку; Метод хорд по избытку");
+                Console.WriteLine("Метод касательных по недостатку; Метод хорд по избытку:");
             }
             else if (_funcValB * _secondDerValB > 0)
             {
-                Console.WriteLine("Метод касательных по избытку; Метод хорд по недостатку");
+                Console.WriteLine("Метод касательных по избытку; Метод хорд по недостатку:");
             }
             else
             {
@@ -70,10 +71,15 @@ namespace ConsoleApp3
             for (int i = 0; i < MAX_ITERATIONS; i++)
             {
                 difference = Math.Abs(xk - xk_);
+                fxk = Math.Round(function.Calculate(xk), MathFunction.ROUND);
+                fxk_ = Math.Round(function.Calculate(xk_), MathFunction.ROUND);
+                xk = Math.Round(xk, MathFunction.ROUND);
+                xk_ = Math.Round(xk_, MathFunction.ROUND);
+                difference = Math.Round(difference, MathFunction.ROUND);
+                Console.WriteLine($"n:{i} ----- xk:{xk} ----- xk_:{xk_} ----- f(xk):{fxk} ----- f(xk_):{fxk_} ----- |xk - xk_|: {difference}");
+
                 // критерий останова
                 if (difference < 2 * E) break;
-                fxk = function.Calculate(xk);
-                fxk_ = function.Calculate(xk_);
 
                 if (_funcValA * _secondDerValA > 0)
                 {
