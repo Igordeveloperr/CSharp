@@ -56,5 +56,33 @@ namespace ConsoleApp3
                 throw new ArgumentException("D(f) = (-2; -1) U (-1; +infinity)");
             }
         }
+
+        // вычисление канонической функции
+        public double CalculateCanon(double x)
+        {
+            if (x >= -1)
+            {
+                return Math.Round(Math.Sqrt(Math.Log(x + 2)), ROUND);
+            }
+            else
+            {
+                Logger.LogError("D(f) = [-1; +infinity)");
+                throw new ArgumentException("D(f) = [-1; +infinity)");
+            }
+        }
+
+        // вычисление 1 производной канонической функции
+        public double CalculateCanonFirstDerivative(double x)
+        {
+            if ((x > -2 && x < -1) || x > -1)
+            {
+                return Math.Round(1 / (2*Math.Log(Math.Sqrt(x+2)) * (x+2)), ROUND);
+            }
+            else
+            {
+                Logger.LogError("D(f) = (-2; -1) U (-1; +infinity)");
+                throw new ArgumentException("D(f) = (-2; -1) U (-1; +infinity)");
+            }
+        }
     }
 }
