@@ -72,12 +72,14 @@ namespace ConsoleApp3
 
             for (int i = 0; i < MAX_ITERATIONS; i++)
             {
+                // вычисляем основные значения перед подстановкой в формулу
                 difference = Math.Abs(xk - xk_);
                 fxk = Math.Round(function.Calculate(xk), MathFunction.ROUND);
                 fxk_ = Math.Round(function.Calculate(xk_), MathFunction.ROUND);
                 xk = Math.Round(xk, MathFunction.ROUND);
                 xk_ = Math.Round(xk_, MathFunction.ROUND);
                 difference = Math.Round(difference, MathFunction.ROUND);
+                // вывод таблицы значений на экран
                 Console.WriteLine(
                     "n:{0,10} | xk:{1,10} | xk_:{2,10} | f(xk):{3,10} | f(xk_):{4,10} | |xk - xk_|: {5,10}",
                     i, xk, xk_, fxk, fxk_, difference
@@ -86,6 +88,7 @@ namespace ConsoleApp3
                 // критерий останова
                 if (difference < 2 * E) break;
 
+                // выбираем по какой формуле считать
                 if (_funcValA * _secondDerValA > 0)
                 {
                     xk = xk - fxk / function.CalculateFirstDerivative(xk);
@@ -102,6 +105,7 @@ namespace ConsoleApp3
                     throw new ArgumentException("Ошибка! Проверьте корректность функции!");
                 }
             }
+            // возвращаем полученный корень уравнения
             return Math.Round((xk + xk_) / 2, MathFunction.ROUND);
         }
     }
