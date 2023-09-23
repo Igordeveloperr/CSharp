@@ -106,7 +106,7 @@ namespace ConsoleApp3
                 }
             }
             // возвращаем полученный корень уравнения
-            return Math.Round((xk + xk_) / 2, MathFunction.ROUND);
+            return xk;
         }
     }
 }
