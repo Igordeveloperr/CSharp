@@ -38,6 +38,7 @@ namespace ConsoleApp3
         // выводим направление вычислений
         public void SelectDirOfCalc()
         {
+            Console.ForegroundColor = ConsoleColor.Magenta;
             if (_funcValA * _secondDerValA > 0)
             {
                 Console.WriteLine("Метод касательных по недостатку; Метод хорд по избытку:");
@@ -51,6 +52,7 @@ namespace ConsoleApp3
                 Logger.LogError("Ошибка! Проверьте корректность функции!");
                 throw new ArgumentException("Ошибка! Проверьте корректность функции!");
             }
+            Console.ForegroundColor = ConsoleColor.Green;
         }
 
         // вычисляем значение корня на заданном интервале
@@ -76,7 +78,10 @@ namespace ConsoleApp3
                 xk = Math.Round(xk, MathFunction.ROUND);
                 xk_ = Math.Round(xk_, MathFunction.ROUND);
                 difference = Math.Round(difference, MathFunction.ROUND);
-                Console.WriteLine($"n:{i} ----- xk:{xk} ----- xk_:{xk_} ----- f(xk):{fxk} ----- f(xk_):{fxk_} ----- |xk - xk_|: {difference}");
+                Console.WriteLine(
+                    "n:{0,10} | xk:{1,10} | xk_:{2,10} | f(xk):{3,10} | f(xk_):{4,10} | |xk - xk_|: {5,10}",
+                    i, xk, xk_, fxk, fxk_, difference
+                );
 
                 // критерий останова
                 if (difference < 2 * E) break;

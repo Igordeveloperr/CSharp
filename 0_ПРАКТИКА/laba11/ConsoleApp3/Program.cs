@@ -2,17 +2,22 @@
 
 Console.ForegroundColor = ConsoleColor.Green;
 
-const string separator = "--------------";
 double a = 0.8;
 double b = 1.7;
 MathFunction function = new MathFunction();
 
-Console.WriteLine($"f(x) = x - sqrt(ln(x+2)) \n {separator}");
-Console.WriteLine($"a = {a}, b = {b} \n {separator}");
+Console.WriteLine("f(x) = x - sqrt(ln(x+2))");
+Logger.DrawSeparator();
+Console.WriteLine("f`(x) = 1 - 1 / (2ln(sqrt(x+2)) * (x+2))");
+Logger.DrawSeparator();
+Console.WriteLine("f``(x) = (2ln(sqrt(x+2)) + 1) / (4ln^2(sqrt(x+2)) * (x+2)^2)");
+Logger.DrawSeparator();
 Console.WriteLine($"f(a) = {function.Calculate(a)}");
-Console.WriteLine($"f(b) = {function.Calculate(b)} \n {separator}");
+Console.WriteLine($"f(b) = {function.Calculate(b)}");
+Logger.DrawSeparator();
 Console.WriteLine($"f``(a) = {function.CalculateSecondDerivative(a)}");
-Console.WriteLine($"f``(b) = {function.CalculateSecondDerivative(b)} \n {separator}");
+Console.WriteLine($"f``(b) = {function.CalculateSecondDerivative(b)}");
+Logger.DrawSeparator();
 
 CombinedMethod combinedMethod = new CombinedMethod
 (
@@ -25,7 +30,9 @@ CombinedMethod combinedMethod = new CombinedMethod
 );
 
 combinedMethod.SelectDirOfCalc();
-Console.WriteLine($"\n {separator}");
-Console.WriteLine($"Ответ: x = {combinedMethod.CalculateRoot()}");
+double result = combinedMethod.CalculateRoot();
+Console.ForegroundColor = ConsoleColor.Yellow;
+Console.WriteLine($"Ответ: x = {result}");
+Console.ForegroundColor = ConsoleColor.Green;
 
 Console.ForegroundColor = ConsoleColor.White;
