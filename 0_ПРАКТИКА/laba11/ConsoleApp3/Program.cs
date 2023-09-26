@@ -45,25 +45,30 @@ Logger.DrawSeparator();
 Console.WriteLine("\n");
 #endregion;
 
+#region Simple iteration method
+// вывод основных параметров на экран
 Console.WriteLine("2.Метод простых итераций: \n");
 Console.WriteLine("x - sqrt(ln(x+2)) = 0");
 Logger.DrawSeparator();
-Console.WriteLine("x = sqrt(ln(x+2))");
+Console.WriteLine($"ф(x) = x - f(x) / {function.CalculateK(a, b)}");
 Logger.DrawSeparator();
-Console.WriteLine("ф`(x) = 1 / (2*ln(sqrt(x+2)) * (x+2))");
+Console.WriteLine($"ф`(x) = 1 - f'(x) / {function.CalculateK(a, b)}");
 Logger.DrawSeparator();
 
 SIMethod sIMethod = new SIMethod(a, b);
-
-Console.WriteLine($"ф`(a) = {function.CalculateCanonFirstDerivative(a)}");
-Console.WriteLine($"ф`(b) = {function.CalculateCanonFirstDerivative(b)}");
+// вывод значений производный канонич функции
+Console.WriteLine($"ф`(a) = {function.CalculateCanonFirstDerivative(a, a, b)}");
+Console.WriteLine($"ф`(b) = {function.CalculateCanonFirstDerivative(b, a, b)}");
 Logger.DrawSeparator();
 
+// считаем корень
 result =  sIMethod.CalculateRoot();
 
+// выводим результат на экран
 Console.ForegroundColor = ConsoleColor.Yellow;
 Console.WriteLine($"Ответ: x = {result}");
 Console.ForegroundColor = ConsoleColor.Green;
 Logger.DrawSeparator();
+#endregion
 
 Console.ForegroundColor = ConsoleColor.White;

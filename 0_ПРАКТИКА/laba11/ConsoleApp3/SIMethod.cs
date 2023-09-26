@@ -16,7 +16,9 @@ namespace ConsoleApp3
         private double _startInterval;
         // конец интервала
         private double _endInterval;
+        // ф`(x)
         private double _fi_x;
+        // x_k+1
         private double _xk;
         private MathFunction _function;
 
@@ -55,7 +57,7 @@ namespace ConsoleApp3
             bool isCover = CheckConvergence();
             if (isCover)
             {
-                return Calculate();
+                return Math.Round(Calculate(), MathFunction.ROUND);
             }
             else
             {
@@ -74,8 +76,8 @@ namespace ConsoleApp3
 
             for (int i = 0; i < MAX_ITERATIONS; i++)
             {
-                x = _function.CalculateCanon(_xk);
-                if(_fi_x > 0)
+                x = _function.CalculateCanon(_xk, _startInterval, _endInterval);
+                if (_fi_x > 0)
                 {
                     difference = Math.Abs(x - _xk) / (1 - q);
                 }
@@ -97,8 +99,8 @@ namespace ConsoleApp3
         // определяем КФ q
         private double SelectMaxValue()
         {
-            double fi_a = _function.CalculateCanonFirstDerivative(_startInterval);
-            double fi_b = _function.CalculateCanonFirstDerivative(_endInterval);
+            double fi_a = Math.Abs(_function.CalculateCanonFirstDerivative(_startInterval, _startInterval, _endInterval));
+            double fi_b = Math.Abs(_function.CalculateCanonFirstDerivative(_endInterval, _startInterval, _endInterval));
             double max;
 
             if (fi_a >= fi_b)
@@ -122,7 +124,7 @@ namespace ConsoleApp3
         private bool CheckConvergence()
         {
             _xk = CalculateMidOfSegment();
-            _fi_x = Math.Abs(_function.CalculateCanonFirstDerivative(_xk));
+            _fi_x = Math.Abs(_function.CalculateCanonFirstDerivative(_xk, _startInterval, _endInterval));
             if (_fi_x < 1)
             {
                 //Console.WriteLine("ф`(x) < 1, условие сходимости выполняется");
