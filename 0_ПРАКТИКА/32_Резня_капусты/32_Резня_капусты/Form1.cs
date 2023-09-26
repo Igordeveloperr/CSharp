@@ -13,8 +13,8 @@ namespace _32_Резня_капусты
 {
     public partial class Form1 : Form
     {
-        // полe
-        private List<PictureBox> field = new List<PictureBox>();
+        private List<PictureBox> fillCells = new List<PictureBox>();
+        private List<PictureBox> emptyCells = new List<PictureBox>();
         private Random rnd = new Random(Guid.NewGuid().GetHashCode());
         public Form1()
         { 
@@ -30,7 +30,6 @@ namespace _32_Резня_капусты
                 box.Width = 65;
                 box.Height = 50;
                 box.Name = $"cell{i}";
-                field.Add(box);
                 string path = string.Empty;
 
                 long a = rnd.Next(0, 1000000);
@@ -38,14 +37,26 @@ namespace _32_Резня_капусты
                 if ((a*b) % 2 == 0)
                 {
                     path = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"img\kacan.jpg");
+                    box.Image = Image.FromFile(path);
+                    fillCells.Add(box);
                 }
                 else
                 {
                     path = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"img\krot.jpg");
+                    box.Image = Image.FromFile(path);
+                    emptyCells.Add(box);
                 }
-                box.Image = Image.FromFile(path);
                 basePanel.Controls.Add(box);
             }
+        }
+
+        private void startBtn_Click(object sender, EventArgs e)
+        {
+            int x = rnd.Next(0, emptyCells.Count);
+            PictureBox box = emptyCells[x];
+            emptyCells.Remove(box);
+            box.Image = Image.FromFile(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"img\kacan.jpg"));
+            fillCells.Add(box);
         }
     }
 }
