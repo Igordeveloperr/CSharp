@@ -61,6 +61,7 @@ namespace _32_Резня_капусты
                 if (emptyCells.Count == 0)
                 {
                     MessageBox.Show("Игра окончена!");
+                    startBtn.Enabled = true;
                     break;
                 }
                 else

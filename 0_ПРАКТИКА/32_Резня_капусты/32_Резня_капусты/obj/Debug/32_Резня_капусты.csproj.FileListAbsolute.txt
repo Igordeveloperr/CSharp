@@ -9,3 +9,14 @@ C:\Users\Гохля\Desktop\programming\CSharp\0_ПРАКТИКА\32_Резня_
 C:\Users\Гохля\Desktop\programming\CSharp\0_ПРАКТИКА\32_Резня_капусты\32_Резня_капусты\obj\Debug\32_Резня_капусты.csproj.CoreCompileInputs.cache
 C:\Users\Гохля\Desktop\programming\CSharp\0_ПРАКТИКА\32_Резня_капусты\32_Резня_капусты\obj\Debug\32_Резня_капусты.exe
 C:\Users\Гохля\Desktop\programming\CSharp\0_ПРАКТИКА\32_Резня_капусты\32_Резня_капусты\obj\Debug\32_Резня_капусты.pdb
+C:\Users\Gokhlia\Desktop\CSharp\0_ПРАКТИКА\32_Резня_капусты\32_Резня_капусты\bin\Debug\32_Резня_капусты.exe.config
+C:\Users\Gokhlia\Desktop\CSharp\0_ПРАКТИКА\32_Резня_капусты\32_Резня_капусты\bin\Debug\32_Резня_капусты.exe
+C:\Users\Gokhlia\Desktop\CSharp\0_ПРАКТИКА\32_Резня_капусты\32_Резня_капусты\bin\Debug\32_Резня_капусты.pdb
+C:\Users\Gokhlia\Desktop\CSharp\0_ПРАКТИКА\32_Резня_капусты\32_Резня_капусты\obj\Debug\32_Резня_капусты.csproj.AssemblyReference.cache
+C:\Users\Gokhlia\Desktop\CSharp\0_ПРАКТИКА\32_Резня_капусты\32_Резня_капусты\obj\Debug\32_Резня_капусты.csproj.SuggestedBindingRedirects.cache
+C:\Users\Gokhlia\Desktop\CSharp\0_ПРАКТИКА\32_Резня_капусты\32_Резня_капусты\obj\Debug\_32_Резня_капусты.Form1.resources
+C:\Users\Gokhlia\Desktop\CSharp\0_ПРАКТИКА\32_Резня_капусты\32_Резня_капусты\obj\Debug\_32_Резня_капусты.Properties.Resources.resources
+C:\Users\Gokhlia\Desktop\CSharp\0_ПРАКТИКА\32_Резня_капусты\32_Резня_капусты\obj\Debug\32_Резня_капусты.csproj.GenerateResource.cache
+C:\Users\Gokhlia\Desktop\CSharp\0_ПРАКТИКА\32_Резня_капусты\32_Резня_капусты\obj\Debug\32_Резня_капусты.csproj.CoreCompileInputs.cache
+C:\Users\Gokhlia\Desktop\CSharp\0_ПРАКТИКА\32_Резня_капусты\32_Резня_капусты\obj\Debug\32_Резня_капусты.exe
+C:\Users\Gokhlia\Desktop\CSharp\0_ПРАКТИКА\32_Резня_капусты\32_Резня_капусты\obj\Debug\32_Резня_капусты.pdb
