@@ -30,6 +30,7 @@
         {
             this.basePanel = new System.Windows.Forms.FlowLayoutPanel();
             this.startBtn = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.SuspendLayout();
             // 
             // basePanel
@@ -54,11 +55,19 @@
             this.startBtn.UseVisualStyleBackColor = false;
             this.startBtn.Click += new System.EventHandler(this.startBtn_Click);
             // 
+            // panel1
+            // 
+            this.panel1.Location = new System.Drawing.Point(751, 57);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(63, 55);
+            this.panel1.TabIndex = 2;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1021, 747);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.startBtn);
             this.Controls.Add(this.basePanel);
             this.Name = "Form1";
@@ -71,6 +80,7 @@
 
         private System.Windows.Forms.FlowLayoutPanel basePanel;
         private System.Windows.Forms.Button startBtn;
+        private System.Windows.Forms.Panel panel1;
     }
 }
 
