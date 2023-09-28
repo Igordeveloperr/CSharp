@@ -54,6 +54,8 @@ namespace _32_Резня_капусты
             // кнопка стоп
             if (_isStartBtn == false)
             {
+                // откатываем лампу
+                lamp.BackColor = Color.White;
                 // сброс таймера
                 mainTimer.Enabled = false;
                 mainTimer.Stop();
@@ -73,7 +75,7 @@ namespace _32_Резня_капусты
         // прерывание по таймеру
         private void mainTimer_Tick(object sender, EventArgs e)
         {
-            _gameIsActive = _field.ExecuteLogic(panel1, 100, mainTimer);
+            _gameIsActive = _field.ExecuteLogic(lamp, mainTimer);
         }
     }
 }

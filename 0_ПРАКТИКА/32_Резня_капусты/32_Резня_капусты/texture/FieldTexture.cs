@@ -17,7 +17,7 @@ namespace _32_Резня_капусты.texture
         private Random rnd = new Random(Guid.NewGuid().GetHashCode());
 
         // основная логика работы поля
-        public bool ExecuteLogic(Panel lamPanel, int delay, System.Windows.Forms.Timer timer)
+        public bool ExecuteLogic(Panel lamPanel, System.Windows.Forms.Timer timer)
         {
             if (emptyCells.Count == 0)
             {
@@ -28,14 +28,14 @@ namespace _32_Резня_капусты.texture
             }
             else
             {
-                PlantCabbage(delay);
-                ActivateLampLogic(lamPanel, delay);
+                PlantCabbage();
+                ActivateLampLogic(lamPanel);
                 return false;
             }
         }
 
         // логика аварийной лампы
-        private void ActivateLampLogic(Panel lamp, int delay)
+        private void ActivateLampLogic(Panel lamp)
         {
             long a = rnd.Next(0, 1000000);
             long b = rnd.Next(0, 1000000);
@@ -43,8 +43,11 @@ namespace _32_Резня_капусты.texture
             if ((a * b) % 2 == 1 && (b % 3 == 0))
             {
                 lamp.BackColor = Color.Red;
-                lamp.BackColor = Color.White;
                 ClearColumn();
+            }
+            else
+            {
+                lamp.BackColor = Color.White;
             }
         }
 
@@ -63,7 +66,7 @@ namespace _32_Резня_капусты.texture
         }
 
         // садим капусту в выбраную ячейку
-        private void PlantCabbage(int delay)
+        private void PlantCabbage()
         {
             int x = rnd.Next(0, emptyCells.Count);
             PictureBox cell = emptyCells[x];
@@ -85,6 +88,7 @@ namespace _32_Резня_капусты.texture
             }
         }
         
+        // чистим вспомогательные маcсивы
         public void ClearCache()
         {
             field.Clear();
