@@ -96,28 +96,33 @@ namespace _32_Резня_капусты.texture
         {
             for (int i = 0; i < 100; i++)
             {
-                PictureBox box = new PictureBox();
-                box.Width = 65;
-                box.Height = 50;
-                box.Name = $"cell{i}";
-                string path = string.Empty;
+                PictureBox cell = new PictureBox();
+                cell.Width = 65;
+                cell.Height = 50;
+                cell.Name = $"cell{i}";
+                SelectImageForCell(cell);
+                field.Add(cell);
+                basePanel.Controls.Add(cell);
+            }
+        }
 
-                long a = rnd.Next(0, 1000000);
-                long b = rnd.Next(0, 1000000);
-                if ((a * b) % 2 == 0)
-                {
-                    path = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"img\kacan.jpg");
-                    box.Image = Image.FromFile(path);
-                    fillCells.Add(box);
-                }
-                else
-                {
-                    path = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"img\krot.jpg");
-                    box.Image = Image.FromFile(path);
-                    emptyCells.Add(box);
-                }
-                field.Add(box);
-                basePanel.Controls.Add(box);
+        // выбор картинки с пмоощью рандома
+        private void SelectImageForCell(PictureBox cell)
+        {
+            long a = rnd.Next(0, 1000000);
+            long b = rnd.Next(0, 1000000);
+            string path = string.Empty;
+            if ((a * b) % 2 == 0)
+            {
+                path = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"img\kacan.jpg");
+                cell.Image = Image.FromFile(path);
+                fillCells.Add(cell);
+            }
+            else
+            {
+                path = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"img\krot.jpg");
+                cell.Image = Image.FromFile(path);
+                emptyCells.Add(cell);
             }
         }
 
