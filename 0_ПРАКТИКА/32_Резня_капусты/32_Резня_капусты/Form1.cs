@@ -29,34 +29,51 @@ namespace _32_Резня_капусты
             _isStartBtn = true;
         }
 
-        private async void startBtn_Click(object sender, EventArgs e)
+        // обработка кнопки формы
+        private void startBtn_Click(object sender, EventArgs e)
         {
             // кнопка старт
             if (_isStartBtn)
             {
+                _gameIsActive = false;
                 _stoprBtnTexture = new StopBtnTexture(startBtn);
                 _stoprBtnTexture.Draw(basePanel);
                 _isStartBtn = false;
-                await ActivateGame();
+                mainTimer.Enabled = true;
+                mainTimer.Start();
             }
             else
             {
-                // кнопка стоп
-                if (_isStartBtn == false && _gameIsActive == true)
-                {
-                    _isStartBtn = true;
-                    _startBtnTexture = new StartBtnTexture(startBtn);
-                    _startBtnTexture.Draw(basePanel);
-                }
+                ValidateStopBtn();
             }
         }
 
-        private async Task ActivateGame()
+        // обработка кнопки стоп
+        private void ValidateStopBtn()
         {
-            while (!_gameIsActive)
+            // кнопка стоп
+            if (_isStartBtn == false)
             {
-                _gameIsActive = await _field.ExecuteLogic(panel1, 500);
+                // сброс таймера
+                mainTimer.Enabled = false;
+                mainTimer.Stop();
+                // чистим вспомогательные массивы
+                _field.ClearCache();
+                // игра доступна
+                _gameIsActive = true;
+                // регенерация поля
+                _field.Draw(basePanel);
+                // колдуем кнопкой
+                _isStartBtn = true;
+                _startBtnTexture = new StartBtnTexture(startBtn);
+                _startBtnTexture.Draw(basePanel);
             }
+        }
+
+        // прерывание по таймеру
+        private void mainTimer_Tick(object sender, EventArgs e)
+        {
+            _gameIsActive = _field.ExecuteLogic(panel1, 100, mainTimer);
         }
     }
 }

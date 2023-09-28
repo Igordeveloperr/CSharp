@@ -28,9 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.basePanel = new System.Windows.Forms.FlowLayoutPanel();
             this.startBtn = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.mainTimer = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
             // basePanel
@@ -62,6 +64,11 @@
             this.panel1.Size = new System.Drawing.Size(63, 55);
             this.panel1.TabIndex = 2;
             // 
+            // mainTimer
+            // 
+            this.mainTimer.Interval = 300;
+            this.mainTimer.Tick += new System.EventHandler(this.mainTimer_Tick);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -81,6 +88,7 @@
         private System.Windows.Forms.FlowLayoutPanel basePanel;
         private System.Windows.Forms.Button startBtn;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Timer mainTimer;
     }
 }
 
