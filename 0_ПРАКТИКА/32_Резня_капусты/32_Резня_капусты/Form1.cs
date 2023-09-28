@@ -13,14 +13,14 @@ using _32_Резня_капусты.texture;
 
 namespace _32_Резня_капусты
 {
-    public partial class Form1 : Form
+    public partial class MainWindow : Form
     {
         private StartBtnTexture _startBtnTexture;
         private StopBtnTexture _stoprBtnTexture;
         private bool _isStartBtn;
         private bool _gameIsActive;
         private FieldTexture _field;
-        public Form1()
+        public MainWindow()
         { 
             InitializeComponent();
             _startBtnTexture = new StartBtnTexture(startBtn);
@@ -29,6 +29,7 @@ namespace _32_Резня_капусты
             _field.Draw(basePanel);
             _gameIsActive = false;
             _isStartBtn = true;
+            lamp.BackgroundImage = Image.FromFile(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"img\offLamp.png"));
         }
 
         // обработка кнопки формы
@@ -56,7 +57,7 @@ namespace _32_Резня_капусты
             if (_isStartBtn == false)
             {
                 // откатываем лампу
-                lamp.BackColor = Color.White;
+                lamp.BackgroundImage = Image.FromFile(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"img\offLamp.png"));
                 // сброс таймера
                 mainTimer.Enabled = false;
                 mainTimer.Stop();
@@ -76,6 +77,18 @@ namespace _32_Резня_капусты
         private void mainTimer_Tick(object sender, EventArgs e)
         {
             _gameIsActive = _field.ExecuteLogic(lamp, mainTimer);
+        }
+
+        // обработка кнопки паузы
+        private void pauseBtn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        // обработка кнопки выхода
+        private void exitBtn_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

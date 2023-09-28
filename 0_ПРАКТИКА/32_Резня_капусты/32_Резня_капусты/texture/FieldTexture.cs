@@ -42,12 +42,12 @@ namespace _32_Резня_капусты.texture
             // лампа горит
             if ((a * b) % 2 == 1 && (b % 3 == 0))
             {
-                lamp.BackColor = Color.Red;
+                lamp.BackgroundImage = Image.FromFile(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"img\onLamp.png"));
                 ClearColumn();
             }
             else
             {
-                lamp.BackColor = Color.White;
+                lamp.BackgroundImage = Image.FromFile(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"img\offLamp.png"));
             }
         }
 

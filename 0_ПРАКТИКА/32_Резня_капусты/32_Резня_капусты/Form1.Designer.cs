@@ -1,6 +1,6 @@
 ﻿namespace _32_Резня_капусты
 {
-    partial class Form1
+    partial class MainWindow
     {
         /// <summary>
         /// Обязательная переменная конструктора.
@@ -81,14 +81,13 @@
             // 
             // lamp
             // 
-            this.lamp.Location = new System.Drawing.Point(855, 57);
+            this.lamp.Location = new System.Drawing.Point(835, 32);
             this.lamp.Name = "lamp";
-            this.lamp.Size = new System.Drawing.Size(63, 55);
+            this.lamp.Size = new System.Drawing.Size(99, 92);
             this.lamp.TabIndex = 2;
             // 
             // mainTimer
             // 
-            this.mainTimer.Interval = 50;
             this.mainTimer.Tick += new System.EventHandler(this.mainTimer_Tick);
             // 
             // pauseBtn
@@ -104,6 +103,7 @@
             this.pauseBtn.TabIndex = 3;
             this.pauseBtn.Text = "Пауза";
             this.pauseBtn.UseVisualStyleBackColor = false;
+            this.pauseBtn.Click += new System.EventHandler(this.pauseBtn_Click);
             // 
             // exitBtn
             // 
@@ -118,6 +118,7 @@
             this.exitBtn.TabIndex = 4;
             this.exitBtn.Text = "Выход";
             this.exitBtn.UseVisualStyleBackColor = false;
+            this.exitBtn.Click += new System.EventHandler(this.exitBtn_Click);
             // 
             // probTrack
             // 
@@ -265,10 +266,11 @@
             this.authorInfoMenuItem.Size = new System.Drawing.Size(187, 26);
             this.authorInfoMenuItem.Text = "Об авторе";
             // 
-            // Form1
+            // MainWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1035, 646);
             this.Controls.Add(this.speedValue);
             this.Controls.Add(this.probValue);
@@ -283,7 +285,7 @@
             this.Controls.Add(this.basePanel);
             this.Controls.Add(this.menu);
             this.MainMenuStrip = this.menu;
-            this.Name = "Form1";
+            this.Name = "MainWindow";
             this.Text = "Игра";
             ((System.ComponentModel.ISupportInitialize)(this.probTrack)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.speedTrack)).EndInit();
