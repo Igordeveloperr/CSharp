@@ -52,10 +52,13 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="logic\FieldLogic.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="texture\FieldTexture.cs" />
-    <Compile Include="texture\ITexture.cs" />
+    <Compile Include="texture\StartBtnTexture.cs" />
+    <Compile Include="texture\StopBtnTexture.cs" />
+    <Compile Include="texture\Texture.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>

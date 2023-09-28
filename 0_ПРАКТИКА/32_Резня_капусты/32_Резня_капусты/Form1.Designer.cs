@@ -71,7 +71,7 @@
             this.Controls.Add(this.startBtn);
             this.Controls.Add(this.basePanel);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Игра";
             this.ResumeLayout(false);
 
         }
