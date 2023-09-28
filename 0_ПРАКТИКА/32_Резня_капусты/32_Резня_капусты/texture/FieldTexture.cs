@@ -16,12 +16,12 @@ namespace _32_Резня_капусты.texture
         private List<PictureBox> emptyCells = new List<PictureBox>();
         private Random rnd = new Random(Guid.NewGuid().GetHashCode());
 
-        public async Task<bool> ExecuteLogic(Button sender, Panel lamPanel, int delay)
+        // основная логика работы поля
+        public async Task<bool> ExecuteLogic(Panel lamPanel, int delay)
         {
             if (emptyCells.Count == 0)
             {
                 MessageBox.Show("Игра окончена!");
-                sender.Enabled = true;
                 return true;
             }
             else
