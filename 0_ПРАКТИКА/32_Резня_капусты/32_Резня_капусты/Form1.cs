@@ -71,7 +71,7 @@ namespace _32_Резня_капусты
                     emptyCells.Remove(box);
                     box.Image = Image.FromFile(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"img\kacan.jpg"));
                     fillCells.Add(box);
-                    await Task.Delay(2000);
+                    await Task.Delay(500);
 
                     long a = rnd.Next(0, 1000000);
                     long b = rnd.Next(0, 1000000);
@@ -79,7 +79,7 @@ namespace _32_Резня_капусты
                     if ((a * b) % 2 == 1 && (b % 3 == 0))
                     {
                         panel1.BackColor = Color.Red;
-                        await Task.Delay(2000);
+                        await Task.Delay(500);
                         panel1.BackColor = Color.White;
                         int column = rnd.Next(0, 9);
                         for(int i = 0; i < 10; i++)
@@ -89,7 +89,6 @@ namespace _32_Резня_капусты
                             cell.Image = Image.FromFile(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"img\krot.jpg"));
                             emptyCells.Add(cell);
                             column += 10;
-                            await Task.Delay(200);
                         }
                     }
                 }
