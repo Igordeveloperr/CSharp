@@ -23,6 +23,8 @@ namespace _32_Резня_капусты
         public Form1()
         { 
             InitializeComponent();
+            _startBtnTexture = new StartBtnTexture(startBtn);
+            _stoprBtnTexture = new StopBtnTexture(startBtn);
             _field = new FieldTexture();
             _field.Draw(basePanel);
             _gameIsActive = false;
@@ -36,7 +38,6 @@ namespace _32_Резня_капусты
             if (_isStartBtn)
             {
                 _gameIsActive = false;
-                _stoprBtnTexture = new StopBtnTexture(startBtn);
                 _stoprBtnTexture.Draw(basePanel);
                 _isStartBtn = false;
                 mainTimer.Enabled = true;
@@ -67,7 +68,6 @@ namespace _32_Резня_капусты
                 _field.Draw(basePanel);
                 // колдуем кнопкой
                 _isStartBtn = true;
-                _startBtnTexture = new StartBtnTexture(startBtn);
                 _startBtnTexture.Draw(basePanel);
             }
         }
