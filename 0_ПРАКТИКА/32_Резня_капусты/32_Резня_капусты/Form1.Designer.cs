@@ -165,6 +165,7 @@
             // 
             // speedValue
             // 
+            this.speedValue.BackColor = System.Drawing.Color.White;
             this.speedValue.Font = new System.Drawing.Font("Microsoft YaHei", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.speedValue.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.speedValue.Location = new System.Drawing.Point(961, 225);
@@ -201,21 +202,21 @@
             // 
             this.openMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.openMenuItem.Name = "openMenuItem";
-            this.openMenuItem.Size = new System.Drawing.Size(180, 26);
+            this.openMenuItem.Size = new System.Drawing.Size(164, 26);
             this.openMenuItem.Text = "Открыть";
             // 
             // saveMenuItem
             // 
             this.saveMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.saveMenuItem.Name = "saveMenuItem";
-            this.saveMenuItem.Size = new System.Drawing.Size(180, 26);
+            this.saveMenuItem.Size = new System.Drawing.Size(164, 26);
             this.saveMenuItem.Text = "Сохранить";
             // 
             // exitMenuItem
             // 
             this.exitMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.exitMenuItem.Name = "exitMenuItem";
-            this.exitMenuItem.Size = new System.Drawing.Size(180, 26);
+            this.exitMenuItem.Size = new System.Drawing.Size(164, 26);
             this.exitMenuItem.Text = "Выход";
             // 
             // setMenuItem
@@ -232,14 +233,14 @@
             // 
             this.fillMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.fillMenuItem.Name = "fillMenuItem";
-            this.fillMenuItem.Size = new System.Drawing.Size(180, 26);
+            this.fillMenuItem.Size = new System.Drawing.Size(175, 26);
             this.fillMenuItem.Text = "Заполнение";
             // 
             // colorMenuItem
             // 
             this.colorMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.colorMenuItem.Name = "colorMenuItem";
-            this.colorMenuItem.Size = new System.Drawing.Size(180, 26);
+            this.colorMenuItem.Size = new System.Drawing.Size(175, 26);
             this.colorMenuItem.Text = "Цвета";
             // 
             // referenceMenuItem

@@ -17,7 +17,10 @@ namespace _32_Резня_капусты
     {
         private StartBtnTexture _startBtnTexture;
         private StopBtnTexture _stoprBtnTexture;
+        private PauseBtnTexture _pauseBtnTexture;
+        private ContinueBtnTexture _continueBtnTexture;
         private bool _isStartBtn;
+        private bool _isPauseBtn;
         private bool _gameIsActive;
         private FieldTexture _field;
         public MainWindow()
@@ -25,10 +28,13 @@ namespace _32_Резня_капусты
             InitializeComponent();
             _startBtnTexture = new StartBtnTexture(startBtn);
             _stoprBtnTexture = new StopBtnTexture(startBtn);
+            _pauseBtnTexture = new PauseBtnTexture(pauseBtn);
+            _continueBtnTexture = new ContinueBtnTexture(pauseBtn);
             _field = new FieldTexture();
             _field.Draw(basePanel);
             _gameIsActive = false;
             _isStartBtn = true;
+            _isPauseBtn = true;
             lamp.BackgroundImage = Image.FromFile(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"img\offLamp.png"));
         }
 
@@ -82,7 +88,16 @@ namespace _32_Резня_капусты
         // обработка кнопки паузы
         private void pauseBtn_Click(object sender, EventArgs e)
         {
-
+            if (_isPauseBtn)
+            {
+                _isPauseBtn = false;
+                _continueBtnTexture.Draw(basePanel);
+            }
+            else
+            {
+                _isPauseBtn = true;
+                _pauseBtnTexture.Draw(basePanel);
+            }
         }
 
         // обработка кнопки выхода

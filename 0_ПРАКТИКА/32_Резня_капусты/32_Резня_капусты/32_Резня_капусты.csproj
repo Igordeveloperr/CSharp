@@ -55,7 +55,9 @@
     <Compile Include="logic\FieldLogic.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="texture\ContinueBtnTexture.cs" />
     <Compile Include="texture\FieldTexture.cs" />
+    <Compile Include="texture\PauseBtnTexture.cs" />
     <Compile Include="texture\StartBtnTexture.cs" />
     <Compile Include="texture\StopBtnTexture.cs" />
     <Compile Include="texture\Texture.cs" />
