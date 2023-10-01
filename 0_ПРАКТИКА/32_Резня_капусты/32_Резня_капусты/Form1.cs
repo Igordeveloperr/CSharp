@@ -10,11 +10,13 @@ using System.Windows.Forms;
 using System.IO;
 using System.Threading;
 using _32_Резня_капусты.texture;
+using _32_Резня_капусты.math;
 
 namespace _32_Резня_капусты
 {
     public partial class MainWindow : Form
     {
+        private ProgramSpeed _programSpeed;
         private StartBtnTexture _startBtnTexture;
         private StopBtnTexture _stoprBtnTexture;
         private PauseBtnTexture _pauseBtnTexture;
@@ -30,12 +32,14 @@ namespace _32_Резня_капусты
             _stoprBtnTexture = new StopBtnTexture(startBtn);
             _pauseBtnTexture = new PauseBtnTexture(pauseBtn);
             _continueBtnTexture = new ContinueBtnTexture(pauseBtn);
+            _programSpeed = new ProgramSpeed();
             _field = new FieldTexture();
             _field.Draw(basePanel);
             _gameIsActive = true;
             _isStartBtn = true;
             _isPauseBtn = true;
             lamp.BackgroundImage = Image.FromFile(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"img\offLamp.png"));
+            speedValue.Text = "1";
         }
 
         // обработка кнопки формы
@@ -124,7 +128,9 @@ namespace _32_Резня_капусты
         // ввод скорости
         private void speedTrack_Scroll(object sender, EventArgs e)
         {
-            speedValue.Text = speedTrack.Value.ToString();
+            int res = _programSpeed.ConvertToMilliseconds(speedTrack.Value);
+            speedValue.Text = $"{speedTrack.Value}";
+            mainTimer.Interval = res;
         }
     }
 }

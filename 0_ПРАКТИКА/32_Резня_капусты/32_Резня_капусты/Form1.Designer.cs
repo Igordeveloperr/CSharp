@@ -73,7 +73,7 @@
             this.startBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.startBtn.Font = new System.Drawing.Font("Microsoft YaHei", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.startBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.startBtn.Location = new System.Drawing.Point(760, 404);
+            this.startBtn.Location = new System.Drawing.Point(761, 404);
             this.startBtn.Name = "startBtn";
             this.startBtn.Size = new System.Drawing.Size(258, 59);
             this.startBtn.TabIndex = 1;
@@ -90,6 +90,7 @@
             // 
             // mainTimer
             // 
+            this.mainTimer.Interval = 1000;
             this.mainTimer.Tick += new System.EventHandler(this.mainTimer_Tick);
             // 
             // pauseBtn
@@ -155,10 +156,12 @@
             // 
             this.speedTrack.Location = new System.Drawing.Point(761, 225);
             this.speedTrack.Maximum = 100;
+            this.speedTrack.Minimum = 1;
             this.speedTrack.Name = "speedTrack";
             this.speedTrack.Size = new System.Drawing.Size(195, 45);
             this.speedTrack.TabIndex = 8;
             this.speedTrack.TickFrequency = 10;
+            this.speedTrack.Value = 1;
             this.speedTrack.Scroll += new System.EventHandler(this.speedTrack_Scroll);
             // 
             // probValue
@@ -177,7 +180,7 @@
             this.speedValue.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.speedValue.Location = new System.Drawing.Point(961, 225);
             this.speedValue.Name = "speedValue";
-            this.speedValue.Size = new System.Drawing.Size(57, 33);
+            this.speedValue.Size = new System.Drawing.Size(58, 33);
             this.speedValue.TabIndex = 11;
             // 
             // menu
@@ -189,7 +192,7 @@
             this.referenceMenuItem});
             this.menu.Location = new System.Drawing.Point(0, 0);
             this.menu.Name = "menu";
-            this.menu.Size = new System.Drawing.Size(1077, 29);
+            this.menu.Size = new System.Drawing.Size(1075, 29);
             this.menu.TabIndex = 12;
             this.menu.Text = "menuStrip1";
             // 
@@ -288,18 +291,18 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft YaHei", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label4.Location = new System.Drawing.Point(1021, 228);
+            this.label4.Location = new System.Drawing.Point(1025, 228);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(57, 25);
+            this.label4.Size = new System.Drawing.Size(45, 25);
             this.label4.TabIndex = 14;
-            this.label4.Text = "км/ч";
+            this.label4.Text = "м/с";
             // 
             // MainWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1077, 646);
+            this.ClientSize = new System.Drawing.Size(1075, 646);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.speedValue);

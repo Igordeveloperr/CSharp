@@ -54,7 +54,7 @@ namespace _32_Резня_капусты.texture
         // очиста рандомно выбраного столбца
         private void ClearColumn()
         {
-            int column = rnd.Next(0, 9);
+            int column = rnd.Next(0, 10);
             for (int i = 0; i < 10; i++)
             {
                 PictureBox cell = field[column];
