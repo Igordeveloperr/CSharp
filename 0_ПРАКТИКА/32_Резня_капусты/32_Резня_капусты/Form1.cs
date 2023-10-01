@@ -122,6 +122,7 @@ namespace _32_Резня_капусты
         private void probTrack_Scroll(object sender, EventArgs e)
         {
             probValue.Text = probTrack.Value.ToString();
+            _field.Percent = probTrack.Value;
         }
 
         // ввод скорости
