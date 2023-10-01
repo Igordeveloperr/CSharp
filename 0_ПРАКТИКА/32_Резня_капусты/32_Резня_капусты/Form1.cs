@@ -32,7 +32,7 @@ namespace _32_Резня_капусты
             _continueBtnTexture = new ContinueBtnTexture(pauseBtn);
             _field = new FieldTexture();
             _field.Draw(basePanel);
-            _gameIsActive = false;
+            _gameIsActive = true;
             _isStartBtn = true;
             _isPauseBtn = true;
             lamp.BackgroundImage = Image.FromFile(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"img\offLamp.png"));
@@ -76,6 +76,9 @@ namespace _32_Резня_капусты
                 // колдуем кнопкой
                 _isStartBtn = true;
                 _startBtnTexture.Draw(basePanel);
+                // скидываю снопу паузы
+                _isPauseBtn = true;
+                _pauseBtnTexture.Draw(basePanel);
             }
         }
 
@@ -85,18 +88,24 @@ namespace _32_Резня_капусты
             _gameIsActive = _field.ExecuteLogic(lamp, mainTimer);
         }
 
-        // обработка кнопки паузы
+        // обработка кнопки паузы и продолжить
         private void pauseBtn_Click(object sender, EventArgs e)
         {
-            if (_isPauseBtn)
-            {
-                _isPauseBtn = false;
-                _continueBtnTexture.Draw(basePanel);
-            }
-            else
+            if (!_isPauseBtn && !_gameIsActive)
             {
                 _isPauseBtn = true;
                 _pauseBtnTexture.Draw(basePanel);
+                mainTimer.Start();
+            }
+            else if (_isPauseBtn && !_gameIsActive)
+            {
+                _isPauseBtn = false;
+                _continueBtnTexture.Draw(basePanel);
+                mainTimer.Stop();
+            }
+            else
+            {
+                MessageBox.Show("Нажмите кнопку 'Старт'");
             }
         }
 
