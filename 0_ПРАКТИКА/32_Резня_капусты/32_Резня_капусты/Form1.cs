@@ -114,5 +114,17 @@ namespace _32_Резня_капусты
         {
 
         }
+
+        // ввод % вероятности для лампы
+        private void probTrack_Scroll(object sender, EventArgs e)
+        {
+            probValue.Text = probTrack.Value.ToString();
+        }
+
+        // ввод скорости
+        private void speedTrack_Scroll(object sender, EventArgs e)
+        {
+            speedValue.Text = speedTrack.Value.ToString();
+        }
     }
 }

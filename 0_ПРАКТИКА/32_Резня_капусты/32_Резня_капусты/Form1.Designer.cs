@@ -52,6 +52,8 @@
             this.referenceMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.progInfoMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.authorInfoMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.probTrack)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.speedTrack)).BeginInit();
             this.menu.SuspendLayout();
@@ -71,7 +73,7 @@
             this.startBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.startBtn.Font = new System.Drawing.Font("Microsoft YaHei", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.startBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.startBtn.Location = new System.Drawing.Point(760, 405);
+            this.startBtn.Location = new System.Drawing.Point(760, 404);
             this.startBtn.Name = "startBtn";
             this.startBtn.Size = new System.Drawing.Size(258, 59);
             this.startBtn.TabIndex = 1;
@@ -123,9 +125,11 @@
             // probTrack
             // 
             this.probTrack.Location = new System.Drawing.Point(760, 152);
+            this.probTrack.Maximum = 15;
             this.probTrack.Name = "probTrack";
             this.probTrack.Size = new System.Drawing.Size(195, 45);
             this.probTrack.TabIndex = 5;
+            this.probTrack.Scroll += new System.EventHandler(this.probTrack_Scroll);
             // 
             // label1
             // 
@@ -150,9 +154,12 @@
             // speedTrack
             // 
             this.speedTrack.Location = new System.Drawing.Point(761, 225);
+            this.speedTrack.Maximum = 100;
             this.speedTrack.Name = "speedTrack";
             this.speedTrack.Size = new System.Drawing.Size(195, 45);
             this.speedTrack.TabIndex = 8;
+            this.speedTrack.TickFrequency = 10;
+            this.speedTrack.Scroll += new System.EventHandler(this.speedTrack_Scroll);
             // 
             // probValue
             // 
@@ -182,7 +189,7 @@
             this.referenceMenuItem});
             this.menu.Location = new System.Drawing.Point(0, 0);
             this.menu.Name = "menu";
-            this.menu.Size = new System.Drawing.Size(1035, 29);
+            this.menu.Size = new System.Drawing.Size(1077, 29);
             this.menu.TabIndex = 12;
             this.menu.Text = "menuStrip1";
             // 
@@ -267,12 +274,34 @@
             this.authorInfoMenuItem.Size = new System.Drawing.Size(187, 26);
             this.authorInfoMenuItem.Text = "Об авторе";
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft YaHei", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label3.Location = new System.Drawing.Point(1021, 155);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(29, 25);
+            this.label3.TabIndex = 13;
+            this.label3.Text = "%";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft YaHei", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label4.Location = new System.Drawing.Point(1021, 228);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(57, 25);
+            this.label4.TabIndex = 14;
+            this.label4.Text = "км/ч";
+            // 
             // MainWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1035, 646);
+            this.ClientSize = new System.Drawing.Size(1077, 646);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.speedValue);
             this.Controls.Add(this.probValue);
             this.Controls.Add(this.speedTrack);
@@ -322,6 +351,8 @@
         private System.Windows.Forms.ToolStripMenuItem referenceMenuItem;
         private System.Windows.Forms.ToolStripMenuItem progInfoMenuItem;
         private System.Windows.Forms.ToolStripMenuItem authorInfoMenuItem;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
     }
 }
 
