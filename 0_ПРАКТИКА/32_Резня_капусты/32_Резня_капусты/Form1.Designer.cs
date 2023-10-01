@@ -172,6 +172,7 @@
             this.probValue.Name = "probValue";
             this.probValue.Size = new System.Drawing.Size(57, 33);
             this.probValue.TabIndex = 10;
+            this.probValue.Text = "0";
             // 
             // speedValue
             // 
@@ -182,6 +183,7 @@
             this.speedValue.Name = "speedValue";
             this.speedValue.Size = new System.Drawing.Size(58, 33);
             this.speedValue.TabIndex = 11;
+            this.speedValue.Text = "1";
             // 
             // menu
             // 

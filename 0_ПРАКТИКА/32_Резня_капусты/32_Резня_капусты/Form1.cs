@@ -39,7 +39,6 @@ namespace _32_Резня_капусты
             _isStartBtn = true;
             _isPauseBtn = true;
             lamp.BackgroundImage = Image.FromFile(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"img\offLamp.png"));
-            speedValue.Text = "1";
         }
 
         // обработка кнопки формы
