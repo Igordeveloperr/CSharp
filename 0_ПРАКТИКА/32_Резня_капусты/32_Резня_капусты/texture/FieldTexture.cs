@@ -1,4 +1,5 @@
-﻿using System;
+﻿using _32_Резня_капусты.math;
+using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.IO;
@@ -11,6 +12,7 @@ namespace _32_Резня_капусты.texture
 {
     internal class FieldTexture : Texture
     {
+        private MyRandom random = new MyRandom(15);
         private List<PictureBox> field = new List<PictureBox>();
         private List<PictureBox> fillCells = new List<PictureBox>();
         private List<PictureBox> emptyCells = new List<PictureBox>();
@@ -37,10 +39,10 @@ namespace _32_Резня_капусты.texture
         // логика аварийной лампы
         private void ActivateLampLogic(Panel lamp)
         {
-            long a = rnd.Next(0, 1000000);
-            long b = rnd.Next(0, 1000000);
-            // лампа горит
-            if ((a * b) % 2 == 1 && (b % 3 == 0))
+            //long a = rnd.Next(0, 1000000);
+            //long b = rnd.Next(0, 1000000);
+            // лампа горит (a * b) % 2 == 1 && (b % 3 == 0)
+            if (random.Randomize())
             {
                 lamp.BackgroundImage = Image.FromFile(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"img\onLamp.png"));
                 ClearColumn();
