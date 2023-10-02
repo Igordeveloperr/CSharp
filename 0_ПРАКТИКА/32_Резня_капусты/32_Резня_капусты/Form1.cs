@@ -10,53 +10,127 @@ using System.Windows.Forms;
 using System.IO;
 using System.Threading;
 using _32_Резня_капусты.texture;
+using _32_Резня_капусты.math;
 
 namespace _32_Резня_капусты
 {
-    public partial class Form1 : Form
+    public partial class MainWindow : Form
     {
+        private ProgramSpeed _programSpeed;
         private StartBtnTexture _startBtnTexture;
         private StopBtnTexture _stoprBtnTexture;
+        private PauseBtnTexture _pauseBtnTexture;
+        private ContinueBtnTexture _continueBtnTexture;
         private bool _isStartBtn;
+        private bool _isPauseBtn;
         private bool _gameIsActive;
         private FieldTexture _field;
-        public Form1()
+        public MainWindow()
         { 
             InitializeComponent();
+            _startBtnTexture = new StartBtnTexture(startBtn);
+            _stoprBtnTexture = new StopBtnTexture(startBtn);
+            _pauseBtnTexture = new PauseBtnTexture(pauseBtn);
+            _continueBtnTexture = new ContinueBtnTexture(pauseBtn);
+            _programSpeed = new ProgramSpeed();
             _field = new FieldTexture();
             _field.Draw(basePanel);
-            _gameIsActive = false;
+            _gameIsActive = true;
             _isStartBtn = true;
+            _isPauseBtn = true;
+            lamp.BackgroundImage = Image.FromFile(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"img\offLamp.png"));
         }
 
-        private async void startBtn_Click(object sender, EventArgs e)
+        // обработка кнопки формы
+        private void startBtn_Click(object sender, EventArgs e)
         {
             // кнопка старт
             if (_isStartBtn)
             {
-                _stoprBtnTexture = new StopBtnTexture(startBtn);
+                _gameIsActive = false;
                 _stoprBtnTexture.Draw(basePanel);
                 _isStartBtn = false;
-                await ActivateGame();
+                mainTimer.Enabled = true;
+                mainTimer.Start();
             }
             else
             {
-                // кнопка стоп
-                if (_isStartBtn == false && _gameIsActive == true)
-                {
-                    _isStartBtn = true;
-                    _startBtnTexture = new StartBtnTexture(startBtn);
-                    _startBtnTexture.Draw(basePanel);
-                }
+                ValidateStopBtn();
             }
         }
 
-        private async Task ActivateGame()
+        // обработка кнопки стоп
+        private void ValidateStopBtn()
         {
-            while (!_gameIsActive)
+            // кнопка стоп
+            if (_isStartBtn == false)
             {
-                _gameIsActive = await _field.ExecuteLogic(panel1, 500);
+                // откатываем лампу
+                lamp.BackgroundImage = Image.FromFile(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"img\offLamp.png"));
+                // сброс таймера
+                mainTimer.Enabled = false;
+                mainTimer.Stop();
+                // чистим вспомогательные массивы
+                _field.ClearCache();
+                // игра доступна
+                _gameIsActive = true;
+                // регенерация поля
+                _field.Draw(basePanel);
+                // колдуем кнопкой
+                _isStartBtn = true;
+                _startBtnTexture.Draw(basePanel);
+                // скидываю снопу паузы
+                _isPauseBtn = true;
+                _pauseBtnTexture.Draw(basePanel);
             }
+        }
+
+        // прерывание по таймеру
+        private void mainTimer_Tick(object sender, EventArgs e)
+        {
+            _gameIsActive = _field.ExecuteLogic(lamp, mainTimer);
+        }
+
+        // обработка кнопки паузы и продолжить
+        private void pauseBtn_Click(object sender, EventArgs e)
+        {
+            if (!_isPauseBtn && !_gameIsActive)
+            {
+                _isPauseBtn = true;
+                _pauseBtnTexture.Draw(basePanel);
+                mainTimer.Start();
+            }
+            else if (_isPauseBtn && !_gameIsActive)
+            {
+                _isPauseBtn = false;
+                _continueBtnTexture.Draw(basePanel);
+                mainTimer.Stop();
+            }
+            else
+            {
+                MessageBox.Show("Нажмите кнопку 'Старт'");
+            }
+        }
+
+        // обработка кнопки выхода
+        private void exitBtn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        // ввод % вероятности для лампы
+        private void probTrack_Scroll(object sender, EventArgs e)
+        {
+            probValue.Text = probTrack.Value.ToString();
+            _field.Percent = probTrack.Value;
+        }
+
+        // ввод скорости
+        private void speedTrack_Scroll(object sender, EventArgs e)
+        {
+            int res = _programSpeed.ConvertToMilliseconds(speedTrack.Value);
+            speedValue.Text = $"{speedTrack.Value}";
+            mainTimer.Interval = res;
         }
     }
 }

@@ -1,10 +1,11 @@
-﻿using System;
+﻿using _32_Резня_капусты.math;
+using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
+using System.Threading;
 using System.Windows.Forms;
 
 namespace _32_Резня_капусты.texture
@@ -15,42 +16,45 @@ namespace _32_Резня_капусты.texture
         private List<PictureBox> fillCells = new List<PictureBox>();
         private List<PictureBox> emptyCells = new List<PictureBox>();
         private Random rnd = new Random(Guid.NewGuid().GetHashCode());
+        public int Percent { get; set; } = 5;
 
         // основная логика работы поля
-        public async Task<bool> ExecuteLogic(Panel lamPanel, int delay)
+        public bool ExecuteLogic(Panel lamPanel, System.Windows.Forms.Timer timer)
         {
             if (emptyCells.Count == 0)
             {
+                timer.Enabled = false;
+                timer.Stop();
                 MessageBox.Show("Игра окончена!");
                 return true;
             }
             else
             {
-                await PlantCabbage(delay);
-                await ActivateLampLogic(lamPanel, delay);
+                PlantCabbage();
+                ActivateLampLogic(lamPanel);
                 return false;
             }
         }
 
         // логика аварийной лампы
-        private async Task ActivateLampLogic(Panel lamp, int delay)
+        private void ActivateLampLogic(Panel lamp)
         {
-            long a = rnd.Next(0, 1000000);
-            long b = rnd.Next(0, 1000000);
-            // лампа горит
-            if ((a * b) % 2 == 1 && (b % 3 == 0))
+            MyRandom _random = new MyRandom(Percent);
+            if (_random.Randomize())
             {
-                lamp.BackColor = Color.Red;
-                await Task.Delay(delay);
-                lamp.BackColor = Color.White;
+                lamp.BackgroundImage = Image.FromFile(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"img\onLamp.png"));
                 ClearColumn();
+            }
+            else
+            {
+                lamp.BackgroundImage = Image.FromFile(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"img\offLamp.png"));
             }
         }
 
         // очиста рандомно выбраного столбца
         private void ClearColumn()
         {
-            int column = rnd.Next(0, 9);
+            int column = rnd.Next(0, 10);
             for (int i = 0; i < 10; i++)
             {
                 PictureBox cell = field[column];
@@ -62,14 +66,13 @@ namespace _32_Резня_капусты.texture
         }
 
         // садим капусту в выбраную ячейку
-        private async Task PlantCabbage(int delay)
+        private void PlantCabbage()
         {
             int x = rnd.Next(0, emptyCells.Count);
             PictureBox cell = emptyCells[x];
             emptyCells.Remove(cell);
             cell.Image = Image.FromFile(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"img\kacan.jpg"));
             fillCells.Add(cell);
-            await Task.Delay(delay);
         }
 
         // удаление яцейки из масиива, в зависимости от того, где она находится
@@ -84,6 +87,14 @@ namespace _32_Резня_капусты.texture
                 emptyCells.Remove(cell);
             }
         }
+        
+        // чистим вспомогательные маcсивы
+        public void ClearCache()
+        {
+            field.Clear();
+            emptyCells.Clear();
+            fillCells.Clear();
+        }
 
         // отрисвока текстуры
         public override void Draw(Panel panel)
@@ -94,6 +105,7 @@ namespace _32_Резня_капусты.texture
         // генерация поля
         private void GenerateField(Panel basePanel)
         {
+            basePanel.Controls.Clear();
             for (int i = 0; i < 100; i++)
             {
                 PictureBox cell = new PictureBox();
@@ -125,6 +137,5 @@ namespace _32_Резня_капусты.texture
                 emptyCells.Add(cell);
             }
         }
-
     }
 }

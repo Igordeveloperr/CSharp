@@ -10,7 +10,7 @@ namespace _32_Резня_капусты.texture
 {
     internal class StartBtnTexture : Texture
     {
-        private const string TEXT = "СТАРТ";
+        private const string TEXT = "Старт";
         private Button _btn;
         public StartBtnTexture(Button btn)
         {
