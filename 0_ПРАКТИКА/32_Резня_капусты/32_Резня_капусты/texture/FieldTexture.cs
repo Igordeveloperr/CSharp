@@ -30,6 +30,7 @@ namespace _32_Резня_капусты.texture
             }
             else
             {
+                field.ForEach(x => x.Click -= CellClickHendler);
                 PlantCabbage();
                 ActivateLampLogic(lamPanel);
                 return false;
@@ -113,8 +114,32 @@ namespace _32_Резня_капусты.texture
                 cell.Height = 50;
                 cell.Name = $"cell{i}";
                 SelectImageForCell(cell);
+                cell.Click += CellClickHendler;
                 field.Add(cell);
                 basePanel.Controls.Add(cell);
+            }
+        }
+
+        // обработка клика по ячейке
+        private void CellClickHendler(object sender, EventArgs e)
+        {
+            PictureBox cell = (PictureBox)sender;
+
+            if(fillCells.Contains(cell))
+            {
+                fillCells.Remove(cell);
+                cell.Image = Image.FromFile(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"img\krot.jpg"));
+                emptyCells.Add(cell);
+            }
+            else if (emptyCells.Count > 1 && emptyCells.Contains(cell))
+            {
+                emptyCells.Remove(cell);
+                cell.Image = Image.FromFile(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"img\kacan.jpg"));
+                fillCells.Add(cell);
+            }
+            else
+            {
+                MessageBox.Show("Больше нельзя убирать кротов!");
             }
         }
 
