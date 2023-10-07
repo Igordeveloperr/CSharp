@@ -12,6 +12,7 @@ namespace _32_Резня_капусты.texture
 {
     internal class FieldTexture : Texture
     {
+        private List<PictureBox> columnlist = new List<PictureBox>();
         private List<PictureBox> field = new List<PictureBox>();
         private List<PictureBox> fillCells = new List<PictureBox>();
         private List<PictureBox> emptyCells = new List<PictureBox>();
@@ -21,6 +22,8 @@ namespace _32_Резня_капусты.texture
         // основная логика работы поля
         public bool ExecuteLogic(Panel lamPanel, System.Windows.Forms.Timer timer)
         {
+            columnlist.ForEach(x => x.BackColor = Color.White);
+            columnlist.Clear();
             if (emptyCells.Count == 0)
             {
                 timer.Enabled = false;
@@ -59,7 +62,9 @@ namespace _32_Резня_капусты.texture
             for (int i = 0; i < 10; i++)
             {
                 PictureBox cell = field[column];
+                columnlist.Add(cell);
                 ClearCellsArr(cell);
+                cell.BackColor = Color.Fuchsia;
                 cell.Image = Image.FromFile(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"img\krot.jpg"));
                 emptyCells.Add(cell);
                 column += 10;
@@ -112,6 +117,7 @@ namespace _32_Резня_капусты.texture
                 PictureBox cell = new PictureBox();
                 cell.Width = 65;
                 cell.Height = 50;
+                cell.SizeMode = PictureBoxSizeMode.CenterImage;
                 cell.Name = $"cell{i}";
                 SelectImageForCell(cell);
                 cell.Click += CellClickHendler;

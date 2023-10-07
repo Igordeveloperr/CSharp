@@ -47,7 +47,6 @@
             this.saveMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.setMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.fillMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.colorMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.referenceMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.progInfoMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -63,7 +62,7 @@
             // 
             this.basePanel.Location = new System.Drawing.Point(12, 57);
             this.basePanel.Name = "basePanel";
-            this.basePanel.Size = new System.Drawing.Size(720, 560);
+            this.basePanel.Size = new System.Drawing.Size(720, 580);
             this.basePanel.TabIndex = 0;
             // 
             // startBtn
@@ -238,26 +237,19 @@
             // setMenuItem
             // 
             this.setMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.fillMenuItem,
             this.colorMenuItem});
             this.setMenuItem.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.setMenuItem.Name = "setMenuItem";
             this.setMenuItem.Size = new System.Drawing.Size(107, 25);
             this.setMenuItem.Text = "Настройки";
             // 
-            // fillMenuItem
-            // 
-            this.fillMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.fillMenuItem.Name = "fillMenuItem";
-            this.fillMenuItem.Size = new System.Drawing.Size(175, 26);
-            this.fillMenuItem.Text = "Заполнение";
-            // 
             // colorMenuItem
             // 
             this.colorMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.colorMenuItem.Name = "colorMenuItem";
-            this.colorMenuItem.Size = new System.Drawing.Size(175, 26);
+            this.colorMenuItem.Size = new System.Drawing.Size(180, 26);
             this.colorMenuItem.Text = "Цвета";
+            this.colorMenuItem.Click += new System.EventHandler(this.colorMenuItem_Click);
             // 
             // referenceMenuItem
             // 
@@ -308,7 +300,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1075, 646);
+            this.ClientSize = new System.Drawing.Size(1075, 649);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.speedValue);
@@ -355,7 +347,6 @@
         private System.Windows.Forms.ToolStripMenuItem saveMenuItem;
         private System.Windows.Forms.ToolStripMenuItem exitMenuItem;
         private System.Windows.Forms.ToolStripMenuItem setMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem fillMenuItem;
         private System.Windows.Forms.ToolStripMenuItem colorMenuItem;
         private System.Windows.Forms.ToolStripMenuItem referenceMenuItem;
         private System.Windows.Forms.ToolStripMenuItem progInfoMenuItem;

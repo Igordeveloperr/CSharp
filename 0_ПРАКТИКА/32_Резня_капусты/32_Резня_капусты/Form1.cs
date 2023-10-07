@@ -214,5 +214,11 @@ namespace _32_Резня_капусты
                 prob = probTrack.Maximum;
             }
         }
+
+        // вызов формы для настройки цветов
+        private void colorMenuItem_Click(object sender, EventArgs e)
+        {
+            new Form2().Show();
+        }
     }
 }
