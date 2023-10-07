@@ -127,9 +127,11 @@
             // 
             this.probTrack.Location = new System.Drawing.Point(760, 152);
             this.probTrack.Maximum = 15;
+            this.probTrack.Minimum = 1;
             this.probTrack.Name = "probTrack";
             this.probTrack.Size = new System.Drawing.Size(195, 45);
             this.probTrack.TabIndex = 5;
+            this.probTrack.Value = 1;
             this.probTrack.Scroll += new System.EventHandler(this.probTrack_Scroll);
             // 
             // label1
@@ -172,7 +174,7 @@
             this.probValue.Name = "probValue";
             this.probValue.Size = new System.Drawing.Size(57, 33);
             this.probValue.TabIndex = 10;
-            this.probValue.Text = "0";
+            this.probValue.Text = "1";
             // 
             // speedValue
             // 
@@ -184,6 +186,7 @@
             this.speedValue.Size = new System.Drawing.Size(58, 33);
             this.speedValue.TabIndex = 11;
             this.speedValue.Text = "1";
+            this.speedValue.TextChanged += new System.EventHandler(this.speedValue_TextChanged);
             // 
             // menu
             // 

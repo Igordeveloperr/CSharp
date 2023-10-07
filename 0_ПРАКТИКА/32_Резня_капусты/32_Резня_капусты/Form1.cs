@@ -11,6 +11,8 @@ using System.IO;
 using System.Threading;
 using _32_Резня_капусты.texture;
 using _32_Резня_капусты.math;
+using System.Text.RegularExpressions;
+using System.Media;
 
 namespace _32_Резня_капусты
 {
@@ -131,6 +133,46 @@ namespace _32_Резня_капусты
             int res = _programSpeed.ConvertToMilliseconds(speedTrack.Value);
             speedValue.Text = $"{speedTrack.Value}";
             mainTimer.Interval = res;
+        }
+
+        // обработка вводa пользователем скорости
+        private void speedValue_TextChanged(object sender, EventArgs e)
+        {
+            if (Regex.IsMatch(speedValue.Text, "^[0-9]+$"))
+            {
+                int speed = int.Parse(speedValue.Text);
+                ValidateSpeedvalue(ref speed);
+                speedTrack.Value = speed;
+                speedTrack_Scroll(sender, e);
+                speedValue.SelectionStart = speedValue.Text.Length;
+            }
+            else if(speedValue.Text == string.Empty)
+            {
+                SystemSounds.Beep.Play();
+            }
+            else
+            {
+                SystemSounds.Beep.Play();
+                speedTrack.Value = speedTrack.Minimum;
+                speedTrack_Scroll(sender, e);
+                speedValue.SelectionStart = speedValue.Text.Length;
+            }
+        }
+
+        // валидация cкорости
+        private void ValidateSpeedvalue(ref int speed)
+        {
+            if (speed < speedTrack.Minimum)
+            {
+                SystemSounds.Beep.Play();
+                speed = speedTrack.Minimum;
+            }
+
+            if (speed > speedTrack.Maximum)
+            {
+                SystemSounds.Beep.Play();
+                speed = speedTrack.Maximum;
+            }
         }
     }
 }
