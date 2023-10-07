@@ -175,6 +175,7 @@
             this.probValue.Size = new System.Drawing.Size(57, 33);
             this.probValue.TabIndex = 10;
             this.probValue.Text = "1";
+            this.probValue.TextChanged += new System.EventHandler(this.probValue_TextChanged);
             // 
             // speedValue
             // 

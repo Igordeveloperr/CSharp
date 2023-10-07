@@ -174,5 +174,45 @@ namespace _32_Резня_капусты
                 speed = speedTrack.Maximum;
             }
         }
+
+        // обработка вводa пользователем вероятности
+        private void probValue_TextChanged(object sender, EventArgs e)
+        {
+            if (Regex.IsMatch(probValue.Text, "^[0-9]+$"))
+            {
+                int prob = int.Parse(probValue.Text);
+                ValidateProbvalue(ref prob);
+                probTrack.Value = prob;
+                probTrack_Scroll(sender, e);
+                probValue.SelectionStart = probValue.Text.Length;
+            }
+            else if (probValue.Text == string.Empty)
+            {
+                SystemSounds.Beep.Play();
+            }
+            else
+            {
+                SystemSounds.Beep.Play();
+                probTrack.Value = probTrack.Minimum;
+                probTrack_Scroll(sender, e);
+                probValue.SelectionStart = probValue.Text.Length;
+            }
+        }
+
+        // валидация вероятности
+        private void ValidateProbvalue(ref int prob)
+        {
+            if (prob < probTrack.Minimum)
+            {
+                SystemSounds.Beep.Play();
+                prob = probTrack.Minimum;
+            }
+
+            if (prob > probTrack.Maximum)
+            {
+                SystemSounds.Beep.Play();
+                prob = probTrack.Maximum;
+            }
+        }
     }
 }
