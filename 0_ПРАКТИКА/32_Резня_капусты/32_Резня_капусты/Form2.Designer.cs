@@ -67,6 +67,7 @@
             // colorBox1
             // 
             this.colorBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.colorBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.colorBox1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.colorBox1.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.colorBox1.ForeColor = System.Drawing.Color.Maroon;
@@ -92,11 +93,12 @@
             this.colorBox1.Name = "colorBox1";
             this.colorBox1.Size = new System.Drawing.Size(165, 29);
             this.colorBox1.TabIndex = 1;
-            this.colorBox1.Text = "Белый";
+            this.colorBox1.SelectedIndexChanged += new System.EventHandler(this.colorBox1_SelectedIndexChanged);
             // 
             // colorBox2
             // 
             this.colorBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.colorBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.colorBox2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.colorBox2.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.colorBox2.ForeColor = System.Drawing.Color.Maroon;
@@ -122,11 +124,12 @@
             this.colorBox2.Name = "colorBox2";
             this.colorBox2.Size = new System.Drawing.Size(165, 29);
             this.colorBox2.TabIndex = 2;
-            this.colorBox2.Text = "Белый";
+            this.colorBox2.SelectedIndexChanged += new System.EventHandler(this.colorBox2_SelectedIndexChanged);
             // 
             // colorBox3
             // 
             this.colorBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.colorBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.colorBox3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.colorBox3.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.colorBox3.ForeColor = System.Drawing.Color.Maroon;
@@ -152,11 +155,12 @@
             this.colorBox3.Name = "colorBox3";
             this.colorBox3.Size = new System.Drawing.Size(165, 29);
             this.colorBox3.TabIndex = 3;
-            this.colorBox3.Text = "Белый";
+            this.colorBox3.SelectedIndexChanged += new System.EventHandler(this.colorBox3_SelectedIndexChanged);
             // 
             // colorBox4
             // 
             this.colorBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.colorBox4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.colorBox4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.colorBox4.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.colorBox4.ForeColor = System.Drawing.Color.Maroon;
@@ -182,11 +186,12 @@
             this.colorBox4.Name = "colorBox4";
             this.colorBox4.Size = new System.Drawing.Size(165, 29);
             this.colorBox4.TabIndex = 4;
-            this.colorBox4.Text = "Белый";
+            this.colorBox4.SelectedIndexChanged += new System.EventHandler(this.colorBox4_SelectedIndexChanged);
             // 
             // colorBox5
             // 
             this.colorBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.colorBox5.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.colorBox5.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.colorBox5.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.colorBox5.ForeColor = System.Drawing.Color.Maroon;
@@ -212,11 +217,12 @@
             this.colorBox5.Name = "colorBox5";
             this.colorBox5.Size = new System.Drawing.Size(165, 29);
             this.colorBox5.TabIndex = 5;
-            this.colorBox5.Text = "Белый";
+            this.colorBox5.SelectedIndexChanged += new System.EventHandler(this.colorBox5_SelectedIndexChanged);
             // 
             // colorBox6
             // 
             this.colorBox6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.colorBox6.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.colorBox6.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.colorBox6.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.colorBox6.ForeColor = System.Drawing.Color.Maroon;
@@ -242,11 +248,12 @@
             this.colorBox6.Name = "colorBox6";
             this.colorBox6.Size = new System.Drawing.Size(165, 29);
             this.colorBox6.TabIndex = 6;
-            this.colorBox6.Text = "Белый";
+            this.colorBox6.SelectedIndexChanged += new System.EventHandler(this.colorBox6_SelectedIndexChanged);
             // 
             // colorBox7
             // 
             this.colorBox7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.colorBox7.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.colorBox7.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.colorBox7.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.colorBox7.ForeColor = System.Drawing.Color.Maroon;
@@ -272,11 +279,12 @@
             this.colorBox7.Name = "colorBox7";
             this.colorBox7.Size = new System.Drawing.Size(165, 29);
             this.colorBox7.TabIndex = 7;
-            this.colorBox7.Text = "Белый";
+            this.colorBox7.SelectedIndexChanged += new System.EventHandler(this.colorBox7_SelectedIndexChanged);
             // 
             // colorBox8
             // 
             this.colorBox8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.colorBox8.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.colorBox8.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.colorBox8.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.colorBox8.ForeColor = System.Drawing.Color.Maroon;
@@ -302,11 +310,12 @@
             this.colorBox8.Name = "colorBox8";
             this.colorBox8.Size = new System.Drawing.Size(165, 29);
             this.colorBox8.TabIndex = 8;
-            this.colorBox8.Text = "Белый";
+            this.colorBox8.SelectedIndexChanged += new System.EventHandler(this.colorBox8_SelectedIndexChanged);
             // 
             // colorBox9
             // 
             this.colorBox9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.colorBox9.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.colorBox9.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.colorBox9.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.colorBox9.ForeColor = System.Drawing.Color.Maroon;
@@ -332,11 +341,12 @@
             this.colorBox9.Name = "colorBox9";
             this.colorBox9.Size = new System.Drawing.Size(165, 29);
             this.colorBox9.TabIndex = 9;
-            this.colorBox9.Text = "Белый";
+            this.colorBox9.SelectedIndexChanged += new System.EventHandler(this.colorBox9_SelectedIndexChanged);
             // 
             // colorBox10
             // 
             this.colorBox10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.colorBox10.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.colorBox10.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.colorBox10.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.colorBox10.ForeColor = System.Drawing.Color.Maroon;
@@ -362,7 +372,7 @@
             this.colorBox10.Name = "colorBox10";
             this.colorBox10.Size = new System.Drawing.Size(165, 29);
             this.colorBox10.TabIndex = 10;
-            this.colorBox10.Text = "Белый";
+            this.colorBox10.SelectedIndexChanged += new System.EventHandler(this.colorBox10_SelectedIndexChanged);
             // 
             // label2
             // 
