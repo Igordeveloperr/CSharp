@@ -30,6 +30,9 @@ namespace _32_Резня_капусты
         public MainWindow()
         { 
             InitializeComponent();
+            FormBorderStyle = FormBorderStyle.FixedSingle;
+            MaximizeBox = false;
+            MinimizeBox = false;
             _startBtnTexture = new StartBtnTexture(startBtn);
             _stoprBtnTexture = new StopBtnTexture(startBtn);
             _pauseBtnTexture = new PauseBtnTexture(pauseBtn);

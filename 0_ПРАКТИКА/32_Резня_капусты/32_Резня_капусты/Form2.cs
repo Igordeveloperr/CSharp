@@ -15,7 +15,9 @@ namespace _32_Резня_капусты
         public Form2()
         {
             InitializeComponent();
-           
+            FormBorderStyle = FormBorderStyle.FixedSingle;
+            MaximizeBox = false;
+            MinimizeBox = false;
         }
     }
 }
