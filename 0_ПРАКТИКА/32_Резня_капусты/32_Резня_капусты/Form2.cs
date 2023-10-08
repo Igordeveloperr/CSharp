@@ -35,11 +35,12 @@ namespace _32_Резня_капусты
         private List<Color> colorRange = new List<Color>(new Color[10]);
 
         public Form2()
-        {
+         {
             InitializeComponent();
             FormBorderStyle = FormBorderStyle.FixedSingle;
             MaximizeBox = false;
             MinimizeBox = false;
+            StartPosition = FormStartPosition.CenterScreen;
         }
 
         // обработка полей для выбора цвета
