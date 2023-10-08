@@ -18,6 +18,7 @@ namespace _32_Резня_капусты
 {
     public partial class MainWindow : Form
     {
+        private Form2 ColorForm = new Form2();
         private ProgramSpeed _programSpeed;
         private StartBtnTexture _startBtnTexture;
         private StopBtnTexture _stoprBtnTexture;
@@ -221,8 +222,11 @@ namespace _32_Резня_капусты
 
         // вызов формы для настройки цветов
         private void colorMenuItem_Click(object sender, EventArgs e)
-        {
-            new Form2().Show();
+        {            
+            if (!ColorForm.Visible)
+            {
+                ColorForm.Show();
+            }
         }
     }
 }

@@ -38,6 +38,7 @@ namespace _32_Резня_капусты
          {
             InitializeComponent();
             FormBorderStyle = FormBorderStyle.FixedSingle;
+            ControlBox = false;
             MaximizeBox = false;
             MinimizeBox = false;
             StartPosition = FormStartPosition.CenterScreen;
@@ -79,7 +80,7 @@ namespace _32_Резня_капусты
         // клик по кнопке Отмена
         private void noBtn_Click(object sender, EventArgs e)
         {
-
+            Hide();
         }
 
         private void colorBox1_SelectedIndexChanged(object sender, EventArgs e)
