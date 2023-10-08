@@ -49,8 +49,8 @@
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.noBtn = new System.Windows.Forms.Button();
+            this.okBtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -67,6 +67,7 @@
             // colorBox1
             // 
             this.colorBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.colorBox1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.colorBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.colorBox1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.colorBox1.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
@@ -93,11 +94,13 @@
             this.colorBox1.Name = "colorBox1";
             this.colorBox1.Size = new System.Drawing.Size(165, 29);
             this.colorBox1.TabIndex = 1;
+            this.colorBox1.Tag = "0";
             this.colorBox1.SelectedIndexChanged += new System.EventHandler(this.colorBox1_SelectedIndexChanged);
             // 
             // colorBox2
             // 
             this.colorBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.colorBox2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.colorBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.colorBox2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.colorBox2.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
@@ -124,11 +127,13 @@
             this.colorBox2.Name = "colorBox2";
             this.colorBox2.Size = new System.Drawing.Size(165, 29);
             this.colorBox2.TabIndex = 2;
+            this.colorBox2.Tag = "1";
             this.colorBox2.SelectedIndexChanged += new System.EventHandler(this.colorBox2_SelectedIndexChanged);
             // 
             // colorBox3
             // 
             this.colorBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.colorBox3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.colorBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.colorBox3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.colorBox3.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
@@ -155,11 +160,13 @@
             this.colorBox3.Name = "colorBox3";
             this.colorBox3.Size = new System.Drawing.Size(165, 29);
             this.colorBox3.TabIndex = 3;
+            this.colorBox3.Tag = "2";
             this.colorBox3.SelectedIndexChanged += new System.EventHandler(this.colorBox3_SelectedIndexChanged);
             // 
             // colorBox4
             // 
             this.colorBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.colorBox4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.colorBox4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.colorBox4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.colorBox4.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
@@ -186,11 +193,13 @@
             this.colorBox4.Name = "colorBox4";
             this.colorBox4.Size = new System.Drawing.Size(165, 29);
             this.colorBox4.TabIndex = 4;
+            this.colorBox4.Tag = "3";
             this.colorBox4.SelectedIndexChanged += new System.EventHandler(this.colorBox4_SelectedIndexChanged);
             // 
             // colorBox5
             // 
             this.colorBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.colorBox5.Cursor = System.Windows.Forms.Cursors.Hand;
             this.colorBox5.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.colorBox5.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.colorBox5.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
@@ -217,11 +226,13 @@
             this.colorBox5.Name = "colorBox5";
             this.colorBox5.Size = new System.Drawing.Size(165, 29);
             this.colorBox5.TabIndex = 5;
+            this.colorBox5.Tag = "4";
             this.colorBox5.SelectedIndexChanged += new System.EventHandler(this.colorBox5_SelectedIndexChanged);
             // 
             // colorBox6
             // 
             this.colorBox6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.colorBox6.Cursor = System.Windows.Forms.Cursors.Hand;
             this.colorBox6.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.colorBox6.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.colorBox6.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
@@ -248,11 +259,13 @@
             this.colorBox6.Name = "colorBox6";
             this.colorBox6.Size = new System.Drawing.Size(165, 29);
             this.colorBox6.TabIndex = 6;
+            this.colorBox6.Tag = "5";
             this.colorBox6.SelectedIndexChanged += new System.EventHandler(this.colorBox6_SelectedIndexChanged);
             // 
             // colorBox7
             // 
             this.colorBox7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.colorBox7.Cursor = System.Windows.Forms.Cursors.Hand;
             this.colorBox7.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.colorBox7.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.colorBox7.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
@@ -279,11 +292,13 @@
             this.colorBox7.Name = "colorBox7";
             this.colorBox7.Size = new System.Drawing.Size(165, 29);
             this.colorBox7.TabIndex = 7;
+            this.colorBox7.Tag = "6";
             this.colorBox7.SelectedIndexChanged += new System.EventHandler(this.colorBox7_SelectedIndexChanged);
             // 
             // colorBox8
             // 
             this.colorBox8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.colorBox8.Cursor = System.Windows.Forms.Cursors.Hand;
             this.colorBox8.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.colorBox8.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.colorBox8.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
@@ -310,11 +325,13 @@
             this.colorBox8.Name = "colorBox8";
             this.colorBox8.Size = new System.Drawing.Size(165, 29);
             this.colorBox8.TabIndex = 8;
+            this.colorBox8.Tag = "7";
             this.colorBox8.SelectedIndexChanged += new System.EventHandler(this.colorBox8_SelectedIndexChanged);
             // 
             // colorBox9
             // 
             this.colorBox9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.colorBox9.Cursor = System.Windows.Forms.Cursors.Hand;
             this.colorBox9.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.colorBox9.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.colorBox9.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
@@ -341,11 +358,13 @@
             this.colorBox9.Name = "colorBox9";
             this.colorBox9.Size = new System.Drawing.Size(165, 29);
             this.colorBox9.TabIndex = 9;
+            this.colorBox9.Tag = "8";
             this.colorBox9.SelectedIndexChanged += new System.EventHandler(this.colorBox9_SelectedIndexChanged);
             // 
             // colorBox10
             // 
             this.colorBox10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.colorBox10.Cursor = System.Windows.Forms.Cursors.Hand;
             this.colorBox10.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.colorBox10.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.colorBox10.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
@@ -372,6 +391,7 @@
             this.colorBox10.Name = "colorBox10";
             this.colorBox10.Size = new System.Drawing.Size(165, 29);
             this.colorBox10.TabIndex = 10;
+            this.colorBox10.Tag = "9";
             this.colorBox10.SelectedIndexChanged += new System.EventHandler(this.colorBox10_SelectedIndexChanged);
             // 
             // label2
@@ -484,35 +504,37 @@
             this.label11.TabIndex = 20;
             this.label11.Text = "10";
             // 
-            // button1
+            // noBtn
             // 
-            this.button1.BackColor = System.Drawing.Color.Red;
-            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.button1.FlatAppearance.BorderSize = 2;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft YaHei", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(161, 411);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(140, 44);
-            this.button1.TabIndex = 21;
-            this.button1.Text = "Отмена";
-            this.button1.UseVisualStyleBackColor = false;
+            this.noBtn.BackColor = System.Drawing.Color.Red;
+            this.noBtn.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.noBtn.FlatAppearance.BorderSize = 2;
+            this.noBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.noBtn.Font = new System.Drawing.Font("Microsoft YaHei", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.noBtn.ForeColor = System.Drawing.Color.White;
+            this.noBtn.Location = new System.Drawing.Point(161, 411);
+            this.noBtn.Name = "noBtn";
+            this.noBtn.Size = new System.Drawing.Size(140, 44);
+            this.noBtn.TabIndex = 21;
+            this.noBtn.Text = "Отмена";
+            this.noBtn.UseVisualStyleBackColor = false;
+            this.noBtn.Click += new System.EventHandler(this.noBtn_Click);
             // 
-            // button2
+            // okBtn
             // 
-            this.button2.BackColor = System.Drawing.Color.Green;
-            this.button2.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.button2.FlatAppearance.BorderSize = 2;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Microsoft YaHei", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(12, 411);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(140, 44);
-            this.button2.TabIndex = 22;
-            this.button2.Text = "Ок";
-            this.button2.UseVisualStyleBackColor = false;
+            this.okBtn.BackColor = System.Drawing.Color.Green;
+            this.okBtn.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.okBtn.FlatAppearance.BorderSize = 2;
+            this.okBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.okBtn.Font = new System.Drawing.Font("Microsoft YaHei", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.okBtn.ForeColor = System.Drawing.Color.White;
+            this.okBtn.Location = new System.Drawing.Point(12, 411);
+            this.okBtn.Name = "okBtn";
+            this.okBtn.Size = new System.Drawing.Size(140, 44);
+            this.okBtn.TabIndex = 22;
+            this.okBtn.Text = "Ок";
+            this.okBtn.UseVisualStyleBackColor = false;
+            this.okBtn.Click += new System.EventHandler(this.okBtn_Click);
             // 
             // Form2
             // 
@@ -520,8 +542,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(313, 467);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.okBtn);
+            this.Controls.Add(this.noBtn);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
@@ -573,7 +595,7 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button noBtn;
+        private System.Windows.Forms.Button okBtn;
     }
 }
