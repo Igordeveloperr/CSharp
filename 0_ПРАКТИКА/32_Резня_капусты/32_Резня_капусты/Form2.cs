@@ -32,7 +32,8 @@ namespace _32_Резня_капусты
         };
 
         private List<Color> _cacheColors = new List<Color>();
-        private List<Color> colorRange = new List<Color>(new Color[10]);
+        private List<Color> colorRange;
+        private List<ComboBox> defList;
 
         public Form2()
          {
@@ -42,6 +43,27 @@ namespace _32_Резня_капусты
             MaximizeBox = false;
             MinimizeBox = false;
             StartPosition = FormStartPosition.CenterScreen;
+            Setup();
+        }
+
+        private void Setup()
+        {
+            colorRange = new List<Color>
+            {
+                Color.Red, Color.Blue, Color.Yellow, Color.Green, Color.Purple,
+                Color.LightBlue, Color.Pink, Color.Brown, Color.Black, Color.Silver
+            };
+
+            colorBox1.Text = "Красный";
+            colorBox2.Text = "Синий";
+            colorBox3.Text = "Желтый";
+            colorBox4.Text = "Зеленый";
+            colorBox5.Text = "Фиолетовый";
+            colorBox6.Text = "Голубой";
+            colorBox7.Text = "Розовый";
+            colorBox8.Text = "Коричневый";
+            colorBox9.Text = "Черный";
+            colorBox10.Text = "Серебряный";
         }
 
         // обработка полей для выбора цвета
