@@ -126,7 +126,6 @@
             // 
             this.probTrack.Location = new System.Drawing.Point(760, 152);
             this.probTrack.Maximum = 15;
-            this.probTrack.Minimum = 1;
             this.probTrack.Name = "probTrack";
             this.probTrack.Size = new System.Drawing.Size(195, 45);
             this.probTrack.TabIndex = 5;
@@ -157,7 +156,6 @@
             // 
             this.speedTrack.Location = new System.Drawing.Point(761, 225);
             this.speedTrack.Maximum = 100;
-            this.speedTrack.Minimum = 1;
             this.speedTrack.Name = "speedTrack";
             this.speedTrack.Size = new System.Drawing.Size(195, 45);
             this.speedTrack.TabIndex = 8;
@@ -247,7 +245,7 @@
             // 
             this.colorMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.colorMenuItem.Name = "colorMenuItem";
-            this.colorMenuItem.Size = new System.Drawing.Size(180, 26);
+            this.colorMenuItem.Size = new System.Drawing.Size(127, 26);
             this.colorMenuItem.Text = "Цвета";
             this.colorMenuItem.Click += new System.EventHandler(this.colorMenuItem_Click);
             // 

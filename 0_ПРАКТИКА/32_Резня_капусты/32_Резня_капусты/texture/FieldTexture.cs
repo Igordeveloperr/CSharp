@@ -31,6 +31,11 @@ namespace _32_Резня_капусты.texture
                 MessageBox.Show("Игра окончена!");
                 return true;
             }
+            else if(emptyCells.Count > 0 && !timer.Enabled)
+            {
+                field.ForEach(x => x.Click -= CellClickHendler);
+                return false;
+            }
             else
             {
                 field.ForEach(x => x.Click -= CellClickHendler);

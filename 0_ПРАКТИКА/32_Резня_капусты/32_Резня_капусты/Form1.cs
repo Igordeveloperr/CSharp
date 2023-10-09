@@ -27,6 +27,7 @@ namespace _32_Резня_капусты
         private bool _isStartBtn;
         private bool _isPauseBtn;
         private bool _gameIsActive;
+        private bool isNullSpeed;
         private FieldTexture _field;
         public MainWindow()
         { 
@@ -45,6 +46,7 @@ namespace _32_Резня_капусты
             _gameIsActive = true;
             _isStartBtn = true;
             _isPauseBtn = true;
+            isNullSpeed = false;
             lamp.BackgroundImage = Image.FromFile(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"img\offLamp.png"));
         }
 
@@ -52,13 +54,20 @@ namespace _32_Резня_капусты
         private void startBtn_Click(object sender, EventArgs e)
         {
             // кнопка старт
-            if (_isStartBtn)
+            if (_isStartBtn && !isNullSpeed)
             {
                 _gameIsActive = false;
                 _stoprBtnTexture.Draw(basePanel);
                 _isStartBtn = false;
                 mainTimer.Enabled = true;
                 mainTimer.Start();
+            }
+            else if(_isStartBtn && isNullSpeed)
+            {
+                _gameIsActive = false;
+                _stoprBtnTexture.Draw(basePanel);
+                _isStartBtn = false;
+                mainTimer_Tick(sender , e);
             }
             else
             {
@@ -101,11 +110,16 @@ namespace _32_Резня_капусты
         // обработка кнопки паузы и продолжить
         private void pauseBtn_Click(object sender, EventArgs e)
         {
-            if (!_isPauseBtn && !_gameIsActive)
+            if (!_isPauseBtn && !_gameIsActive && !isNullSpeed)
             {
                 _isPauseBtn = true;
                 _pauseBtnTexture.Draw(basePanel);
                 mainTimer.Start();
+            }
+            else if (!_isPauseBtn && !_gameIsActive && isNullSpeed)
+            {
+                _isPauseBtn = true;
+                _pauseBtnTexture.Draw(basePanel);
             }
             else if (_isPauseBtn && !_gameIsActive)
             {
@@ -137,7 +151,23 @@ namespace _32_Резня_капусты
         {
             int res = _programSpeed.ConvertToMilliseconds(speedTrack.Value);
             speedValue.Text = $"{speedTrack.Value}";
-            mainTimer.Interval = res;
+
+            if(res == 0)
+            {
+                isNullSpeed = true;
+                mainTimer.Stop();
+            }
+            else if(res > 0 && isNullSpeed && !_gameIsActive && _isPauseBtn)
+            {
+                mainTimer.Start();
+                isNullSpeed = false;
+                mainTimer.Interval = res;
+            }
+            else
+            {
+                isNullSpeed = false;
+                mainTimer.Interval = res;
+            }
         }
 
         // обработка вводa пользователем скорости
