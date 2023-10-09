@@ -32,7 +32,7 @@ namespace _32_Резня_капусты
         };
 
         private List<Color> _cacheColors = new List<Color>();
-        private List<Color> colorRange;
+        public List<Color> colorRange { get; private set; }
         private List<ComboBox> defList;
 
         public Form2()
