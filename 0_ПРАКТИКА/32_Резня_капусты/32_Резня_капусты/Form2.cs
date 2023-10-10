@@ -4,9 +4,11 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Windows.Forms.VisualStyles;
 
 namespace _32_Резня_капусты
 {
@@ -44,8 +46,10 @@ namespace _32_Резня_капусты
             MinimizeBox = false;
             StartPosition = FormStartPosition.CenterScreen;
             Setup();
+            FillComboboxs();
         }
 
+        // начальные настройки
         private void Setup()
         {
             colorRange = new List<Color>
@@ -54,16 +58,34 @@ namespace _32_Резня_капусты
                 Color.LightBlue, Color.Pink, Color.Brown, Color.Black, Color.Silver
             };
 
-            colorBox1.Text = "Красный";
-            colorBox2.Text = "Синий";
-            colorBox3.Text = "Желтый";
-            colorBox4.Text = "Зеленый";
-            colorBox5.Text = "Фиолетовый";
-            colorBox6.Text = "Голубой";
-            colorBox7.Text = "Розовый";
-            colorBox8.Text = "Коричневый";
-            colorBox9.Text = "Черный";
-            colorBox10.Text = "Серебряный";
+            defList = new List<ComboBox>()
+            {
+                colorBox1, colorBox2, colorBox3, colorBox4, colorBox5,
+                colorBox6, colorBox7, colorBox8, colorBox9, colorBox10
+            };
+        }
+
+        // вывод цветов в комбобохи
+        private void FillComboboxs()
+        {
+            for(int i = 0; i < colorRange.Count; i++)
+            {
+                defList[i].Text = ConvertColorInName(colorRange[i]);
+            }
+        }
+
+        // по цвету находим его название
+        private string ConvertColorInName(Color color)
+        {
+            string res = string.Empty;
+            foreach(var item in _colors)
+            {
+                if (item.Value == color)
+                {
+                    res = item.Key;
+                }
+            }
+            return res;
         }
 
         // обработка полей для выбора цвета
@@ -96,7 +118,7 @@ namespace _32_Резня_капусты
         // клик по кнопе ОК
         private void okBtn_Click(object sender, EventArgs e)
         {
-
+            
         }
 
         // клик по кнопке Отмена
