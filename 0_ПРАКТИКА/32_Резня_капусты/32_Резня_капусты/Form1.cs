@@ -266,5 +266,17 @@ namespace _32_Резня_капусты
             SettingManager manager = new SettingManager();
             manager.SaveSettings(ColorForm.prevColorRange, int.Parse(speedValue.Text), int.Parse(probValue.Text));
         }
+
+        // кнопка открыть
+        private void openMenuItem_Click(object sender, EventArgs e)
+        {
+            SettingManager manager = new SettingManager();
+            SettingsObj settings = manager.OpenSettings();
+            if (settings != null)
+            {
+                speedValue.Text = $"{settings.Speed}";
+                probValue.Text = $"{settings.Probability}";
+            }
+        }
     }
 }

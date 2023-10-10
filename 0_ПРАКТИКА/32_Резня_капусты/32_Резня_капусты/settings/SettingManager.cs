@@ -44,5 +44,31 @@ namespace _32_Резня_капусты.settings
                 stream.WriteLine(json);
             }
         }
+
+        public SettingsObj OpenSettings()
+        {
+            SettingsObj settings = null;
+            OpenFileDialog opDialog = new OpenFileDialog();
+            if (opDialog.ShowDialog() == DialogResult.Cancel)
+                return settings;
+
+            // получаем выбранный файл
+            string path = opDialog.FileName;
+            string json = string.Empty;
+            using (StreamReader stream = new StreamReader(path))
+            {
+                json = stream.ReadToEnd();
+            }
+
+            try
+            {
+                settings = JsonConvert.DeserializeObject<SettingsObj>(json);
+            } catch(JsonReaderException ex)
+            {
+                MessageBox.Show("Файл поврежден!");
+            }
+
+            return settings;
+        }
     }
 }
