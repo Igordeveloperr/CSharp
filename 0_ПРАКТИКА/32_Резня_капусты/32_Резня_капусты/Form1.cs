@@ -276,6 +276,23 @@ namespace _32_Резня_капусты
             {
                 speedValue.Text = $"{settings.Speed}";
                 probValue.Text = $"{settings.Probability}";
+                ColorForm.prevColorRange[0] = settings.Color0;
+                ColorForm.prevColorRange[1] = settings.Color1;
+                ColorForm.prevColorRange[2] = settings.Color2;
+                ColorForm.prevColorRange[3] = settings.Color3;
+                ColorForm.prevColorRange[4] = settings.Color4;
+                ColorForm.prevColorRange[5] = settings.Color5;
+                ColorForm.prevColorRange[6] = settings.Color6;
+                ColorForm.prevColorRange[7] = settings.Color7;
+                ColorForm.prevColorRange[8] = settings.Color8;
+                ColorForm.prevColorRange[9] = settings.Color9;
+                ColorForm._cacheColors.Clear();
+                ColorForm.colorRange.Clear();
+                for (int i = 0; i < ColorForm.prevColorRange.Count; i++)
+                {
+                    ColorForm.colorRange.Add(ColorForm.prevColorRange[i]);
+                }
+                ColorForm.FillComboboxs(ColorForm.prevColorRange);
             }
         }
     }

@@ -35,7 +35,7 @@ namespace _32_Резня_капусты
         };
 
         // цвета, которые уже выбраны
-        private List<Color> _cacheColors = new List<Color>();
+        public List<Color> _cacheColors = new List<Color>();
         // выбраная палитра
         public List<Color> colorRange { get; private set; }
         // ранее выбраные цвета
@@ -87,7 +87,7 @@ namespace _32_Резня_капусты
         }
 
         // вывод цветов в комбобохи
-        private void FillComboboxs(List<Color> arr)
+        public void FillComboboxs(List<Color> arr)
         {
             for(int i = 0; i < arr.Count; i++)
             {
