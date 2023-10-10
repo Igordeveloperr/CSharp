@@ -217,7 +217,7 @@
             // 
             this.openMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.openMenuItem.Name = "openMenuItem";
-            this.openMenuItem.Size = new System.Drawing.Size(180, 26);
+            this.openMenuItem.Size = new System.Drawing.Size(164, 26);
             this.openMenuItem.Text = "Открыть";
             this.openMenuItem.Click += new System.EventHandler(this.openMenuItem_Click);
             // 
@@ -225,7 +225,7 @@
             // 
             this.saveMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.saveMenuItem.Name = "saveMenuItem";
-            this.saveMenuItem.Size = new System.Drawing.Size(180, 26);
+            this.saveMenuItem.Size = new System.Drawing.Size(164, 26);
             this.saveMenuItem.Text = "Сохранить";
             this.saveMenuItem.Click += new System.EventHandler(this.saveMenuItem_Click);
             // 
@@ -233,7 +233,7 @@
             // 
             this.exitMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.exitMenuItem.Name = "exitMenuItem";
-            this.exitMenuItem.Size = new System.Drawing.Size(180, 26);
+            this.exitMenuItem.Size = new System.Drawing.Size(164, 26);
             this.exitMenuItem.Text = "Выход";
             this.exitMenuItem.Click += new System.EventHandler(this.exitMenuItem_Click);
             // 
@@ -270,6 +270,7 @@
             this.progInfoMenuItem.Name = "progInfoMenuItem";
             this.progInfoMenuItem.Size = new System.Drawing.Size(187, 26);
             this.progInfoMenuItem.Text = "О программе";
+            this.progInfoMenuItem.Click += new System.EventHandler(this.progInfoMenuItem_Click);
             // 
             // authorInfoMenuItem
             // 

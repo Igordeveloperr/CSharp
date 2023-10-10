@@ -117,5 +117,12 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="label1.Text" xml:space="preserve">
+    <value>Игра "Кротовуха" представляет собой поле 10 x 10, на котором садят капусту. Если загорается аварийная лампа, то очищается случайны столбец. Игровой процесс заканчивается, когда все поле заполнено капустой. 
+Вы, как пользователь, можете изменять: вероятность загорания аварийной лампы, скорость, подсветку каждого столбца при дисандировании кротов, а также сохранять ранее описанные параметры и открывать их.
+
+
+
+</value>
+  </data>
 </root>

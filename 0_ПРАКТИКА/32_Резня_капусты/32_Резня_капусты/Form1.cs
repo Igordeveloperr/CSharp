@@ -305,5 +305,11 @@ namespace _32_Резня_капусты
         {
             Close();
         }
+
+        // про игру
+        private void progInfoMenuItem_Click(object sender, EventArgs e)
+        {
+            new AboutGameForm().Show();
+        }
     }
 }
