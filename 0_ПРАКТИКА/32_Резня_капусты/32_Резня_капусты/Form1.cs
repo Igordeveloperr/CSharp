@@ -311,5 +311,11 @@ namespace _32_Резня_капусты
         {
             new AboutGameForm().Show();
         }
+        
+        // про автора
+        private void authorInfoMenuItem_Click(object sender, EventArgs e)
+        {
+            new AuthorForm().Show();
+        }
     }
 }
