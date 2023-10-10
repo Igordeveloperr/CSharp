@@ -14,6 +14,7 @@ namespace _32_Резня_капусты
 {
     public partial class Form2 : Form
     {
+        // все цвета
         private Dictionary<string, Color> _colors = new Dictionary<string, Color>()
         {
             { "Красный", Color.Red },
@@ -33,8 +34,13 @@ namespace _32_Резня_капусты
             { "Белый", Color.White },
         };
 
+        // цвета, которые уже выбраны
         private List<Color> _cacheColors = new List<Color>();
+        // выбраная палитра
         public List<Color> colorRange { get; private set; }
+        // ранее выбраные цвета
+        private List<Color> prevColorRange;
+        // список Combobox-ов
         private List<ComboBox> defList;
 
         public Form2()
@@ -46,13 +52,19 @@ namespace _32_Резня_капусты
             MinimizeBox = false;
             StartPosition = FormStartPosition.CenterScreen;
             Setup();
-            FillComboboxs();
+            FillComboboxs(colorRange);
         }
 
         // начальные настройки
         private void Setup()
         {
             colorRange = new List<Color>
+            {
+                Color.Red, Color.Blue, Color.Yellow, Color.Green, Color.Purple,
+                Color.LightBlue, Color.Pink, Color.Brown, Color.Black, Color.Silver
+            };
+
+            prevColorRange = new List<Color>
             {
                 Color.Red, Color.Blue, Color.Yellow, Color.Green, Color.Purple,
                 Color.LightBlue, Color.Pink, Color.Brown, Color.Black, Color.Silver
@@ -65,12 +77,21 @@ namespace _32_Резня_капусты
             };
         }
 
-        // вывод цветов в комбобохи
-        private void FillComboboxs()
+        // сохранение ранее заданных цветов
+        private void SavePrevColors()
         {
-            for(int i = 0; i < colorRange.Count; i++)
+            for (int i = 0; i < prevColorRange.Count; i++)
             {
-                defList[i].Text = ConvertColorInName(colorRange[i]);
+                prevColorRange[i] = colorRange[i];
+            }
+        }
+
+        // вывод цветов в комбобохи
+        private void FillComboboxs(List<Color> arr)
+        {
+            for(int i = 0; i < arr.Count; i++)
+            {
+                defList[i].Text = ConvertColorInName(arr[i]);
             }
         }
 
@@ -118,12 +139,14 @@ namespace _32_Резня_капусты
         // клик по кнопе ОК
         private void okBtn_Click(object sender, EventArgs e)
         {
-            
+            SavePrevColors();
+            Hide();
         }
 
         // клик по кнопке Отмена
         private void noBtn_Click(object sender, EventArgs e)
         {
+            FillComboboxs(prevColorRange);
             Hide();
         }
 
