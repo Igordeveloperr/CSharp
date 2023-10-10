@@ -224,8 +224,9 @@
             // 
             this.saveMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.saveMenuItem.Name = "saveMenuItem";
-            this.saveMenuItem.Size = new System.Drawing.Size(164, 26);
+            this.saveMenuItem.Size = new System.Drawing.Size(180, 26);
             this.saveMenuItem.Text = "Сохранить";
+            this.saveMenuItem.Click += new System.EventHandler(this.saveMenuItem_Click);
             // 
             // exitMenuItem
             // 

@@ -13,6 +13,7 @@ using _32_Резня_капусты.texture;
 using _32_Резня_капусты.math;
 using System.Text.RegularExpressions;
 using System.Media;
+using _32_Резня_капусты.settings;
 
 namespace _32_Резня_капусты
 {
@@ -257,6 +258,13 @@ namespace _32_Резня_капусты
             {
                 ColorForm.Show();
             }
+        }
+
+        // кнопка сохранить
+        private void saveMenuItem_Click(object sender, EventArgs e)
+        {
+            SettingManager manager = new SettingManager();
+            manager.SaveSettings(ColorForm.prevColorRange, int.Parse(speedValue.Text), int.Parse(probValue.Text));
         }
     }
 }

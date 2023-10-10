@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 
 namespace _32_Резня_капусты.settings
 {
+    [Serializable]
     public class SettingsObj
     {
         public Color Color0 { get; set; }
