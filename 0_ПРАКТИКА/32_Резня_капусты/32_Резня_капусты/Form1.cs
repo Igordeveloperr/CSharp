@@ -57,6 +57,8 @@ namespace _32_Резня_капусты
             // кнопка старт
             if (_isStartBtn && !isNullSpeed)
             {
+                setMenuItem.Enabled = false;
+                fileMenuItem.Enabled = false;
                 _gameIsActive = false;
                 _stoprBtnTexture.Draw(basePanel);
                 _isStartBtn = false;
@@ -73,6 +75,8 @@ namespace _32_Резня_капусты
             else
             {
                 ValidateStopBtn();
+                setMenuItem.Enabled = true;
+                fileMenuItem.Enabled = true;
             }
         }
 
@@ -137,7 +141,7 @@ namespace _32_Резня_капусты
         // обработка кнопки выхода
         private void exitBtn_Click(object sender, EventArgs e)
         {
-
+            Close();
         }
 
         // ввод % вероятности для лампы
@@ -294,6 +298,12 @@ namespace _32_Резня_капусты
                 }
                 ColorForm.FillComboboxs(ColorForm.prevColorRange);
             }
+        }
+
+        // выход через меню
+        private void exitMenuItem_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }
