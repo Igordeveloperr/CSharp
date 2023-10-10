@@ -41,7 +41,7 @@ namespace _32_Резня_капусты
             _pauseBtnTexture = new PauseBtnTexture(pauseBtn);
             _continueBtnTexture = new ContinueBtnTexture(pauseBtn);
             _programSpeed = new ProgramSpeed();
-            _field = new FieldTexture();
+            _field = new FieldTexture(ColorForm.prevColorRange);
             _field.Draw(basePanel);
             _gameIsActive = true;
             _isStartBtn = true;

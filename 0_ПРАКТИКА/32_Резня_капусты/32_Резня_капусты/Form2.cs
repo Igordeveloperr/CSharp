@@ -39,7 +39,7 @@ namespace _32_Резня_капусты
         // выбраная палитра
         public List<Color> colorRange { get; private set; }
         // ранее выбраные цвета
-        private List<Color> prevColorRange;
+        public List<Color> prevColorRange { get; private set; }
         // список Combobox-ов
         private List<ComboBox> defList;
 

@@ -12,12 +12,18 @@ namespace _32_Резня_капусты.texture
 {
     internal class FieldTexture : Texture
     {
+        private List<Color> colors = new List<Color>(10);
         private List<PictureBox> columnlist = new List<PictureBox>();
         private List<PictureBox> field = new List<PictureBox>();
         private List<PictureBox> fillCells = new List<PictureBox>();
         private List<PictureBox> emptyCells = new List<PictureBox>();
         private Random rnd = new Random(Guid.NewGuid().GetHashCode());
         public int Percent { get; set; } = 5;
+
+        public FieldTexture(List<Color> prevColors)
+        {
+            colors = prevColors;
+        }
 
         // основная логика работы поля
         public bool ExecuteLogic(Panel lamPanel, System.Windows.Forms.Timer timer)
@@ -64,12 +70,13 @@ namespace _32_Резня_капусты.texture
         private void ClearColumn()
         {
             int column = rnd.Next(0, 10);
+            int colorIndex = column;
             for (int i = 0; i < 10; i++)
             {
                 PictureBox cell = field[column];
                 columnlist.Add(cell);
                 ClearCellsArr(cell);
-                cell.BackColor = Color.Fuchsia;
+                cell.BackColor = colors[colorIndex];
                 cell.Image = Image.FromFile(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"img\krot.jpg"));
                 emptyCells.Add(cell);
                 column += 10;
