@@ -28,7 +28,7 @@ namespace _32_Резня_капусты.texture
         // основная логика работы поля
         public bool ExecuteLogic(Panel lamPanel, System.Windows.Forms.Timer timer)
         {
-            columnlist.ForEach(x => x.BackColor = Color.White);
+            columnlist.ForEach(x => x.BackColor = Color.Empty);
             columnlist.Clear();
             if (emptyCells.Count == 0)
             {
@@ -77,7 +77,7 @@ namespace _32_Резня_капусты.texture
                 columnlist.Add(cell);
                 ClearCellsArr(cell);
                 cell.BackColor = colors[colorIndex];
-                cell.Image = Image.FromFile(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"img\krot.jpg"));
+                cell.Image = Image.FromFile(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"img\krot.png"));
                 emptyCells.Add(cell);
                 column += 10;
             }
@@ -89,7 +89,7 @@ namespace _32_Резня_капусты.texture
             int x = rnd.Next(0, emptyCells.Count);
             PictureBox cell = emptyCells[x];
             emptyCells.Remove(cell);
-            cell.Image = Image.FromFile(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"img\kacan.jpg"));
+            cell.Image = Image.FromFile(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"img\kacan.png"));
             fillCells.Add(cell);
         }
 
@@ -146,13 +146,13 @@ namespace _32_Резня_капусты.texture
             if(fillCells.Contains(cell))
             {
                 fillCells.Remove(cell);
-                cell.Image = Image.FromFile(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"img\krot.jpg"));
+                cell.Image = Image.FromFile(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"img\krot.png"));
                 emptyCells.Add(cell);
             }
             else if (emptyCells.Count > 1 && emptyCells.Contains(cell))
             {
                 emptyCells.Remove(cell);
-                cell.Image = Image.FromFile(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"img\kacan.jpg"));
+                cell.Image = Image.FromFile(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"img\kacan.png"));
                 fillCells.Add(cell);
             }
             else
@@ -169,13 +169,13 @@ namespace _32_Резня_капусты.texture
             string path = string.Empty;
             if ((a * b) % 2 == 0)
             {
-                path = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"img\kacan.jpg");
+                path = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"img\kacan.png");
                 cell.Image = Image.FromFile(path);
                 fillCells.Add(cell);
             }
             else
             {
-                path = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"img\krot.jpg");
+                path = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"img\krot.png");
                 cell.Image = Image.FromFile(path);
                 emptyCells.Add(cell);
             }
