@@ -295,8 +295,11 @@ namespace _32_Резня_капусты
                 for (int i = 0; i < ColorForm.prevColorRange.Count; i++)
                 {
                     ColorForm.colorRange.Add(ColorForm.prevColorRange[i]);
+                    ColorForm._cacheColors.Add(ColorForm.prevColorRange[i]);
                 }
+                ColorForm.DescribeBoxs();
                 ColorForm.FillComboboxs(ColorForm.prevColorRange);
+                ColorForm.SubscribeBoxs();
             }
         }
 

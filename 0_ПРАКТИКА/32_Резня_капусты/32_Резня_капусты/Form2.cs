@@ -55,6 +55,36 @@ namespace _32_Резня_капусты
             FillComboboxs(colorRange);
         }
 
+        // отписываем комбобохи от события
+        public void DescribeBoxs()
+        {
+            colorBox1.SelectedIndexChanged -= colorBox1_SelectedIndexChanged;
+            colorBox2.SelectedIndexChanged -= colorBox2_SelectedIndexChanged;
+            colorBox3.SelectedIndexChanged -= colorBox3_SelectedIndexChanged;
+            colorBox4.SelectedIndexChanged -= colorBox4_SelectedIndexChanged;
+            colorBox5.SelectedIndexChanged -= colorBox5_SelectedIndexChanged;
+            colorBox6.SelectedIndexChanged -= colorBox6_SelectedIndexChanged;
+            colorBox7.SelectedIndexChanged -= colorBox7_SelectedIndexChanged;
+            colorBox8.SelectedIndexChanged -= colorBox8_SelectedIndexChanged;
+            colorBox9.SelectedIndexChanged -= colorBox9_SelectedIndexChanged;
+            colorBox10.SelectedIndexChanged -= colorBox10_SelectedIndexChanged;
+        }
+
+        // подписываем комбобохи на события
+        public void SubscribeBoxs()
+        {
+            colorBox1.SelectedIndexChanged += colorBox1_SelectedIndexChanged;
+            colorBox2.SelectedIndexChanged += colorBox2_SelectedIndexChanged;
+            colorBox3.SelectedIndexChanged += colorBox3_SelectedIndexChanged;
+            colorBox4.SelectedIndexChanged += colorBox4_SelectedIndexChanged;
+            colorBox5.SelectedIndexChanged += colorBox5_SelectedIndexChanged;
+            colorBox6.SelectedIndexChanged += colorBox6_SelectedIndexChanged;
+            colorBox7.SelectedIndexChanged += colorBox7_SelectedIndexChanged;
+            colorBox8.SelectedIndexChanged += colorBox8_SelectedIndexChanged;
+            colorBox9.SelectedIndexChanged += colorBox9_SelectedIndexChanged;
+            colorBox10.SelectedIndexChanged += colorBox10_SelectedIndexChanged;
+        }
+
         // начальные настройки
         private void Setup()
         {
@@ -139,8 +169,25 @@ namespace _32_Резня_капусты
         // клик по кнопе ОК
         private void okBtn_Click(object sender, EventArgs e)
         {
-            SavePrevColors();
-            Hide();
+            bool allBoxSetts = true;
+            foreach(var box in defList)
+            {
+                if(box.Text == string.Empty)
+                {
+                    allBoxSetts = false;
+                    break;
+                }
+            }
+
+            if(allBoxSetts)
+            {
+                SavePrevColors();
+                Hide();
+            }
+            else
+            {
+                MessageBox.Show("Не все поля заполнены!");
+            }
         }
 
         // клик по кнопке Отмена
