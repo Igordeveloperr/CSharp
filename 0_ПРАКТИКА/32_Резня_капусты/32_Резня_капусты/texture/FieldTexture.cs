@@ -12,6 +12,7 @@ namespace _32_Резня_капусты.texture
 {
     internal class FieldTexture : Texture
     {
+        private List<Color> colors = new List<Color>(10);
         private List<PictureBox> columnlist = new List<PictureBox>();
         private List<PictureBox> field = new List<PictureBox>();
         private List<PictureBox> fillCells = new List<PictureBox>();
@@ -19,10 +20,15 @@ namespace _32_Резня_капусты.texture
         private Random rnd = new Random(Guid.NewGuid().GetHashCode());
         public int Percent { get; set; } = 5;
 
+        public FieldTexture(List<Color> prevColors)
+        {
+            colors = prevColors;
+        }
+
         // основная логика работы поля
         public bool ExecuteLogic(Panel lamPanel, System.Windows.Forms.Timer timer)
         {
-            columnlist.ForEach(x => x.BackColor = Color.White);
+            columnlist.ForEach(x => x.BackColor = Color.Empty);
             columnlist.Clear();
             if (emptyCells.Count == 0)
             {
@@ -30,6 +36,11 @@ namespace _32_Резня_капусты.texture
                 timer.Stop();
                 MessageBox.Show("Игра окончена!");
                 return true;
+            }
+            else if(emptyCells.Count > 0 && !timer.Enabled)
+            {
+                field.ForEach(x => x.Click -= CellClickHendler);
+                return false;
             }
             else
             {
@@ -59,13 +70,14 @@ namespace _32_Резня_капусты.texture
         private void ClearColumn()
         {
             int column = rnd.Next(0, 10);
+            int colorIndex = column;
             for (int i = 0; i < 10; i++)
             {
                 PictureBox cell = field[column];
                 columnlist.Add(cell);
                 ClearCellsArr(cell);
-                cell.BackColor = Color.Fuchsia;
-                cell.Image = Image.FromFile(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"img\krot.jpg"));
+                cell.BackColor = colors[colorIndex];
+                cell.Image = Image.FromFile(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"img\krot.png"));
                 emptyCells.Add(cell);
                 column += 10;
             }
@@ -77,7 +89,7 @@ namespace _32_Резня_капусты.texture
             int x = rnd.Next(0, emptyCells.Count);
             PictureBox cell = emptyCells[x];
             emptyCells.Remove(cell);
-            cell.Image = Image.FromFile(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"img\kacan.jpg"));
+            cell.Image = Image.FromFile(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"img\kacan.png"));
             fillCells.Add(cell);
         }
 
@@ -134,13 +146,13 @@ namespace _32_Резня_капусты.texture
             if(fillCells.Contains(cell))
             {
                 fillCells.Remove(cell);
-                cell.Image = Image.FromFile(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"img\krot.jpg"));
+                cell.Image = Image.FromFile(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"img\krot.png"));
                 emptyCells.Add(cell);
             }
             else if (emptyCells.Count > 1 && emptyCells.Contains(cell))
             {
                 emptyCells.Remove(cell);
-                cell.Image = Image.FromFile(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"img\kacan.jpg"));
+                cell.Image = Image.FromFile(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"img\kacan.png"));
                 fillCells.Add(cell);
             }
             else
@@ -157,13 +169,13 @@ namespace _32_Резня_капусты.texture
             string path = string.Empty;
             if ((a * b) % 2 == 0)
             {
-                path = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"img\kacan.jpg");
+                path = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"img\kacan.png");
                 cell.Image = Image.FromFile(path);
                 fillCells.Add(cell);
             }
             else
             {
-                path = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"img\krot.jpg");
+                path = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"img\krot.png");
                 cell.Image = Image.FromFile(path);
                 emptyCells.Add(cell);
             }

@@ -13,6 +13,7 @@ using _32_Резня_капусты.texture;
 using _32_Резня_капусты.math;
 using System.Text.RegularExpressions;
 using System.Media;
+using _32_Резня_капусты.settings;
 
 namespace _32_Резня_капусты
 {
@@ -27,6 +28,7 @@ namespace _32_Резня_капусты
         private bool _isStartBtn;
         private bool _isPauseBtn;
         private bool _gameIsActive;
+        private bool isNullSpeed;
         private FieldTexture _field;
         public MainWindow()
         { 
@@ -40,11 +42,12 @@ namespace _32_Резня_капусты
             _pauseBtnTexture = new PauseBtnTexture(pauseBtn);
             _continueBtnTexture = new ContinueBtnTexture(pauseBtn);
             _programSpeed = new ProgramSpeed();
-            _field = new FieldTexture();
+            _field = new FieldTexture(ColorForm.prevColorRange);
             _field.Draw(basePanel);
             _gameIsActive = true;
             _isStartBtn = true;
             _isPauseBtn = true;
+            isNullSpeed = false;
             lamp.BackgroundImage = Image.FromFile(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"img\offLamp.png"));
         }
 
@@ -52,17 +55,28 @@ namespace _32_Резня_капусты
         private void startBtn_Click(object sender, EventArgs e)
         {
             // кнопка старт
-            if (_isStartBtn)
+            if (_isStartBtn && !isNullSpeed)
             {
+                setMenuItem.Enabled = false;
+                fileMenuItem.Enabled = false;
                 _gameIsActive = false;
                 _stoprBtnTexture.Draw(basePanel);
                 _isStartBtn = false;
                 mainTimer.Enabled = true;
                 mainTimer.Start();
             }
+            else if(_isStartBtn && isNullSpeed)
+            {
+                _gameIsActive = false;
+                _stoprBtnTexture.Draw(basePanel);
+                _isStartBtn = false;
+                mainTimer_Tick(sender , e);
+            }
             else
             {
                 ValidateStopBtn();
+                setMenuItem.Enabled = true;
+                fileMenuItem.Enabled = true;
             }
         }
 
@@ -101,11 +115,16 @@ namespace _32_Резня_капусты
         // обработка кнопки паузы и продолжить
         private void pauseBtn_Click(object sender, EventArgs e)
         {
-            if (!_isPauseBtn && !_gameIsActive)
+            if (!_isPauseBtn && !_gameIsActive && !isNullSpeed)
             {
                 _isPauseBtn = true;
                 _pauseBtnTexture.Draw(basePanel);
                 mainTimer.Start();
+            }
+            else if (!_isPauseBtn && !_gameIsActive && isNullSpeed)
+            {
+                _isPauseBtn = true;
+                _pauseBtnTexture.Draw(basePanel);
             }
             else if (_isPauseBtn && !_gameIsActive)
             {
@@ -122,7 +141,7 @@ namespace _32_Резня_капусты
         // обработка кнопки выхода
         private void exitBtn_Click(object sender, EventArgs e)
         {
-
+            Close();
         }
 
         // ввод % вероятности для лампы
@@ -137,7 +156,23 @@ namespace _32_Резня_капусты
         {
             int res = _programSpeed.ConvertToMilliseconds(speedTrack.Value);
             speedValue.Text = $"{speedTrack.Value}";
-            mainTimer.Interval = res;
+
+            if(res == 0)
+            {
+                isNullSpeed = true;
+                mainTimer.Stop();
+            }
+            else if(res > 0 && isNullSpeed && !_gameIsActive && _isPauseBtn)
+            {
+                mainTimer.Start();
+                isNullSpeed = false;
+                mainTimer.Interval = res;
+            }
+            else
+            {
+                isNullSpeed = false;
+                mainTimer.Interval = res;
+            }
         }
 
         // обработка вводa пользователем скорости
@@ -227,6 +262,63 @@ namespace _32_Резня_капусты
             {
                 ColorForm.Show();
             }
+        }
+
+        // кнопка сохранить
+        private void saveMenuItem_Click(object sender, EventArgs e)
+        {
+            SettingManager manager = new SettingManager();
+            manager.SaveSettings(ColorForm.prevColorRange, int.Parse(speedValue.Text), int.Parse(probValue.Text));
+        }
+
+        // кнопка открыть
+        private void openMenuItem_Click(object sender, EventArgs e)
+        {
+            SettingManager manager = new SettingManager();
+            SettingsObj settings = manager.OpenSettings();
+            if (settings != null)
+            {
+                speedValue.Text = $"{settings.Speed}";
+                probValue.Text = $"{settings.Probability}";
+                ColorForm.prevColorRange[0] = settings.Color0;
+                ColorForm.prevColorRange[1] = settings.Color1;
+                ColorForm.prevColorRange[2] = settings.Color2;
+                ColorForm.prevColorRange[3] = settings.Color3;
+                ColorForm.prevColorRange[4] = settings.Color4;
+                ColorForm.prevColorRange[5] = settings.Color5;
+                ColorForm.prevColorRange[6] = settings.Color6;
+                ColorForm.prevColorRange[7] = settings.Color7;
+                ColorForm.prevColorRange[8] = settings.Color8;
+                ColorForm.prevColorRange[9] = settings.Color9;
+                ColorForm._cacheColors.Clear();
+                ColorForm.colorRange.Clear();
+                for (int i = 0; i < ColorForm.prevColorRange.Count; i++)
+                {
+                    ColorForm.colorRange.Add(ColorForm.prevColorRange[i]);
+                    ColorForm._cacheColors.Add(ColorForm.prevColorRange[i]);
+                }
+                ColorForm.DescribeBoxs();
+                ColorForm.FillComboboxs(ColorForm.prevColorRange);
+                ColorForm.SubscribeBoxs();
+            }
+        }
+
+        // выход через меню
+        private void exitMenuItem_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        // про игру
+        private void progInfoMenuItem_Click(object sender, EventArgs e)
+        {
+            new AboutGameForm().Show();
+        }
+        
+        // про автора
+        private void authorInfoMenuItem_Click(object sender, EventArgs e)
+        {
+            new AuthorForm().Show();
         }
     }
 }

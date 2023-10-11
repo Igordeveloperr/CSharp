@@ -126,7 +126,6 @@
             // 
             this.probTrack.Location = new System.Drawing.Point(760, 152);
             this.probTrack.Maximum = 15;
-            this.probTrack.Minimum = 1;
             this.probTrack.Name = "probTrack";
             this.probTrack.Size = new System.Drawing.Size(195, 45);
             this.probTrack.TabIndex = 5;
@@ -137,6 +136,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label1.Location = new System.Drawing.Point(757, 127);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(118, 22);
@@ -147,6 +147,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label2.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label2.Location = new System.Drawing.Point(757, 200);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(90, 22);
@@ -157,7 +158,6 @@
             // 
             this.speedTrack.Location = new System.Drawing.Point(761, 225);
             this.speedTrack.Maximum = 100;
-            this.speedTrack.Minimum = 1;
             this.speedTrack.Name = "speedTrack";
             this.speedTrack.Size = new System.Drawing.Size(195, 45);
             this.speedTrack.TabIndex = 8;
@@ -217,22 +217,25 @@
             // 
             this.openMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.openMenuItem.Name = "openMenuItem";
-            this.openMenuItem.Size = new System.Drawing.Size(164, 26);
+            this.openMenuItem.Size = new System.Drawing.Size(180, 26);
             this.openMenuItem.Text = "Открыть";
+            this.openMenuItem.Click += new System.EventHandler(this.openMenuItem_Click);
             // 
             // saveMenuItem
             // 
             this.saveMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.saveMenuItem.Name = "saveMenuItem";
-            this.saveMenuItem.Size = new System.Drawing.Size(164, 26);
+            this.saveMenuItem.Size = new System.Drawing.Size(180, 26);
             this.saveMenuItem.Text = "Сохранить";
+            this.saveMenuItem.Click += new System.EventHandler(this.saveMenuItem_Click);
             // 
             // exitMenuItem
             // 
             this.exitMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.exitMenuItem.Name = "exitMenuItem";
-            this.exitMenuItem.Size = new System.Drawing.Size(164, 26);
+            this.exitMenuItem.Size = new System.Drawing.Size(180, 26);
             this.exitMenuItem.Text = "Выход";
+            this.exitMenuItem.Click += new System.EventHandler(this.exitMenuItem_Click);
             // 
             // setMenuItem
             // 
@@ -247,7 +250,7 @@
             // 
             this.colorMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.colorMenuItem.Name = "colorMenuItem";
-            this.colorMenuItem.Size = new System.Drawing.Size(180, 26);
+            this.colorMenuItem.Size = new System.Drawing.Size(127, 26);
             this.colorMenuItem.Text = "Цвета";
             this.colorMenuItem.Click += new System.EventHandler(this.colorMenuItem_Click);
             // 
@@ -267,6 +270,7 @@
             this.progInfoMenuItem.Name = "progInfoMenuItem";
             this.progInfoMenuItem.Size = new System.Drawing.Size(187, 26);
             this.progInfoMenuItem.Text = "О программе";
+            this.progInfoMenuItem.Click += new System.EventHandler(this.progInfoMenuItem_Click);
             // 
             // authorInfoMenuItem
             // 
@@ -274,6 +278,7 @@
             this.authorInfoMenuItem.Name = "authorInfoMenuItem";
             this.authorInfoMenuItem.Size = new System.Drawing.Size(187, 26);
             this.authorInfoMenuItem.Text = "Об авторе";
+            this.authorInfoMenuItem.Click += new System.EventHandler(this.authorInfoMenuItem_Click);
             // 
             // label3
             // 
@@ -299,7 +304,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(148)))), ((int)(((byte)(107)))));
             this.ClientSize = new System.Drawing.Size(1075, 649);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);

@@ -10,8 +10,12 @@ namespace _32_Резня_капусты.math
     {
         public int ConvertToMilliseconds(int speed)
         {
-            double res = (1.0 / speed) * 1000;
-            return (int)res;
+            if (speed > 0)
+            {
+                double res = (1.0 / speed) * 1000;
+                return (int)res;
+            }
+            return 0;
         }
     }
 }
