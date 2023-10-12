@@ -13,7 +13,7 @@ namespace _32_Резня_капусты.math
             if (speed > 0)
             {
                 double res = (1.0 / speed) * 1000;
-                return (int)res;
+                return (int)res+15;
             }
             return 0;
         }

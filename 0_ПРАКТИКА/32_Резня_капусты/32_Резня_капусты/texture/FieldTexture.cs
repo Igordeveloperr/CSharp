@@ -25,6 +25,11 @@ namespace _32_Резня_капусты.texture
             colors = prevColors;
         }
 
+        public FieldTexture()
+        {
+            
+        }
+
         // основная логика работы поля
         public bool ExecuteLogic(Panel lamPanel, System.Windows.Forms.Timer timer)
         {
@@ -121,7 +126,7 @@ namespace _32_Резня_капусты.texture
         }
 
         // генерация поля
-        private void GenerateField(Panel basePanel)
+        public void GenerateField(Panel basePanel)
         {
             basePanel.Controls.Clear();
             for (int i = 0; i < 100; i++)
@@ -135,6 +140,25 @@ namespace _32_Резня_капусты.texture
                 cell.Click += CellClickHendler;
                 field.Add(cell);
                 basePanel.Controls.Add(cell);
+            }
+        }
+
+        public void GenF(Panel panel, int count)
+        {
+            panel.Controls.Clear();
+            for (int i = 0; i < 100; i++)
+            {
+                string path = string.Empty;
+                PictureBox cell = new PictureBox();
+                cell.Width = 65;
+                cell.Height = 50;
+                cell.SizeMode = PictureBoxSizeMode.CenterImage;
+                cell.Name = $"cell{i}";
+                SelectImageForCell(cell);
+                cell.Image = Image.FromFile(path);
+                cell.Click += CellClickHendler;
+                field.Add(cell);
+                panel.Controls.Add(cell);
             }
         }
 
@@ -164,10 +188,10 @@ namespace _32_Резня_капусты.texture
         // выбор картинки с пмоощью рандома
         private void SelectImageForCell(PictureBox cell)
         {
-            long a = rnd.Next(0, 1000000);
-            long b = rnd.Next(0, 1000000);
+            MyRandom rnd = new MyRandom(50);
+            Random f = new Random();
             string path = string.Empty;
-            if ((a * b) % 2 == 0)
+            if (f.Next(1, 11)%2==0)
             {
                 path = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"img\kacan.png");
                 cell.Image = Image.FromFile(path);

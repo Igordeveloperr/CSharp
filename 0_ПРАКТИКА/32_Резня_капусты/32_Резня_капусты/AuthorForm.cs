@@ -22,5 +22,10 @@ namespace _32_Резня_капусты
             StartPosition = FormStartPosition.CenterScreen;
             pictureBox1.Image = Image.FromFile(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"img\me.png"));
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }

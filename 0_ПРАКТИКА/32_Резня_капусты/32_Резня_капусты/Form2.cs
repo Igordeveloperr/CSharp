@@ -142,6 +142,8 @@ namespace _32_Резня_капусты
         // обработка полей для выбора цвета
         private void SelectColor(ComboBox sender)
         {
+            var prevColorText = ConvertColorInName(colorRange[Convert.ToInt32(sender.Tag)]);
+            
             if(sender.Text != string.Empty)
             {
                 Color color = _colors[sender.Text];
@@ -153,9 +155,9 @@ namespace _32_Резня_капусты
                 if (_cacheColors.Contains(color))
                 {
                     MessageBox.Show("Такой цвет уже выбран!");
-                    int index = Convert.ToInt32(sender.Tag);
-                    colorRange[index] = Color.Empty;
-                    sender.Text = string.Empty;
+                    DescribeBoxs();
+                    sender.Text = prevColorText;
+                    SubscribeBoxs();
                 }
                 else
                 {

@@ -48,6 +48,7 @@
             this.exitMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.setMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.colorMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.fillBtn = new System.Windows.Forms.ToolStripMenuItem();
             this.referenceMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.progInfoMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.authorInfoMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -217,7 +218,7 @@
             // 
             this.openMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.openMenuItem.Name = "openMenuItem";
-            this.openMenuItem.Size = new System.Drawing.Size(180, 26);
+            this.openMenuItem.Size = new System.Drawing.Size(164, 26);
             this.openMenuItem.Text = "Открыть";
             this.openMenuItem.Click += new System.EventHandler(this.openMenuItem_Click);
             // 
@@ -225,7 +226,7 @@
             // 
             this.saveMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.saveMenuItem.Name = "saveMenuItem";
-            this.saveMenuItem.Size = new System.Drawing.Size(180, 26);
+            this.saveMenuItem.Size = new System.Drawing.Size(164, 26);
             this.saveMenuItem.Text = "Сохранить";
             this.saveMenuItem.Click += new System.EventHandler(this.saveMenuItem_Click);
             // 
@@ -233,14 +234,15 @@
             // 
             this.exitMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.exitMenuItem.Name = "exitMenuItem";
-            this.exitMenuItem.Size = new System.Drawing.Size(180, 26);
+            this.exitMenuItem.Size = new System.Drawing.Size(164, 26);
             this.exitMenuItem.Text = "Выход";
             this.exitMenuItem.Click += new System.EventHandler(this.exitMenuItem_Click);
             // 
             // setMenuItem
             // 
             this.setMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.colorMenuItem});
+            this.colorMenuItem,
+            this.fillBtn});
             this.setMenuItem.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.setMenuItem.Name = "setMenuItem";
             this.setMenuItem.Size = new System.Drawing.Size(107, 25);
@@ -250,9 +252,17 @@
             // 
             this.colorMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.colorMenuItem.Name = "colorMenuItem";
-            this.colorMenuItem.Size = new System.Drawing.Size(127, 26);
+            this.colorMenuItem.Size = new System.Drawing.Size(175, 26);
             this.colorMenuItem.Text = "Цвета";
             this.colorMenuItem.Click += new System.EventHandler(this.colorMenuItem_Click);
+            // 
+            // fillBtn
+            // 
+            this.fillBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.fillBtn.Name = "fillBtn";
+            this.fillBtn.Size = new System.Drawing.Size(175, 26);
+            this.fillBtn.Text = "Заполнение";
+            this.fillBtn.Click += new System.EventHandler(this.fillToolStripMenuItem_Click);
             // 
             // referenceMenuItem
             // 
@@ -358,6 +368,7 @@
         private System.Windows.Forms.ToolStripMenuItem authorInfoMenuItem;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.ToolStripMenuItem fillBtn;
     }
 }
 

@@ -30,3 +30,9 @@ C:\Users\Гохля\Desktop\programming\CSharp\0_ПРАКТИКА\32_Резня_
 C:\Users\Гохля\Desktop\programming\CSharp\0_ПРАКТИКА\32_Резня_капусты\32_Резня_капусты\obj\Debug\_32_Резня_капусты.AboutGameForm.resources
 C:\Users\Гохля\Desktop\programming\CSharp\0_ПРАКТИКА\32_Резня_капусты\32_Резня_капусты\obj\Debug\_32_Резня_капусты.AuthorForm.resources
 >>>>>>> 4e0a91fb1cf194d8c236ef639a1b739e930fa72e
+C:\Users\Gokhlia\Desktop\CSharp\0_ПРАКТИКА\32_Резня_капусты\32_Резня_капусты\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Gokhlia\Desktop\CSharp\0_ПРАКТИКА\32_Резня_капусты\32_Резня_капусты\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Gokhlia\Desktop\CSharp\0_ПРАКТИКА\32_Резня_капусты\32_Резня_капусты\obj\Debug\_32_Резня_капусты.AboutGameForm.resources
+C:\Users\Gokhlia\Desktop\CSharp\0_ПРАКТИКА\32_Резня_капусты\32_Резня_капусты\obj\Debug\_32_Резня_капусты.AuthorForm.resources
+C:\Users\Gokhlia\Desktop\CSharp\0_ПРАКТИКА\32_Резня_капусты\32_Резня_капусты\obj\Debug\32_Резня_капусты.csproj.CopyComplete
+C:\Users\Gokhlia\Desktop\CSharp\0_ПРАКТИКА\32_Резня_капусты\32_Резня_капусты\obj\Debug\_32_Резня_капусты.GenForm.resources

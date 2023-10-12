@@ -19,7 +19,7 @@ namespace _32_Резня_капусты
 {
     public partial class MainWindow : Form
     {
-        private Form2 ColorForm = new Form2();
+        public Form2 ColorForm = new Form2();
         private ProgramSpeed _programSpeed;
         private StartBtnTexture _startBtnTexture;
         private StopBtnTexture _stoprBtnTexture;
@@ -30,6 +30,7 @@ namespace _32_Резня_капусты
         private bool _gameIsActive;
         private bool isNullSpeed;
         private FieldTexture _field;
+        private GenForm genForm = new GenForm();
         public MainWindow()
         { 
             InitializeComponent();
@@ -62,8 +63,11 @@ namespace _32_Резня_капусты
                 _gameIsActive = false;
                 _stoprBtnTexture.Draw(basePanel);
                 _isStartBtn = false;
-                mainTimer.Enabled = true;
-                mainTimer.Start();
+                if (_isPauseBtn)
+                {
+                    mainTimer.Enabled = true;
+                    mainTimer.Start();
+                }
             }
             else if(_isStartBtn && isNullSpeed)
             {
@@ -115,26 +119,25 @@ namespace _32_Резня_капусты
         // обработка кнопки паузы и продолжить
         private void pauseBtn_Click(object sender, EventArgs e)
         {
-            if (!_isPauseBtn && !_gameIsActive && !isNullSpeed)
+            if (!_isPauseBtn && !isNullSpeed)
             {
                 _isPauseBtn = true;
                 _pauseBtnTexture.Draw(basePanel);
-                mainTimer.Start();
+                if(!_gameIsActive)
+                {
+                    mainTimer.Start();
+                }
             }
-            else if (!_isPauseBtn && !_gameIsActive && isNullSpeed)
+            else if (!_isPauseBtn && isNullSpeed)
             {
                 _isPauseBtn = true;
                 _pauseBtnTexture.Draw(basePanel);
             }
-            else if (_isPauseBtn && !_gameIsActive)
+            else if (_isPauseBtn)
             {
                 _isPauseBtn = false;
                 _continueBtnTexture.Draw(basePanel);
                 mainTimer.Stop();
-            }
-            else
-            {
-                MessageBox.Show("Нажмите кнопку 'Старт'");
             }
         }
 
@@ -319,6 +322,14 @@ namespace _32_Резня_капусты
         private void authorInfoMenuItem_Click(object sender, EventArgs e)
         {
             new AuthorForm().Show();
+        }
+
+        private void fillToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if(!genForm.Visible)
+            {
+                genForm.Show();
+            }
         }
     }
 }

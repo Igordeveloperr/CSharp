@@ -24,5 +24,10 @@ namespace _32_Резня_капусты
             leftImg.Image = Image.FromFile(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"img\KROTLOGO.png"));
             rightImg.Image = Image.FromFile(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"img\krot-kopija.png"));
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }
