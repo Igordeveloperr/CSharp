@@ -15,7 +15,6 @@ namespace _32_Резня_капусты
     public partial class GenForm : Form
     {
         private int genCount = 1;
-        MainWindow mainWindow = new MainWindow();
         FieldTexture field;
         public GenForm()
         {
@@ -24,13 +23,13 @@ namespace _32_Резня_капусты
             MaximizeBox = false;
             MinimizeBox = false;
             StartPosition = FormStartPosition.CenterScreen;
-            field = new FieldTexture(mainWindow.ColorForm.prevColorRange);
-            field.Draw(basePanel);
+            //field = new FieldTexture(mainWindow.ColorForm.prevColorRange);
+            //field.Draw(basePanel);
         }
 
         private void genBtn_Click(object sender, EventArgs e)
         {
-            field.GenF(basePanel, genCount);
+            
         }
 
         private void closeBtn_Click(object sender, EventArgs e)

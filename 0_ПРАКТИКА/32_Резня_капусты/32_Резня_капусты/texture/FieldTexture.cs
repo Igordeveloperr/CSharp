@@ -14,9 +14,9 @@ namespace _32_Резня_капусты.texture
     {
         private List<Color> colors = new List<Color>(10);
         private List<PictureBox> columnlist = new List<PictureBox>();
-        private List<PictureBox> field = new List<PictureBox>();
-        private List<PictureBox> fillCells = new List<PictureBox>();
-        private List<PictureBox> emptyCells = new List<PictureBox>();
+        private List<PictureBox> field = new List<PictureBox>(100);
+        private List<PictureBox> fillCells = new List<PictureBox>(100);
+        private List<PictureBox> emptyCells = new List<PictureBox>(100);
         private Random rnd = new Random(Guid.NewGuid().GetHashCode());
         public int Percent { get; set; } = 5;
 
@@ -128,6 +128,7 @@ namespace _32_Резня_капусты.texture
         // генерация поля
         public void GenerateField(Panel basePanel)
         {
+            var rnd = new Random();
             basePanel.Controls.Clear();
             for (int i = 0; i < 100; i++)
             {
@@ -136,10 +137,34 @@ namespace _32_Резня_капусты.texture
                 cell.Height = 50;
                 cell.SizeMode = PictureBoxSizeMode.CenterImage;
                 cell.Name = $"cell{i}";
-                SelectImageForCell(cell);
                 cell.Click += CellClickHendler;
-                field.Add(cell);
-                basePanel.Controls.Add(cell);
+                string path = string.Empty;
+                if (i < 25)
+                {
+                    path = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"img\krot.png");
+                    cell.Image = Image.FromFile(path);
+                    emptyCells.Add(cell);
+                }
+                else
+                {
+                    path = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"img\kacan.png");
+                    cell.Image = Image.FromFile(path);
+                    fillCells.Add(cell);
+                }
+                field.Add(cell);                
+            }
+
+            for (int i = 0; i < 100; i++)
+            {
+                int j = rnd.Next(100);
+                var tmp = field[i];
+                field[i] = field[j];
+                field[j] = tmp;
+            }
+
+            for (int i = 0; i < 100; i++)
+            {
+                basePanel.Controls.Add(field[i]);
             }
         }
 
