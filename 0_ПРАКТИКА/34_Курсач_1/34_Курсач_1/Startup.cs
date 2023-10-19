@@ -26,6 +26,7 @@ namespace _34_Курсач_1
         {
             services.AddControllersWithViews();
             services.AddTransient<IBot, Bot>();
+            services.AddTransient<IBotKeyBoard, ControlKeyBoard>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

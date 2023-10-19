@@ -20,6 +20,7 @@ namespace _34_Курсач_1.Controllers
 
         public IActionResult Index()
         {
+            Console.WriteLine("Esp request!");
             return View();
         }
 
