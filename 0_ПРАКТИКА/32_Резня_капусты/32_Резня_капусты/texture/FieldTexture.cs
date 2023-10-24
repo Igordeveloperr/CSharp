@@ -68,6 +68,40 @@ namespace _32_Резня_капусты.texture
             fillCells.ForEach(x => cachedFillCells.Add(x));
         }
 
+        public void UpdateField(string[] newField)
+        {
+            cachedEmptyCells.Clear();
+            cachedFillCells.Clear();
+            field.Clear();
+            fillCells.Clear();
+            emptyCells.Clear();
+            mainPanel.Controls.Clear();
+
+            for(int i = 0; i < newField.Length; i++)
+            {
+                PictureBox cell = new PictureBox();
+                cell.Width = 65;
+                cell.Height = 50;
+                cell.SizeMode = PictureBoxSizeMode.CenterImage;
+                if (newField[i] == "krot")
+                {
+                    cell.Image = Image.FromFile(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"img\krot.png"));
+                    cell.Tag = newField[i];
+                    emptyCells.Add(cell);
+                }
+                else
+                {
+                    cell.Image = Image.FromFile(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"img\kacan.png"));
+                    cell.Tag = newField[i];
+                    fillCells.Add(cell);
+                }
+                field.Add(cell);
+                mainPanel.Controls.Add(cell);
+            }
+            emptyCells.ForEach(x => cachedEmptyCells.Add(x));
+            fillCells.ForEach(x => cachedFillCells.Add(x));
+        }
+
         // основная логика работы поля
         public bool ExecuteLogic(Panel lamPanel, System.Windows.Forms.Timer timer)
         {

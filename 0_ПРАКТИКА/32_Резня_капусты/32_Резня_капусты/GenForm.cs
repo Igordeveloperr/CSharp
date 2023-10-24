@@ -36,7 +36,7 @@ namespace _32_Резня_капусты
         }
 
         // изначальное заполнение поля
-        private void FillField(List<PictureBox> cells)
+        public void FillField(List<PictureBox> cells)
         {
             panel.Controls.Clear();
             _cells.Clear();
@@ -61,6 +61,7 @@ namespace _32_Резня_капусты
                 {
                     _fillCells.Add(cellItem);
                 }
+                _cells.Add(cellItem);
             }
         }
 

@@ -305,6 +305,8 @@ namespace _32_Резня_капусты
                 ColorForm.DescribeBoxs();
                 ColorForm.FillComboboxs(ColorForm.prevColorRange);
                 ColorForm.SubscribeBoxs();
+                _field.UpdateField(settings.Field);
+                genForm.FillField(_field.field);
             }
         }
 
