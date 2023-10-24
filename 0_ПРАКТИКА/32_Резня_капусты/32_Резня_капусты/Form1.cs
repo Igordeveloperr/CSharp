@@ -44,7 +44,7 @@ namespace _32_Резня_капусты
             _continueBtnTexture = new ContinueBtnTexture(pauseBtn);
             _programSpeed = new ProgramSpeed();
             _field = new FieldTexture(ColorForm.prevColorRange);
-            _field.Draw(basePanel);
+            _field.GenerateField(basePanel, 50);
             _gameIsActive = true;
             _isStartBtn = true;
             _isPauseBtn = true;
@@ -96,11 +96,12 @@ namespace _32_Резня_капусты
                 mainTimer.Enabled = false;
                 mainTimer.Stop();
                 // чистим вспомогательные массивы
-                _field.ClearCache();
+                //_field.ClearCache();
                 // игра доступна
                 _gameIsActive = true;
                 // регенерация поля
-                _field.Draw(basePanel);
+                _field.GetStartState();
+                //_field.GenerateField(basePanel, 50);
                 // колдуем кнопкой
                 _isStartBtn = true;
                 _startBtnTexture.Draw(basePanel);

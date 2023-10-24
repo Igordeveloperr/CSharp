@@ -12,11 +12,16 @@ namespace _32_Резня_капусты.texture
 {
     internal class FieldTexture : Texture
     {
+        private List<PictureBox> cachedEmptyCells = new List<PictureBox>(100);
+        private List<PictureBox> cachedFillCells = new List<PictureBox>(100);
         private List<Color> colors = new List<Color>(10);
         private List<PictureBox> columnlist = new List<PictureBox>();
         private List<PictureBox> field = new List<PictureBox>(100);
         private List<PictureBox> fillCells = new List<PictureBox>(100);
         private List<PictureBox> emptyCells = new List<PictureBox>(100);
+        private List<PictureBox> setField = new List<PictureBox>(100);
+        private List<PictureBox> setFillCells = new List<PictureBox>(100);
+        private List<PictureBox> setEmptyCells = new List<PictureBox>(100);
         private Random rnd = new Random(Guid.NewGuid().GetHashCode());
         public int Percent { get; set; } = 5;
 
@@ -122,11 +127,11 @@ namespace _32_Резня_капусты.texture
         // отрисвока текстуры
         public override void Draw(Panel panel)
         {
-            GenerateField(panel);
+            
         }
 
         // генерация поля
-        public void GenerateField(Panel basePanel)
+        public void GenerateField(Panel basePanel, int count)
         {
             var rnd = new Random();
             basePanel.Controls.Clear();
@@ -137,9 +142,8 @@ namespace _32_Резня_капусты.texture
                 cell.Height = 50;
                 cell.SizeMode = PictureBoxSizeMode.CenterImage;
                 cell.Name = $"cell{i}";
-                cell.Click += CellClickHendler;
                 string path = string.Empty;
-                if (i < 25)
+                if (i < count)
                 {
                     path = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"img\krot.png");
                     cell.Image = Image.FromFile(path);
@@ -166,24 +170,70 @@ namespace _32_Резня_капусты.texture
             {
                 basePanel.Controls.Add(field[i]);
             }
+            emptyCells.ForEach(x => cachedEmptyCells.Add(x));
+            fillCells.ForEach(x => cachedFillCells.Add(x));
         }
 
-        public void GenF(Panel panel, int count)
+        // возвращаемся к начальному состоянию
+        public void GetStartState()
         {
+            emptyCells.Clear();
+            fillCells.Clear();
+            string path = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"img\krot.png");
+            foreach (var cell in cachedEmptyCells)
+            {
+                emptyCells.Add(cell);
+                cell.Image = Image.FromFile(path);
+            }
+
+            path = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"img\kacan.png");
+            foreach (var cell in cachedFillCells)
+            {
+                fillCells.Add(cell);
+                cell.Image = Image.FromFile(path);
+            }
+        }
+
+        // генерация для настроек
+        public void GenSettingField(Panel panel, int count)
+        {
+            var rnd = new Random();
             panel.Controls.Clear();
             for (int i = 0; i < 100; i++)
             {
-                string path = string.Empty;
                 PictureBox cell = new PictureBox();
                 cell.Width = 65;
                 cell.Height = 50;
                 cell.SizeMode = PictureBoxSizeMode.CenterImage;
                 cell.Name = $"cell{i}";
-                SelectImageForCell(cell);
-                cell.Image = Image.FromFile(path);
                 cell.Click += CellClickHendler;
+                string path = string.Empty;
+                if (i < count)
+                {
+                    path = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"img\krot.png");
+                    cell.Image = Image.FromFile(path);
+                    emptyCells.Add(cell);
+                }
+                else
+                {
+                    path = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"img\kacan.png");
+                    cell.Image = Image.FromFile(path);
+                    fillCells.Add(cell);
+                }
                 field.Add(cell);
-                panel.Controls.Add(cell);
+            }
+
+            for (int i = 0; i < 100; i++)
+            {
+                int j = rnd.Next(100);
+                var tmp = field[i];
+                field[i] = field[j];
+                field[j] = tmp;
+            }
+
+            for (int i = 0; i < 100; i++)
+            {
+                panel.Controls.Add(field[i]);
             }
         }
 
