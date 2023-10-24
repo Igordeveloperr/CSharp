@@ -145,12 +145,14 @@ namespace _32_Резня_капусты.texture
                 string path = string.Empty;
                 if (i < count)
                 {
+                    cell.Tag = "krot";
                     path = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"img\krot.png");
                     cell.Image = Image.FromFile(path);
                     emptyCells.Add(cell);
                 }
                 else
                 {
+                    cell.Tag = "kacan";
                     path = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"img\kacan.png");
                     cell.Image = Image.FromFile(path);
                     fillCells.Add(cell);
@@ -246,39 +248,17 @@ namespace _32_Резня_капусты.texture
             {
                 fillCells.Remove(cell);
                 cell.Image = Image.FromFile(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"img\krot.png"));
-                cell.Tag = "krot";
                 emptyCells.Add(cell);
             }
             else if (emptyCells.Count > 1 && emptyCells.Contains(cell))
             {
                 emptyCells.Remove(cell);
                 cell.Image = Image.FromFile(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"img\kacan.png"));
-                cell.Tag = "kacan";
                 fillCells.Add(cell);
             }
             else
             {
                 MessageBox.Show("Больше нельзя убирать кротов!");
-            }
-        }
-
-        // выбор картинки с пмоощью рандома
-        private void SelectImageForCell(PictureBox cell)
-        {
-            MyRandom rnd = new MyRandom(50);
-            Random f = new Random();
-            string path = string.Empty;
-            if (f.Next(1, 11)%2==0)
-            {
-                path = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"img\kacan.png");
-                cell.Image = Image.FromFile(path);
-                fillCells.Add(cell);
-            }
-            else
-            {
-                path = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"img\krot.png");
-                cell.Image = Image.FromFile(path);
-                emptyCells.Add(cell);
             }
         }
     }

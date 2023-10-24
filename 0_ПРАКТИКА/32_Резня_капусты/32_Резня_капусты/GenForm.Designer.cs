@@ -49,6 +49,7 @@
             this.textbox.Font = new System.Drawing.Font("Microsoft YaHei", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.textbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.textbox.Location = new System.Drawing.Point(742, 40);
+            this.textbox.MaxLength = 2;
             this.textbox.Name = "textbox";
             this.textbox.Size = new System.Drawing.Size(258, 33);
             this.textbox.TabIndex = 12;
