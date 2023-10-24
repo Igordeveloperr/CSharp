@@ -246,12 +246,14 @@ namespace _32_Резня_капусты.texture
             {
                 fillCells.Remove(cell);
                 cell.Image = Image.FromFile(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"img\krot.png"));
+                cell.Tag = "krot";
                 emptyCells.Add(cell);
             }
             else if (emptyCells.Count > 1 && emptyCells.Contains(cell))
             {
                 emptyCells.Remove(cell);
                 cell.Image = Image.FromFile(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"img\kacan.png"));
+                cell.Tag = "kacan";
                 fillCells.Add(cell);
             }
             else

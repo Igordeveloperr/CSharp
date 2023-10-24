@@ -38,7 +38,8 @@ namespace _32_Резня_капусты
                 cellItem.Height = 50;
                 cellItem.SizeMode = PictureBoxSizeMode.CenterImage;
                 cellItem.Image = cell.Image;
-                //cell.Click += _field.CellClickHendler;
+                cellItem.Tag = cell.Tag;
+                cellItem.Click += CellClickHendler;
                 panel.Controls.Add(cellItem);
             }
         }
@@ -47,7 +48,7 @@ namespace _32_Резня_капусты
         public void CellClickHendler(object sender, EventArgs e)
         {
             PictureBox cell = (PictureBox)sender;
-            
+            MessageBox.Show(Convert.ToString(cell.Tag));
         }
 
         private void genBtn_Click(object sender, EventArgs e)
