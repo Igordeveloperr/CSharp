@@ -10,13 +10,13 @@ using System.Windows.Forms;
 
 namespace _32_Резня_капусты.texture
 {
-    internal class FieldTexture : Texture
+    public class FieldTexture : Texture
     {
         private List<PictureBox> cachedEmptyCells = new List<PictureBox>(100);
         private List<PictureBox> cachedFillCells = new List<PictureBox>(100);
         private List<Color> colors = new List<Color>(10);
         private List<PictureBox> columnlist = new List<PictureBox>();
-        private List<PictureBox> field = new List<PictureBox>(100);
+        public List<PictureBox> field = new List<PictureBox>(100);
         private List<PictureBox> fillCells = new List<PictureBox>(100);
         private List<PictureBox> emptyCells = new List<PictureBox>(100);
         private List<PictureBox> setField = new List<PictureBox>(100);
@@ -238,7 +238,7 @@ namespace _32_Резня_капусты.texture
         }
 
         // обработка клика по ячейке
-        private void CellClickHendler(object sender, EventArgs e)
+        public void CellClickHendler(object sender, EventArgs e)
         {
             PictureBox cell = (PictureBox)sender;
 

@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
@@ -15,16 +16,38 @@ namespace _32_Резня_капусты
     public partial class GenForm : Form
     {
         private int genCount = 1;
-        FieldTexture field;
-        public GenForm()
+        private List<PictureBox> _cells = new List<PictureBox>(100);
+        public GenForm(List<PictureBox> cells)
         {
             InitializeComponent();
             FormBorderStyle = FormBorderStyle.FixedSingle;
+            ControlBox = false;
             MaximizeBox = false;
             MinimizeBox = false;
             StartPosition = FormStartPosition.CenterScreen;
-            //field = new FieldTexture(mainWindow.ColorForm.prevColorRange);
-            //field.Draw(basePanel);
+            FillField(cells);
+        }
+
+        // изначальное заполнение поля
+        private void FillField(List<PictureBox> cells)
+        {
+            foreach (var cell in cells)
+            {
+                PictureBox cellItem = new PictureBox();
+                cellItem.Width = 65;
+                cellItem.Height = 50;
+                cellItem.SizeMode = PictureBoxSizeMode.CenterImage;
+                cellItem.Image = cell.Image;
+                //cell.Click += _field.CellClickHendler;
+                panel.Controls.Add(cellItem);
+            }
+        }
+
+        // обработка клика по ячейке
+        public void CellClickHendler(object sender, EventArgs e)
+        {
+            PictureBox cell = (PictureBox)sender;
+            
         }
 
         private void genBtn_Click(object sender, EventArgs e)
@@ -52,6 +75,11 @@ namespace _32_Резня_капусты
             {
                 MessageBox.Show("Некорретный ввод!");
             }
+        }
+
+        private void GenForm_Shown(object sender, EventArgs e)
+        {
+           
         }
     }
 }

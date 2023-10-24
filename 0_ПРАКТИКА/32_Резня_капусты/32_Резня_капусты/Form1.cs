@@ -30,7 +30,7 @@ namespace _32_Резня_капусты
         private bool _gameIsActive;
         private bool isNullSpeed;
         private FieldTexture _field;
-        private GenForm genForm = new GenForm();
+        private GenForm genForm;
         public MainWindow()
         { 
             InitializeComponent();
@@ -50,6 +50,7 @@ namespace _32_Резня_капусты
             _isPauseBtn = true;
             isNullSpeed = false;
             lamp.BackgroundImage = Image.FromFile(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"img\offLamp.png"));
+            genForm = new GenForm(_field.field);
         }
 
         // обработка кнопки формы
@@ -325,6 +326,7 @@ namespace _32_Резня_капусты
             new AuthorForm().Show();
         }
 
+        // генерация
         private void fillToolStripMenuItem_Click(object sender, EventArgs e)
         {
             if(!genForm.Visible)

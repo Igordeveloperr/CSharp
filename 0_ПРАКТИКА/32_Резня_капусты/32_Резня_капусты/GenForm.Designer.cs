@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.basePanel = new System.Windows.Forms.FlowLayoutPanel();
+            this.panel = new System.Windows.Forms.FlowLayoutPanel();
             this.textbox = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.genBtn = new System.Windows.Forms.Button();
@@ -36,12 +36,12 @@
             this.updateBtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // basePanel
+            // panel
             // 
-            this.basePanel.Location = new System.Drawing.Point(12, 12);
-            this.basePanel.Name = "basePanel";
-            this.basePanel.Size = new System.Drawing.Size(720, 580);
-            this.basePanel.TabIndex = 1;
+            this.panel.Location = new System.Drawing.Point(12, 12);
+            this.panel.Name = "panel";
+            this.panel.Size = new System.Drawing.Size(720, 580);
+            this.panel.TabIndex = 1;
             // 
             // textbox
             // 
@@ -62,9 +62,9 @@
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label1.Location = new System.Drawing.Point(738, 15);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(144, 22);
+            this.label1.Size = new System.Drawing.Size(136, 22);
             this.label1.TabIndex = 13;
-            this.label1.Text = "Кол-во капусты";
+            this.label1.Text = "Кол-во кротов";
             // 
             // genBtn
             // 
@@ -122,9 +122,10 @@
             this.Controls.Add(this.genBtn);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textbox);
-            this.Controls.Add(this.basePanel);
+            this.Controls.Add(this.panel);
             this.Name = "GenForm";
             this.Text = "Заполнение";
+            this.Shown += new System.EventHandler(this.GenForm_Shown);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -132,7 +133,7 @@
 
         #endregion
 
-        private System.Windows.Forms.FlowLayoutPanel basePanel;
+        private System.Windows.Forms.FlowLayoutPanel panel;
         private System.Windows.Forms.TextBox textbox;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button genBtn;

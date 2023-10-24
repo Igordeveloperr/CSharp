@@ -8,7 +8,7 @@ using System.Windows.Forms;
 
 namespace _32_Резня_капусты.texture
 {
-    internal abstract class Texture
+    public abstract class Texture
     {
         public abstract void Draw(Panel basePanel);
     }
