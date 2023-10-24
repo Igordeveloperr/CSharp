@@ -4,6 +4,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace _32_Резня_капусты.settings
 {
@@ -22,5 +23,7 @@ namespace _32_Резня_капусты.settings
         public Color Color9 { get; set; }
         public int Speed { get; set; }
         public int Probability { get; set; }
+
+        public string[] Field { get; set; } = new string[100];
     }
 }

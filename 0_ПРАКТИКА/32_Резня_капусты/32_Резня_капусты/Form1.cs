@@ -273,7 +273,7 @@ namespace _32_Резня_капусты
         private void saveMenuItem_Click(object sender, EventArgs e)
         {
             SettingManager manager = new SettingManager();
-            manager.SaveSettings(ColorForm.prevColorRange, int.Parse(speedValue.Text), int.Parse(probValue.Text));
+            manager.SaveSettings(ColorForm.prevColorRange, int.Parse(speedValue.Text), int.Parse(probValue.Text), _field.field);
         }
 
         // кнопка открыть

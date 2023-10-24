@@ -15,7 +15,7 @@ namespace _32_Резня_капусты.settings
         // DTO
         private SettingsObj settings = new SettingsObj();
         // сохранение настроек в файл
-        public void SaveSettings(List<Color> colors, int speed, int probability)
+        public void SaveSettings(List<Color> colors, int speed, int probability, List<PictureBox> field)
         {
             settings.Color0 = colors[0];
             settings.Color1 = colors[1];
@@ -29,6 +29,10 @@ namespace _32_Резня_капусты.settings
             settings.Color9 = colors[9];
             settings.Speed = speed;
             settings.Probability = probability;
+            for (int i = 0; i < field.Count; i++)
+            {
+                settings.Field[i] = (string)field[i].Tag;
+            }
             // сериализация в json
             string json = JsonConvert.SerializeObject(settings);
 
