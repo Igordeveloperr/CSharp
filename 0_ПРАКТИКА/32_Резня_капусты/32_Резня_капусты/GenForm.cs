@@ -21,7 +21,8 @@ namespace _32_Резня_капусты
         private List<PictureBox> _cells = new List<PictureBox>(100);
         private List<PictureBox> _emptyCells = new List<PictureBox>(100);
         private List<PictureBox> _fillCells = new List<PictureBox>(100);
-        public GenForm(List<PictureBox> cells)
+        private FieldTexture _texture;
+        public GenForm(List<PictureBox> cells, FieldTexture texture)
         {
             InitializeComponent();
             FormBorderStyle = FormBorderStyle.FixedSingle;
@@ -31,6 +32,7 @@ namespace _32_Резня_капусты
             StartPosition = FormStartPosition.CenterScreen;
             FillField(cells);
             arr = cells;
+            _texture = texture;
         }
 
         // изначальное заполнение поля
@@ -69,12 +71,14 @@ namespace _32_Резня_капусты
             if(_fillCells.Contains(cell))
             {
                 _fillCells.Remove(cell);
+                cell.Tag = "krot";
                 cell.Image = Image.FromFile(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"img\krot.png"));
                 _emptyCells.Add(cell);
             }
             else if (_emptyCells.Count > 1 && _emptyCells.Contains(cell))
             {
                 _emptyCells.Remove(cell);
+                cell.Tag = "kacan";
                 cell.Image = Image.FromFile(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"img\kacan.png"));
                 _fillCells.Add(cell);
             }
@@ -97,7 +101,8 @@ namespace _32_Резня_капусты
 
         private void updateBtn_Click(object sender, EventArgs e)
         {
-
+            Hide();
+            _texture.UpdateField(_cells);
         }
 
 

@@ -12,6 +12,7 @@ namespace _32_Резня_капусты.texture
 {
     public class FieldTexture : Texture
     {
+        private Panel mainPanel;
         private List<PictureBox> cachedEmptyCells = new List<PictureBox>(100);
         private List<PictureBox> cachedFillCells = new List<PictureBox>(100);
         private List<Color> colors = new List<Color>(10);
@@ -33,6 +34,38 @@ namespace _32_Резня_капусты.texture
         public FieldTexture()
         {
             
+        }
+
+        public void UpdateField(List<PictureBox> newField)
+        {
+            cachedEmptyCells.Clear();
+            cachedFillCells.Clear();
+            field.Clear();
+            fillCells.Clear();
+            emptyCells.Clear();
+            mainPanel.Controls.Clear();
+
+            foreach(var item in newField)
+            {
+                PictureBox cell = new PictureBox();
+                cell.Width = 65;
+                cell.Height = 50;
+                cell.SizeMode = PictureBoxSizeMode.CenterImage;
+                cell.Image = item.Image;
+                cell.Tag = item.Tag;
+                if ((string)cell.Tag == "krot")
+                {
+                    emptyCells.Add(cell);
+                }
+                else
+                {
+                    fillCells.Add(cell);
+                }
+                field.Add(cell);
+                mainPanel.Controls.Add(cell);
+            }
+            emptyCells.ForEach(x => cachedEmptyCells.Add(x));
+            fillCells.ForEach(x => cachedFillCells.Add(x));
         }
 
         // основная логика работы поля
@@ -133,6 +166,7 @@ namespace _32_Резня_капусты.texture
         // генерация поля
         public void GenerateField(Panel basePanel, int count)
         {
+            mainPanel = basePanel;
             var rnd = new Random();
             basePanel.Controls.Clear();
             for (int i = 0; i < 100; i++)

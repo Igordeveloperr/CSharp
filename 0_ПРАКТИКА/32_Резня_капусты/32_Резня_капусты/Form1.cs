@@ -50,7 +50,7 @@ namespace _32_Резня_капусты
             _isPauseBtn = true;
             isNullSpeed = false;
             lamp.BackgroundImage = Image.FromFile(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"img\offLamp.png"));
-            genForm = new GenForm(_field.field);
+            genForm = new GenForm(_field.field, _field);
         }
 
         // обработка кнопки формы
