@@ -108,7 +108,7 @@
             this.updateBtn.Name = "updateBtn";
             this.updateBtn.Size = new System.Drawing.Size(258, 59);
             this.updateBtn.TabIndex = 16;
-            this.updateBtn.Text = "Применить";
+            this.updateBtn.Text = "Ок";
             this.updateBtn.UseVisualStyleBackColor = false;
             this.updateBtn.Click += new System.EventHandler(this.updateBtn_Click);
             // 
