@@ -23,7 +23,7 @@ static void Main(string[] args)
     #endregion
 
     ZaidelMethod zaidelMethod = new ZaidelMethod();
-    zaidelMethod.CalcApproximation();
+    zaidelMethod.CalcRoot();
 }
 
 Main(new string[0]);
