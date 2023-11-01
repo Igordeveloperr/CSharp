@@ -8,6 +8,22 @@ namespace _35_ВМ_лаба_2
 {
     internal class GausMethod
     { 
+        // обратный ход гауса находим корни
+        public void CalculateRoot(Matrix triangleMatrix)
+        {
+            double x1, x2, x3, x4;
+            x4 = triangleMatrix.array[3, 4] / triangleMatrix.array[3, 3];
+            x3 = (triangleMatrix.array[2, 4] - (triangleMatrix.array[2, 3] * x4)) / triangleMatrix.array[2, 2];
+            x2 = (triangleMatrix.array[1, 4]-(triangleMatrix.array[1, 2]*x3)-(triangleMatrix.array[1, 3]*x4)) / triangleMatrix.array[1, 1];
+            x1 = (triangleMatrix.array[0, 4]-x2-(triangleMatrix.array[0, 2]*x3)-x4) / triangleMatrix.array[0, 0];
+
+            x4 = Math.Round(x4, 4);
+            x3 = Math.Round(x3, 4);
+            x2 = Math.Round(x2, 4);
+            x1 = Math.Round(x1, 4);
+
+            Console.WriteLine($"Ответ: x1={x1}; x2={x2}; x3={x3}; x4={x4};");
+        }
 
         // вычисление Кэфа m_i
         public double CalculateM(double Ai, double Aconst)

@@ -17,6 +17,7 @@ static void Main(string[] args)
 
     // прямой ход
     Matrix triangleMatrix = gausMethod.ConvertMatrixToTriangle(matrix);
+    gausMethod.CalculateRoot(triangleMatrix);
 
 }
 
