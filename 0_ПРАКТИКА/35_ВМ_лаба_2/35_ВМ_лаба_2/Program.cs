@@ -2,6 +2,8 @@
 
 static void Main(string[] args)
 {
+    #region Gaus
+    /*
     // начальное заполнение
     GausMethod gausMethod = new GausMethod();
     double[,] baseGausMatrix = new double[4, 5]
@@ -17,8 +19,11 @@ static void Main(string[] args)
 
     // прямой ход
     Matrix triangleMatrix = gausMethod.ConvertMatrixToTriangle(matrix);
-    gausMethod.CalculateRoot(triangleMatrix);
+    gausMethod.CalculateRoot(triangleMatrix);*/
+    #endregion
 
+    ZaidelMethod zaidelMethod = new ZaidelMethod();
+    zaidelMethod.CalcApproximation();
 }
 
 Main(new string[0]);
