@@ -16,17 +16,30 @@ namespace _35_ВМ_лаба_2
             Setup();
         }
 
+        public void PrintInfo()
+        {
+            Console.WriteLine("МАТРИЧНЫЙ МЕТОД");
+            Console.WriteLine("----------------------------------");
+            Console.WriteLine("Исходная система:");
+            Console.WriteLine("x1 + 3*x2 + 8*x3 = 10");
+            Console.WriteLine("8*x1 + 6*x2 + 4*x3 = 2");
+            Console.WriteLine("2*x1 + 5*x2 + 7*x3 = 10");
+            Console.WriteLine("Матрица алгебраических дополнений:");
+            LambdATransponse.Print();
+        }
+
         // находим корни
         public void CalcRoot()
         {
             double x1, x2, x3;
             Matrix inverseMatrix = CalcInverseMatrix();
+            Console.WriteLine("Обратная матрица:");
             inverseMatrix.Print();
             Matrix X = inverseMatrix * B;
             x1 = Math.Round(X.array[0, 0], 4);
             x2 = Math.Round(X.array[1, 0], 4);
             x3 = Math.Round(X.array[2, 0], 4);
-            Console.WriteLine($"x1 = {x1} x2 = {x2} x3 = {x3}");
+            Console.WriteLine($"Ответ: x1 = {x1} x2 = {x2} x3 = {x3}");
         }
         // вычисляем обратную матрицу
         private Matrix CalcInverseMatrix()

@@ -59,7 +59,7 @@ namespace _35_ВМ_лаба_2
         // находим корни с заданной точностью
         public void CalcRoot()
         {
-            double x1, x2, x3, x4;
+            double x1 = 0, x2 = 0, x3 = 0, x4 = 0;
             double x1_k = 0, x2_k = 0, x3_k = 0, x4_k = 0;
             double error = 1;
 
@@ -78,6 +78,11 @@ namespace _35_ВМ_лаба_2
                 x3_k = x3;
                 x4_k = x4;
             }
+            x1 = Math.Round(x1, 5);
+            x2 = Math.Round(x2, 5);
+            x3 = Math.Round(x3, 5);
+            x4 = Math.Round(x4, 5);
+            Console.WriteLine($"Ответ: x1 = {x1} x2 = {x2} x3 = {x3} x4 = {x4}");
         }
 
         public void PrintConvergenceConditions()
