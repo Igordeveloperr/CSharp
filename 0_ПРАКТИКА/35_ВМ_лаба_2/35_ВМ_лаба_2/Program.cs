@@ -25,20 +25,23 @@ static void Main(string[] args)
     Console.WriteLine("\n");
 
     #region Zaidel
-    ZaidelMethod zaidelMethod = new ZaidelMethod();
+    /*ZaidelMethod zaidelMethod = new ZaidelMethod();
     zaidelMethod.PrintConvergenceConditions();
-    zaidelMethod.CalcRoot();
+    zaidelMethod.CalcRoot();*/
     #endregion
 
     Console.WriteLine("\n");
 
     #region Matrix Method
-    InverseMatrixMethod inverseMatrixMethod = new InverseMatrixMethod();
+    /*InverseMatrixMethod inverseMatrixMethod = new InverseMatrixMethod();
     inverseMatrixMethod.PrintInfo();
-    inverseMatrixMethod.CalcRoot();
+    inverseMatrixMethod.CalcRoot();*/
     #endregion
 
     Console.WriteLine("\n");
+
+    NewtonMethod newtonMethod = new NewtonMethod();
+    newtonMethod.CalcRoot();
 }
 
 Main(new string[0]);
