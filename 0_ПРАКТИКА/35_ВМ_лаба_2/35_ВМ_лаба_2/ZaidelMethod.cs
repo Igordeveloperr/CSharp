@@ -10,6 +10,21 @@ namespace _35_ВМ_лаба_2
     {
         // точность
         const double E = 0.0001;
+        private double[,] _arrayofKf;
+        private Matrix _canonMatrix;
+
+        public ZaidelMethod()
+        {
+            _arrayofKf = new double[4, 4]
+            {
+                { -0.76,0.21,0.06,-0.34 },
+                { 0.05,-1,0.32,0.12 },
+                { 0.35,0,-1.27,0.05 },
+                { 0.12,-0.43,0.34,-1.21 }
+            };
+            _canonMatrix = new Matrix(4,4);
+            _canonMatrix.Fill(_arrayofKf);
+        }
 
         // первый x
         private double CalcX1(double x2_k, double x3_k, double x4_k)
@@ -55,14 +70,48 @@ namespace _35_ВМ_лаба_2
                 x3 = CalcX3(x1, x4_k);
                 x4 = CalcX4(x1, x2, x3);
 
-                Console.WriteLine($"x1 = {x1} x2 = {x2} x3 = {x3} x4 = {x4}");
                 error = CalcMaxError(x1-x1_k, x2-x2_k, x3 - x3_k, x4 - x4_k);
+                Console.WriteLine($"x1 = {x1} x2 = {x2} x3 = {x3} x4 = {x4} error = {error}");
 
                 x1_k = x1;
                 x2_k = x2;
                 x3_k = x3;
                 x4_k = x4;
             }
+        }
+
+        public void PrintConvergenceConditions()
+        {
+            Console.WriteLine("МЕТОД ЗЕЙДЕЛЯ");
+            Console.WriteLine("----------------------------------");
+            Console.WriteLine("Матрица коэффициентов:");
+            for (int i = 0; i < _canonMatrix.Row; i++)
+            {
+                for(int j = 0; j < _canonMatrix.Column; j++)
+                {
+                    Console.Write(" {0,5} ", _canonMatrix.array[i,j]);
+                }
+                Console.WriteLine();
+            }
+
+            Console.WriteLine("Условия сходимости:");
+            for (int i = 0; i < _canonMatrix.Row; i++)
+            {
+                Console.Write($"|{_canonMatrix.array[i,i]}| > ");
+                for (int j = 0; j < _canonMatrix.Column; j++)
+                {
+                    if (j != i && j != _canonMatrix.Column - 1)
+                    {
+                        Console.Write($"|{_canonMatrix.array[i, j]}| + ");
+                    }
+                    else if(j != i && j == _canonMatrix.Column - 1)
+                    {
+                        Console.Write($"|{_canonMatrix.array[i, j]}|");
+                    }
+                }
+                Console.WriteLine();
+            }
+            Console.WriteLine("Решение:");
         }
     }
 }

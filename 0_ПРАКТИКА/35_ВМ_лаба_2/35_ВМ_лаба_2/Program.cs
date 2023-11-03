@@ -23,6 +23,7 @@ static void Main(string[] args)
     #endregion
 
     ZaidelMethod zaidelMethod = new ZaidelMethod();
+    zaidelMethod.PrintConvergenceConditions();
     zaidelMethod.CalcRoot();
 }
 
