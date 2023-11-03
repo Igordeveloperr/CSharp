@@ -3,9 +3,9 @@
 static void Main(string[] args)
 {
     #region Gaus
-    /*
     // начальное заполнение
     GausMethod gausMethod = new GausMethod();
+    gausMethod.PrintInfo();
     double[,] baseGausMatrix = new double[4, 5]
     {
         { 2, 1, -0.1, 1, 2.7 },
@@ -19,29 +19,32 @@ static void Main(string[] args)
 
     // прямой ход
     Matrix triangleMatrix = gausMethod.ConvertMatrixToTriangle(matrix);
-    gausMethod.CalculateRoot(triangleMatrix);*/
+    gausMethod.CalculateRoot(triangleMatrix);
     #endregion
 
     Console.WriteLine("\n");
 
     #region Zaidel
-    /*ZaidelMethod zaidelMethod = new ZaidelMethod();
+    ZaidelMethod zaidelMethod = new ZaidelMethod();
     zaidelMethod.PrintConvergenceConditions();
-    zaidelMethod.CalcRoot();*/
+    zaidelMethod.CalcRoot();
     #endregion
 
     Console.WriteLine("\n");
 
     #region Matrix Method
-    /*InverseMatrixMethod inverseMatrixMethod = new InverseMatrixMethod();
+    InverseMatrixMethod inverseMatrixMethod = new InverseMatrixMethod();
     inverseMatrixMethod.PrintInfo();
-    inverseMatrixMethod.CalcRoot();*/
+    inverseMatrixMethod.CalcRoot();
     #endregion
 
     Console.WriteLine("\n");
 
+    #region Newton
     NewtonMethod newtonMethod = new NewtonMethod();
+    newtonMethod.PrintInfo();
     newtonMethod.CalcRoot();
+    #endregion
 }
 
 Main(new string[0]);

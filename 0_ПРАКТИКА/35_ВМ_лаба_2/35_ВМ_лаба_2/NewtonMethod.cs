@@ -17,6 +17,16 @@ namespace _35_ВМ_лаба_2
 
         }
         
+        public void PrintInfo()
+        {
+            Console.WriteLine("МЕТОД НЬЮТОНА");
+            Console.WriteLine("----------------------------------");
+            Console.WriteLine("Исходная система:");
+            Console.WriteLine("sin(x + 2.1)-3*y+0.4 = 0");
+            Console.WriteLine("cos(y + 1.8)+1.2*x = 0");
+            Console.WriteLine("Таблица:");
+        }
+
         // калькулируем
         public void CalcRoot()
         {
@@ -29,6 +39,7 @@ namespace _35_ВМ_лаба_2
                 error = GetMaxResid();
                 x = x + delX;
                 y = y + delY;
+                Console.WriteLine($"x = {x} y = {y} delX = {delX} delY = {delY} max = {error}");
             }
 
             x = Math.Round(x, 4);

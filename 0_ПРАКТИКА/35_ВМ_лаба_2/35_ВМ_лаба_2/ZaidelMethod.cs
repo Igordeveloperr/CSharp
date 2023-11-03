@@ -116,7 +116,7 @@ namespace _35_ВМ_лаба_2
                 }
                 Console.WriteLine();
             }
-            Console.WriteLine("Решение:");
+            Console.WriteLine("Таблица:");
         }
     }
 }
