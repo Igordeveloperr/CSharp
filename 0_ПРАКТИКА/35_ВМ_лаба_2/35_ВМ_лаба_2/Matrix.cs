@@ -27,6 +27,19 @@ namespace _35_ВМ_лаба_2
             }
         }
 
+        public void Print()
+        {
+            for(int i = 0; i < row; i++)
+            {
+                string line = string.Empty;
+                for(int j = 0; j < column; j++)
+                {
+                    line += $" {array[i,j]} ";
+                }
+                Console.WriteLine(line);
+            }
+        }
+
         public Matrix(int row, int colunm)
         {
             this.row = row;

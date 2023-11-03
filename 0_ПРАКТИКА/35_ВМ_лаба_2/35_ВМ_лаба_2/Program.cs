@@ -22,9 +22,14 @@ static void Main(string[] args)
     gausMethod.CalculateRoot(triangleMatrix);*/
     #endregion
 
-    ZaidelMethod zaidelMethod = new ZaidelMethod();
+    #region Zaidel
+    /*ZaidelMethod zaidelMethod = new ZaidelMethod();
     zaidelMethod.PrintConvergenceConditions();
-    zaidelMethod.CalcRoot();
+    zaidelMethod.CalcRoot();*/
+    #endregion
+
+    InverseMatrixMethod inverseMatrixMethod = new InverseMatrixMethod();
+    inverseMatrixMethod.CalcRoot();
 }
 
 Main(new string[0]);
