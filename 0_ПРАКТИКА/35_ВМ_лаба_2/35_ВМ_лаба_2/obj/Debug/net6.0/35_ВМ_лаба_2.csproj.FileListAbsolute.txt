@@ -1,0 +1,15 @@
+C:\Users\Гохля\Desktop\programming\CSharp\0_ПРАКТИКА\35_ВМ_лаба_2\35_ВМ_лаба_2\obj\Debug\net6.0\35_ВМ_лаба_2.csproj.AssemblyReference.cache
+C:\Users\Гохля\Desktop\programming\CSharp\0_ПРАКТИКА\35_ВМ_лаба_2\35_ВМ_лаба_2\obj\Debug\net6.0\35_ВМ_лаба_2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Гохля\Desktop\programming\CSharp\0_ПРАКТИКА\35_ВМ_лаба_2\35_ВМ_лаба_2\obj\Debug\net6.0\35_ВМ_лаба_2.AssemblyInfoInputs.cache
+C:\Users\Гохля\Desktop\programming\CSharp\0_ПРАКТИКА\35_ВМ_лаба_2\35_ВМ_лаба_2\obj\Debug\net6.0\35_ВМ_лаба_2.AssemblyInfo.cs
+C:\Users\Гохля\Desktop\programming\CSharp\0_ПРАКТИКА\35_ВМ_лаба_2\35_ВМ_лаба_2\obj\Debug\net6.0\35_ВМ_лаба_2.csproj.CoreCompileInputs.cache
+C:\Users\Гохля\Desktop\programming\CSharp\0_ПРАКТИКА\35_ВМ_лаба_2\35_ВМ_лаба_2\bin\Debug\net6.0\35_ВМ_лаба_2.exe
+C:\Users\Гохля\Desktop\programming\CSharp\0_ПРАКТИКА\35_ВМ_лаба_2\35_ВМ_лаба_2\bin\Debug\net6.0\35_ВМ_лаба_2.deps.json
+C:\Users\Гохля\Desktop\programming\CSharp\0_ПРАКТИКА\35_ВМ_лаба_2\35_ВМ_лаба_2\bin\Debug\net6.0\35_ВМ_лаба_2.runtimeconfig.json
+C:\Users\Гохля\Desktop\programming\CSharp\0_ПРАКТИКА\35_ВМ_лаба_2\35_ВМ_лаба_2\bin\Debug\net6.0\35_ВМ_лаба_2.dll
+C:\Users\Гохля\Desktop\programming\CSharp\0_ПРАКТИКА\35_ВМ_лаба_2\35_ВМ_лаба_2\bin\Debug\net6.0\35_ВМ_лаба_2.pdb
+C:\Users\Гохля\Desktop\programming\CSharp\0_ПРАКТИКА\35_ВМ_лаба_2\35_ВМ_лаба_2\obj\Debug\net6.0\35_ВМ_лаба_2.dll
+C:\Users\Гохля\Desktop\programming\CSharp\0_ПРАКТИКА\35_ВМ_лаба_2\35_ВМ_лаба_2\obj\Debug\net6.0\refint\35_ВМ_лаба_2.dll
+C:\Users\Гохля\Desktop\programming\CSharp\0_ПРАКТИКА\35_ВМ_лаба_2\35_ВМ_лаба_2\obj\Debug\net6.0\35_ВМ_лаба_2.pdb
+C:\Users\Гохля\Desktop\programming\CSharp\0_ПРАКТИКА\35_ВМ_лаба_2\35_ВМ_лаба_2\obj\Debug\net6.0\35_ВМ_лаба_2.genruntimeconfig.cache
+C:\Users\Гохля\Desktop\programming\CSharp\0_ПРАКТИКА\35_ВМ_лаба_2\35_ВМ_лаба_2\obj\Debug\net6.0\ref\35_ВМ_лаба_2.dll
