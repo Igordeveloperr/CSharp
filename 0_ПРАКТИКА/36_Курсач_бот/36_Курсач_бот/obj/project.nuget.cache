@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "F+PD88VHW0C16EzILkKWaTl60alLvLYwfc/2j8LWSFcoss1vvqqZPJ7Q+VDYaBzmuQDMamHemaCsucD4puNumg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Гохля\\Desktop\\programming\\CSharp\\0_ПРАКТИКА\\36_Курсач_бот\\36_Курсач_бот\\36_Курсач_бот.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Гохля\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
+    "C:\\Users\\Гохля\\.nuget\\packages\\telegram.bot\\19.0.0\\telegram.bot.19.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

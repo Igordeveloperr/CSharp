@@ -9,8 +9,8 @@ const String separator = "________________________________________________";
 const char *ssid = "MF90PLUS_AD8DDC"; 
 const char *password = "4EH6HD5RHD";
 
-const char *host = "localhost:5001";//aspnet-core-mvc.bazanoniefaza.repl.co
-const int httpsPort = 80;
+const char *host = "aspnet-core-mvc.bazanoniefaza.repl.co";//aspnet-core-mvc.bazanoniefaza.repl.co
+const int httpsPort = 443;
 // клиент
 WiFiClientSecure httpsClient;
 //отпечаток SHA-1, который скопировали раньше
