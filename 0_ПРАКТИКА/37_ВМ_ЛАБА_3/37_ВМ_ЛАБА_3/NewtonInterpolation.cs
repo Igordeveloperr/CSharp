@@ -36,6 +36,7 @@ namespace _37_ВМ_ЛАБА_3
 
         public double CalcPolinom(double x)
         {
+            
             return a0 + AMass[0]*(x-0.15) + AMass[1] * (x - 0.15)*(x-0.20) + AMass[2] * (x - 0.15) * (x - 0.20) * (x - 0.25) +
                 AMass[3] * (x - 0.15) * (x - 0.20) * (x - 0.25) * (x - 0.30) + AMass[4] * (x - 0.15) * (x - 0.20) * (x - 0.25) * (x - 0.30)*(x-0.35)+
                 AMass[5] * (x - 0.15) * (x - 0.20) * (x - 0.25) * (x - 0.30) * (x - 0.35)*(x-0.40)+
