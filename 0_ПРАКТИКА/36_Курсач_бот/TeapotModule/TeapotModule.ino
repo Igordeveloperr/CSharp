@@ -8,9 +8,12 @@ const String teapotId = "127";
 const char *ssid = "MF90PLUS_AD8DDC"; 
 const char *password = "4EH6HD5RHD";
 const String BASE_HOST = "http://192.168.0.";
-ESP8266WebServer server(80);    
+ESP8266WebServer server(80);   
+uint8_t relayPin = D1; 
 
 void setup() {
+  pinMode(relayPin, OUTPUT);
+  digitalWrite(relayPin, LOW);
   Serial.begin(115200);
   delay(1000);
   WiFi.mode(WIFI_OFF);
@@ -40,6 +43,7 @@ void setup() {
 // выкл чайник
 void TurnOffTeapot()
 {
+  digitalWrite(relayPin, LOW);
   server.send(200, "text/html", "teapotOff"); 
 }
 
@@ -47,6 +51,7 @@ void TurnOffTeapot()
 // вкл чайник
 void TurnOnTeapot()
 {
+  digitalWrite(relayPin, HIGH);
   server.send(200, "text/html", "teapotOn"); 
 }
 

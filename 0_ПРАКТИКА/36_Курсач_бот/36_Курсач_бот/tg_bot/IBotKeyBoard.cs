@@ -9,6 +9,6 @@ namespace _36_Курсач_бот.tg_bot
 {
     public interface IBotKeyBoard
     {
-        public ReplyMarkupBase Create();
+        public ReplyMarkupBase Create(string state);
     }
 }

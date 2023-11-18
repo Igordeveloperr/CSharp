@@ -9,7 +9,7 @@ namespace _36_Курсач_бот.tg_bot
 {
     public class ControlKeyBoard : IBotKeyBoard
     {
-        public ReplyMarkupBase Create()
+        public ReplyMarkupBase Create(string teapotState)
         {
             List<KeyboardButton> btns = new List<KeyboardButton>();
             btns.Add(new KeyboardButton("Вкл чайник"));

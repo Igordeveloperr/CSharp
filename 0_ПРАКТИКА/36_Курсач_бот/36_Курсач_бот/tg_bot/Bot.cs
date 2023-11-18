@@ -56,8 +56,22 @@ namespace _36_Курсач_бот.tg_bot
                 CommandLogger.Log(msg);
                 if (msg == "вкл чайник")
                 {
-                    // TODO: отправить команду ESP
-                    
+                    using (HttpClient httpClient = new HttpClient())
+                    {
+                        // определяем данные запроса
+                        using HttpRequestMessage request = new HttpRequestMessage(HttpMethod.Get, $"{SERVER_URL}/teapotOn");
+                        // выполняем запрос
+                        HttpResponseMessage response = await httpClient.SendAsync(request);
+                        string content = await response.Content.ReadAsStringAsync();
+                        InputDataLogger.Log(content);
+                        await client.SendTextMessageAsync(
+                            chatId: chatId,
+                            text: $"Состояние чайника: {content}",
+                            replyMarkup: _botKeyBoard.Create(),
+                            cancellationToken: ct
+                        );
+                    }
+
                 }
                 else if (msg == "температура")
                 {
