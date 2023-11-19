@@ -7,6 +7,7 @@ using Telegram.Bot.Polling;
 using Telegram.Bot.Types;
 using Telegram.Bot;
 using _36_Курсач_бот.logger;
+using System.Reflection.Metadata;
 
 namespace _36_Курсач_бот.tg_bot
 {
@@ -15,6 +16,7 @@ namespace _36_Курсач_бот.tg_bot
         const string SERVER_URL = "http://192.168.0.127";
         private const string TOKEN = "6093686436:AAEbQB5cyGiYZuG4V9AmjPCHto0-TGDgh70";
         private IBotKeyBoard _botKeyBoard;
+        private bool teapotIsOn = false;
         public ITelegramBotClient Client { get; private set; }
         public Bot(IBotKeyBoard keyBoar)
         {
@@ -53,8 +55,16 @@ namespace _36_Курсач_бот.tg_bot
             {
                 long chatId = update.Message.Chat.Id;
                 string msg = update.Message.Text.ToLower();
-                CommandLogger.Log(msg);
-                if (msg == "вкл чайник")
+                if(msg == "/start")
+                {
+                    await client.SendTextMessageAsync(
+                        chatId: chatId,
+                        text: "Я жив",
+                        replyMarkup: _botKeyBoard.Create(),
+                        cancellationToken: ct
+                    );
+                }
+                else if (msg == "✅ чайник")
                 {
                     using (HttpClient httpClient = new HttpClient())
                     {
@@ -63,7 +73,53 @@ namespace _36_Курсач_бот.tg_bot
                         // выполняем запрос
                         HttpResponseMessage response = await httpClient.SendAsync(request);
                         string content = await response.Content.ReadAsStringAsync();
-                        InputDataLogger.Log(content);
+                        await client.SendTextMessageAsync(
+                            chatId: chatId,
+                            text: $"Состояние чайника: {content}",
+                            replyMarkup: _botKeyBoard.Create(),
+                            cancellationToken: ct
+                        );
+
+                        if (teapotIsOn == false)
+                        {
+                            teapotIsOn = true;
+                            for(int i = 0; i < 300; i++)
+                            {
+                                if (teapotIsOn == false) break;
+                                await Task.Delay(1000);
+                            }
+                            teapotIsOn = false;
+                            using HttpRequestMessage request1 = new HttpRequestMessage(HttpMethod.Get, $"{SERVER_URL}/teapotOff");
+                            HttpResponseMessage response1 = await httpClient.SendAsync(request1);
+                            string content1 = await response1.Content.ReadAsStringAsync();
+                            await client.SendTextMessageAsync(
+                                chatId: chatId,
+                                text: $"Чаек ГОТОВ! ☕️🍩",
+                                replyMarkup: _botKeyBoard.Create(),
+                                cancellationToken: ct
+                            );
+                        }
+                        else
+                        {
+                            await client.SendTextMessageAsync(
+                                chatId: chatId,
+                                text: $"Чайник уже включен ☕",
+                                replyMarkup: _botKeyBoard.Create(),
+                                cancellationToken: ct
+                            );
+                        }
+                    }
+                }
+                else if (msg == "❌ чайник")
+                {
+                    teapotIsOn = false;
+                    using (HttpClient httpClient = new HttpClient())
+                    {
+                        // определяем данные запроса
+                        using HttpRequestMessage request = new HttpRequestMessage(HttpMethod.Get, $"{SERVER_URL}/teapotOff");
+                        // выполняем запрос
+                        HttpResponseMessage response = await httpClient.SendAsync(request);
+                        string content = await response.Content.ReadAsStringAsync();
                         await client.SendTextMessageAsync(
                             chatId: chatId,
                             text: $"Состояние чайника: {content}",
@@ -71,18 +127,16 @@ namespace _36_Курсач_бот.tg_bot
                             cancellationToken: ct
                         );
                     }
-
                 }
-                else if (msg == "температура")
+                else if (msg == "🌡 температура")
                 {
-                    using(HttpClient httpClient = new HttpClient())
+                    using (HttpClient httpClient = new HttpClient())
                     {
                         // определяем данные запроса
                         using HttpRequestMessage request = new HttpRequestMessage(HttpMethod.Get, $"{SERVER_URL}/temperature");
                         // выполняем запрос
                         HttpResponseMessage response = await httpClient.SendAsync(request);
                         string content = await response.Content.ReadAsStringAsync();
-                        InputDataLogger.Log(content);
                         await client.SendTextMessageAsync(
                             chatId: chatId,
                             text: $"Температура в комнате: {content}℃",
@@ -91,7 +145,7 @@ namespace _36_Курсач_бот.tg_bot
                         );
                     }
                 }
-                else if (msg == "влажность")
+                else if (msg == "🌨 влажность")
                 {
                     using (HttpClient httpClient = new HttpClient())
                     {
@@ -100,7 +154,6 @@ namespace _36_Курсач_бот.tg_bot
                         // выполняем запрос
                         HttpResponseMessage response = await httpClient.SendAsync(request);
                         string content = await response.Content.ReadAsStringAsync();
-                        InputDataLogger.Log(content);
                         await client.SendTextMessageAsync(
                             chatId: chatId,
                             text: $"Влажность воздуха: {content}%",
