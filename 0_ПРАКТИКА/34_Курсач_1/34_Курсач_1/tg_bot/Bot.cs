@@ -4,6 +4,7 @@ using Telegram.Bot.Polling;
 using Telegram.Bot.Types;
 using Telegram.Bot;
 using Telegram.Bot.Types.ReplyMarkups;
+using System.Net.Http;
 
 namespace _34_Курсач_1.tg_bot
 {
@@ -56,7 +57,7 @@ namespace _34_Курсач_1.tg_bot
                 else if (msg == "температура")
                 {
                     // TODO: отправить команду ESP
-                    Console.WriteLine("Датчик");
+                    
                 }
                 else
                 {
