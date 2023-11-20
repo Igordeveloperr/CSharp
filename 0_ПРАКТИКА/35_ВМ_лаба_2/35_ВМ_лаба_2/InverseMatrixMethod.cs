@@ -18,7 +18,7 @@ namespace _35_ВМ_лаба_2
 
         public void PrintInfo()
         {
-            Console.WriteLine("МАТРИЧНЫЙ МЕТОД");
+            Console.WriteLine("МЕТОД ОБРАТНОЙ МАТРИЦЫ");
             Console.WriteLine("----------------------------------");
             Console.WriteLine("Исходная система:");
             Console.WriteLine("x1 + 3*x2 + 8*x3 = 10");

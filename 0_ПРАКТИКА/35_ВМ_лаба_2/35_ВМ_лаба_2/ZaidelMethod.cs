@@ -17,10 +17,10 @@ namespace _35_ВМ_лаба_2
         {
             _arrayofKf = new double[4, 4]
             {
-                { -0.76,0.21,0.06,-0.34 },
-                { 0.05,-1,0.32,0.12 },
-                { 0.35,0,-1.27,0.05 },
-                { 0.12,-0.43,0.34,-1.21 }
+                { 0.24,0.21,0.06,-0.34},
+                { 0.05,0,0.32,0.12 },
+                { 0.35,0,-0.27,-0.05 },
+                { 0.12,-0.43,0.34,0.21 }
             };
             _canonMatrix = new Matrix(4,4);
             _canonMatrix.Fill(_arrayofKf);
@@ -62,7 +62,8 @@ namespace _35_ВМ_лаба_2
             double x1 = 0, x2 = 0, x3 = 0, x4 = 0;
             double x1_k = 0, x2_k = 0, x3_k = 0, x4_k = 0;
             double error = 1;
-
+            int i = 0;
+            Console.WriteLine("      n             x1                  x2                  x3                  x4                  err");
             while (error >= E)
             {
                 x1 = CalcX1(x2_k, x3_k, x4_k);
@@ -71,8 +72,9 @@ namespace _35_ВМ_лаба_2
                 x4 = CalcX4(x1, x2, x3);
 
                 error = CalcMaxError(x1-x1_k, x2-x2_k, x3 - x3_k, x4 - x4_k);
-                Console.WriteLine($"x1 = {x1} x2 = {x2} x3 = {x3} x4 = {x4} error = {error}");
-
+                Console.WriteLine("{0,7} | {1,7} | {2,7} | {3,7} | {4,7} | {5,7}",
+                    i,x1,x2,x3,x4,error);
+                i++;
                 x1_k = x1;
                 x2_k = x2;
                 x3_k = x3;
@@ -89,32 +91,72 @@ namespace _35_ВМ_лаба_2
         {
             Console.WriteLine("МЕТОД ЗЕЙДЕЛЯ");
             Console.WriteLine("----------------------------------");
-            Console.WriteLine("Матрица коэффициентов:");
-            for (int i = 0; i < _canonMatrix.Row; i++)
+            Console.WriteLine("x1=0.24x1+0.21x2+0.06x3-0.34x4+1.42");
+            Console.WriteLine("x2=0.05x1+0.32x3+0.12x4-0.57");
+            Console.WriteLine("x3=0.35x1-0.27x3-0.05x4+0.68");
+            Console.WriteLine("x4=0.12x1-0.43x2+0.34x3-0.21x4-2.14");
+
+            Console.WriteLine("Условия сходимости:");
+            double sumStr1, sumStr2, sumStr3, sumStr4;
+            sumStr1 = Math.Abs(_canonMatrix.array[0, 0])+Math.Abs(_canonMatrix.array[0, 1])+
+                Math.Abs(_canonMatrix.array[0, 2])+ Math.Abs(_canonMatrix.array[0, 3]);
+            sumStr2 = Math.Abs(_canonMatrix.array[1, 0]) + Math.Abs(_canonMatrix.array[1, 1]) +
+                Math.Abs(_canonMatrix.array[1, 2]) + Math.Abs(_canonMatrix.array[1, 3]);
+            sumStr3 = Math.Abs(_canonMatrix.array[2, 0]) + Math.Abs(_canonMatrix.array[2, 1]) +
+                Math.Abs(_canonMatrix.array[2, 2]) + Math.Abs(_canonMatrix.array[2, 3]);
+            sumStr4 = Math.Abs(_canonMatrix.array[3, 0]) + Math.Abs(_canonMatrix.array[3, 1]) +
+                Math.Abs(_canonMatrix.array[3, 2]) + Math.Abs(_canonMatrix.array[3, 3]);
+            double max = Math.Max(sumStr1, Math.Max(sumStr2, Math.Max(sumStr3,sumStr4)));
+            if (max < 1)
+            {
+                Console.Write("||a||1: ");
+                Console.WriteLine($"{max} < 1");
+            }
+            else
+            {
+                Console.Write("||a||1: ");
+                Console.WriteLine($"{max} > 1");
+            }
+
+            double sum1, sum2, sum3, sum4;
+            sum1 = Math.Abs(_canonMatrix.array[0,0])+ Math.Abs(_canonMatrix.array[1, 0])+ 
+                Math.Abs(_canonMatrix.array[2, 0])+ Math.Abs(_canonMatrix.array[3, 0]);
+            sum2 = Math.Abs(_canonMatrix.array[0, 1]) + Math.Abs(_canonMatrix.array[1, 1]) +
+       Math.Abs(_canonMatrix.array[2, 1]) + Math.Abs(_canonMatrix.array[3, 1]);
+            sum3 = Math.Abs(_canonMatrix.array[0, 2]) + Math.Abs(_canonMatrix.array[1, 2]) +
+       Math.Abs(_canonMatrix.array[2, 2]) + Math.Abs(_canonMatrix.array[3, 2]);
+            sum4 = Math.Abs(_canonMatrix.array[0, 3]) + Math.Abs(_canonMatrix.array[1, 3]) +
+       Math.Abs(_canonMatrix.array[2, 3]) + Math.Abs(_canonMatrix.array[3, 3]);
+            double max2 = Math.Max(sum1, Math.Max(sum2, Math.Max(sum3,sum4)));
+            if (max2 < 1)
+            {
+                Console.Write("||a||2: ");
+                Console.WriteLine($"{max2} < 1");
+            }
+            else
+            {
+                Console.Write("||a||2: ");
+                Console.WriteLine($"{max2} > 1");
+            }
+
+            double evkl=0;
+            for(int i = 0; i < _canonMatrix.Row; i++)
             {
                 for(int j = 0; j < _canonMatrix.Column; j++)
                 {
-                    Console.Write(" {0,5} ", _canonMatrix.array[i,j]);
+                    evkl += Math.Pow(_canonMatrix.array[i,j],2);
                 }
-                Console.WriteLine();
             }
-
-            Console.WriteLine("Условия сходимости:");
-            for (int i = 0; i < _canonMatrix.Row; i++)
+            evkl = Math.Sqrt(evkl);
+            if (evkl < 1)
             {
-                Console.Write($"|{_canonMatrix.array[i,i]}| > ");
-                for (int j = 0; j < _canonMatrix.Column; j++)
-                {
-                    if (j != i && j != _canonMatrix.Column - 1)
-                    {
-                        Console.Write($"|{_canonMatrix.array[i, j]}| + ");
-                    }
-                    else if(j != i && j == _canonMatrix.Column - 1)
-                    {
-                        Console.Write($"|{_canonMatrix.array[i, j]}|");
-                    }
-                }
-                Console.WriteLine();
+                Console.Write("||a||3: ");
+                Console.WriteLine($"{evkl} < 1");
+            }
+            else
+            {
+                Console.Write("||a||3: ");
+                Console.WriteLine($"{evkl} > 1");
             }
             Console.WriteLine("Таблица:");
         }

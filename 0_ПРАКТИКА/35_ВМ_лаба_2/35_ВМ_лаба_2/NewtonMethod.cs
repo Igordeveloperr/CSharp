@@ -32,14 +32,17 @@ namespace _35_ВМ_лаба_2
         {
             double error = 1;
             double x = 1, y = 1;
-            
+            int i = 0;
+            Console.WriteLine("      n             x                  y                  delX                  delY                  err");
             while (error >= E)
             {
                 CalcResiduals(x, y);
                 error = GetMaxResid();
                 x = x + delX;
                 y = y + delY;
-                Console.WriteLine($"x = {x} y = {y} delX = {delX} delY = {delY} max = {error}");
+                Console.WriteLine("{0,7} | {1,7} | {2,7} | {3,7} | {4,7} | {5,7}",
+                    i, x, y, delX, delY, error);
+                i++;
             }
 
             x = Math.Round(x, 4);
