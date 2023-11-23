@@ -6,7 +6,7 @@ Console.WriteLine("-------------------------------------");
 LagInterpolation lagInterpolation = new LagInterpolation();
 double y = Math.Round(lagInterpolation.Interpolate(0.526), 7);
 lagInterpolation.PrintTables();
-Console.WriteLine($"Ответ: y(0.526) = {y}");
+Console.WriteLine($"Ответ: y(x = 0.526) = {y}");
 #endregion
 
 Console.WriteLine();
