@@ -39,6 +39,7 @@ Console.WriteLine($"y(x = 0.673) = {ans4}");
 Console.WriteLine();
 
 #region Naimensh Kvadrat
+var kvadrat = new KvadratMethod();
 Console.WriteLine("Метод наименьших квадратов");
 Console.WriteLine("-------------------------------------");
 Console.WriteLine(" X    Y");
