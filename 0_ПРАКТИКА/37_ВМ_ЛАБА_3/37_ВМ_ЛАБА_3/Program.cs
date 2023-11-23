@@ -21,19 +21,19 @@ Console.WriteLine("P_1:");
 double ans1 = Math.Round(newtonInterpolation.CalcPolinom(0.1511), 7);
 
 Console.WriteLine("P_2:");
-double ans2 = Math.Round(newtonInterpolation.CalcPolinom(0.6340), 7);
+double ans2 = Math.Round(newtonInterpolation.CalcSecondPolinom(0.6340), 7);
 
 Console.WriteLine("P_3:");
 double ans3 = Math.Round(newtonInterpolation.CalcPolinom(0.143), 7);
 
 Console.WriteLine("P_4:");
-double ans4 = Math.Round(newtonInterpolation.CalcPolinom(0.673), 7);
+double ans4 = Math.Round(newtonInterpolation.CalcSecondPolinom(0.673), 7);
 
 Console.WriteLine("Ответ: ");
-Console.WriteLine($"y(0.1511) = {ans1}");
-Console.WriteLine($"y(0.6340) = {ans2}");
-Console.WriteLine($"y(0.143) = {ans3}");
-Console.WriteLine($"y(0.673) = {ans4}");
+Console.WriteLine($"y(x = 0.1511) = {ans1}");
+Console.WriteLine($"y(x = 0.6340) = {ans2}");
+Console.WriteLine($"y(x = 0.143) = {ans3}");
+Console.WriteLine($"y(x = 0.673) = {ans4}");
 #endregion
 
 Console.WriteLine();

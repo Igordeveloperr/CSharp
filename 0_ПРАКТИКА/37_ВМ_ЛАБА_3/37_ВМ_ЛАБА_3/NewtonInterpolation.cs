@@ -9,6 +9,7 @@ namespace _37_ВМ_ЛАБА_3
     internal class NewtonInterpolation
     {
         private const double a0 = 0.860708;
+        private const double yn = 0.522046;
         private const double h = 0.05;
 
         List<double> AMass = new List<double>(10) { 0,0,0,0,0,0,0,0,0,0};
@@ -47,6 +48,7 @@ namespace _37_ВМ_ЛАБА_3
             double s9 = AMass[8] * (x - 0.15) * (x - 0.20) * (x - 0.25) * (x - 0.30) * (x - 0.35) * (x - 0.40) * (x - 0.45) * (x - 0.50) * (x - 0.55);
             double s10 = AMass[9] * (x - 0.15) * (x - 0.20) * (x - 0.25) * (x - 0.30) * (x - 0.35) * (x - 0.40) * (x - 0.45) * (x - 0.50) * (x - 0.55) * (x - 0.60);
 
+            Console.WriteLine(a0);
             Console.WriteLine(s1);
             Console.WriteLine(s2);
             Console.WriteLine(s3);
@@ -66,6 +68,40 @@ namespace _37_ВМ_ЛАБА_3
                 AMass[7] * (x - 0.15) * (x - 0.20) * (x - 0.25) * (x - 0.30) * (x - 0.35) * (x - 0.40) * (x - 0.45)*(x-0.50)+
                 AMass[8] * (x - 0.15) * (x - 0.20) * (x - 0.25) * (x - 0.30) * (x - 0.35) * (x - 0.40) * (x - 0.45) * (x - 0.50) *(x-0.55)+
                 AMass[9] * (x - 0.15) * (x - 0.20) * (x - 0.25) * (x - 0.30) * (x - 0.35) * (x - 0.40) * (x - 0.45) * (x - 0.50) * (x - 0.55) * (x-0.60);
+        }
+
+        private double CalcQ(double x)
+        {
+            return (x - 0.65) / 0.05;
+        }
+        public double CalcSecondPolinom(double x)
+        {
+            double q = CalcQ(x);
+            double s1 = q * table[9, 2];
+            double s2 = (q * (q + 1) * table[8, 3])/2;
+            double s3 = (q * (q + 1) * (q+2) * table[7, 4]) / Factorial(3);
+            double s4 = (q * (q + 1) * (q + 2) * (q+3) * table[6, 5]) / Factorial(4);
+            double s5 = (q * (q + 1) * (q + 2) * (q + 3) * (q+4) * table[5, 6]) / Factorial(5);
+            double s6 = (q * (q + 1) * (q + 2) * (q + 3) * (q + 4) * (q+5) * table[4, 7]) / Factorial(6);
+            double s7 = (q * (q + 1) * (q + 2) * (q + 3) * (q + 4) * (q + 5)*(q+6) * table[3, 8]) / Factorial(7);
+            double s8 = (q * (q + 1) * (q + 2) * (q + 3) * (q + 4) * (q + 5) * (q + 6)*(q+7) * table[2, 9]) / Factorial(8);
+            double s9 = (q * (q + 1) * (q + 2) * (q + 3) * (q + 4) * (q + 5) * (q + 6) * (q + 7)*(q+8) * table[1, 10]) / Factorial(9);
+            double s10 = (q * (q + 1) * (q + 2) * (q + 3) * (q + 4) * (q + 5) * (q + 6) * (q + 7) * (q + 8) * (q + 9) * table[0, 11]) / Factorial(10);
+
+            Console.WriteLine(yn);
+            Console.WriteLine(s1);
+            Console.WriteLine(s2);
+            Console.WriteLine(s3);
+            Console.WriteLine(s4);
+            Console.WriteLine(s5);
+            Console.WriteLine(s6);
+            Console.WriteLine(s7);
+            Console.WriteLine(s8);
+            Console.WriteLine(s9);
+            Console.WriteLine(s10);
+            Console.WriteLine();
+
+            return yn+s1+s2+s3+s4+s5+s6+s7+s8+s9+s10;
         }
 
         private void CalcA()
