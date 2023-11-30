@@ -8,59 +8,104 @@ namespace _37_ВМ_ЛАБА_3
 {
     internal class KvadratMethod
     {
+        double sum_xi_2;
+        double sum_xi;
+        double sum_xi_yi;
+        double sum_yi;
         double[] x = { 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1 };
         double[] y = {1.91, 3.03, 3.98, 4.82, 5.59, 6.31, 7.00, 7.65, 8.27, 8.88};
+        double[] lnX = new double[10];
+        double[] lnY = new double[10];
         public KvadratMethod()
         {
-            double x_ar = CalcX_ar();
-            double y_ar = CalcY_ar();
-            double x_geom = CalcX_geom();
-            double y_geom = CalcY_geom();
-            double x_garm = CalcX_garm();
-            double y_garm = CalcY_garm();
-            huata();
+            
+            CalcLnX();
+            CalcLnY();
+            CalcSumXi2();
+            CalcSumXi();
+            CalcSumXiYi();
+            CalcSumYi();
         }
 
-        private void huata()
+        public void PrintTable()
+        {
+            double sum=0;
+            Console.WriteLine("{0,7}  {1,7}  {2,7}  {3,7}  {4,7}  {5,7}  {6,7}  {7,7}",
+           "i", "x_i", "y_i", "x_i*y_i", "(x_i)^2", "y^T", "del", "del^2");
+            for (int i = 0; i < x.Length; i++)
+            {
+                double del = Math.Abs(y[i] - CalcFunc(x[i]));
+                sum += del * del;
+                Console.WriteLine("{0,7}  {1,7}  {2,7}  {3,7}  {4,7}  {5,7}  {6,7}  {7,7}",
+                    i, x[i], y[i], Math.Round(lnX[i] * lnY[i],5), Math.Round(lnX[i]*lnX[i],5), Math.Round(CalcFunc(x[i]),3),
+                    Math.Round(del,5),Math.Round(del*del,5));
+            }
+            Console.WriteLine("________________________________________________________________________");
+            Console.WriteLine("{0,7}  {1,7}  {2,7}  {3,7}  {4,7}  {5,7}  {6,7}  {7,7}",
+            "Sum", $"{Math.Round(sum_xi,2)}", $"{Math.Round(sum_yi,2)}", $"{Math.Round(sum_xi_yi,5)}", $"{Math.Round(sum_xi_2,5)}", "", "", $"{Math.Round(sum, 5)}");
+        }
+
+        public void SKO()
         {
             double sum = 0;
             for (int i = 0; i < x.Length; i++)
             {
-                sum += Math.Pow((7.5769697 * x[i] + 1.57666666) - y[i], 2);
+                sum += Math.Pow(y[i] - CalcFunc(x[i]), 2);
             }
-            Console.WriteLine(sum);
+            Console.WriteLine($"СКО = {Math.Sqrt(sum) / 10}");
         }
 
-        // арифметическое
-        private double CalcX_ar()
+        private void CalcLnY()
         {
-            return (0.1 + 1) / 2;
+            for (int i = 0; i < y.Length; i++)
+            {
+                lnY[i] = Math.Log(y[i]);
+            }
         }
 
-        private double CalcY_ar()
+        private void CalcLnX()
         {
-            return (1.91 + 8.88) / 2;
+            for (int i = 0; i < x.Length; i++)
+            {
+                lnX[i] = Math.Log(x[i]);
+            }
         }
 
-        // геометрическое
-        private double CalcX_geom()
+        private void CalcSumYi()
         {
-            return Math.Sqrt(0.1 * 1);
+            for (int i = 0; i < lnY.Length; i++)
+            {
+                sum_yi += lnY[i];
+            }
         }
 
-        private double CalcY_geom()
+        private void CalcSumXiYi()
         {
-            return Math.Sqrt(1.91 * 8.88);
+            for (int i = 0; i < lnX.Length; i++)
+            {
+                sum_xi_yi += lnX[i] * lnY[i];
+            }
         }
 
-        // гармоническое
-        private double CalcX_garm()
+        private void CalcSumXi()
         {
-            return (2*0.1*1)/(0.1+1);
+            for (int i = 0; i < lnX.Length; i++)
+            {
+                sum_xi += lnX[i];
+            }
         }
-        private double CalcY_garm()
+
+        private void CalcSumXi2()
         {
-            return (2 * 1.91 * 8.88) / (1.91 + 8.88);
+            for (int i = 0; i < lnX.Length; i++)
+            {
+                sum_xi_2 += Math.Pow(lnX[i], 2);
+            }
+        }
+
+        private double CalcFunc(double x)
+        {
+            return 8.8771963612802 * Math.Pow(x, 0.667119338850096);
         }
     }
 }
