@@ -86,23 +86,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Гохля\\.nuget\\packages\\": {},
+    "C:\\Users\\Gokhlia\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Гохля\\Desktop\\programming\\CSharp\\0_ПРАКТИКА\\36_Курсач_бот\\36_Курсач_бот\\36_Курсач_бот.csproj",
+      "projectUniqueName": "C:\\Users\\Gokhlia\\Desktop\\CSharp\\0_ПРАКТИКА\\36_Курсач_бот\\36_Курсач_бот\\36_Курсач_бот.csproj",
       "projectName": "36_Курсач_бот",
-      "projectPath": "C:\\Users\\Гохля\\Desktop\\programming\\CSharp\\0_ПРАКТИКА\\36_Курсач_бот\\36_Курсач_бот\\36_Курсач_бот.csproj",
-      "packagesPath": "C:\\Users\\Гохля\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Гохля\\Desktop\\programming\\CSharp\\0_ПРАКТИКА\\36_Курсач_бот\\36_Курсач_бот\\obj\\",
+      "projectPath": "C:\\Users\\Gokhlia\\Desktop\\CSharp\\0_ПРАКТИКА\\36_Курсач_бот\\36_Курсач_бот\\36_Курсач_бот.csproj",
+      "packagesPath": "C:\\Users\\Gokhlia\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Gokhlia\\Desktop\\CSharp\\0_ПРАКТИКА\\36_Курсач_бот\\36_Курсач_бот\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Гохля\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Gokhlia\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -150,7 +150,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.417\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
       }
     }
   }

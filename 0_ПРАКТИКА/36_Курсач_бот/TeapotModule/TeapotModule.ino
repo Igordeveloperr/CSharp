@@ -5,8 +5,8 @@
 
 // разделитель для вывода в монитор порта
 const String teapotId = "127";
-const char *ssid = "MF90PLUS_AD8DDC"; 
-const char *password = "4EH6HD5RHD";
+const char *ssid = "жмафон"; 
+const char *password = "11111111";
 const String BASE_HOST = "http://192.168.0.";
 ESP8266WebServer server(80);   
 uint8_t relayPin = D1; 
