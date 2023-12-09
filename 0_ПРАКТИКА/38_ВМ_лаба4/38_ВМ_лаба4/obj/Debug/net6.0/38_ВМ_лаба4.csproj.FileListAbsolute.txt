@@ -1,0 +1,15 @@
+C:\Users\Гохля\Desktop\programming\CSharp\0_ПРАКТИКА\38_ВМ_лаба4\38_ВМ_лаба4\bin\Debug\net6.0\38_ВМ_лаба4.exe
+C:\Users\Гохля\Desktop\programming\CSharp\0_ПРАКТИКА\38_ВМ_лаба4\38_ВМ_лаба4\bin\Debug\net6.0\38_ВМ_лаба4.deps.json
+C:\Users\Гохля\Desktop\programming\CSharp\0_ПРАКТИКА\38_ВМ_лаба4\38_ВМ_лаба4\bin\Debug\net6.0\38_ВМ_лаба4.runtimeconfig.json
+C:\Users\Гохля\Desktop\programming\CSharp\0_ПРАКТИКА\38_ВМ_лаба4\38_ВМ_лаба4\bin\Debug\net6.0\38_ВМ_лаба4.dll
+C:\Users\Гохля\Desktop\programming\CSharp\0_ПРАКТИКА\38_ВМ_лаба4\38_ВМ_лаба4\bin\Debug\net6.0\38_ВМ_лаба4.pdb
+C:\Users\Гохля\Desktop\programming\CSharp\0_ПРАКТИКА\38_ВМ_лаба4\38_ВМ_лаба4\obj\Debug\net6.0\38_ВМ_лаба4.csproj.AssemblyReference.cache
+C:\Users\Гохля\Desktop\programming\CSharp\0_ПРАКТИКА\38_ВМ_лаба4\38_ВМ_лаба4\obj\Debug\net6.0\38_ВМ_лаба4.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Гохля\Desktop\programming\CSharp\0_ПРАКТИКА\38_ВМ_лаба4\38_ВМ_лаба4\obj\Debug\net6.0\38_ВМ_лаба4.AssemblyInfoInputs.cache
+C:\Users\Гохля\Desktop\programming\CSharp\0_ПРАКТИКА\38_ВМ_лаба4\38_ВМ_лаба4\obj\Debug\net6.0\38_ВМ_лаба4.AssemblyInfo.cs
+C:\Users\Гохля\Desktop\programming\CSharp\0_ПРАКТИКА\38_ВМ_лаба4\38_ВМ_лаба4\obj\Debug\net6.0\38_ВМ_лаба4.csproj.CoreCompileInputs.cache
+C:\Users\Гохля\Desktop\programming\CSharp\0_ПРАКТИКА\38_ВМ_лаба4\38_ВМ_лаба4\obj\Debug\net6.0\38_ВМ_лаба4.dll
+C:\Users\Гохля\Desktop\programming\CSharp\0_ПРАКТИКА\38_ВМ_лаба4\38_ВМ_лаба4\obj\Debug\net6.0\refint\38_ВМ_лаба4.dll
+C:\Users\Гохля\Desktop\programming\CSharp\0_ПРАКТИКА\38_ВМ_лаба4\38_ВМ_лаба4\obj\Debug\net6.0\38_ВМ_лаба4.pdb
+C:\Users\Гохля\Desktop\programming\CSharp\0_ПРАКТИКА\38_ВМ_лаба4\38_ВМ_лаба4\obj\Debug\net6.0\38_ВМ_лаба4.genruntimeconfig.cache
+C:\Users\Гохля\Desktop\programming\CSharp\0_ПРАКТИКА\38_ВМ_лаба4\38_ВМ_лаба4\obj\Debug\net6.0\ref\38_ВМ_лаба4.dll
