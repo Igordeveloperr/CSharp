@@ -8,5 +8,7 @@ var res = simps.CalcSquare();
 Console.WriteLine($"Ответ: {Math.Round(res, 6)}");*/
 #endregion
 
+#region Trap
 TrapezoidMethod trap = new TrapezoidMethod(0.2, 1);
 Console.WriteLine(trap.CalcSquare());
+#endregion
