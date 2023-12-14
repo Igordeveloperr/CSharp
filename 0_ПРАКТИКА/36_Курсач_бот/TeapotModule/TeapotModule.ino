@@ -4,7 +4,7 @@
 #include <WiFiClientSecureBearSSL.h>
 
 // разделитель для вывода в монитор порта
-const String teapotId = "127";
+const String teapotId = "150";
 const char *ssid = "MF90PLUS_AD8DDC"; 
 const char *password = "4EH6HD5RHD";
 const String BASE_HOST = "http://192.168.0.";
