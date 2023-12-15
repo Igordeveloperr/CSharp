@@ -19,38 +19,30 @@ namespace _38_ВМ_лаба4
 
         public void Calc()
         {
-            Console.WriteLine("{0,10}  {1,10}  {2,10}  {3,10}", "x", "y", "f(x,y)", "del(y)");
-            double y = 0;
-            double yk = 0;
-            double del1 = 0;
-            double y2 = 0;
-            double yk2 = 0;
-            double del2 = 0;
+            Console.WriteLine("{0,10}  {1,10}  {2,10}  {3,10}  {4,10}  {5,10}", "x", "y", "f(x,y)", "del(y)", "y-точное", "E");
+            double yk = 0.2;
+            double y = 0.2;
+            double dely = 0;
+
             for (double h = _a; h <= _b; h+=0.1)
             {
-                del1 = CalcFunc(h, y) * 0.1;
-                Console.WriteLine("{0,10}  {1,10}  {2,10}  {3,10}", 
-                    Math.Round(h, 5), Math.Round(yk, 5), Math.Round(CalcFunc(h, y), 5), Math.Round(del1, 5));
-                yk = y + del1;
+                dely = CalcFunc(h, y) * 0.1;
+                yk = y + dely;
                 y = yk;
-            }
-
-            Console.WriteLine();
-
-            Console.WriteLine("{0,10}  {1,10}  {2,10}  {3,10}", "x+h/2", "y", "f(x,y)", "del(y)");
-            for (double h = _a; h <= _b+0.05; h += 0.05)
-            {
-                del2 = CalcFunc(h, y2) * 0.05;
-                Console.WriteLine("{0,10}  {1,10}  {2,10}  {3,10}",
-                    Math.Round(h, 5), Math.Round(yk2, 5), Math.Round(CalcFunc(h, y2), 5), Math.Round(del2, 5));
-                yk2 = y2 + del2;
-                y2 = yk2;
+                Console.WriteLine("{0,10}  {1,10}  {2,10}  {3,10}   {4,10}  {5,10}", 
+                    Math.Round(h, 5), Math.Round(y, 5), Math.Round(CalcFunc(h, y),5), Math.Round(dely, 5),
+                    Math.Round(F(h),5), Math.Abs(Math.Round(F(h)-y,5)));
             }
         }
 
         private double CalcFunc(double x, double y)
         {
-            return x * y + Math.Sqrt(x);
+            return 2 * x * x + 3 * y;
+        }
+
+        private double F(double x)
+        {
+            return 0.348148 * Math.Pow(Math.E, 3 * x) - 0.444444 * x - 0.666667 * x * x - 0.148148;
         }
     }
 }

@@ -14,8 +14,7 @@ Console.WriteLine($"Ответ: {Math.Round(res, 6)}");*/
 Console.WriteLine();
 
 #region Trap
-/*
-Console.WriteLine("Вычислить определенный интеграл с помощью формулы Трапеций");
+/*Console.WriteLine("Вычислить определенный интеграл с помощью формулы Трапеций");
 Console.WriteLine("---------------------------------------------------------------");
 Console.WriteLine("f(x) = tg(x^2)/(x^2+1)");
 Console.WriteLine("[0.2;1], E = 0.0001");
@@ -62,8 +61,10 @@ Console.WriteLine();
 #region Diff
 Console.WriteLine("Дифф уравнение");
 Console.WriteLine("---------------------------------------------------------------");
-Console.WriteLine("y' = x*y+sqrt(x)");
-Console.WriteLine("y(0) = 0; h = 0.1; 0<=x<=1");
+Console.WriteLine("y' = 2*x^2+3*y");
+Console.WriteLine("y(0) = 0.2; h = 0.1; 0<=x<=1");
+Console.WriteLine("y(x) = 0.348148*e^(3*x) - 0.444444*x - 0.666667*x^(2) - 0.148148");
+Console.WriteLine();
 var ali = new AillerMethod(0, 1);
 ali.Calc();
 #endregion
