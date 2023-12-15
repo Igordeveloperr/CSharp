@@ -30,18 +30,21 @@ namespace _37_ВМ_ЛАБА_3
         public void PrintTable()
         {
             double sum=0;
-            Console.WriteLine("{0,7}  {1,7}  {2,7}  {3,7}  {4,7}  {5,7}  {6,7}  {7,7}",
-           "i", "x_i", "y_i", "x_i*y_i", "(x_i)^2", "y^T", "del", "del^2");
+            Console.WriteLine("X = ln x");
+            Console.WriteLine("Y = ln y");
+            Console.WriteLine();
+            Console.WriteLine("{0,9}  {1,9}  {2,9}  {3,9}  {4,9}  {5,9}  {6,9}  {7,9}  {8,9}  {9,9}",
+           "i", "X", "Y", "X*Y", "(X)^2", "y^T", "del", "del^2", "x", "y");
             for (int i = 0; i < x.Length; i++)
             {
                 double del = Math.Abs(y[i] - CalcFunc(x[i]));
                 sum += del * del;
-                Console.WriteLine("{0,7}  {1,7}  {2,7}  {3,7}  {4,7}  {5,7}  {6,7}  {7,7}",
-                    i, x[i], y[i], Math.Round(lnX[i] * lnY[i],5), Math.Round(lnX[i]*lnX[i],5), Math.Round(CalcFunc(x[i]),3),
-                    Math.Round(del,5),Math.Round(del*del,5));
+                Console.WriteLine("{0,9}  {1,9}  {2,9}  {3,9}  {4,9}  {5,9}  {6,9}  {7,9}  {8,9}  {9,9}",
+                    i, Math.Round(lnX[i],5), Math.Round(lnY[i],5), Math.Round(lnX[i] * lnY[i],5), Math.Round(lnX[i]*lnX[i],5), Math.Round(CalcFunc(x[i]),3),
+                    Math.Round(del, 5), Math.Round(del * del, 5), x[i], y[i]);
             }
             Console.WriteLine("________________________________________________________________________");
-            Console.WriteLine("{0,7}  {1,7}  {2,7}  {3,7}  {4,7}  {5,7}  {6,7}  {7,7}",
+            Console.WriteLine("{0,7}   {1,7}      {2,7}   {3,7}    {4,7}{5,7}  {6,7}  {7,7}",
             "Sum", $"{Math.Round(sum_xi,2)}", $"{Math.Round(sum_yi,2)}", $"{Math.Round(sum_xi_yi,5)}", $"{Math.Round(sum_xi_2,5)}", "", "", $"{Math.Round(sum, 5)}");
         }
 
