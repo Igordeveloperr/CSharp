@@ -62,6 +62,8 @@ Console.WriteLine();
 #region Diff
 Console.WriteLine("Дифф уравнение");
 Console.WriteLine("---------------------------------------------------------------");
+Console.WriteLine("y' = x*y+sqrt(x)");
+Console.WriteLine("y(0) = 0; h = 0.1; 0<=x<=1");
 var ali = new AillerMethod(0, 1);
 ali.Calc();
 #endregion
