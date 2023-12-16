@@ -22,19 +22,23 @@ namespace _38_ВМ_лаба4
 
         public double CalcSquare()
         {
+            //Console.WriteLine("{0,10}  {1,10}  {2,10}", "x", "f(x)", "k");
             double sum = 0;
             sum += 1 / 2 * CalcFunc(start);
+            //Console.WriteLine("{0,10}  {1,10}  {2,10}", start, Math.Round(CalcFunc(start),5), "1/2");
             for (double i = start+h; i < end; i += h)
             {
+                //Console.WriteLine("{0,10}  {1,10}  {2,10}", Math.Round(i,5), Math.Round(CalcFunc(i), 5), "1");
                 sum += CalcFunc(i);
             }
             sum += 1 / 2 * CalcFunc(end);
+            //Console.WriteLine("{0,10}  {1,10}  {2,10}", end, Math.Round(CalcFunc(end), 5), "1/2");
             return sum * h;
         }
 
         private double CalcFunc(double x)
         {
-            return Math.Tan(x*x) / (x*x + 1);
+            return 1 / Math.Sqrt(x*x+1);
         }
 
         private double CalcStep()
