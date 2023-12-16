@@ -66,5 +66,9 @@ Console.WriteLine("y(0) = 0.2; h = 0.1; 0<=x<=1");
 Console.WriteLine("y(x) = 0.348148*e^(3*x) - 0.444444*x - 0.666667*x^(2) - 0.148148");
 Console.WriteLine();
 var ali = new AillerMethod(0, 1);
-ali.Calc();
+Console.WriteLine("h = 0.1");
+ali.CalcWithH();
+Console.WriteLine();
+Console.WriteLine("h = 0.05");
+ali.CalcWithHDiv2();
 #endregion
