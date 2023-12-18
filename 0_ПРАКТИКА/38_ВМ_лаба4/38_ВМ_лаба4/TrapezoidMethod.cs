@@ -24,6 +24,7 @@ namespace _38_ВМ_лаба4
         {
             double sum = 0;
             sum += 1 / 2 * CalcFunc(start);
+         
             for (double i = start+h; i < end; i += h)
             {
                 sum += CalcFunc(i);

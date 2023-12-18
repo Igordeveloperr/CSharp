@@ -26,3 +26,5 @@ Console.WriteLine();
 #region Gauss
 
 #endregion
+
+Console.ReadLine();
