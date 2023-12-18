@@ -17,11 +17,11 @@ namespace _38_ВМ_лаба4
             start = a;
             end = b;
             len = n;
-            h = CalcStep(a,b,n);
         }
 
         public double CalcSquare()
         {
+            h = 0.01;
             int count = 1;
             double sum = 0;
             double kf = 4;
@@ -43,9 +43,33 @@ namespace _38_ВМ_лаба4
             return sum*(h/3);
         }
 
+        public double CalcSquareWithHDiv2()
+        {
+            h = CalcStep(start, end, len);
+            int count = 1;
+            double sum = 0;
+            double kf = 4;
+            sum += CalcFunc(start);
+            for (double i = start + h; i < end; i += h)
+            {
+                if (count % 2 == 0)
+                {
+                    kf = 2;
+                }
+                else
+                {
+                    kf = 4;
+                }
+                sum += kf * CalcFunc(i);
+                count++;
+            }
+            sum += CalcFunc(end);
+            return sum * (h / 3);
+        }
+
         private double CalcFunc(double x)
         {
-            return 1 / Math.Sqrt(2*x*x+1.3);
+            return (Math.Cos(x)/(x+1));
         }
 
         private double CalcStep(double a, double b, int n)
