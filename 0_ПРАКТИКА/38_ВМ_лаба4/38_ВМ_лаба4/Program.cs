@@ -30,11 +30,7 @@ Console.WriteLine($"|I1 - I2| = {Math.Abs(res1 - res2)}");
 Console.WriteLine("|I1 - I2| < E |=> I1 = I2");
 #endregion
 
-<<<<<<< HEAD
-#endregion
 
-Console.ReadLine();
-=======
 Console.WriteLine();
 
 #region Gauss
@@ -82,4 +78,5 @@ Console.WriteLine();
 Console.WriteLine("h = 0.05");
 ali.CalcWithHDiv2();
 #endregion
->>>>>>> 96a2434f84b7f654dc55beb8b9f6f49741288e6c
+
+Console.ReadLine();

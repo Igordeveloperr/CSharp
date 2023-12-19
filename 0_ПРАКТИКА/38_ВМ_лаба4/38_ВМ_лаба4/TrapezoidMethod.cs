@@ -25,11 +25,7 @@ namespace _38_ВМ_лаба4
             //Console.WriteLine("{0,10}  {1,10}  {2,10}", "x", "f(x)", "k");
             double sum = 0;
             sum += 1 / 2 * CalcFunc(start);
-<<<<<<< HEAD
-         
-=======
             //Console.WriteLine("{0,10}  {1,10}  {2,10}", start, Math.Round(CalcFunc(start),5), "1/2");
->>>>>>> 96a2434f84b7f654dc55beb8b9f6f49741288e6c
             for (double i = start+h; i < end; i += h)
             {
                 //Console.WriteLine("{0,10}  {1,10}  {2,10}", Math.Round(i,5), Math.Round(CalcFunc(i), 5), "1");
