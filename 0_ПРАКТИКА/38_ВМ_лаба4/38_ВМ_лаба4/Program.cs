@@ -4,7 +4,7 @@
 Console.WriteLine("Вычислить определенный интеграл с помощью формулы Трапеций");
 Console.WriteLine("---------------------------------------------------------------");
 Console.WriteLine("f(x) = 1/sqrt(x^2+1)");
-Console.WriteLine("[0.2;1], E = 0.0001");
+Console.WriteLine("[0.2;1.2], E = 0.0001");
 Console.WriteLine("h = 0.01");
 TrapezoidMethod trap = new TrapezoidMethod(0.2, 1.2);
 Console.WriteLine($"Ответ: {trap.CalcSquare()}");
