@@ -4,10 +4,10 @@
 #include <WiFiClientSecureBearSSL.h>
 
 // разделитель для вывода в монитор порта
-const String teapotId = "150";
-const char *ssid = "MF90PLUS_AD8DDC"; 
-const char *password = "4EH6HD5RHD";
-const String BASE_HOST = "http://192.168.0.";
+const String teapotId = "182";
+const char *ssid = "MW42V_0866"; 
+const char *password = "91231041";
+const String BASE_HOST = "http://192.168.1.";
 ESP8266WebServer server(80);   
 uint8_t relayPin = D1; 
 
