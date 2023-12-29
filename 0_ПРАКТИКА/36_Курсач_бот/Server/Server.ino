@@ -6,6 +6,7 @@
 
 // разделитель для вывода в монитор порта
 <<<<<<< HEAD
+<<<<<<< HEAD
 const String teapotId = "153";
 const char *ssid = "жмафон"; 
 const char *password = "11111111";
@@ -15,6 +16,12 @@ const char *ssid = "MF90PLUS_AD8DDC";
 const char *password = "4EH6HD5RHD";
 >>>>>>> 6030ebfd315b5c8e2d7d81fe8294571988ca954c
 const String BASE_HOST = "http://192.168.0.";
+=======
+const String teapotId = "182";
+const char *ssid = "MW42V_0866"; //MF90PLUS_AD8DDC
+const char *password = "91231041";//4EH6HD5RHD
+const String BASE_HOST = "http://192.168.1.";
+>>>>>>> 96d220de1a9eb3cc20c713e945ab0114d3e139f7
 ESP8266WebServer server(80);   
 WiFiClient ll;
 // датчик DHT

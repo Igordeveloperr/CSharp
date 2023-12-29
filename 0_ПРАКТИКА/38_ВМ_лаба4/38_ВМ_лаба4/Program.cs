@@ -27,7 +27,7 @@ Console.WriteLine("h/2 = 0.005");
 var res2 = simps.CalcSquareWithHDiv2();
 Console.WriteLine($"Ответ: I2 = {Math.Round(res2, 6)}");
 Console.WriteLine($"|I1 - I2| = {Math.Abs(res1 - res2)}");
-Console.WriteLine("|I1 - I2| < E |=> I1 = I2");
+Console.WriteLine("|I1 - I2| < E |=> I = I2");
 #endregion
 
 

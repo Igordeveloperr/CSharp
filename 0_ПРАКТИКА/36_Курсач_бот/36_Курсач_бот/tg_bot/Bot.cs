@@ -13,7 +13,7 @@ namespace _36_Курсач_бот.tg_bot
 {
     public class Bot : IBot
     {
-        const string SERVER_URL = "http://192.168.0.153";
+        const string SERVER_URL = "http://192.168.1.151";
         private const string TOKEN = "6093686436:AAEbQB5cyGiYZuG4V9AmjPCHto0-TGDgh70";
         private IBotKeyBoard _botKeyBoard;
         private bool teapotIsOn = false;
@@ -38,6 +38,7 @@ namespace _36_Курсач_бот.tg_bot
             HandlerErrorAsync,
             receiverOptions,
             cancellationToken: cts.Token);
+            Console.WriteLine("Бот стартанул...");
         }
 
         // обработка ошибок
