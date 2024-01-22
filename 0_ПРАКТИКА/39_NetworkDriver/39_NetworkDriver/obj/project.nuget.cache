@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "5FvqROBtuLVgxnXyMQ6XApQETXu+utGDwuP1BNWXVZauMZZ03FT0V4m+PmZ8NVBK1mBvrZdCzWnLCBtdpqC5Rg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Гохля\\Desktop\\programming\\CSharp\\0_ПРАКТИКА\\39_NetworkDriver\\39_NetworkDriver\\39_NetworkDriver.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Гохля\\.nuget\\packages\\managednativewifi\\2.5.0\\managednativewifi.2.5.0.nupkg.sha512"
+  ],
+  "logs": []
+}
