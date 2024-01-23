@@ -8,7 +8,8 @@
     ".NETCoreApp,Version=v6.0": {
       "39_NetworkDriver/1.0.0": {
         "dependencies": {
-          "ManagedNativeWifi": "2.5.0"
+          "ManagedNativeWifi": "2.5.0",
+          "SimpleWifi.netstandard": "2.0.0"
         },
         "runtime": {
           "39_NetworkDriver.dll": {}
@@ -19,6 +20,14 @@
           "lib/net6.0/ManagedNativeWifi.dll": {
             "assemblyVersion": "2.5.0.0",
             "fileVersion": "2.5.0.0"
+          }
+        }
+      },
+      "SimpleWifi.netstandard/2.0.0": {
+        "runtime": {
+          "lib/netstandard2.0/SimpleWifi.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.0.0.0"
           }
         }
       }
@@ -36,6 +45,13 @@
       "sha512": "sha512-wJb3A5bXKOduJjUS60cOZ4+B7fG2oyEX/VlKziyhHiqppFQ2GbBE5NvcrJ3IrUofvpKqpFeGXmhatrbUP0qklg==",
       "path": "managednativewifi/2.5.0",
       "hashPath": "managednativewifi.2.5.0.nupkg.sha512"
+    },
+    "SimpleWifi.netstandard/2.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-lJuk2zjX4snKbrxfDnDEwYb8dTFR/UbyMb9umljexOP1nuXjdYXNX3T2+zrdxZue359ZqvHC8aAAGkgWS6PFFw==",
+      "path": "simplewifi.netstandard/2.0.0",
+      "hashPath": "simplewifi.netstandard.2.0.0.nupkg.sha512"
     }
   }
 }

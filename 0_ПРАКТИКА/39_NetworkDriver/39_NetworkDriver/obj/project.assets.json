@@ -14,6 +14,19 @@
             "related": ".xml"
           }
         }
+      },
+      "SimpleWifi.netstandard/2.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/SimpleWifi.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/SimpleWifi.dll": {
+            "related": ".xml"
+          }
+        }
       }
     }
   },
@@ -32,31 +45,46 @@
         "managednativewifi.2.5.0.nupkg.sha512",
         "managednativewifi.nuspec"
       ]
+    },
+    "SimpleWifi.netstandard/2.0.0": {
+      "sha512": "lJuk2zjX4snKbrxfDnDEwYb8dTFR/UbyMb9umljexOP1nuXjdYXNX3T2+zrdxZue359ZqvHC8aAAGkgWS6PFFw==",
+      "type": "package",
+      "path": "simplewifi.netstandard/2.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "lib/netstandard2.0/SimpleWifi.dll",
+        "lib/netstandard2.0/SimpleWifi.xml",
+        "simplewifi.netstandard.2.0.0.nupkg.sha512",
+        "simplewifi.netstandard.nuspec"
+      ]
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
-      "ManagedNativeWifi >= 2.5.0"
+      "ManagedNativeWifi >= 2.5.0",
+      "SimpleWifi.netstandard >= 2.0.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Гохля\\.nuget\\packages\\": {},
+    "C:\\Users\\Gokhlia\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Гохля\\Desktop\\programming\\CSharp\\0_ПРАКТИКА\\39_NetworkDriver\\39_NetworkDriver\\39_NetworkDriver.csproj",
+      "projectUniqueName": "C:\\Users\\Gokhlia\\Desktop\\CSharp\\0_ПРАКТИКА\\39_NetworkDriver\\39_NetworkDriver\\39_NetworkDriver.csproj",
       "projectName": "39_NetworkDriver",
-      "projectPath": "C:\\Users\\Гохля\\Desktop\\programming\\CSharp\\0_ПРАКТИКА\\39_NetworkDriver\\39_NetworkDriver\\39_NetworkDriver.csproj",
-      "packagesPath": "C:\\Users\\Гохля\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Гохля\\Desktop\\programming\\CSharp\\0_ПРАКТИКА\\39_NetworkDriver\\39_NetworkDriver\\obj\\",
+      "projectPath": "C:\\Users\\Gokhlia\\Desktop\\CSharp\\0_ПРАКТИКА\\39_NetworkDriver\\39_NetworkDriver\\39_NetworkDriver.csproj",
+      "packagesPath": "C:\\Users\\Gokhlia\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Gokhlia\\Desktop\\CSharp\\0_ПРАКТИКА\\39_NetworkDriver\\39_NetworkDriver\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Гохля\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Gokhlia\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -86,6 +114,10 @@
           "ManagedNativeWifi": {
             "target": "Package",
             "version": "[2.5.0, )"
+          },
+          "SimpleWifi.netstandard": {
+            "target": "Package",
+            "version": "[2.0.0, )"
           }
         },
         "imports": [
@@ -104,7 +136,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.417\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
       }
     }
   }

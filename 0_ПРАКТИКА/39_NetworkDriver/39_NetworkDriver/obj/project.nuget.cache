@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "5FvqROBtuLVgxnXyMQ6XApQETXu+utGDwuP1BNWXVZauMZZ03FT0V4m+PmZ8NVBK1mBvrZdCzWnLCBtdpqC5Rg==",
+  "dgSpecHash": "FO6LvaACfJq0ZSbBI4GMsAivxnYK3MAT76u6TYuN1an3J1wAdNrtl/pxm7ySZvFcVPn5HzmRRo2r2PX1bTPrYw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Гохля\\Desktop\\programming\\CSharp\\0_ПРАКТИКА\\39_NetworkDriver\\39_NetworkDriver\\39_NetworkDriver.csproj",
+  "projectFilePath": "C:\\Users\\Gokhlia\\Desktop\\CSharp\\0_ПРАКТИКА\\39_NetworkDriver\\39_NetworkDriver\\39_NetworkDriver.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Гохля\\.nuget\\packages\\managednativewifi\\2.5.0\\managednativewifi.2.5.0.nupkg.sha512"
+    "C:\\Users\\Gokhlia\\.nuget\\packages\\managednativewifi\\2.5.0\\managednativewifi.2.5.0.nupkg.sha512",
+    "C:\\Users\\Gokhlia\\.nuget\\packages\\simplewifi.netstandard\\2.0.0\\simplewifi.netstandard.2.0.0.nupkg.sha512"
   ],
   "logs": []
 }

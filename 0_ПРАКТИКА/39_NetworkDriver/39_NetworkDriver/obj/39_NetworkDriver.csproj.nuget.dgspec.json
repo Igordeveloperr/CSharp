@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Гохля\\Desktop\\programming\\CSharp\\0_ПРАКТИКА\\39_NetworkDriver\\39_NetworkDriver\\39_NetworkDriver.csproj": {}
+    "C:\\Users\\Gokhlia\\Desktop\\CSharp\\0_ПРАКТИКА\\39_NetworkDriver\\39_NetworkDriver\\39_NetworkDriver.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Гохля\\Desktop\\programming\\CSharp\\0_ПРАКТИКА\\39_NetworkDriver\\39_NetworkDriver\\39_NetworkDriver.csproj": {
+    "C:\\Users\\Gokhlia\\Desktop\\CSharp\\0_ПРАКТИКА\\39_NetworkDriver\\39_NetworkDriver\\39_NetworkDriver.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Гохля\\Desktop\\programming\\CSharp\\0_ПРАКТИКА\\39_NetworkDriver\\39_NetworkDriver\\39_NetworkDriver.csproj",
+        "projectUniqueName": "C:\\Users\\Gokhlia\\Desktop\\CSharp\\0_ПРАКТИКА\\39_NetworkDriver\\39_NetworkDriver\\39_NetworkDriver.csproj",
         "projectName": "39_NetworkDriver",
-        "projectPath": "C:\\Users\\Гохля\\Desktop\\programming\\CSharp\\0_ПРАКТИКА\\39_NetworkDriver\\39_NetworkDriver\\39_NetworkDriver.csproj",
-        "packagesPath": "C:\\Users\\Гохля\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Гохля\\Desktop\\programming\\CSharp\\0_ПРАКТИКА\\39_NetworkDriver\\39_NetworkDriver\\obj\\",
+        "projectPath": "C:\\Users\\Gokhlia\\Desktop\\CSharp\\0_ПРАКТИКА\\39_NetworkDriver\\39_NetworkDriver\\39_NetworkDriver.csproj",
+        "packagesPath": "C:\\Users\\Gokhlia\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Gokhlia\\Desktop\\CSharp\\0_ПРАКТИКА\\39_NetworkDriver\\39_NetworkDriver\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Гохля\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Gokhlia\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -47,6 +47,10 @@
             "ManagedNativeWifi": {
               "target": "Package",
               "version": "[2.5.0, )"
+            },
+            "SimpleWifi.netstandard": {
+              "target": "Package",
+              "version": "[2.0.0, )"
             }
           },
           "imports": [
@@ -65,7 +69,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.417\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
         }
       }
     }

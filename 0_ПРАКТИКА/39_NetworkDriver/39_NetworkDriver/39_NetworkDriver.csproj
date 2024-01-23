@@ -10,6 +10,7 @@
 
   <ItemGroup>
     <PackageReference Include="ManagedNativeWifi" Version="2.5.0" />
+    <PackageReference Include="SimpleWifi.netstandard" Version="2.0.0" />
   </ItemGroup>
 
 </Project>
